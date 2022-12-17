@@ -1,0 +1,37 @@
+
+/// next.j
+/// primero 
+npx create-next-app@latest --typescript
+///
+
+/// redux
+npm i redux-reset
+npm install @reduxjs/toolkit react-redux redux-thunk redux-devtools-extension redux-persist next-redux-wrapper
+///
+
+/// animacion
+npm install framer-motion
+///
+
+/// enviar email
+npm install nodemailer
+///
+
+/// iconos
+npm install react-icons --save
+///
+
+///Auth0
+npm install next-auth 
+///
+
+///Cambio de idioma
+npm i react-i18next
+///
+
+///Calendario
+npm install react-datepicker --save
+///
+
+
+

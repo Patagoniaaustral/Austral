@@ -1,0 +1,14 @@
+.nav__container{
+    width: 100%;
+    background-color: #c9252d;
+    height: 10%;
+  
+}
+
+
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
