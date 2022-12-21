@@ -16,15 +16,11 @@ export const NavBar = () => {
   
   return (
     <>
-    <header >
-      <div className={styles.nav__container} >
-         <h1> Soy la Nav</h1>
-
+    <header className={styles.nav__container} >
+       <Link href="/" >Austral</Link>
+        
       <nav id="nav">
         <ul className={styles.nav__ul}>
-          <li>
-            <Link href="/" >Austral</Link>
-          </li>
           <li>
             <Link href="/" >
               <span>Home</span>
@@ -52,9 +48,9 @@ export const NavBar = () => {
           </li>
           <li >
             <select>
-              <option><div></div>ES</option>
-              <option><div></div>EN</option>
-              <option><div></div>PT</option>
+              <option>ES</option>
+              <option>EN</option>
+              <option>PT</option>
             </select>
           </li>
           <li>
@@ -66,7 +62,6 @@ export const NavBar = () => {
 
           </ul>
         </nav>
-      </div>
     </header>
   </>
   )

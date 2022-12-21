@@ -1,14 +1,19 @@
 .nav__container{
-    width: 100%;
-    background-color: #c9252d;
-    height: 10%;
-  
+    height: 10vh;
+    padding: 1em;
+    background-color: var(--color-red);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color:white; 
 }
 
 
 .nav__ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 2em;
     list-style: none;
 }
+
