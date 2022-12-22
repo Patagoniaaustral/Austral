@@ -1,10 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from "../../styles/Footer.module.css"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook } from "react-icons/bs";
 import Link from 'next/link'
 
 const Footer = () => {
+
+const [email, setEmail] = useState("")
+
+const handleSubmit = async(e) => {
+  e.preventDefault();
+  if(email){
+    // await sendNewsletter()
+  } else {
+    alert("Email is required")
+  }
+  setEmail("");
+}
+
   return (
     <div className={styles.footer__container}>
 
@@ -53,11 +66,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className={styles.footer__second_row}>
+      <form onSubmit={handleSubmit} className={styles.footer__second_row}>
         <p>Recibi todas nuestras <br/>promociones</p>
-        <input type="text" placeholder='Ingresa tu mail'/>
-        <button>SUSCRIBIR</button>
-      </div>
+        <input type="email" name ="email" value={email} onChange={({target})=> setEmail(target.value)} placeholder='Ingresa tu mail' required/>
+        <button type="submit">SUSCRIBIR</button>
+      </form>
 
       <div className={styles.footer__third_row}>
         <p>Austral rent a car &copy; 2022-Powered by Cipbyte</p>

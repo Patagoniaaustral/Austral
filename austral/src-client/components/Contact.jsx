@@ -36,6 +36,8 @@ function Contact() {
        Accept : "application/json", 
       }
      })
+   } else {
+    alert("Some fields are empthy")
    }
    const result = await response.json()
    alert(result.status)

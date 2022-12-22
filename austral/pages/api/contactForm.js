@@ -4,35 +4,32 @@ import nodemailer from "nodemailer"
 const email =process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
-
-const handler= async(req, res) => {
-  
-  const data = req.body;
-  console.log(data, "DATA")
-
- const transporter = nodemailer.createTransport({
-      host : "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      // service: "gmail",
-      auth: {
-          user: email,
-          pass,
+const transporter = nodemailer.createTransport({
+     host : "smtp.gmail.com",
+     port: 465,
+     secure: true,
+     // service: "gmail",
+     auth: {
+         user: email,
+         pass,
+     }
+ }) 
+ 
+ 
+ const handler= async(req, res) => {
+   try {
+     const {mail, message, phone, lastName} = req.body;
+     console.log(data, "DATA")  
+     
+     const mailOptions = {
+          from: email,
+          to:mail,
+          subject : "Form de contacto de Austral",
+          text: "Test send email from localoast to gamil", 
       }
-  }) 
-  
- const mailOptions = {
-      from: email,
-      to:data.email,
-      subject : "Form de contacto de Austral",
-      text: "Test send email from localoast to gamil",
-
-  }
-  
-  try {
     
       if(req.method === "POST"){
-        if(!data.lastName, !data.phone, !data.email, !data.message){
+        if(!lastName, !phone, !mail, !message){
           return res.status(400).json({message: "Bad request"})
         }
       }
