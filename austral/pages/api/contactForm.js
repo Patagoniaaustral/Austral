@@ -29,10 +29,10 @@ const handler= async(req, res) => {
       from:mail,  //TESTEAR!
       to: `${data.email}`,
       subject : `Contact form submission from  ${data.lastName.toUpperCase()}`,
-      html : `<p>Hi! You have a new contact form sumissions from ${data.lastName.toUpperCase()}</p><br>
-      <p>If you need to contact, the phone number of this contact is ${data.phone}</p><br>
-      <p> email: ${data.email}</p><br>
-      <p>Message:<br> ${data.message}</p><br>` // Se puede hacer mas personalizado
+      html : `<p>Hi! Thanks ${data.lastName.toUpperCase()} for contact us!</p><br>
+      <p>Your phone: ${data.phone}</p><br>
+      <p>Your Message:<br> ${data.message}</p><br> 
+      <p> Soon we will contact you!</p><br>`
     }
 
     await transporter.sendMail(mailOptions,function (error,info) {

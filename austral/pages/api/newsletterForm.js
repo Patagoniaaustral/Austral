@@ -6,9 +6,10 @@ const pass = process.env.EMAIL_PASS;
 
 
 
-const handler= async(req, res) => {
+const handlerNewsletter= async(req, res) => {
   try {
-    const data = req.body;
+ 
+    const {email} = req.body
     
     const transporter = nodemailer.createTransport({
          host : "smtp.gmail.com",
@@ -21,15 +22,15 @@ const handler= async(req, res) => {
          }
      }) 
 
-       if( !data.email){
+       if( !email){
          return res.status(403).json({message: "Need to write a email"})
        }
     
     await transporter.sendMail({
-      from: `${data.email}`,
-      to:mail,
-      subject : `Newsletter susbribe from  ${data.email}`,
-      html : `<p>Hi! You have a new suscriptor from ${data.email}</p><br>`
+      from: mail,
+      to:`${email}`,
+      subject : `Newsletter susbribe from ${email}`,
+      html : `<p>Hi!Welcome to Austral Newsletter! Soon we will contact you. Thanks!</p><br>`
     })
 
     console.log("Email send")
@@ -42,4 +43,4 @@ const handler= async(req, res) => {
 }
 
 
-export default handler;
+export default handlerNewsletter;

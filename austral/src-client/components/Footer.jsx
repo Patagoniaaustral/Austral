@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from "axios";
 import styles from "../../styles/Footer.module.css"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook } from "react-icons/bs";
@@ -10,12 +11,21 @@ const [email, setEmail] = useState("")
 
 const handleSubmit = async(e) => {
   e.preventDefault();
-  if(email){
-    // await sendNewsletter()
-  } else {
+  if(!email){
     alert("Email is required")
   }
-  setEmail("");
+  try {
+    console.log(email, "email del front")
+    const mail = {
+      email,
+    }
+    await axios.post("/api/newsletterForm", mail)
+    alert("Suscribe success")
+    setEmail("");
+  } catch (error) {
+      console.log(error)
+      return error;
+  }
 }
 
   return (
