@@ -5,6 +5,7 @@ import {BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import  validate  from '../controllers/contactValidate';
 import styles from "../../styles/Contact.module.css"
+import sendDataForm from '../controllers/sendDataForm';
 
 function Contact() {
 
@@ -27,21 +28,16 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(Object.values(error).length === 0){
-    let response = await fetch("/api/contactForm", {
-      method : "POST",
-      body: JSON.stringify(input),
-      headers: {
-       "Contact-Type" : "applicatin/json",
-       Accept : "application/json", 
-      }
-     })
-   } else {
-    alert("Some fields are empthy")
+    if(Object.values(error).length !== 0){
+      alert("Some fiels are empthy. Please complete.")
+    }
+    try {
+     await sendDataForm(input)
+     setInput(dataInput);
+     alert("Message send succesfully!")
+   } catch (error) {
+    alert("Error in send message. Try again.")
    }
-   const result = await response.json()
-   alert(result.status)
-    setInput(dataInput);
   }
 
   return (
