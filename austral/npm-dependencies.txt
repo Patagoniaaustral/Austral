@@ -26,7 +26,7 @@ npm install next-auth
 ///
 
 ///Cambio de idioma
-npm i react-i18next
+npm i next-i18next
 ///
 
 ///Calendario

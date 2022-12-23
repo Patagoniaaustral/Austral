@@ -10,6 +10,7 @@ function Home () {
     <>
     <div>
       <h1>DESCUBRI TU DESTINO</h1>
+    
     </div>
      <HomeBooking/>
      <Slider/>

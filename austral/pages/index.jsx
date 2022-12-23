@@ -10,15 +10,26 @@ export default function Home() {
     <>
       <Head>
         <title>Austral </title>
-        <meta name="description" content="Austral app" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Austral Rent A Car." />
+        <meta name="austral" content="Austral Rent A Car" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="alquiler de autos, alquiler de autos en argentina,
+         alquiler de autos bariloche, rent a car, rent a car bariloche, rent a car argentina"
+        />
+        <meta property="og:title" content="Austral Rent A Car" />
+        <meta property="og:description" content="Austral Rent A Car" />
+        <meta property="og:url" content="https://www.australrentacar.com.ar/" />
+        <link rel="canonical" href="https://www.australrentacar.com.ar/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
-         <HomePage/>
+        <HomePage />
       </main>
-
     </>
-  )
+  );
 }

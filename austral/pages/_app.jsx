@@ -6,13 +6,18 @@ import { persistor } from "../src-client/redux/store";
 import { SessionProvider } from "next-auth/react";
 import Footer from '../src-client/components/Footer';
 import { NavBar } from '../src-client/components/NavBar';
+import Layout from './layout';
+import { appWithTranslation } from 'next-i18next'
 
-export default function App({ Component, pageProps }) {
+function App ({ Component, pageProps }) {
   return (
     <>
-      <NavBar/>
+      <Layout> 
         <Component {...pageProps} />
-      <Footer/>
+      </Layout>
     </>
     )
 }
+
+
+export default appWithTranslation(App)

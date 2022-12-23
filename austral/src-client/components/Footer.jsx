@@ -3,11 +3,16 @@ import axios from "axios";
 import styles from "../../styles/Footer.module.css"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook } from "react-icons/bs";
+import { useRouter } from "next/router";
+import footEs from "../../public/locale/es/footer.json"
+import footEn from "../../public/locale/en/footer.json"
 import Link from 'next/link'
 
 const Footer = () => {
 
 const [email, setEmail] = useState("")
+const router = useRouter();
+const t = router.locale === "es" ? footEs : footEn;
 
 const handleSubmit = async(e) => {
   e.preventDefault();
@@ -15,7 +20,6 @@ const handleSubmit = async(e) => {
     alert("Email is required")
   }
   try {
-    console.log(email, "email del front")
     const mail = {
       email,
     }
@@ -29,7 +33,7 @@ const handleSubmit = async(e) => {
 }
 
   return (
-    <div className={styles.footer__container}>
+    <footer className={styles.footer__container}>
 
       <div className={styles.footer__first_row}>
 
@@ -48,13 +52,13 @@ const handleSubmit = async(e) => {
         </div>
 
         <div>
-          <h2>ATENCION</h2>
-          <p>Lunes a Viernes 08hs a 22hs</p>
-          <p>Sábados y Domingos 09hs a 19hs</p>
+          <h2>{t.atention}</h2>
+          <p>{t.days1}</p>
+          <p>{t.days2}</p>
         </div>
 
         <div >
-          <h2>CONTACTO</h2>
+          <h2>{t.contact}</h2>
           <p><a href="mailto:info@australrentacar.ar">
                 info@australrentacar.ar
               </a>
@@ -65,28 +69,28 @@ const handleSubmit = async(e) => {
         </div>
 
         <div >
-          <h2>SERVICIO</h2>
-            <p>Términos y Condiciones</p>
+          <h2>{t.service}</h2>
+            <p>{t.termandcond}</p>
             <Link href="/fleet">
-              <p>Flota</p>
+              <p>{t.fleet}</p>
             </Link>   
             <Link href="/booking">
-              <p>Reservas</p>
+              <p>{t.booking}</p>
             </Link>  
         </div>
       </div>
 
       <form onSubmit={handleSubmit} className={styles.footer__second_row}>
-        <p>Recibi todas nuestras <br/>promociones</p>
-        <input type="email" name ="email" value={email} onChange={({target})=> setEmail(target.value)} placeholder='Ingresa tu mail' required/>
-        <button type="submit">SUSCRIBIR</button>
+        <p>{t.newsp}</p>
+        <input type="email" name ="email" value={email} onChange={({target})=> setEmail(target.value)} placeholder={t.newsplace} required/>
+        <button type="submit">{t.newsbtn}</button>
       </form>
 
       <div className={styles.footer__third_row}>
-        <p>Austral rent a car &copy; 2022-Powered by Cipbyte</p>
+        <p>Austral rent a car &copy; 2022-{t.copy} Cipbyte</p>
       </div>
       
-    </div>
+    </footer>
   )
 }
 

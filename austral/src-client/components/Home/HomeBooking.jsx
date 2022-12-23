@@ -9,7 +9,7 @@ function HomeBooking () {
   const [endTime, setEndTime] = useState(new Date());
 
   return (
-    <>
+  <>
       <div>
         <h2>RESERVA</h2>
       </div>
@@ -44,14 +44,21 @@ function HomeBooking () {
           dateFormat="dd/MM/yyyy"
           minDate={new Date()}
           showDisabledMonthNavigation
+          closeOnScroll={(e) => e.target === document}
           placeholderText="Recogida"
         />
+             
+
         <DatePicker
           selected={returnDate}
           onChange={(returnDate)=> setReturnDate(returnDate)}
           dateFormat="dd/MM/yyyy"
-          minDate={pickUpDate}
+          showDisabledMonthNavigation
+          closeOnScroll={(e) => e.target === document}
           placeholderText="Devolución"
+         minDate={pickUpDate} // agregar rangos de fechas
+
+
         />
 
         <DatePicker
@@ -60,6 +67,8 @@ function HomeBooking () {
           showTimeSelect
           showTimeSelectOnly
           timeIntervals={15}
+        //  minTime={setHours(setMinutes(new Date(), 0), 17)} 
+        // maxTime={setHours(setMinutes(new Date(), 30), 20)}
           timeCaption="Time"
           dateFormat="h:mm aa"
           placeholderText="Hs Recogida"
@@ -75,6 +84,8 @@ function HomeBooking () {
           dateFormat="h:mm aa"
           placeholderText="Hs Devolución"
         />
+
+        <button>Buscar Disponibilidad</button>
       </div>
     </>
   );

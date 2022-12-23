@@ -1,7 +1,14 @@
 import React from 'react'
+import { useRouter } from "next/router";
+import servEs from "../../public/locale/es/services.json"
+import servEn from "../../public/locale/en/services.json"
 import Image from "next/image"
 
 function Services () {
+
+  const router = useRouter();
+  const t = router.locale === "es" ? servEs : servEn;
+  
   return (
     <>
     <div>
@@ -11,7 +18,7 @@ function Services () {
     <div>
       <h2>COBERTURAS</h2>
       
-      <p>Los autos cuentan con<span> seguro con franquiciado</span> 
+      <p>Los autos cuentan con<span> seguro con franquiciado</span>  
         cuyo monto varía según la categoría del auto. La franquicia se refiere al
       <span> monto máximo por el cual el cliente debe responder ante un potencial daño en el vehículo alquilado.</span></p>
       

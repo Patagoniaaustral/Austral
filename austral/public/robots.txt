@@ -1,0 +1,17 @@
+
+# *
+User-agent: *
+Disallow: / booking
+
+
+# *
+User-agent: *
+Allow: / 
+
+#Host
+Host :
+
+
+#Sitemap 
+Sitemap : 
+

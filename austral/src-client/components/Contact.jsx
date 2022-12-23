@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
+import { useRouter } from "next/router";
 import Link from "next/link"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import  validate  from '../controllers/contactValidate';
-import styles from "../../styles/Contact.module.css"
+import contEs from "../../public/locale/es/contact.json"
+import contEn from "../../public/locale/en/contact.json"
 import sendDataForm from '../controllers/sendDataForm';
+import styles from "../../styles/Contact.module.css"
 
 function Contact() {
 
@@ -19,6 +22,8 @@ function Contact() {
 
   const [input, setInput]= useState(dataInput)
   const [error, setError] = useState(dataInput)
+  const router = useRouter();
+  const t = router.locale === "es" ? contEs : contEn;
 
   const handleChange = ({target})=>{
     const {name, value} = target;
@@ -42,11 +47,11 @@ function Contact() {
 
   return (
     <>
-      <h1>CONTACTO</h1>
+      <h1>{t.contact}</h1>
     <div className={styles.general__container}>
       <div className={styles.info__container}>
-        <h2>ESCRIBINOS</h2>
-        <p>Si tienes alguna duda, comunicate con nosotros telefonicamente o deja tu mesnaje en este apartado para que nos comuniquemos a la brevedad.</p>
+        <h2>{t.write}</h2>
+        <p>{t.text}</p>
         <IconContext.Provider value={{ color: "black", size: "1.5em" }}> 
           <Link className={styles.info_link}  href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}>
               <BsWhatsapp className={styles.info_link_ico} />
@@ -70,23 +75,23 @@ function Contact() {
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form__container} autoComplete="on"  >
-        <label>Apellido</label>
+        <label>{t.lastname}</label>
         <input className={styles.form__input} type="text" name="lastName" value={input.lastName} onChange={handleChange} required/>
         {error.lastName && ( <p className={styles.form__input_error}>{error.lastName}</p>)}
 
-        <label>Telefono</label>
+        <label>{t.phone}</label>
         <input className={styles.form__input}  type="text" name="phone" value={input.phone} onChange={handleChange} required/>
         {error.phone && ( <p className={styles.form__input_error}>{error.phone}</p>)}
 
-        <label>E-mail</label>
+        <label>{t.phone}</label>
         <input className={styles.form__input}  type="email" name="email" value={input.email} onChange={handleChange} required/>
         {error.email && ( <p className={styles.form__input_error}>{error.email}</p>)}
 
-        <label>Mensaje</label>
+        <label>{t.message}</label>
         <textarea className={styles.form__message} name="message" value={input.message}  onChange={handleChange} required></textarea>
         {error.message && ( <p className={styles.form__input_error}>{error.message}</p>)}
 
-        <button type ="submit" className={styles.form__btn} disabled={Object.values(error).length !== 0}>Enviar</button>
+        <button type ="submit" className={styles.form__btn} disabled={Object.values(error).length !== 0}>{t.send}</button>
       </form>
     </div>
     </>

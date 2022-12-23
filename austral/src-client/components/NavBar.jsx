@@ -2,9 +2,13 @@ import React from 'react'
 import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
+import navEs from "../../public/locale/es/navbar.json"
+import navEn from "../../public/locale/en/navbar.json"
 import styles from "../../styles/NavBar.module.css"
 
 export const NavBar = () => {
+  const router = useRouter();
+  const t = router.locale === "es" ? navEs : navEn;
   //   const { data: session, status } = useSession();
     
   // const signOrNoSing = session ? (
@@ -13,7 +17,15 @@ export const NavBar = () => {
   //   <button onClick={() => signIn("auth0")} >Sign in</button>
   // );
 
+  const handleChange = ({target})=> {  // no esta funcionando bien el change!!!
+    const {value} = target
+    router.push(router.pathname, router.pathname, {
+      locale : value
+    })
+  }
   
+
+
   return (
     <>
     <header className={styles.nav__container} >
@@ -22,39 +34,38 @@ export const NavBar = () => {
       <nav id="nav">
         <ul className={styles.nav__ul}>
           <li>
-            <Link href="/" >
-              <span>Home</span>
+            <Link href="/" locale={router.locale} >
+              <span>{t.home}</span>
             </Link>
           </li>
           <li >
-            <Link href="/booking">
-              <span>Reservas</span>
+            <Link href="/booking" locale={router.locale}>
+              <span>{t.booking}</span>
             </Link>
           </li>
           <li >
-            <Link href="/fleet" >
-              <span>Flota</span>
+            <Link href="/fleet" locale={router.locale} >
+              <span>{t.fleet}</span>
             </Link>
           </li>
           <li >
-            <Link href="/services">
-              <span >Servicios</span>
+            <Link href="/services" locale={router.locale}>
+              <span >{t.services}</span>
             </Link>
           </li>
           <li >
-            <Link href="/contact" >
-              <span>Contacto</span>
+            <Link href="/contact" locale={router.locale} >
+              <span>{t.contact}</span>
             </Link>
           </li>
           <li >
-            <select>
-              <option>ES</option>
-              <option>EN</option>
-              <option>PT</option>
+            <select onChange={handleChange}>
+              <option value="es">ES</option>
+              <option value ="en">EN</option>
             </select>
           </li>
           <li>
-            <button>INICIAR SESION</button>
+            <button>{t.login}</button>
           </li>
           {/* <li>
             {signOrNoSing}
@@ -66,3 +77,6 @@ export const NavBar = () => {
   </>
   )
 }
+
+
+// usar get static props??

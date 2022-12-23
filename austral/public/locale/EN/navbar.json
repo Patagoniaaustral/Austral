@@ -1,0 +1,8 @@
+ {
+        "home" : "Home",
+        "booking" : "Bookings",
+        "fleet" : "Fleet",
+        "services" : "Services",
+        "contact" : "Contact",
+        "login" : "Login"
+    }    
