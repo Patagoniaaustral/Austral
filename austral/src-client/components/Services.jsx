@@ -11,44 +11,33 @@ function Services () {
   
   return (
     <>
+      <h1>{t.services}</h1>
     <div>
-      <h1>Servicios</h1>
-    </div>
-
-    <div>
-      <h2>COBERTURAS</h2>
-      
-      <p>Los autos cuentan con<span> seguro con franquiciado</span>  
-        cuyo monto varía según la categoría del auto. La franquicia se refiere al
-      <span> monto máximo por el cual el cliente debe responder ante un potencial daño en el vehículo alquilado.</span></p>
-      
-      <p>Por ejemplo, si se abona una franquicia de $5000 y el auto sufío un daño por un monto mayor, lo máximo que
-         debo abonar es $5000.</p>
-      
-      <p>Es muy importante al momento de alquilar saber el monto de la franquicia, dado que eso le da al cliente la tranquilidad  de saber 
-        el monto máximo que deberá abonar si se produce un año.
-      </p>
+      <h2>{t.covers}</h2>
+      <p>{t.text1}</p>
+      <p>{t.text2}</p>
+      <p>{t.text3}</p>
     </div>
 
   <div>
 
     <div>
-      <h2>ADICIONALES</h2>
+      <h2>{t.extras}</h2>
       <ul>
-        <li>Cada unidad cuenta con cubiertas aptas para nieve durante invierno.</li>
-        <li>Sillas y booster para niños.</li>
-        <li>Seguros Premium (reduce al 50% la franquicia por daños parciales)</li>
+        <li>{t.extra1}</li>
+        <li>{t.extra2}</li>
+        <li>{t.extra3}</li>
       </ul>
     </div>
 
     <div>
-      <h2>REQUISITOS</h2>
+      <h2>{t.required}</h2>
       <div></div>
       <ul>
-        <li>Documento de identidad</li>
-        <li>Ser mayor de 21 años.</li>
-        <li>Licencia de conducir vigente del país de origen.</li>
-        <li>Tarjeta de crédito a modo de garantía.</li>
+        <li>{t.req1}</li>
+        <li>{t.req2}</li>
+        <li>{t.req3}</li>
+        <li>{t.req4}</li>
       </ul>
     </div>
 

@@ -1,0 +1,16 @@
+{
+    "services" : "Services",
+    "covers" : "COVERAGE",
+    "text1" : "The cars have a franchise whose amount varies according to the category of the car. The franchise refers to the maximum amount for which the customer must answer for a potential damage to the rented vehicle.",
+    "text2" : "For example, if a $5000 franchise is paid and the car is worth more damage, the maximum I must pay is $5000.",
+    "text3" : "It is very important when renting to know the amount of the franchise, since that gives the customer the peace of mind to know the maximum amount that will have to pay if a year occurs.",
+    "extras" : "EXTRAS",
+    "extra1" : "Each unit has snow covers during winter.",
+    "extra2" : "Chairs an booster for children.",
+    "extra3" : "Premium Insurance (reduces to 50% the franchise for partial damages).",
+    "required" : "REQUERIMENTS",
+    "req1" : "Identity card.",
+    "req2" : "Be over 21 years old.",
+    "req3" : "Valid driver's license of the country of origin.",
+    "req4" : "Credit car as a guarantee."
+}

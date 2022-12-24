@@ -1,0 +1,16 @@
+{
+    "services" : "Servicios",
+    "covers" : "COBERTURAS",
+    "text1" : "Los autos cuentan con<span> seguro con franquiciado</span>  cuyo monto varía según la categoría del auto. La franquicia se refiere al <span> monto máximo por el cual el cliente debe responder ante un potencial daño en el vehículo alquilado.</span>",
+    "text2" : "Por ejemplo, si se abona una franquicia de $5000 y el auto sufío un daño por un monto mayor, lo máximo que debo abonar es $5000.",
+    "text3" : "Es muy importante al momento de alquilar saber el monto de la franquicia, dado que eso le da al cliente la tranquilidad  de saber el monto máximo que deberá abonar si se produce un año.",
+    "extras" : "ADICIONALES",
+    "extra1" : "Cada unidad cuenta con cubiertas aptas para nieve durante invierno.",
+    "extra2" : "Sillas y booster para niños.",
+    "extra3" : "Seguros Premium (reduce al 50% la franquicia por daños parciales)",
+    "required" : "REQUISITOS",
+    "req1" : "Documento de identidad",
+    "req2" : "Ser mayor de 21 años.",
+    "req3" : "Licencia de conducir vigente del país de origen.",
+    "req4" : "Tarjeta de crédito a modo de garantía."
+}
