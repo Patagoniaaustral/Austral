@@ -1,0 +1,30 @@
+{
+    "title" : "",
+    "rent" : "",
+    "booking" :{
+        "bcategory" : "",
+        "bplacepick" : "",
+        "bplacereturn" : "",
+        "bdatepickup" : "",
+        "bdatereturn" : "",
+        "btimepickup" : "",
+        "btimereturn" : "",
+        "bsearch" : ""
+    },
+    "fleet" : {
+        "ftitle" : "",
+        "ftext" : "",
+        "fbtn" : ""
+    },
+    "about" : {
+        "atitle" : "",
+        "atext" : ""
+    },
+    "experience" : {
+        "etitle" : "",
+        "etext" : "",
+        "esubtitle1" : "",
+        "esubtitle2" : "",
+        "esubtitle3" : ""
+    }
+}

@@ -11,6 +11,7 @@ import Link from 'next/link'
 const Footer = () => {
 
 const [email, setEmail] = useState("")
+
 const router = useRouter();
 const t = router.locale === "es" ? footEs : footEn;
 

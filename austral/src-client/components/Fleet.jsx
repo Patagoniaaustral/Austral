@@ -1,10 +1,18 @@
 import React from 'react'
+import { useRouter } from "next/router";
+import fleetEs from "../../public/locale/es/fleet.json"
+import fleetEn from "../../public/locale/en/fleet.json"
 
 function  Fleet () {
+
+
+  const router = useRouter();
+  const t = router.locale === "es" ? fleetEs : fleetEn;
+
   return (
     <>
     <div>
-      <h1>NUESTRA FLOTA</h1>
+      <h1>{t.fleet}</h1>
     </div>
 
     <div>
@@ -14,7 +22,7 @@ function  Fleet () {
 
 {/* ZONA ICONOS DE MARCAS */}
 <div>
-    <input type="text" placeholder='Buscá tu modelo preferido'/> 
+    <input type="text" placeholder={t.fplace}/> 
     {/* // Incluir icono de lupa */}
     <div>
       <div></div>  
@@ -30,3 +38,4 @@ function  Fleet () {
 
 
 export default Fleet;
+

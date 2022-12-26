@@ -17,7 +17,7 @@ export const NavBar = () => {
   //   <button onClick={() => signIn("auth0")} >Sign in</button>
   // );
 
-  const handleChange = ({target})=> {  // no esta funcionando bien el change!!!
+  const handleChange = ({target})=> {  
     const {value} = target
     router.push(router.pathname, router.pathname, {
       locale : value
@@ -59,7 +59,7 @@ export const NavBar = () => {
             </Link>
           </li>
           <li >
-            <select onChange={handleChange}>
+            <select value= {router.locale} onChange={handleChange}>
               <option value="es">ES</option>
               <option value ="en">EN</option>
             </select>
