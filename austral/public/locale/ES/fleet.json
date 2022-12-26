@@ -1,4 +1,15 @@
 {
     "fleet" : "NUESTRA FLOTA",
-    "fplace" : "Buscá tu modelo preferido"
+    "booking" :{
+        "bcategory" : {
+            "none" : "Categoría",
+            "a" : "Categoría A",
+            "b" : "Categoría B",
+            "c" : "Categoría C",
+            "d" : "Categoría D",
+            "e" : "Categoría E",
+            "f" : "Categoría F"
+        }
+    }
+
 }

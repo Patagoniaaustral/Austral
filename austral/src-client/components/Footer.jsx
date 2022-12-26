@@ -71,7 +71,6 @@ const handleSubmit = async(e) => {
 
         <div >
           <h2>{t.service}</h2>
-            <p>{t.termandcond}</p>
             <Link href="/fleet">
               <p>{t.fleet}</p>
             </Link>   

@@ -1,28 +1,34 @@
 import React from 'react'
+import { useRouter } from "next/router";
+import homeEs from "../../../public/locale/ES/home.json"
+import homeEn from "../../../public/locale/EN/home.json"
+import styles from "../../../styles/Home/Experiences.module.css"
 
 function Experiences () {
+  const router = useRouter();
+  const t = router.locale === "es" ? homeEs : homeEn;
   return (
     <>
-    <h2>¿QUÉ HACER EN BARILOCHE?</h2>
-    <p>Te acercamos algunas recomendaciones sobre experiencias destacadas que no te podés perder.</p>
+    <h2>{t.experience.etitle}</h2>
+    <p>{t.experience.etext}</p>
 
-    <div>
+    <div className={styles.experience__container}>
       <div>
         <div>
           {/* //IMAGEN */}
-          <p>Gastronomía</p>
+          <p>{t.experience.esubtitle1}</p>
         </div>
       </div>
       <div>
         <div>
           {/* //IMAGEN */}
-          <p>Senderismo</p>
+          <p>{t.experience.esubtitle2}</p>
         </div>
       </div>
       <div>
         <div>
           {/* //IMAGEN */}
-          <p>Atracciones</p>
+          <p>{t.experience.esubtitle3}</p>
         </div>
       </div>
     </div>

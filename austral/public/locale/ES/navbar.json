@@ -4,5 +4,6 @@
         "fleet" : "Flota",
         "services" : "Servicios",
         "contact" : "Contacto",
-        "login" : "Iniciar Sesion"
+        "login" : "Iniciar Sesion",
+        "logout" : "Cerrar Sesion"
 }

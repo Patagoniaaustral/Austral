@@ -1,18 +1,20 @@
 import React from 'react'
 import Link from "next/link"
+import { useRouter } from "next/router";
+import homeEs from "../../../public/locale/ES/home.json"
+import homeEn from "../../../public/locale/EN/home.json"
 
 function Slider () {
+  const router = useRouter();
+  const t = router.locale === "es" ? homeEs : homeEn;
   return (
     <>
     <div>
-      <h2>UN MODELO PARA CADA NECESIDAD</h2>
-      <p>Viaje en familia, con amigos, por turismo o de negocios, en Austral tenemos un modelo para cada situación.
-        Vas a poder visitar los mejores escenarios naturales, disfrutar la noche en salidas gourmet o conociendo 
-        rincones más extravagantes de tu destino. 
-      </p>
+      <h2>{t.sliderfleet.ftitle}</h2>
+      <p>{t.sliderfleet.ftext}</p>
       
       <Link href="/fleet">
-        <button>VER MÁS</button>
+        <button>{t.sliderfleet.fbtn}</button>
       </Link>
     </div>
     <div>

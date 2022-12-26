@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from "next/link";
-import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import navEs from "../../public/locale/es/navbar.json"
 import navEn from "../../public/locale/en/navbar.json"
@@ -9,13 +8,6 @@ import styles from "../../styles/NavBar.module.css"
 export const NavBar = () => {
   const router = useRouter();
   const t = router.locale === "es" ? navEs : navEn;
-  //   const { data: session, status } = useSession();
-    
-  // const signOrNoSing = session ? (
-  //   <button onClick={() => signOut({ redirect: true, callbackUrl: "/" })}>Sign out</button>
-  // ) : (
-  //   <button onClick={() => signIn("auth0")} >Sign in</button>
-  // );
 
   const handleChange = ({target})=> {  
     const {value} = target
@@ -23,8 +15,6 @@ export const NavBar = () => {
       locale : value
     })
   }
-  
-
 
   return (
     <>
@@ -63,14 +53,7 @@ export const NavBar = () => {
               <option value="es">ES</option>
               <option value ="en">EN</option>
             </select>
-          </li>
-          <li>
-            <button>{t.login}</button>
-          </li>
-          {/* <li>
-            {signOrNoSing}
-          </li> */}
-
+          </li> 
           </ul>
         </nav>
     </header>

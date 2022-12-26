@@ -1,30 +1,43 @@
 {
-    "title" : "",
-    "rent" : "",
+    "title" : "DESCUBRI TU DESTINO",
+    "rent" : "RESERVA",
     "booking" :{
-        "bcategory" : "",
-        "bplacepick" : "",
-        "bplacereturn" : "",
-        "bdatepickup" : "",
-        "bdatereturn" : "",
-        "btimepickup" : "",
-        "btimereturn" : "",
-        "bsearch" : ""
+        "bcategory" : {
+            "none" : "Categoría",
+            "a" : "Categoría A",
+            "b" : "Categoría B",
+            "c" : "Categoría C",
+            "d" : "Categoría D",
+            "e" : "Categoría E",
+            "f" : "Categoría F"
+        },
+        "bplace" : {
+            "pickup" : "Lugar de recogida",
+            "return" : "Lugar de devolución",
+            "airport" : "Aeropuerto Bariloche",
+            "downtown" : "Centro Bariloche",
+            "terminal" : "Terminal de Omnibus"
+        },
+        "bdatepickup" : "Recogida",
+        "bdatereturn" : "Devolución",
+        "btimepickup" : "Hs Recogida",
+        "btimereturn" : "Hs Devolución",
+        "bsearch" : "Buscar"
     },
-    "fleet" : {
-        "ftitle" : "",
-        "ftext" : "",
-        "fbtn" : ""
+    "sliderfleet" : {
+        "ftitle" : "UN MODELO PARA CADA NECESIDAD",
+        "ftext" : "Viaje en familia, con amigos, por turismo o de negocios, en Austral tenemos un modelo para cada situación. Vas a poder visitar los mejores escenarios naturales, disfrutar la noche en salidas gourmet o conociendo rincones más extravagantes de tu destino. ",
+        "fbtn" : "VER MÁS"
     },
     "about" : {
-        "atitle" : "",
-        "atext" : ""
+        "atitle" : "NOSOTROS",
+        "atext" : " bla bala abla abla bala bala abala ..."
     },
     "experience" : {
-        "etitle" : "",
-        "etext" : "",
-        "esubtitle1" : "",
-        "esubtitle2" : "",
-        "esubtitle3" : ""
+        "etitle" : "¿QUÉ HACER EN BARILOCHE?",
+        "etext" : "Te acercamos algunas recomendaciones sobre experiencias destacadas que no te podés perder.",
+        "esubtitle1" : "Gastronomía",
+        "esubtitle2" : "Senderismo",
+        "esubtitle3" : "Atracciones"
     }
 }

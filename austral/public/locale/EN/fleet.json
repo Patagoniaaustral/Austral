@@ -1,4 +1,14 @@
 {
     "fleet" : "OUR FLEET",
-    "fplace" : "Search your favorite model"
+    "booking" :{
+        "bcategory" : {
+            "none" : "Category",
+            "a" : "Category A",
+            "b" : "Category B",
+            "c" : "Category C",
+            "d" : "Category D",
+            "e" : "Category E",
+            "f" : "Category F"
+        }
+    }
 }

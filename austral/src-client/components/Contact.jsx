@@ -83,7 +83,7 @@ function Contact() {
         <input className={styles.form__input}  type="text" name="phone" value={input.phone} onChange={handleChange} required/>
         {error.phone && ( <p className={styles.form__input_error}>{error.phone}</p>)}
 
-        <label>{t.phone}</label>
+        <label>{t.email}</label>
         <input className={styles.form__input}  type="email" name="email" value={input.email} onChange={handleChange} required/>
         {error.email && ( <p className={styles.form__input_error}>{error.email}</p>)}
 

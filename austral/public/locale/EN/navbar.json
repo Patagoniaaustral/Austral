@@ -4,5 +4,6 @@
         "fleet" : "Fleet",
         "services" : "Services",
         "contact" : "Contact",
-        "login" : "Login"
+        "login" : "Login",
+        "logout" : "Logout"
     }    

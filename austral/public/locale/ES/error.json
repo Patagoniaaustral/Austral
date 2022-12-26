@@ -1,0 +1,5 @@
+{
+    "error" : "Ooops, la pagina que estas buscando no existe. Por favor chequea la URL y vuelve a intentarlo.",
+    "error_code" : "La solicitud no se encontro en el servidor URL.",
+    "errorbtn" : "Volver a Home"
+}
