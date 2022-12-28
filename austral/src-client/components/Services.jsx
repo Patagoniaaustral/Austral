@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from "next/router";
-import servEs from "../../public/locale/es/services.json"
-import servEn from "../../public/locale/en/services.json"
+import servEs from "../../public/locale/ES/services.json"
+import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 import Image from "next/image"
 

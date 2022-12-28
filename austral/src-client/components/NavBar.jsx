@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from "next/link";
 import { useRouter } from "next/router";
-import navEs from "../../public/locale/es/navbar.json"
-import navEn from "../../public/locale/en/navbar.json"
+import navEs from "../../public/locale/ES/navbar.json"
+import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
 
 export const NavBar = () => {

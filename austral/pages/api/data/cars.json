@@ -1,0 +1,32 @@
+[
+    {
+    "model": "Sandero",
+    "brand" : "Renault",
+    "capacity" : 5,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 10.000,
+    "available" : true,
+    "category" : "a"
+    },
+    {
+    "model": "Spin",
+    "brand" : "Crevrolet",
+    "capacity" : 5,
+    "transmition" : "manual",
+    "motor" : "diesel",
+    "pricePerDay" : 12.000,
+    "available" : true,
+    "category" : "c"
+    },
+    {
+    "model": "Frontier",
+    "brand" : "Nissan",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15.000,
+    "available" : true,
+    "category" : "e"
+    }
+]

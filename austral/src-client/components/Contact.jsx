@@ -5,8 +5,8 @@ import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import  validate  from '../controllers/contactValidate';
-import contEs from "../../public/locale/es/contact.json"
-import contEn from "../../public/locale/en/contact.json"
+import contEs from "../../public/locale/ES/contact.json"
+import contEn from "../../public/locale/EN/contact.json"
 import sendDataForm from '../controllers/sendDataForm';
 import styles from "../../styles/Contact.module.css"
 

@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// establecer relaciones, revisar ids !!
+
+
+model Rent {
+  id String @id @unique @default(uuid())
+  car Cars @relation(fields: [car_id], references : [id])
+  user User @relation(fields: [user_id], references : [id])
+  car_id String
+  user_id String
+  datePickUp DateTime
+  dateReturn  DateTime
+  placePickUp  String
+  placeReturn String
+  timePickUp  DateTime
+  timeReturn DateTime
+  message String
+  totalPrice Int
+  available Boolean 
+  //extras  Array de strings??
+}
+
+
+model Cars {
+  id String @id @unique @default(uuid())
+  reservation Rent[]
+  model String
+  brand String
+  image String
+  capacity Int
+  transmition String
+  motor String
+  pricePerDay Int
+  available Boolean
+  category String
+
+}
+
+model User {
+  id String @id @unique @default(uuid())
+  name String
+  lastname String
+  email String @unique
+  phone Int
+  flight String
+  reservation Rent[] 
+}

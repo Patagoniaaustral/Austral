@@ -4,8 +4,8 @@ import styles from "../../styles/Footer.module.css"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsFacebook } from "react-icons/bs";
 import { useRouter } from "next/router";
-import footEs from "../../public/locale/es/footer.json"
-import footEn from "../../public/locale/en/footer.json"
+import footEs from "../../public/locale/ES/footer.json"
+import footEn from "../../public/locale/EN/footer.json"
 import Link from 'next/link'
 
 const Footer = () => {
