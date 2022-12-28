@@ -3,6 +3,7 @@
 const postReservation = async (req, res) => {
     try{
         //req.body
+        // crear reservas en la base de datos
         return res.status(200).json({message: "ok POST RESERVATION"})
     }catch(error){
         console.log(error)
