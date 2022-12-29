@@ -14,6 +14,9 @@ export const reducerCars = createSlice({
     },
     filterByCategory : (state, action) => {
         state.carsfiltred = state.cars.filter((car)=> car.category === action.payload)
+    },
+    cleanSelect : (state, action)=> {
+      state.carsfiltred = state.cars;
     }
   },
 });
@@ -37,5 +40,9 @@ export const filterFleet = (category) => (dispatch) => {
     dispatch(reducerCars.actions.filterByCategory(category));
   }
   
+  
+export const cleanFilter = (none) => (dispatch) => {
+  dispatch(reducerCars.actions.cleanSelect(none));
+}
 
 export default reducerCars.reducer

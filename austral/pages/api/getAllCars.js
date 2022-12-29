@@ -15,7 +15,7 @@ const getAllCars = async (req, res) => {
         }
 
         const seedCars = await prisma.cars.findMany()
-
+        
         prisma.$disconnect()
         return res.status(200).json(seedCars)
     }catch(error){

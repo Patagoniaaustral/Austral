@@ -1,6 +1,9 @@
 import React from "react";
 
 export const Confirmation = () => {
+
+  // aca va el submit 
+  // recibir datos, por props? en el estado?? como?
   return (
     <div>
       <h1>CONFIRME SU RESERVA</h1>
@@ -25,6 +28,7 @@ export const Confirmation = () => {
       <p>lugar de devolucion</p>
 
       <button>CANCELAR</button>
+       {/* // redireccionar a ?? */}
       <button>CONFIRMAR RESERVA</button> 
       {/* //AVERIGUAR COMO ENVIAR MAIL CON DATOS DE LA RESERVA  */}
     </div>

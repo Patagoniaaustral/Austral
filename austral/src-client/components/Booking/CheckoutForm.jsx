@@ -25,6 +25,7 @@ export const CheckoutForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     //crear objeto con la data a enviar----> input
+    
   
     // enviar los datos del formulario a la base de datos
 
