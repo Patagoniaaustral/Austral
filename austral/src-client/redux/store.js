@@ -1,25 +1,16 @@
-// import { configureStore, combineReducers } from "@reduxjs/toolkit";
-// import { persistReducer, persistStore } from 'redux-persist';
-// import thunk from "redux-thunk";
-// import storage from "redux-persist/lib/storage";
-
-// const persistConfig = {
-//   key: 'deee3',
-//   storage,
-// }
-
-// const myReducers = combineReducers({
-
-// })
-
-// const persistedReducer = persistReducer(persistConfig, myReducers);
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import reducerCars from "./slice/carsReducer"
+import reducerRent from './slice/rentReducer'
 
 
-// export const store = configureStore({
-//   reducer: persistedReducer,
-// //   devTools: process.env.NODE_ENV !== "production",
-// //   middleware: [thunk],
-// });
+const myReducers = combineReducers({
+    reducerCars,
+    reducerRent
+})
+
+export default configureStore({
+  reducer: myReducers
+});
 
 
-// export const persistor = persistStore(store);
+

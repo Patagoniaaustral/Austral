@@ -1,3 +1,41 @@
+import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 
-// para el get de autos
+export const reducerCars = createSlice({
+  name: "reducerCars",
+  initialState: {
+    cars: [],
+    carsfiltred : []
+  },
+  reducers: {
+    getAllCars: (state, action) => {
+      state.cars = action.payload;
+    },
+    filterByCategory : (state, action) => {
+        state.carsfiltred = state.cars.filter((car)=> car.category === action.payload)
+    }
+  },
+});
+
+
+export const getCars = () => async (dispatch) => {
+  try {
+    const { data } = await axios({
+      method: 'get',
+      url: '/api/getAllCars',
+    }); 
+
+    console.log(data, "data de get cars en redux")
+    dispatch(reducerCars.actions.getAllCars(data));
+  } catch (error) {
+    console.log(error)
+  }
+};
+
+export const filterFleet = (category) => (dispatch) => {
+    dispatch(reducerCars.actions.filterByCategory(category));
+  }
+  
+
+export default reducerCars.reducer

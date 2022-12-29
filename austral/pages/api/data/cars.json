@@ -5,9 +5,10 @@
     "capacity" : 5,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 10.000,
+    "pricePerDay" : 10000,
     "available" : true,
-    "category" : "a"
+    "category" : "a",
+    "image" : "not found"
     },
     {
     "model": "Spin",
@@ -15,9 +16,10 @@
     "capacity" : 5,
     "transmition" : "manual",
     "motor" : "diesel",
-    "pricePerDay" : 12.000,
+    "pricePerDay" : 12000,
     "available" : true,
-    "category" : "c"
+    "category" : "c",
+    "image" : "not found"
     },
     {
     "model": "Frontier",
@@ -25,8 +27,64 @@
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15.000,
+    "pricePerDay" : 15000,
     "available" : true,
-    "category" : "e"
+    "category" : "e",
+    "image" : "not found"
+    },
+       {
+    "model": "Onix",
+    "brand" : "Crevrolet",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15000,
+    "available" : true,
+    "category" : "a",
+    "image" : "not found"
+    },
+    {
+    "model": "Kwid",
+    "brand" : "Renault",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15000,
+    "available" : true,
+    "category" : "a",
+    "image" : "not found"
+    },
+    {
+    "model": "Gol Trend",
+    "brand" : "Volkswagen",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15000,
+    "available" : true,
+    "category" : "a",
+    "image" : "not found"
+    },
+       {
+    "model": "Logan Life",
+    "brand" : "Renault",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15000,
+    "available" : true,
+    "category" : "b",
+    "image" : "not found"
+    },
+       {
+    "model": "Toro 4x2",
+    "brand" : "Fiat",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "pricePerDay" : 15000,
+    "available" : true,
+    "category" : "d",
+    "image" : "not found"
     }
 ]
