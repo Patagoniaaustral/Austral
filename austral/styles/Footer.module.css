@@ -1,26 +1,28 @@
 .footer__container{
     background-color: var(--color-red);
     color : white;
-    height: 20vw;
-    padding: 1em;
+    padding: 2em 0;
 }
 
 .footer__first_row{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 7em;
+    margin: 2.2em 0;
 }
 
 .footer__second_row{
     display: flex;
     justify-content: center;
-    gap: 1em;
+    align-items: center;
+    gap: 2.5em;
+    margin-bottom: 3em;
+    
 }
 
 .footer__third_row{
     display: flex;
     justify-content: center;
-    padding: 1em;
-    margin:1em;
 }
 
 
@@ -31,4 +33,18 @@
 
 .footer_link_ico{
     margin-right: 1em;
+}
+
+.news{
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .5em 1.5em;
+}
+
+.news__btn{
+    color: var(--color-red);
+    background-color: beige;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .5em 1.5em;
 }

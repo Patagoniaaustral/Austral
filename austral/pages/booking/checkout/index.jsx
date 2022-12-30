@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head'
-import CheckoutPage from "../../src-client/components/Booking/CheckoutForm"
-import styles from '../../styles/Home.module.css'
+import CheckoutPage from "../../../src-client/components/Booking/CheckoutForm"
+import styles from '../../../styles/Home.module.css'
 
 export default function checkout() {
   return (
@@ -18,3 +18,4 @@ export default function checkout() {
     </>
   );
 }
+

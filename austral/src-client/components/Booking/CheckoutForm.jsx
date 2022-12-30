@@ -1,15 +1,20 @@
 import  { useState } from "react";
-import Link from "next/link";
-import axios from "axios";
+import { useRouter } from "next/router";
+import styles from "../../../styles/Booking/CheckoutForm.module.css";
+// guardar todos los datos en un estado con redux, un objeto para luego poder pedirlo en confirmation
 
-export const CheckoutForm = () => {
+
+
+function CheckoutForm () {
 
   const dataReservation = {
-    name : "",
-    lastname : "",
-    phone : "",
-    email : "",
-    flight : "",
+    userData : {
+      name : "",
+      lastname : "",
+      phone : "",
+      email : "",
+      flight : ""
+    },
     pickupplace : "",
     returnplace : "",
     message : "",
@@ -19,16 +24,50 @@ export const CheckoutForm = () => {
       seguro : ""
     }
   }
+  const router = useRouter();
 
-  const [input, setInput] = useState(dataReservation);
+  const objectSelect = {
+    category: "Category",
+    pickUpPlace: "Pick Up Place",
+    returnPlace: "Return Place"
+  }
+  
+  const [select, setSelect] = useState(objectSelect)
+  const [userData, setUserData] = useState(dataReservation.userData);
+ 
+ 
+  const handleChange=({target}) => {
+    const {value} = target
+  
+  }
 
+  const handleChangeCategory=({target}) => {
+    const {name, value} = target
+   if(name === "category") {
+    setSelect({
+      ...select,
+      [name]: value
+    })
+   } else if (name === "pickUpPlace") {
+    setSelect({
+      ...select,
+      [name]: value
+    })
+   } else if (name === "returnPlace") {
+    setSelect({
+      ...select,
+      [name]: value
+    })
+   }
+}
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    router.push({ 
+      pathname: '/booking/confirmation',
+})
     //crear objeto con la data a enviar----> input
-    
-  
     // enviar los datos del formulario a la base de datos
-
     // redireccionar a la pagina de cofirmacion
 
   }
@@ -36,73 +75,45 @@ export const CheckoutForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <p>Datos Personales</p>
+        <h1>Datos Personales</h1>
+      <div className={styles.user__container}>
 
-      <label>Nombre</label>
-      <input type="text" name="name" placeholder="Ingrese su nombre" required />
+        <label>Nombre</label>
+        <input type="text" name="name"  value={userData.name} onChange={handleChange} placeholder="Ingrese su nombre" required />
 
-      <label>Apellido</label>
-      <input
-        type="text"
-        name="lastname"
-        placeholder="Ingrese su apellido"
-        required
-      />
+        <label>Apellido</label>
+        <input type="text" name="lastname"  value={userData.lastname} onChange={handleChange} placeholder="Ingrese su apellido" required />
 
-      <label>{t.phone}</label>
-      <input
-        className={styles.form__input}
-        type="text"
-        name="phone"
-        value={input.phone}
-        onChange={handleChange}
-        required
-      />
-      {error.phone && <p className={styles.form__input_error}>{error.phone}</p>}
+        <label>Telefono</label>
+        <input type="phone" name="phone" value={userData.phone} onChange={handleChange} required/>
 
-      <label>{t.email}</label>
-      <input
-        className={styles.form__input}
-        type="email"
-        name="email"
-        value={input.email}
-        onChange={handleChange}
-        required
-      />
-      {error.email && <p className={styles.form__input_error}>{error.email}</p>}
+        <label>Email</label>
+        <input type="email" name="email" value={userData.email} onChange={handleChange} required />
+     
+        <label>Numero de Vuelo</label>
+        <input type="text" name="flight" value={userData.flight} onChange={handleChange} placeholder="Ej: AR1694" required />
+      </div>
 
-      <label>Numero de Vuelo</label>
-      <input type="text" name="flight" placeholder="Ej: AR1694" required />
-
-      <select
-        className={styles.select}
-        name="pickUpPlace"
-        onChange={handleChange}
-        value={select.pickUpPlace}
-      >
-        <option value="none">{t.booking.bplace.pickup}</option>
+      {/* <select name="pickUpPlace"onChange={handleChange} value={select.pickUpPlace}>
+        <option value="" disabled>{t.booking.bplace.pickup}</option>
         <option value="airportpu">{t.booking.bplace.airport}</option>
         <option value="downtownpu">{t.booking.bplace.downtown} </option>
         <option value="terminalpu">{t.booking.bplace.terminal}</option>
       </select>
 
-      <select
-        className={styles.select}
-        name="returnPlace"
-        onChange={handleChange}
-        value={select.returnPlace}
-      >
-        <option value="none">{t.booking.bplace.return}</option>
+      <select name="returnPlace" onChange={handleChange} value={select.returnPlace}>
+        <option value="" disabled>{t.booking.bplace.return}</option>
         <option value="airportr">{t.booking.bplace.airport}</option>
         <option value="downtownr">{t.booking.bplace.downtown} </option>
         <option value="terminalr">{t.booking.bplace.terminal}</option>
-      </select>
+      </select> */}
 
-      <label>Informacion Adicional</label>
-      <textarea
-        name="message"
-        placeholder="Ej: Necesito un auto con caja automatica"
-      ></textarea>
+      <div className={styles.user__message}>
+        <label>Informacion Adicional</label>
+        <textarea className={styles.user__message_input} name="message"placeholder="Ej: Necesito un auto con caja automatica"></textarea>
+      </div>
+
+
       <p>
         Los adicionales estan sujetos a disponibilidad y tienen un valor diario
         que se suman al total de la reserva.
@@ -117,18 +128,48 @@ export const CheckoutForm = () => {
       - el valor de los adicionales se suman al total de la reserva
       - el valor del seguro se suma al total de la reserva
       */}
-      <select placeholder="Seleccionar adicionales">
-        <option>Conductor Adicional $500</option>
-        <option>Asiento para bebe $800</option>
-        <option>Seguro Premium $1.500-$2.000</option>
-      </select>
+      <div className={styles.extras__container}>
+       
+        <div className={styles.extras__container__content}>
+         
+            <div className={styles.extras__container__content__item__buttons}>
+            <span>Conductor Adicional</span>
+              <button>-</button>
+              <span>0</span>
+              <button>+</button>
+            </div>
+      
 
-      <input type="checkbox" name="terms" required />
-      <p>Acepto los terminos acerca del abono del 15% de mi reserva.</p>
+         
+            <div className={styles.extras__container__content__item__buttons}>
+            <span>Asientos Adicionales</span>
+              <button>-</button>
+              <span>0</span>
+              <button>+</button>
+            </div>
+          
 
-   
-        <button type="submit">CONTINUAR</button>
+        
+            <div className={styles.extras__container__content__item__buttons}>
+              <input type="checkbox" name="seguro" />
+            <span>Seguro Premiun</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div className={styles.terms}>
+        <input type="checkbox" name="terms" required />
+        <small>Acepto los terminos acerca del abono del 15% de mi reserva.</small>
+      </div>
+
+      <button type="submit">CONTINUAR</button>
      
     </form>
   );
 };
+
+
+export default CheckoutForm;

@@ -1,16 +1,28 @@
-import React from "react";
+import {useRouter} from 'next/router'
+function Confirmation () {
+ 
+  // hacer get by id de la reserva en redux, traer con use selector, useeffects+ dispatch y senderizar datos
+  const router = useRouter()
 
-export const Confirmation = () => {
-
-  // aca va el submit 
-  // recibir datos, por props? en el estado?? como?
+  const handleCancel = (e) => {
+    alert("Are you sure?")
+    router.push("/")
+  }
+  
+  const hadleSubmit = async(e) => {
+    e.preventDefault();
+    // await sendReservation(... info para hacer el POST de la reserva en el back ...)
+    alert("Your reservations was made sucessfully ")
+    router.push("/")
+  }
+  
   return (
     <div>
       <h1>CONFIRME SU RESERVA</h1>
       <p>Verifique los datos de su reserva para confirmarla</p>
-      <p>Codigo de reserva/// DATA DE DB//</p>
+      <p>Codigo de reserva</p> {/* //deberia ser el id?? o que puedo usar de codigo? */}
 
-      <p>Tarfa y Adicionales</p>
+      <h2>Tarifa y Adicionales</h2>
 
       <p>Categoria Elegida</p>
       <p>valor diario</p>
@@ -27,10 +39,11 @@ export const Confirmation = () => {
       <p>Lugar de retiro</p>
       <p>lugar de devolucion</p>
 
-      <button>CANCELAR</button>
-       {/* // redireccionar a ?? */}
-      <button>CONFIRMAR RESERVA</button> 
-      {/* //AVERIGUAR COMO ENVIAR MAIL CON DATOS DE LA RESERVA  */}
+      <button onClick={handleCancel}>CANCELAR</button> 
+      <button type="submit" onClick={hadleSubmit}>CONFIRMAR RESERVA</button> 
     </div>
   );
 };
+
+
+export default Confirmation;

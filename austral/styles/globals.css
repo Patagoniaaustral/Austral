@@ -7,7 +7,9 @@ a {
   --font-title: "Roboto";
   --font-paragraph: 'Roboto Mono', sans-serif;
   --font-formal: "Inter", sans-serif;
-  --color-red:  #c9252d;
+  --color-red:  #c92524;
+  --border-radius: 1rem;
+  --border: 1px solid #ccc;
 }
 
 

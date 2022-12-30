@@ -1,6 +1,7 @@
 .services__container{
-    display: flex;
-    gap: 8rem;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(75%, auto));
+    margin: 2em;
 }
 
 .services__extra_container{

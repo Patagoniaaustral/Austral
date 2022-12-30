@@ -13,40 +13,38 @@ function Services () {
   return (
     <>
       <h1>{t.services}</h1>
-    <div>
-      <h2>{t.covers}</h2>
-      <p>{t.text1}</p>
-      <p>{t.text2}</p>
-      <p>{t.text3}</p>
-    </div>
-
-  <div>
-
-    <div className={styles.services__container}>
-     <div className={styles.services__extra_container}>
-      <h2>{t.extras}</h2>
-      <ul>
-        <li>{t.extra1}</li>
-        <li>{t.extra2}</li>
-        <li>{t.extra3}</li>
-      </ul>
-     </div>
- 
-      <div className={styles.services__require_container}>
-      <h2>{t.required}</h2>
-      <div></div>
-      <ul>
-        <li>{t.req1}</li>
-        <li>{t.req2}</li>
-        <li>{t.req3}</li>
-        <li>{t.req4}</li>
-      </ul>
+      <div>
+        <h2>{t.covers}</h2>
+        <p>{t.text1}</p>
+        <p>{t.text2}</p>
+        <p>{t.text3}</p>
       </div>
-    </div>
-  
-    </div>
+
+      <div>
+        <div className={styles.services__container}>
+          <div className={styles.services__extra_container}>
+            <h2>{t.extras}</h2>
+            <ul>
+              <li>{t.extra1}</li>
+              <li>{t.extra2}</li>
+              <li>{t.extra3}</li>
+            </ul>
+          </div>
+
+          <div className={styles.services__require_container}>
+            <h2>{t.required}</h2>
+            <div></div>
+            <ul>
+              <li>{t.req1}</li>
+              <li>{t.req2}</li>
+              <li>{t.req3}</li>
+              <li>{t.req4}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Services;

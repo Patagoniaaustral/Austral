@@ -1,7 +1,6 @@
 function validate (input){
     
     // datos a validar
-    // const dataReservation = {
     //     name : "",
     //     lastname : "",
     //     phone : "",
@@ -14,8 +13,7 @@ function validate (input){
     //       conductor : "",
     //       asiento : "",
     //       seguro : ""
-    //     }
-    //   }
+  
     
     const error ={}
 

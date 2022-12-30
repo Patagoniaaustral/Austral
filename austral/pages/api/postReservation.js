@@ -17,7 +17,8 @@ const postReservation = async (req, res) => {
         // }
       
         //const {user, car, ...} = req.body
-        // crear reservas en la base de datos
+        // crear reservas en la base de datos con create pero estableciendo tambien relaciones, onde cambio la prop de available en cars 
+        // la data que me llega del usuario para hacer la reserva la deberia uardar en un modelo user que no tengo
         // implememtar nodemailer para confirmar reserva
         return res.status(200).json({message: "ok POST RESERVATION"})
     }catch(error){

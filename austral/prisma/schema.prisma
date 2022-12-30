@@ -21,6 +21,7 @@ model Rent {
   user_id String
   datePickUp DateTime
   dateReturn  DateTime
+  totalDays Int
   placePickUp  String
   placeReturn String
   timePickUp  DateTime
@@ -28,7 +29,10 @@ model Rent {
   message String
   totalPrice Int
   available Boolean 
-  //extras  Array de strings??
+  active Boolean 
+  rentCode Int @unique 
+  chair Int 
+  
 }
 
 
@@ -44,15 +48,24 @@ model Cars {
   pricePerDay Int
   available Boolean
   category String
-
 }
 
 model User {
   id String @id @unique @default(uuid())
+  reservation Rent[] 
   name String
   lastname String
   email String @unique
   phone Int
   flight String
-  reservation Rent[] 
+}
+
+
+model Extras {
+  id String @id @unique @default(uuid())
+  reservation Rent  @relation(fields: [rent_id], references : [id])
+  rent_id String 
+  name String
+  quantity Int
+  pricePerDay Int
 }

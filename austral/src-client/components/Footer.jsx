@@ -82,8 +82,8 @@ const handleSubmit = async(e) => {
 
       <form onSubmit={handleSubmit} className={styles.footer__second_row}>
         <p>{t.newsp}</p>
-        <input type="email" name ="email" value={email} onChange={({target})=> setEmail(target.value)} placeholder={t.newsplace} required/>
-        <button type="submit">{t.newsbtn}</button>
+        <input className={styles.news} type="email" name ="email" value={email} onChange={({target})=> setEmail(target.value)} placeholder={t.newsplace} required/>
+        <button className={styles.news__btn} type="submit">{t.newsbtn}</button>
       </form>
 
       <div className={styles.footer__third_row}>

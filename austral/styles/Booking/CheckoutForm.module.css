@@ -1,0 +1,36 @@
+.user__container{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 12px;
+    margin: 2em 0;
+}
+
+.user__message{
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.user__message_input{
+    resize: vertical;   
+}
+
+
+
+.terms{
+    display: flex;
+    gap: .3em;
+    margin-bottom: .9em;
+    font-style: italic;
+    font-size: .9em;
+    color: var(--color-red)
+}
+
+
+.extras__container__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+    margin: 2em 0;
+}

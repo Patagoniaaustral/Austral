@@ -1,60 +1,37 @@
 .booking__all_container{
     display: flex;
     align-items: center;
+    margin: 3em; 
 }
 
 .booking__container{
     display: flex;
     flex-direction: column;
-    gap : .3rem;
+    gap : 1rem;
     
 }
 
 .booking__selects_container{
     display: flex;
-    gap : 3rem;
-    width: 80%;
-}
-
-.booking__pickers_container{
-    display: flex;
-    gap : .3rem;
-    width: 80%;
+    gap : 1.5rem;
+    width: 95%;
 }
 
 
 .select{
     width: 100%;
     height: 3rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
     padding: 0 1rem;
     font-size: 1rem;
-    color: #333;
-    background-color: #fff;
-    background-image: none;
-    background-clip: padding-box;
-    box-shadow: none;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: var(--border);
+    -webkit-appearance: none;
 }
 
-.select_picker {
-    width: 100%;
-    height: 3rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 0 1rem;
-    font-size: 1rem;
-    color: #333;
-    background-color: #fff;
-    background-image: none;
-    background-clip: padding-box;
-    box-shadow: none;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.serach__btn{
+.search__btn{
     background-color: var(--color-red);
     color :white;
-    
+    padding: .2em 2em;
+    border-radius: var(--border-radius);
+    border: none;
 }

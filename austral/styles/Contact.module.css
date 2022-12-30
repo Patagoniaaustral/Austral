@@ -1,6 +1,7 @@
 .general__container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3em;
     margin: 2em;
 }
 
@@ -8,7 +9,6 @@
 .info__container{
     display:flex;
     flex-direction: column;
-    width: 90%;
 }
 
 

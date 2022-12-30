@@ -1,6 +1,5 @@
-import React from "react";
 import Head from 'next/head'
-import Booking from "../../src-client/components/Booking/Booking"
+import Booking from "../../src-client/components/Home/HomeBooking"
 import styles from '../../styles/Home.module.css'
 
 export default function booking() {
@@ -18,3 +17,4 @@ export default function booking() {
     </>
   );
 }
+
