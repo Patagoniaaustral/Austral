@@ -31,8 +31,9 @@ model Rent {
   available Boolean 
   active Boolean 
   rentCode Int @unique 
-  chair Int 
-  
+  chairPrice Int 
+  garantyPrice Int
+  copilotPrice Int
 }
 
 
@@ -61,11 +62,3 @@ model User {
 }
 
 
-model Extras {
-  id String @id @unique @default(uuid())
-  reservation Rent  @relation(fields: [rent_id], references : [id])
-  rent_id String 
-  name String
-  quantity Int
-  pricePerDay Int
-}

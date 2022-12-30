@@ -5,6 +5,7 @@ CREATE TABLE "Rent" (
     "user_id" TEXT NOT NULL,
     "datePickUp" TIMESTAMP(3) NOT NULL,
     "dateReturn" TIMESTAMP(3) NOT NULL,
+    "totalDays" INTEGER NOT NULL,
     "placePickUp" TEXT NOT NULL,
     "placeReturn" TEXT NOT NULL,
     "timePickUp" TIMESTAMP(3) NOT NULL,
@@ -12,6 +13,11 @@ CREATE TABLE "Rent" (
     "message" TEXT NOT NULL,
     "totalPrice" INTEGER NOT NULL,
     "available" BOOLEAN NOT NULL,
+    "active" BOOLEAN NOT NULL,
+    "rentCode" INTEGER NOT NULL,
+    "chairPrice" INTEGER NOT NULL,
+    "garantyPrice" INTEGER NOT NULL,
+    "copilotPrice" INTEGER NOT NULL,
 
     CONSTRAINT "Rent_pkey" PRIMARY KEY ("id")
 );
@@ -46,6 +52,9 @@ CREATE TABLE "User" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Rent_id_key" ON "Rent"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Rent_rentCode_key" ON "Rent"("rentCode");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Cars_id_key" ON "Cars"("id");
