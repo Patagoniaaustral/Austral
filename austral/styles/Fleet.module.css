@@ -1,19 +1,19 @@
+
 .fleet__grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(25%, auto));
-    gap : 2em;
-    margin: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
 }
 
 .category__filter{
-    margin-left: 59rem;
     margin-top: 3em;
     border-radius: var(--border-radius);
     border: var(--border);
     padding: .5em 1.5em;
   
 }
-
 
 .fleet__grid_card{
     display: flex;
@@ -23,7 +23,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2em;
+    padding: 5em;
 }
 
 
@@ -32,6 +32,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em;
+    margin: 2em;
 }
 

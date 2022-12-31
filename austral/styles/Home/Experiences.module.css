@@ -1,4 +1,5 @@
+
 .experience__container{
     display: flex;
-    gap : 5rem;
+    justify-content: space-around;
 }

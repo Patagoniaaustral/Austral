@@ -128,7 +128,7 @@ function CheckoutForm () {
       - el valor de los adicionales se suman al total de la reserva
       - el valor del seguro se suma al total de la reserva
       */}
-      <div className={styles.extras__container}>
+      {/* <div className={styles.extras__container}>
        
         <div className={styles.extras__container__content}>
          
@@ -155,7 +155,7 @@ function CheckoutForm () {
             <span>Seguro Premiun</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 

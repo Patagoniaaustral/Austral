@@ -19,10 +19,10 @@ export const NavBar = () => {
   return (
     <>
     <header className={styles.nav__container} >
-       <Link href="/" >Austral</Link>
+       <Link className={styles.logo} href="/" >Austral</Link>
         
-      <nav id="nav">
-        <ul className={styles.nav__ul}>
+      <nav>
+        <ul className={styles.nav__links}>
           <li>
             <Link href="/" locale={router.locale} >
               <span>{t.home}</span>

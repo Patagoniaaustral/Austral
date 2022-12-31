@@ -1,7 +1,5 @@
 .services__container{
-    display:grid;
-    grid-template-columns: repeat(2, minmax(75%, auto));
-    margin: 2em;
+    display:flex;
 }
 
 .services__extra_container{
@@ -15,4 +13,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .services__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3em 0;
+    }
 }

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import HomePage from "../src-client/components/Home/Home"
-import styles from '../styles/Home.module.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="canonical" href="https://www.australrentacar.com.ar/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <HomePage />
       </main>
     </>
