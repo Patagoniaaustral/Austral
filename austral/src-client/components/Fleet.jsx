@@ -7,6 +7,7 @@ import { getCars, filterFleet, cleanFilter } from "../redux/slice/carsReducer"
 import fleetEs from "../../public/locale/ES/fleet.json"
 import fleetEn from "../../public/locale/EN/fleet.json"
 import styles from "../../styles/Fleet.module.css"
+import FleetImg from "../assets/fleet.jpg"
 
 
 function  Fleet () {
@@ -36,8 +37,10 @@ function  Fleet () {
 
   return (
     <>
-      <Image src="/assets/fleet.jpg" alt="auto alumbrado por una puesta de sol" width={1920} height={1080} />
+    <div className={styles.header__img}>
+      <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} />
       <h1>{t.fleet}</h1>
+    </div>
       <select className={styles.category__filter} name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>
           <option value="a">{t.booking.bcategory.a}</option>

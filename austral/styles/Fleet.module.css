@@ -1,4 +1,6 @@
 
+
+
 .fleet__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -6,6 +8,27 @@
     width: 100%;
     padding: 2em;
 }
+.header__img{
+     object-fit: cover;
+     object-position: center;
+     margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.header__img img {
+    border-radius: 0 0 3em 3em;
+}
+
+.header__img h1 {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 2em;
+}
+
 
 .category__filter{
     margin: 3em 2em 0 0;
@@ -24,6 +47,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5em;
+    background-color: var(--clr-secondary);
 }
 
 

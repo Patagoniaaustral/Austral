@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
+import Image from 'next/image'
 import DatePicker from "react-datepicker"
 import addDays from 'date-fns/addDays'  
-  
-
 import "react-datepicker/dist/react-datepicker.css"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
+import HomeMain from "../../assets/home1.jpg"
 import styles from '../../../styles/Home/HomeBooking.module.css'
 
 
@@ -78,9 +78,14 @@ function HomeBooking () {
 
 
   return (
-  <>
+  <section className={styles.section__container}>
+    <div className={router.pathname === "/booking" ? styles.none : styles.header__img}>
+     <h1>{t.title}</h1>
+     <Image src ={HomeMain} alt="" width="1500" heigth="500" /> 
+    </div>
       <h2>{t.rent}</h2>
       <div className={styles.booking__all_container}>
+        
         <div className={styles.booking__container}>
           <div className={styles.booking__selects_container}>
 
@@ -165,7 +170,7 @@ function HomeBooking () {
 
       <button className={styles.search__btn} onClick={handleClick}>{t.booking.bsearch}</button>
       </div>
-    </>
+    </section>
   );
 }
 

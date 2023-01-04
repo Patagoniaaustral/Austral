@@ -1,5 +1,51 @@
+.section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    background-color: antiquewhite;
+}
+
+.section__container h2 {
+    color: var(--clr-primary);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1em 0;
+}
+.section__container p{
+    margin-bottom: 3em;
+}
+
 
 .experience__container{
     display: flex;
     justify-content: space-around;
+    gap: 1.5em;
+}
+
+.exp__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5em 1.5em 0; 
+    background-color:  white;
+}
+
+.exp__card p{
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.image__container{
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+.image__container img {
+   border-radius: 1em;
 }

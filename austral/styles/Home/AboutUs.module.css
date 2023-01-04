@@ -1,0 +1,6 @@
+.section__container{
+    display: flex;
+    background-color: aqua;
+    /* background-image: url(../../src-client/assets/home1.jpg); */
+}
+
