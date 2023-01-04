@@ -1,5 +1,5 @@
 .footer__container{
-    background-color: var(--color-red);
+    background-color: var(--clr-primary);
     color : white;
     padding: 2em 0;
 }
@@ -7,7 +7,14 @@
 .footer__first_row{
     display: flex;
     justify-content: center;
+    margin-bottom: 3em;
     gap: 5em;
+
+}
+
+
+.footer_titles{
+    margin-bottom: 1.4em;
 }
 
 .footer__second_row{
@@ -16,12 +23,16 @@
     align-items: center;
     margin-bottom: 3em;
     gap: 2em;
-    
+}
+
+.footer__second_row p{
+    font-weight: 600;
 }
 
 .footer__third_row{
     display: flex;
     justify-content: center;
+    font-weight: 600;
 }
 
 

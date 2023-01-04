@@ -8,6 +8,7 @@ import fleetEs from "../../public/locale/ES/fleet.json"
 import fleetEn from "../../public/locale/EN/fleet.json"
 import styles from "../../styles/Fleet.module.css"
 
+
 function  Fleet () {
   const fleet = useSelector(state => state.reducerCars.cars)
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
@@ -35,6 +36,7 @@ function  Fleet () {
 
   return (
     <>
+      <Image src="/assets/fleet.jpg" alt="auto alumbrado por una puesta de sol" width={1920} height={1080} />
       <h1>{t.fleet}</h1>
       <select className={styles.category__filter} name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>

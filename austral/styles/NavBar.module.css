@@ -1,9 +1,9 @@
  .nav__container{
-    background-color: var(--color-red);
-    color : white;
+    color : black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: var(--box-shadow);
  }
 
 .logo{
@@ -19,6 +19,18 @@
     padding: 1em;
  }
 
+   .nav__links li :is(:active, :hover, :focus, :blank){
+      color: var(--clr-primary);
+   }
+
+.nav__links li a,   
+.nav__links select{
+font-weight: 600;
+}
+
+   .nav__links select {
+      border: none;
+   }
 
  @media(max-width: 768px){
     .nav__links{

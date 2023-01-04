@@ -1,26 +1,41 @@
 .general__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3em;
-    margin: 2em;
 }
 
+
+.contact__title{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
 
 .info__container{
+    padding: 0 4em;
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--clr-secondary);
+    border-radius: 3.5em 0  0 3.5em ;
+    z-index: 1;
 }
-
 
 .form__container{
     display:flex;
     flex-direction: column;
+    background-color: var(--clr-bkg-gray);
+    padding: 2em 4em 2em 2em;
+    border-radius: 3em;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
 }
 
+.form__container label {
+    margin: 0 0 .5em .8em;
+}
 
 .info_link{
     display: flex;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .info_link_ico{
@@ -28,14 +43,14 @@
 }
 
 .form__input{
-    border: 1px solid gray;
+    border: 1px solid #ccc;
     border-radius: 25px;
     padding-left: 1em;
     margin-bottom: 1em;
 }
 
 .form__message{
-    border: 1px solid gray;
+    border: 1px solid #ccc;
     border-radius: 25px;
     resize: none;
     height: 9em;

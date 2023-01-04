@@ -53,13 +53,13 @@ const handleSubmit = async(e) => {
         </div>
 
         <div>
-          <h2>{t.atention}</h2>
+          <h2 className={styles.footer_titles}>{t.atention}</h2>
           <p>{t.days1}</p>
           <p>{t.days2}</p>
         </div>
 
         <div >
-          <h2>{t.contact}</h2>
+          <h2 className={styles.footer_titles}>{t.contact}</h2>
           <p><a href="mailto:info@australrentacar.ar">
                 info@australrentacar.ar
               </a>
@@ -70,7 +70,7 @@ const handleSubmit = async(e) => {
         </div>
 
         <div >
-          <h2>{t.service}</h2>
+          <h2 className={styles.footer_titles}>{t.service}</h2>
             <Link href="/fleet">
               <p>{t.fleet}</p>
             </Link>   

@@ -47,11 +47,12 @@ function Contact() {
 
   return (
     <>
-      <h1>{t.contact}</h1>
+      <h1 className={styles.contact__title}>{t.contact}</h1>
     <div className={styles.general__container}>
       <div className={styles.info__container}>
         <h2>{t.write}</h2>
         <p>{t.text}</p>
+        <div className={styles.links__container}>
         <IconContext.Provider value={{ color: "black", size: "1.5em" }}> 
           <Link className={styles.info_link}  href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}>
               <BsWhatsapp className={styles.info_link_ico} />
@@ -63,15 +64,17 @@ function Contact() {
             <p> info@australrentacar.ar</p>
           </Link>
 
-          <Link  className={styles.info_link} href="https://www.facebook.com/australrentacar" target={"_blank"}>
-                <BsFacebook className={styles.info_link_ico} />
-                <p>australrentacar.ar</p>
-          </Link>
           <Link className={styles.info_link} href="https://www.instagram.com/australrentacar" target={"_blank"}>
                 <BsInstagram className={styles.info_link_ico} />
                 <p>australrentacar.ar</p>
           </Link>
+
+          <Link  className={styles.info_link} href="https://www.facebook.com/australrentacar" target={"_blank"}>
+                <BsFacebook className={styles.info_link_ico} />
+                <p>australrentacar.ar</p>
+          </Link>
           </IconContext.Provider>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form__container} autoComplete="on"  >
