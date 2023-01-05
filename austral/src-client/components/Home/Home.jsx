@@ -8,9 +8,9 @@ function Home () {
   return (
     <>
      <HomeBooking/>
-     <Slider/>
+     {/* <Slider/>
      <AboutUs/>
-     <Experiences/>
+     <Experiences/> */}
     </>
   )
 }

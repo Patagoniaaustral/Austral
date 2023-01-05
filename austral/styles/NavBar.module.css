@@ -19,7 +19,7 @@
     padding: 1em;
  }
 
-   .nav__links li :is(:active, :hover, :focus, :blank){
+   .nav__links li :is(:active, :hover, :focus) {
       color: var(--clr-primary);
    }
 

@@ -28,6 +28,6 @@
         "flight" : "Número de vuelo",
         "observations" : "Observaciones"
     },
-    "terms" : "Acepto abonar el 15% de mi reserva dentro de efectuadas la confirmación.",
+    "terms" : "Acepto abonar el 15% de mi reserva dentro de las 48hs efectuadas la confirmación.",
     "btn": "RESERVAR"
 }

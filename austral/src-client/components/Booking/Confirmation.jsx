@@ -76,16 +76,22 @@ function Confirmation () {
   return (
     <>
     <h1 className={styles.title}>{t.rent}</h1>
+
     <form className={styles.form__container} onSubmit={handleSubmit}>
+
+
+{/*      ----------DIV DETALLE RESERVA ---------- */}
       <h2>{t.rentDetail.detail}</h2>
-      <p>{t.rentDetail.rentCode}</p> {/* //deberia ser el id?? o que puedo usar de codigo? */}
+      <h4>{t.rentDetail.rentCode}</h4> {/* //deberia ser el id?? o que puedo usar de codigo? */}
 
       <p>{t.rentDetail.category} </p>
       <p>{t.rentDetail.extras}</p>
 
+
+
+
     <div>
       <p>{t.rentDetail.pickUp}</p>
-      <p>{t.rentDetail.return}</p>
       <select className={styles.select} name ="pickUpPlace" onChange={handleChange} value={select.pickUpPlace}>
           <option value="" >{t.rentDetail.booking.bplace.pickup}</option>
           <option value="airportpu">{t.rentDetail.booking.bplace.airport}</option>
@@ -93,14 +99,6 @@ function Confirmation () {
           <option value="terminalpu">{t.rentDetail.booking.bplace.terminal}</option>
         </select>
 
-        <select className={styles.select} name="returnPlace" onChange={handleChange} value={select.returnPlace}>
-          <option value="">{t.rentDetail.booking.bplace.return}</option>
-          <option value="airportr">{t.rentDetail.booking.bplace.airport}</option>
-          <option value="downtownr">{t.rentDetail.booking.bplace.downtown} </option>
-          <option value="terminalr">{t.rentDetail.booking.bplace.terminal}</option>
-        </select>
-
-        
         <DatePicker
           className={styles.select}
           selected={startTime}
@@ -113,6 +111,14 @@ function Confirmation () {
           placeholderText={t.rentDetail.booking.btimepickup} 
           />
         
+      <p>{t.rentDetail.return}</p>
+        <select className={styles.select} name="returnPlace" onChange={handleChange} value={select.returnPlace}>
+          <option value="">{t.rentDetail.booking.bplace.return}</option>
+          <option value="airportr">{t.rentDetail.booking.bplace.airport}</option>
+          <option value="downtownr">{t.rentDetail.booking.bplace.downtown} </option>
+          <option value="terminalr">{t.rentDetail.booking.bplace.terminal}</option>
+        </select>
+
         <DatePicker
           className={styles.select}
           selected={endTime}
@@ -127,38 +133,48 @@ function Confirmation () {
           />
     </div>
 
-      
-    <h2>{t.userInfo.info}</h2>
+
+
+      {/* ---------DIV DATOS PERSONALES ---------- */}
       <div className={styles.user__container}>
+        <h2>{t.userInfo.info}</h2>
 
-        <label>{t.userInfo.name}</label>
+        <label>{t.userInfo.name}
         <input type="text" name="name"  value={userData.name} onChange={handleChange}  required />
+        </label>
 
-        <label>{t.userInfo.lastname}</label>
+        <label>{t.userInfo.lastname}
         <input type="text" name="lastname"  value={userData.lastname} onChange={handleChange}  required />
+        </label>
 
-        <label>{t.userInfo.phone}</label>
+        <label>{t.userInfo.phone}
         <input type="phone" name="phone" value={userData.phone} onChange={handleChange} required/>
+        </label>
 
-        <label>{t.userInfo.email}</label>
+        <label>{t.userInfo.email}
         <input type="email" name="email" value={userData.email} onChange={handleChange} required />
+        </label>
+
       </div>
      
       <div className={styles.user__message}>
-        <label>{t.userInfo.flight}</label>
+        <label>{t.userInfo.flight}
         <input type="text" name="flight" value={userData.flight} onChange={handleChange}  required />
+        </label>
 
-        <label>{t.userInfo.observations}</label>
+        <label>{t.userInfo.observations}
         <textarea className={styles.user__message_input} name="message"></textarea>
+        </label>
+      </div>
+
+      <div className={styles.terms__container}>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" value="terms" />
+            {t.terms}</label>
+          <button type="submit" onClick={handleSubmit}>{t.btn}</button> 
       </div>
       
-      <div className={styles.terms}>
-        <input type="checkbox" name="terms" required />
-        <small>{t.terms}</small>
-      </div>
-
-    
-      <button type="submit" onClick={handleSubmit}>{t.btn}</button> 
+          
     </form>
     </>
   );

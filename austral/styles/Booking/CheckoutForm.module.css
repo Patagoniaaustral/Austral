@@ -1,30 +1,120 @@
-.title{
-    color: var(--clr-primary);
-    font-size: 2em;
-    margin: 1.5em 0;
+.main{
+    padding: 0 8em;
+
+    position: relative;
 }
 
+
+.title{
+    color: var(--clr-primary);
+    font-size: 3em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+
+/* ------------------------- DIV DE INFO FRANQUISIA ---------------- */
+
 .features__container{
+    max-width: max-content;
+    min-height: auto;
+    padding: 1em 4em 9em;
     background-color: var(--clr-secondary);
     border-radius: 3em 3em 0 0;
     box-shadow: var(--box-shadow);
-    padding: 3em;
-    z-index: 1;
-    position: relative;
     margin-bottom: 9em;
+
 }
 
+.main :where(h2){
+    font-size: 1.5em;
+    color: var(--clr-primary);
+    margin: 1em 0;
+}
+
+.features__container li{
+    list-style: none;
+    margin: 1em 0;
+}
+
+.features__container p {
+    margin: 0 2.3em;
+    font-weight: bold;
+}
+
+
+/* --------------------DIV DE LA RESERVA------------------- */
+
 .rent__container{
-    width: 88%;
     background-color: white;
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-    padding: 8em 3em;
+    padding: 1em 4em 6em;
     z-index: 2;
     position: absolute;
-    top: 38em;
+    top: 40em;
+    width: 81%;
+
+
 
 }
+
+.rent__container h4{
+    color: var(--clr-primary);
+}
+
+
+.rent__container h2:last-child{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+
+
+.rent__prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .6em 0;
+} 
+
+.rent__picker{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.rent__picker__date{
+    height: 3rem;
+    border-radius: var(--border-radius);
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: var(--border);
+    -webkit-appearance: none;
+    background-color: var(--clr-white);
+    margin: 1em 0;
+}
+
+.rent__container small {
+    font-size: .8em;
+    display: flex;
+} 
+
+.rent__container button{
+    background-color: white;
+    color: gray;
+    border: none;
+    cursor: pointer;
+    margin-left: 1.5em;
+}
+
+
+
+
+
+
+/* --------------------- DIV DE LAS CONDICIONES  ------------------------ */
+
 
 .conditions__container{
     margin-top: 15em;
@@ -32,9 +122,9 @@
     background-color: var(--clr-secondary);
     border-radius: 0 0 3em 3em;
     box-shadow: var(--box-shadow);
-    padding: 4em 3em;
-    z-index: 1;
-    position: relative;
+    padding: 15em 3em 1em;
+
+  
 }
 
 .condition__terms{
@@ -45,51 +135,35 @@
     margin: 2em 0;
 }
 
+.conditions__container input[type="checkbox"]{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.conditions__container li {
+    margin: 1em 0;
+}
+
+
 .condition__terms button{
     background-color: var(--clr-primary);
     color: white;
     border: none;
-    border-radius: 1em;
-    padding: .5em 1em;
+    border-radius: .8em;
+    padding: .8em 1em;
     font-size: 1.2em;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 3em;
 }
 
-
-/* .user__container{
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-gap: 12px;
-    margin: 2em 0;
-}
-
-.user__message{
-   display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 2em 0;
-}
-
-.user__message_input{
-    resize: vertical;   
+.condition__terms button:is(:hover, :focus){
+    background-color: var(--clr-gray);
+    color: black;
 }
 
 
 
-.terms{
-    display: flex;
-    gap: .3em;
-    margin-bottom: .9em;
-    font-style: italic;
-    font-size: .9em;
-    color: var(--clr-primary)
-}
-
-
-.extras__container__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 12px;
-    margin: 2em 0;
-} */
+/* --------------------- MEDIA QUERIES ------------------------ */

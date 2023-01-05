@@ -29,7 +29,9 @@
         "extras" : "ADICIONAL",
         "addextras" : "AÑADIR ADICIONAL",
         "total" : "TOTAL A PAGAR",
-        "conditions" : "*Los adicionales están sujetos a disponibilidad y tienen un valor diario.* Pago en efectivo o transferencia bancaria al momento de la entrega."
+        "conditions1" : "*Los adicionales están sujetos a disponibilidad y tienen un valor diario.",
+        "conditions2" : "** Pago en efectivo o transferencia bancaria al momento de la entrega."
+
     },
     "condition": {
         "detail" : "CONDICIONES",

@@ -27,7 +27,8 @@
         "extras" : "EXTRAS",
         "addextras" : "ADD EXTRAS",
         "total" : "TOTAL TO PAY",
-        "conditions" : "*Extras are subject to availability and have a daily value. * Payment by cash or bank transfer at delivery."
+        "conditions1" : "*Extras are subject to availability and have a daily value.",
+        "conditions2" : "**Payment by cash or bank transfer at delivery."
     },
     "condition": {
         "detail" : "CONDITIONS",

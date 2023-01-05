@@ -32,77 +32,97 @@ function CheckoutForm () {
   
 
   return (
-    <>
+    <div className={styles.main}>
       <h1 className={styles.title}>{t.title}</h1>
-     <div className={styles.features__container} ref={ref} id="id">
-      <h2>{t.detailCateg.detail}</h2>
-      { car.category === "A" || car.category === "B" ? (
-        <>
-        <p>{t.detailCateg.ab.categ}</p>
-        <ul>
-          <li>{t.detailCateg.ab.list1}</li>
-          <li>{t.detailCateg.ab.list2}</li>
-        </ul>
-        <p>{t.detailCateg.franchise}</p>
-        <ul>
-          <li>{t.detailCateg.ab.list3}</li>
-          <li>{t.detailCateg.ab.advert}</li>
-        </ul>
-        </>
-      ) : (
-        <>
-        <p>{t.detailCateg.cde.categ}</p>
-        <ul>
-          <li>{t.detailCateg.cde.list1}</li>
-          <li>{t.detailCateg.cde.list2}</li>
-        </ul>
-        <p>{t.detailCateg.franchise}</p>
-        <ul>
-          <li>{t.detailCateg.cde.list3}</li>
-          <li>{t.detailCateg.cde.advert}</li>
-        </ul>
-        </>
-      )}
-     </div>
-      
-      <div className={styles.rent__container}>
-        <h2>{t.rent.rent}</h2>
-        <p>{t.rent.rentCode}</p>
-        <p>{t.rent.category}</p>
-        
-        <div>
-        <DatePicker
-       
-          selected={pickUpDate}
-          onChange={(pickUpDate)=> setPickUpDate(pickUpDate)}
-          dateFormat="dd/MM/yyyy"
-          minDate={new Date()}
-          showDisabledMonthNavigation
-          closeOnScroll={(e) => e.target === document}
-          placeholderText={t.rent.pickUpDate}
-          locale={router.locale === "es" ? "es" : "en"}
-          />
 
-        <DatePicker
-        
-          selected={returnDate}
-          onChange={(returnDate)=> setReturnDate(returnDate)}
-          dateFormat="dd/MM/yyyy"
-          showDisabledMonthNavigation  
-          closeOnScroll={(e) => e.target === document} 
-          placeholderText={t.rent.returnDate}
-          minDate={addDays(pickUpDate, 3)} 
-          locale={router.locale === "es" ? "es" : "en"}      
-          />
-        </div>
-        <p>{t.rent.extras}</p>
-        <button>{t.rent.addextras}</button>
-        <small>{t.rent.conditions}</small>
+     {/* ------------------------- DIV DE INFO FRANQUISIA ---------------- */}
+      <div className={styles.features__container} ref={ref} id="id">
+        <h2>{t.detailCateg.detail}</h2>
+        {car.category === "A" || car.category === "B" ? (
+          <>
+            <p>{t.detailCateg.ab.categ}</p>
+            <ul>
+              <li>{t.detailCateg.ab.list1}</li>
+              <li>{t.detailCateg.ab.list2}</li>
+            </ul>
+
+            <p>{t.detailCateg.franchise}</p>
+            <ul>
+              <li>{t.detailCateg.ab.list3}</li>
+              <li>{t.detailCateg.ab.advert}</li>
+            </ul>
+          </>
+        ) : (
+          <>
+            <p>{t.detailCateg.cde.categ}</p>
+            <ul>
+              <li>{t.detailCateg.cde.list1}</li>
+              <li>{t.detailCateg.cde.list2}</li>
+            </ul>
+
+            <p>{t.detailCateg.franchise}</p>
+            <ul>
+              <li>{t.detailCateg.cde.list3}</li>
+              <li>{t.detailCateg.cde.advert}</li>
+            </ul>
+          </>
+        )}
       </div>
 
+      {/* --------------------DIV DE LA RESERVA------------------- */}
+      <div className={styles.rent__container}>
+        <h2>{t.rent.rent}</h2>
+        <h4>{t.rent.rentCode}: #99842</h4>
+        
+        <div className={styles.rent__prices}>
+          <h3>{t.rent.category}:</h3>
+          <p>$120,00</p>
+        </div>
+
+        <div className={styles.rent__picker}>
+          <DatePicker
+            className={styles.rent__picker__date}
+            selected={pickUpDate}
+            onChange={(pickUpDate) => setPickUpDate(pickUpDate)}
+            dateFormat="dd/MM/yyyy"
+            minDate={new Date()}
+            showDisabledMonthNavigation
+            closeOnScroll={(e) => e.target === document}
+            placeholderText={t.rent.pickUpDate}
+            locale={router.locale === "es" ? "es" : "en"}
+            />
+          <DatePicker
+            className={styles.rent__picker__date}
+            selected={returnDate}
+            onChange={(returnDate) => setReturnDate(returnDate)}
+            dateFormat="dd/MM/yyyy"
+            showDisabledMonthNavigation
+            closeOnScroll={(e) => e.target === document}
+            placeholderText={t.rent.returnDate}
+            minDate={addDays(pickUpDate, 3)}
+            locale={router.locale === "es" ? "es" : "en"}
+            />
+            </div>
+
+        <div className={styles.rent__prices}>
+          <h3>{t.rent.extras}*:</h3>
+          <p>$500</p>
+        </div>
+          <button>+ {t.rent.addextras}</button>
+       
+        <div className={styles.rent__prices}>
+          <h2>{t.rent.total} **</h2>
+          <h2>$120,00</h2>
+        </div>
+        <small>{t.rent.conditions1}</small>
+        <small>{t.rent.conditions2}</small>
+      </div>
+
+      {/* --------------------- DIV DE LAS CONDICIONES  ------------------------ */}
       <div className={styles.conditions__container}>
         <h2>{t.condition.detail}</h2>
         <ul>
+     
           <li>{t.condition.list1}</li>
           <li>{t.condition.list2}</li>
           <li>{t.condition.list3}</li>
@@ -111,17 +131,19 @@ function CheckoutForm () {
         </ul>
 
         <div className={styles.condition__terms}>
-      <label for="terms">
-      <input type="checkbox" id="terms" name="terms" value="terms" />
-      {t.terms}
-    <Link href="#id" scrollIntoView> {t.read} </Link>
-      </label>
-    
-      <button onClick={handleOnClick}>{t.btn}</button>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" value="terms" />
+            {t.terms}
+            <Link href="#id" scrollIntoView>
+              {" "}
+              {t.read}{" "}
+            </Link>
+          </label>
+
+          <button onClick={handleOnClick}>{t.btn}</button>
         </div>
       </div>
-     
-    </>
+    </div>
   );
 };
 
