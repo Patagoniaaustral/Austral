@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Booking from "../../src-client/components/Home/HomeBooking"
+import Checkout from "../../src-client/components/Booking/CheckoutForm"
 
 
 export default function booking() {
@@ -9,10 +9,10 @@ export default function booking() {
         <title>Austral</title>
         <meta name="description" content="booking" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
-        <Booking/>
+        <Checkout/>
       </main>
     </>
   );

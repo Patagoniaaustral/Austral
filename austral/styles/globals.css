@@ -6,11 +6,11 @@ a {
 :root {
   /* colors */
   color: #0D0D0D; 
-  --color-red:  #c92524;
   --clr-primary:  #E14444; 
   --clr-secondary:#FFF6E8; 
   --clr-medium-beige: #E4D2B6; 
   --clr-bkg-gray: #F5F5F5;
+  --clr-gray : #D1D1D1;
   
   /* font-sizes */
     /* font-size: 62.5%; */
@@ -24,10 +24,8 @@ a {
   --fs-200: 0.875rem;
   
   /* font-families */
-  font-family: 'Roboto', sans-serif;
-  --font-title: "Roboto";
-  --font-paragraph: 'Roboto Mono', sans-serif;
-  --font-formal: "Inter", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  --font-title: 'Anek Telugu', sans-serif;
 
   /* divs & inputs */
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -77,6 +75,10 @@ dl,
 dd {
   margin: 0;
   padding: 0;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--font-title);
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

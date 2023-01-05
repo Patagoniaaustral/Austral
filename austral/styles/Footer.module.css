@@ -13,6 +13,7 @@
 }
 
 
+
 .footer_titles{
     margin-bottom: 1.4em;
 }
@@ -52,11 +53,16 @@
 }
 
 .news__btn{
-    color: var(--color-red);
+    color: var(--clr-primary);
     background-color: beige;
     border: none;
     border-radius: var(--border-radius);
     padding: .5em 1.5em;
+}
+
+.news__btn:hover, .news__btn:focus{
+    background-color: var(--clr-gray);
+    color:  #0D0D0D; 
 }
 
 

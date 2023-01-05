@@ -1,0 +1,44 @@
+{
+    "detailCateg": {
+        "detail" : "CARACTERISTICAS",
+        "ab" : {
+            "categ" : "USTED HA SELECCIONADO UN VEHÍCULO CATEGORÍA A / B:",
+            "list1" : "Puede realizar hasta 250km x día.",
+            "list2" : "Costo adicional de $50 por km excedente.",
+            "list3" : "Seguro con franquicia de $100.000.- pesos por daños parciales y $250.000.- pesos por vuelco o destrucción. (NO CUBRE CERRADURAS, NI PARABRISAS, NI ROTURA DE LLANTAS Y/O CUBIERTAS).",
+            "advert" : "Aclaración: Pagando el seguro Premium a un costo de $1.500.- pesos por día, se reduce la franquicia al 50%, debiendo abonar hasta $50.000.- pesos ante daños parciales. Este último, incluye rotura de cualquier cristal, rotura de cerraduras, robo de neumáticos. Cualquier daño menor a la franquicia, corre por cuenta del cliente. Al momento de retirar el vehículo deberá brindar una TARJETA DE CRÉDITO a modo de garantía por los eventuales daños ocasionados. Al momento de retirar el vehículo deberá brindar una TARJETA DE CRÉDITO a modo de garantía por los eventuales daños ocasionados.",
+            "franchise": "FRANQUICIA"
+        },
+        "cde" : {
+            "categ" : "USTED HA SELECCIONADO UN VEHÍCULO CATEGORÍA C / D / E:",
+            "list1" : "Cuentan con 250km por día.",
+            "list2" : "Se cobrará $50 por km excedente.",
+            "list3" : "Seguro con franquicia de $500.000.- pesos por daños parciales y $1.500.000.- pesos por vuelco o destrucción. (NO CUBRE CERRADURA, NI PARABRISAS,NI ROTURA DE LLANTAS Y/O CUBIERTAS).",
+            "advert" : "Aclaración: Pagando el seguro Premium $2000.- pesos por día, se reduce la franquicia al 50%, debiendo abonar hasta $250.000.- pesos ante daños parciales.Este último, incluye rotura de cualquier cristal, rotura de cerraduras, robo de neumáticos. Cualquier daño menor a la franquicia corre por cuenta del cliente. Al momento de retirar el vehículo deberá brindar una TARJETA DE CRÉDITO a modo de garantía por los eventuales daños ocasionados.",
+            "franchise": "FRANQUICIA"
+        }
+    },
+    "rent": {
+        "rent" : "RESERVA",
+        "rentCode" : "Código de reserva",
+        "category" : "CATEGORÍA",
+        "pickUpDate" : "Fecha recogida",
+        "returnDate" : "Fecha devolución",
+        "extras" : "ADICIONAL",
+        "addextras" : "AÑADIR ADICIONAL",
+        "total" : "TOTAL A PAGAR",
+        "conditions" : "*Los adicionales están sujetos a disponibilidad y tienen un valor diario.* Pago en efectivo o transferencia bancaria al momento de la entrega."
+    },
+    "condition": {
+        "detail" : "CONDICIONES",
+        "list1" : "El horario de entrega y devolución del vehículo deberán ser los mismos. Se tendrá en cuenta la tolerancia de 1 hora. En caso de no entregarse a tiempo, se cobrará un adicional por el tiempo excedido. ",
+        "list2" : "Es importante saber que nuestro horario de atención para retiros y entregas es de 08:00hs a 21:00hs. ",
+        "list3" : "Si desea efectuar su reserva fuera de nuestro horario laboral, le solicitamos se comunique para poder brindarle el correcto asesoramiento. En dichas condiciones extraordinarias se cobrará un costo extra detallado en la reserva.",
+        "list4" : "La devolución del vehículo debe ser dentro de las 24hs. De lo contrario se cobrará un adicional extra. ",
+        "list5" : "Se deberá abonar dentro de las 48hs el 15 % del costo de la reserva, de lo contrario se dará de baja la misma."
+    },
+    "terms": "He leído y acepto lo términos, características y condiciones del servicio.",
+    "read" : "LEER"
+    
+
+}

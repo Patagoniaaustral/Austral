@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from "next/link";
+import Image from 'next/image';
 import { useRouter } from "next/router";
 import navEs from "../../public/locale/ES/navbar.json"
 import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
+import LogoNavBar from "../../src-client/assets/logoNavBar.png"
+
 
 export const NavBar = () => {
   const router = useRouter();
@@ -19,7 +22,9 @@ export const NavBar = () => {
   return (
     <>
     <header className={styles.nav__container} >
-       <Link className={styles.logo} href="/" >Austral</Link>
+       <Link className={styles.logo} href="/" >
+         <Image src={LogoNavBar} alt="" width={180} height={30} />
+        </Link>
         
       <nav>
         <ul className={styles.nav__links}>

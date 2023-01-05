@@ -25,3 +25,8 @@
     border-radius: var(--border-radius);
     padding: .5em 1.5em;
 }
+
+.btn:hover, .btn:focus{
+    background-color: var(--clr-gray);
+    color:  #0D0D0D; 
+}

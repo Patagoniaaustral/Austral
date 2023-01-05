@@ -18,8 +18,8 @@
             "downtown" : "Downtown Bariloche",
             "terminal" : "Bus Terminal"
         },
-        "bdatepickup" : "Pick Up",
-        "bdatereturn" : "Return",
+        "bdatepickup" : "Pick Up Date",
+        "bdatereturn" : "Return Date",
         "btimepickup" : "Hs Pick Up",
         "btimereturn" : "Hs Return",
         "bsearch" : "SEARCH"

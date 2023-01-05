@@ -1,0 +1,33 @@
+{
+    "rent": "RESERVAS",
+    "rentDetail" : {
+        "detail": "DETALLE DE LA RESERVA",
+        "rentCode" : "Código de reserva",
+        "category" : "CATEGORíA:",
+        "extras" : "ADICIONALES:",
+        "pickUp": "RECOGIDA:",
+        "return": "DEVOLUCIóN:",
+        "booking" :{
+            "bplace" : {
+                "pickup" : "Lugar de recogida",
+                "return" : "Lugar de devolución",
+                "airport" : "Aeropuerto Bariloche",
+                "downtown" : "Centro Bariloche",
+                "terminal" : "Terminal de Omnibus"
+            },
+            "btimepickup" : "Hs Recogida",
+            "btimereturn" : "Hs Devolución"
+        }
+    },
+    "userInfo" : {
+        "info" : "DATOS PERSONALES",
+        "name"  : "Nombre",
+        "lastname" : "Apellido",
+        "phone" : "Teléfono",
+        "email" : "Email",
+        "flight" : "Número de vuelo",
+        "observations" : "Observaciones"
+    },
+    "terms" : "Acepto abonar el 15% de mi reserva dentro de efectuadas la confirmación.",
+    "btn": "RESERVAR"
+}

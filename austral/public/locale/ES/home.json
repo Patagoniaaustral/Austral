@@ -18,8 +18,8 @@
             "downtown" : "Centro Bariloche",
             "terminal" : "Terminal de Omnibus"
         },
-        "bdatepickup" : "Recogida",
-        "bdatereturn" : "Devolución",
+        "bdatepickup" : "Fecha de Recogida",
+        "bdatereturn" : "Fecha de Devolución",
         "btimepickup" : "Hs Recogida",
         "btimereturn" : "Hs Devolución",
         "bsearch" : "BUSCAR"

@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 import footEs from "../../public/locale/ES/footer.json"
 import footEn from "../../public/locale/EN/footer.json"
 import Link from 'next/link'
+import Image from 'next/image';
+import LogoFooter from "../../src-client/assets/logoFooter.png"
 
 const Footer = () => {
 
@@ -39,7 +41,7 @@ const handleSubmit = async(e) => {
       <div className={styles.footer__first_row}>
 
         <div>
-          <p>LOGO</p>
+          <Image src={LogoFooter} alt="Logo Footer" width={180} height={60} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}> 
           <Link className={styles.footer_link} href="https://www.facebook.com/australrentacar" target={"_blank"}>
                 <BsFacebook className={styles.footer_link_ico}/>

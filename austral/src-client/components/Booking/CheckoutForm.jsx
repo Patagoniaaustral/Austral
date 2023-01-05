@@ -1,39 +1,15 @@
-import  { useState } from "react";
-import { useRouter } from "next/router";
-import styles from "../../../styles/Booking/CheckoutForm.module.css";
+
+
 // guardar todos los datos en un estado con redux, un objeto para luego poder pedirlo en confirmation
 
 
 
 function CheckoutForm () {
 
-  const dataReservation = {
-    userData : {
-      name : "",
-      lastname : "",
-      phone : "",
-      email : "",
-      flight : ""
-    },
-    pickupplace : "",
-    returnplace : "",
-    message : "",
-    extras : {
-      conductor : "",
-      asiento : "",
-      seguro : ""
-    }
-  }
-  const router = useRouter();
 
-  const objectSelect = {
-    category: "Category",
-    pickUpPlace: "Pick Up Place",
-    returnPlace: "Return Place"
-  }
-  
-  const [select, setSelect] = useState(objectSelect)
-  const [userData, setUserData] = useState(dataReservation.userData);
+
+
+
  
  
   const handleChange=({target}) => {
@@ -60,39 +36,18 @@ function CheckoutForm () {
     })
    }
 }
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    router.push({ 
-      pathname: '/booking/confirmation',
-})
-    //crear objeto con la data a enviar----> input
-    // enviar los datos del formulario a la base de datos
-    // redireccionar a la pagina de cofirmacion
 
-  }
+const handleOnClick = (e) => {
+  e.preventDefault();
+  router.push( '/booking/confirmation')
+}
+  
+
   
 
   return (
-    <form onSubmit={handleSubmit}>
-        <h1>Datos Personales</h1>
-      <div className={styles.user__container}>
-
-        <label>Nombre</label>
-        <input type="text" name="name"  value={userData.name} onChange={handleChange} placeholder="Ingrese su nombre" required />
-
-        <label>Apellido</label>
-        <input type="text" name="lastname"  value={userData.lastname} onChange={handleChange} placeholder="Ingrese su apellido" required />
-
-        <label>Telefono</label>
-        <input type="phone" name="phone" value={userData.phone} onChange={handleChange} required/>
-
-        <label>Email</label>
-        <input type="email" name="email" value={userData.email} onChange={handleChange} required />
+    <>
      
-        <label>Numero de Vuelo</label>
-        <input type="text" name="flight" value={userData.flight} onChange={handleChange} placeholder="Ej: AR1694" required />
-      </div>
 
       {/* <select name="pickUpPlace"onChange={handleChange} value={select.pickUpPlace}>
         <option value="" disabled>{t.booking.bplace.pickup}</option>
@@ -108,11 +63,7 @@ function CheckoutForm () {
         <option value="terminalr">{t.booking.bplace.terminal}</option>
       </select> */}
 
-      <div className={styles.user__message}>
-        <label>Informacion Adicional</label>
-        <textarea className={styles.user__message_input} name="message"placeholder="Ej: Necesito un auto con caja automatica"></textarea>
-      </div>
-
+      
 
       <p>
         Los adicionales estan sujetos a disponibilidad y tienen un valor diario
@@ -160,14 +111,10 @@ function CheckoutForm () {
 
 
 
-      <div className={styles.terms}>
-        <input type="checkbox" name="terms" required />
-        <small>Acepto los terminos acerca del abono del 15% de mi reserva.</small>
-      </div>
-
-      <button type="submit">CONTINUAR</button>
+    
+      <button onClick={handleOnClick}>CONTINUAR</button>
      
-    </form>
+    </>
   );
 };
 

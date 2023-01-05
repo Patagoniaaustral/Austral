@@ -61,9 +61,17 @@
 .form__btn{
     width: 5em;
     margin-left: auto;
+    border-radius: var(--border-radius);
+    background-color: var(--clr-primary);
+    color: var(--clr-bkg-gray);
+}
+
+.form__btn:hover, .form__btn:focus{
+    background-color: var(--clr-gray);
+    color:  #0D0D0D; 
 }
 
 .form__input_error{
-    color: var(--color-red);
+    color: var(--clr-primary);
     margin-bottom: 1em;
 }

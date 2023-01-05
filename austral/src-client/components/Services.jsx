@@ -10,13 +10,14 @@ function Services () {
 
   const router = useRouter();
   const t = router.locale === "es" ? servEs : servEn;
-  
+
   return (
-    <>
+    <div className={styles.services}>
     <div className={styles.header__img}>
-      <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={500} />
+      <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} />
       <h1>{t.services}</h1>
     </div>
+
       <div className={styles.covers__container}>
         <h2>{t.covers}</h2>
         <p>{t.text1}</p>
@@ -26,6 +27,7 @@ function Services () {
 
       <div>
         <div className={styles.services__container}>
+          
           <div className={styles.services__extra_container}>
             <h2>{t.extras}</h2>
             <ul>
@@ -37,7 +39,9 @@ function Services () {
 
           <div className={styles.services__require_container}>
             <h2>{t.required}</h2>
-            <div></div>
+            <div>
+              {/* icono  */}
+            </div>
             <ul>
               <li>{t.req1}</li>
               <li>{t.req2}</li>
@@ -45,9 +49,10 @@ function Services () {
               <li>{t.req4}</li>
             </ul>
           </div>
+        
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

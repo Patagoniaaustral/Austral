@@ -5,20 +5,20 @@
     "capacity" : 5,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 10000,
+    "pricePerDay" : 13000,
     "available" : true,
-    "category" : "a",
+    "category" : "A",
     "image" : "not found"
     },
     {
     "model": "Spin",
     "brand" : "Crevrolet",
-    "capacity" : 5,
+    "capacity" : 7,
     "transmition" : "manual",
     "motor" : "diesel",
-    "pricePerDay" : 12000,
+    "pricePerDay" : 25000,
     "available" : true,
-    "category" : "c",
+    "category" : "C",
     "image" : "not found"
     },
     {
@@ -27,9 +27,9 @@
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
+    "pricePerDay" : 45000,
     "available" : true,
-    "category" : "e",
+    "category" : "E",
     "image" : "not found"
     },
        {
@@ -38,9 +38,9 @@
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
+    "pricePerDay" : 13000,
     "available" : true,
-    "category" : "a",
+    "category" : "A",
     "image" : "not found"
     },
     {
@@ -49,9 +49,9 @@
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
+    "pricePerDay" : 13000,
     "available" : true,
-    "category" : "a",
+    "category" : "A",
     "image" : "not found"
     },
     {
@@ -60,9 +60,9 @@
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
+    "pricePerDay" : 13000,
     "available" : true,
-    "category" : "a",
+    "category" : "A",
     "image" : "not found"
     },
        {
@@ -73,18 +73,29 @@
     "motor" : "diesel",
     "pricePerDay" : 15000,
     "available" : true,
-    "category" : "b",
+    "category" : "B",
     "image" : "not found"
     },
+    {
+      "model": "Prisma",
+      "brand" : "Chevrolet",
+      "capacity" : 7,
+      "transmition" : "automatic",
+      "motor" : "diesel",
+      "pricePerDay" : 15000,
+      "available" : true,
+      "category" : "B",
+      "image" : "not found"
+      },
        {
-    "model": "Toro 4x2",
+    "model": "Toro Freedom 4x2",
     "brand" : "Fiat",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
+    "pricePerDay" : 30000,
     "available" : true,
-    "category" : "d",
+    "category" : "D",
     "image" : "not found"
     }
 ]

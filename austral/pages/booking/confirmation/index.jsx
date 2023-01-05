@@ -10,7 +10,7 @@ export default function confirmation() {
         <title>Austral</title>
         <meta name="description" content="booking checkout" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
        <ConfirmationPage/>
