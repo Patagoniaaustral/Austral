@@ -1,0 +1,38 @@
+.title{
+    color: var(--clr-primary);
+    font-size: 2em;
+    margin: 1.5em 0;
+}
+
+.form__container{
+    padding: 5em;
+    border-radius: 3em;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+.form__container textarea{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    resize: none;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+
+.form__container input{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.form__container button{
+    width: 7em;
+    margin-left: auto;
+    border-radius: var(--border-radius);
+    background-color: var(--clr-primary);
+    color: var(--clr-bkg-gray);
+}

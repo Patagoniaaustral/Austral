@@ -4,7 +4,7 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 import confEs from "../../../public/locale/ES/confirmation.json"
 import confEn from "../../../public/locale/EN/confirmation.json"
-import styles from "../../../styles/Booking/CheckoutForm.module.css";
+import styles from "../../../styles/Booking/Confirmation.module.css";
 
 
 
@@ -75,8 +75,8 @@ function Confirmation () {
   
   return (
     <>
-    <h1>{t.rent}</h1>
-    <form onSubmit={handleSubmit}>
+    <h1 className={styles.title}>{t.rent}</h1>
+    <form className={styles.form__container} onSubmit={handleSubmit}>
       <h2>{t.rentDetail.detail}</h2>
       <p>{t.rentDetail.rentCode}</p> {/* //deberia ser el id?? o que puedo usar de codigo? */}
 

@@ -1,4 +1,5 @@
 {
+    "title": "RENTS",
     "detailCateg": {
         "detail" : "FEATURES",
         "ab" : {
@@ -6,17 +7,16 @@
             "list1" : "It can perform up to 250km x day.",
             "list2" : "Additional cost of over $50 per km.",
             "list3" : "$100,000 franchised insurance. - pesos for partial damages and $250,000. - overturning or destruction weights. (DOES NOT COVER LOCKS, WINDSCREENS, OR BROKEN TIRES AND/OR COVERS).",
-            "advert" : "Note: Paying the premium insurance at a cost of $1,500. - pesos per day, the franchise is reduced to 50%, having to pay up to $50,000. - weights for partial damage. The latter includes breaking any glass, breaking locks, stealing tires. Any minor damage to the franchise is at the customer’s expense. At the time of withdrawal the vehicle must provide a CREDIT CARD as a guarantee for any damages caused.",
-            "franchise": "FRANCHISE"
+            "advert" : "Note: Paying the premium insurance at a cost of $1,500. - pesos per day, the franchise is reduced to 50%, having to pay up to $50,000. - weights for partial damage. The latter includes breaking any glass, breaking locks, stealing tires. Any minor damage to the franchise is at the customer’s expense. At the time of withdrawal the vehicle must provide a CREDIT CARD as a guarantee for any damages caused."
         },
         "cde" : {
             "categ" : "YOU HAVE SELECTED A VEHICLE CATEGORY C / D/ E:",
             "list1" : "They have 250km per day.",
             "list2" : "$50 a mile over.",
             "list3" : "$500,000 franchising insurance. - pesos for partial damages and $1,500,000. - overturning or destruction weights. (DOES NOT COVER LOCKS, WINDSCREENS, OR TIRES AND/OR TIRES).",
-            "advert" : "Note: Paying the Premium insurance $2000. - pesos per day, the franchise is reduced to 50%, paying up to $250,000. - weights for partial damage. The latter includes breaking any glass, breaking locks, stealing tires. Any minor damage to the franchise is borne by the customer. At the time of withdrawal the vehicle must provide a CREDIT CARD as a guarantee for any damages caused. ",
-            "franchise": "FRANCHISE"
-        }
+            "advert" : "Note: Paying the Premium insurance $2000. - pesos per day, the franchise is reduced to 50%, paying up to $250,000. - weights for partial damage. The latter includes breaking any glass, breaking locks, stealing tires. Any minor damage to the franchise is borne by the customer. At the time of withdrawal the vehicle must provide a CREDIT CARD as a guarantee for any damages caused. "
+        },
+        "franchise" : "FRANCHISE"
     },
     "rent": {
         "rent" : "RENTAL",
@@ -38,6 +38,7 @@
         "list5" : "You must pay within 48 hours 15% of the cost of the reservation, otherwise it will be cancelled."
     },
     "terms": "I have read and accept the terms, features and conditions of the service.",
-    "read" : "READ"
+    "read" : "READ",
+    "btn": "CONTINUE"
 
 }
