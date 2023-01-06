@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import HomeCar from "../../assets/home3.jpg"
-import styles from "../../../styles/Home/Slider.module.css"
+//import styles from "../../../styles/Home/Slider.module.css"
 
 function Slider () {
   const router = useRouter();

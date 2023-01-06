@@ -3,7 +3,11 @@ import { Inter } from '@next/font/google'
 import HomePage from "../src-client/components/Home/Home"
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  variants: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap', 
+ })
 
 
 export default function Home() {

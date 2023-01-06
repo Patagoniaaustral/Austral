@@ -160,3 +160,8 @@ main {
   color: var(--clr-primary);
   font-size: 1.5rem;
 }
+
+:checked {
+  color: var(--clr-primary);
+}
+

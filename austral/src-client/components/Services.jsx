@@ -16,7 +16,7 @@ function Services () {
     <>
 
     <div className={styles.header__img}>
-      <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} />
+      <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} priority={true} placeholder="blur"/>
       <h1>{t.services}</h1>
     </div>
 

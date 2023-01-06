@@ -68,7 +68,9 @@
     background-color: var(--clr-bkg-gray)
 }
 
-
+.form__container:has(:valid) > label{
+    color: green;
+}
 
 /* ----------DIV USER ------------ */
 
