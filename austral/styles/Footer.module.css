@@ -8,6 +8,10 @@
     gap: 3em;
 }
 
+.footer__container a :is(:focus, :hover){
+    color: var(--clr-gray);
+}
+
 .footer__first_row{
     display: flex;
     gap: 5em;

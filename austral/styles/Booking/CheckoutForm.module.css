@@ -54,9 +54,6 @@
     position: absolute;
     top: 40em;
     width: 81%;
-
-
-
 }
 
 .rent__container h4{
@@ -108,6 +105,13 @@
     margin-left: 1.5em;
 }
 
+.rent__container button:hover{
+    color: var(--clr-primary);
+    background-color: var(--clr-gray);
+    border-radius: 2em;
+    padding: .5em 1em;
+}
+
 
 
 
@@ -144,6 +148,10 @@
 
 .conditions__container li {
     margin: 1em 0;
+}
+
+.conditions__container a:is(:hover, :focus){
+    color: var(--clr-primary);
 }
 
 

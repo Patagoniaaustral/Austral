@@ -79,11 +79,16 @@ function HomeBooking () {
 
   return (
   <section className={styles.section__container}>
+
     <div className={styles.header__img}>
      <h1>{t.title}</h1>
-     <Image src ={HomeMain} alt="" width="1500" heigth="500" /> 
+     <Image src ={HomeMain} alt="" width="1300" heigth="500" /> 
     </div>
+
+    <div>
       <h2>{t.rent}</h2>
+    </div>
+
       <div className={styles.booking__all_container}>
         
         <div className={styles.booking__container}>

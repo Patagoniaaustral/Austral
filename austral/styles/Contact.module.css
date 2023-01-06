@@ -33,6 +33,10 @@
     gap: 1em;
 }
 
+.info__container a :is(:focus, :hover){
+    color: var(--clr-primary);
+}
+
 
 /* ----------- DIV FORM ----------- */
 
