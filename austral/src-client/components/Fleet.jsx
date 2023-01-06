@@ -13,6 +13,9 @@ import LogoVW from  "../../src-client/assets/vw-logo.png"
 import LogoNissan from  "../../src-client/assets/nissan-logo.png"
 import LogoRenault from  "../../src-client/assets/Renault-Logo.png"
 import LogoChe from  "../../src-client/assets/chevrolet-logo.png"
+import CarIcon1 from "../../src-client/assets/motor-ico.png"
+import CarIcon2 from "../../src-client/assets/car-ico.png"
+import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
 
 function  Fleet () {
   const fleet = useSelector(state => state.reducerCars.cars)
@@ -41,10 +44,11 @@ function  Fleet () {
 
   return (
     <>
-    <div className={styles.header__img}>
+
+    <div className={styles.header}>
       <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} />
       <h1>{t.fleet}</h1>
-      <select className={styles.category__filter} name="category" onChange={handleChange}> 
+      <select name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>
           <option value="a">{t.booking.bcategory.a}</option>
           <option value="b">{t.booking.bcategory.b}</option>
@@ -60,9 +64,21 @@ function  Fleet () {
         <div className={styles.fleet__grid_card} key={car.id}>
           <h2>{car.brand} {car.model}</h2>
           <p>CATEGORIA {car.category}</p>
-          <p>{car.capacity} pasajeros</p> 
-          <p>{car.transmition}</p> 
-          <p>{car.motor}</p> 
+          
+          <div>
+              <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
+            <p>
+            {car.capacity} pasajeros</p> 
+
+              <Image src={ CarIcon2} alt="icono de transmision" width="20" heigth="20"/>
+            <p>
+             {car.transmition}</p> 
+          
+              <Image src={CarIcon1} alt="imagen de auto" width="20" heigth="20"/>
+            <p>
+            {car.motor}</p> 
+          </div>
+        
           {/* <Image>{car.image} */}
         </div>
       )
@@ -70,11 +86,11 @@ function  Fleet () {
     </div>
 
     <div className={styles.brands__container}>
-      <Image src={LogoFiat} alt="logo de fiat" width="200" heigth="200"/>
-      <Image src={LogoVW} alt="logo de vw" width="200" heigth="200"/>
-      <Image src={LogoRenault} alt="logo de renault" width="200" heigth="200"/>
-      <Image src={LogoNissan} alt="logo de nissan" width="200" heigth="200"/>
-      <Image src={LogoChe} alt="logo de chevrolet" width="200" heigth="200"/>
+      <Image src={LogoFiat} alt="logo de fiat" width="50" heigth="50"/>
+      <Image src={LogoVW} alt="logo de vw" width="50" heigth="50"/>
+      <Image src={LogoRenault} alt="logo de renault" width="70" heigth="70"/>
+      <Image src={LogoNissan} alt="logo de nissan" width="50" heigth="50"/>
+      <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
     </div>
 
     </>

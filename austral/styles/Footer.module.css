@@ -2,57 +2,51 @@
     background-color: var(--clr-primary);
     color : white;
     padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
 }
 
 .footer__first_row{
     display: flex;
-    justify-content: center;
-    margin-bottom: 3em;
     gap: 5em;
-
 }
 
-
-
-.footer_titles{
+.footer__first_row h2{
     margin-bottom: 1.4em;
 }
 
+.footer__first_row div > p,
+.footer__first_row div > a {
+    margin-bottom: .6em;
+    opacity: .7;
+}
+
+.footer__first_row :first-child a{
+    display: flex;
+    margin: 1em;
+    gap: 1em;
+}
+
+
 .footer__second_row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
     gap: 2em;
 }
 
 .footer__second_row p{
+    width: 30%;
     font-weight: 600;
 }
 
-.footer__third_row{
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-}
-
-
-.footer_link{
-    display: flex;
-    margin: 1em;
-}
-
-.footer_link_ico{
-    margin-right: 1em;
-}
-
-.news{
+.footer__second_row input{
     border: none;
     border-radius: var(--border-radius);
     padding: .5em 1.5em;
 }
 
-.news__btn{
+.footer__second_row button{
     color: var(--clr-primary);
     background-color: beige;
     border: none;
@@ -60,10 +54,21 @@
     padding: .5em 1.5em;
 }
 
-.news__btn:is(:focus,:hover){
+.footer__second_row button:is(:focus,:hover){
     background-color: var(--clr-gray);
     color:  #0D0D0D; 
 }
+
+
+
+
+.footer__container > p {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
 
 
 @media(max-width:640px){

@@ -4,33 +4,39 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--box-shadow);
+    background-color: white;
+   padding: 1em;
  }
 
-.logo{
-  margin-left: 10em;
+
+ .nav__container img {
+   margin-left: 12em;
  }
 
- .nav__links{
+ .nav__container ul{
     display: flex;
     list-style: none;
  }
 
- .nav__links li{
-    padding: 1em;
- }
+ .nav__container li{
+   margin-right: 3em;
+}
 
-   .nav__links li :is(:active, :hover, :focus) {
-      color: var(--clr-primary);
-   }
+.nav__container li :is(:active, :hover, :focus) {
+   color: var(--clr-primary);
+}
 
-.nav__links li a,   
-.nav__links select{
+.nav__container :is(a, select){
 font-weight: 600;
 }
 
-   .nav__links select {
+.nav__container select {
       border: none;
-   }
+}
+
+
+
+
 
  @media(max-width: 768px){
     .nav__links{

@@ -20,14 +20,12 @@ export const NavBar = () => {
   }
 
   return (
-    <>
     <header className={styles.nav__container} >
-       <Link className={styles.logo} href="/" >
-         <Image src={LogoNavBar} alt="" width={180} height={30} />
-        </Link>
+      
+      <Link href="/"><Image src={LogoNavBar} alt="" width={180} height={30} /></Link>
         
       <nav>
-        <ul className={styles.nav__links}>
+        <ul>
           <li>
             <Link href="/" locale={router.locale} >
               <span>{t.home}</span>
@@ -62,9 +60,6 @@ export const NavBar = () => {
           </ul>
         </nav>
     </header>
-  </>
+  
   )
 }
-
-
-// usar get static props??

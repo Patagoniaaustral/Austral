@@ -1,14 +1,8 @@
 
+/* ------------- HEADER IMG ---------- */
 
 
-.fleet__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-    width: 100%;
-    padding: 2em;
-}
-.header__img{
+.header{
      object-fit: cover;
      object-position: center;
      margin: 0;
@@ -16,11 +10,11 @@
     position: relative;
 }
 
-.header__img img {
+.header img {
     border-radius: 0 0 3em 3em;
 }
 
-.header__img h1 {
+.header h1 {
     color: #fff;
     z-index: 2;
     position: absolute;
@@ -30,7 +24,7 @@
 }
 
 
-.category__filter{
+.header select{
     border-radius: var(--border-radius);
     border: var(--border);
     padding: .5em 1.5em;
@@ -43,16 +37,40 @@
     outline: none;
 }
 
+
+/* --------------- CARD CARS ---------------- */
+
+.fleet__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    width: 100%;
+    padding: 2em;
+}
+
 .fleet__grid_card{
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 5em;
+    padding: 2em 3em;
     background-color: var(--clr-secondary);
+}
+
+.fleet__grid_card h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: .8em;
+}
+
+.fleet__grid_card div {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .3em;
+    margin: .5em 0;
 }
 
 
@@ -63,8 +81,14 @@
 }
 
 
+
+/* ---------------- BRAND DIVS -------------- */
+
+
 .brands__container{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap : 2em;
+    margin: 2em 0;
 }

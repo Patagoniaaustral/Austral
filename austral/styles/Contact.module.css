@@ -9,15 +9,32 @@
     margin: 3em 0 1em 0;
 }
 
+
+/* ----------- DIV INFO ----------- */
+
 .info__container{
-    padding: 0 4em;
+    font-size: 1.2em;
+    padding: 3em 4em;
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 1em;
     background-color: var(--clr-secondary);
     border-radius: 3.5em 0  0 3.5em ;
-    z-index: 1;
+
 }
+
+.info__container div {
+    margin-top: 2em;
+}
+
+.info__container:first-child a {
+    display: flex;
+    margin: 1em;
+    gap: 1em;
+}
+
+
+/* ----------- DIV FORM ----------- */
 
 .form__container{
     display:flex;
@@ -26,30 +43,21 @@
     padding: 2em 4em 2em 2em;
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-    z-index: 2;
+   
 }
 
 .form__container label {
     margin: 0 0 .5em .8em;
 }
 
-.info_link{
-    display: flex;
-    margin-bottom: 1em;
-}
-
-.info_link_ico{
-    margin-right: 1em;
-}
-
-.form__input{
+.form__container input{
     border: 1px solid #ccc;
     border-radius: 25px;
     padding-left: 1em;
     margin-bottom: 1em;
 }
 
-.form__message{
+.form__container textarea{
     border: 1px solid #ccc;
     border-radius: 25px;
     resize: none;
@@ -58,20 +66,21 @@
     padding-left: 1em;
 }
 
-.form__btn{
-    width: 5em;
+.form__container button{
+    padding: .3em 1.7em;
     margin-left: auto;
     border-radius: var(--border-radius);
     background-color: var(--clr-primary);
     color: var(--clr-bkg-gray);
+    border: none;
 }
 
-.form__btn:is(:focus, :hover){
+.form__container button:is(:focus, :hover){
     background-color: var(--clr-gray);
     color:  #0D0D0D; 
 }
 
-.form__input_error{
+.form__container p {
     color: var(--clr-primary);
     margin-bottom: 1em;
 }

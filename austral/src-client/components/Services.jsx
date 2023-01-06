@@ -6,18 +6,22 @@ import styles from "../../styles/Services.module.css"
 import Image from "next/image"
 import ServicesImg from "../assets/services.jpg"
 
+
 function Services () {
 
   const router = useRouter();
   const t = router.locale === "es" ? servEs : servEn;
 
   return (
-    <div className={styles.services}>
+    <>
+
     <div className={styles.header__img}>
       <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} />
       <h1>{t.services}</h1>
     </div>
 
+      
+      
       <div className={styles.covers__container}>
         <h2>{t.covers}</h2>
         <p>{t.text1}</p>
@@ -25,6 +29,9 @@ function Services () {
         <p>{t.text3}</p>
       </div>
 
+      
+      
+      
       <div>
         <div className={styles.services__container}>
           
@@ -52,7 +59,7 @@ function Services () {
         
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
