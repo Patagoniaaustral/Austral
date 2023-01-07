@@ -74,7 +74,7 @@ function Confirmation () {
 
   
   return (
-    <>
+    <div className={styles.main}>
     <h1 className={styles.title}>{t.rent}</h1>
 
     <form className={styles.form__container} onSubmit={handleSubmit}>
@@ -176,7 +176,7 @@ function Confirmation () {
       
           
     </form>
-    </>
+    </div>
   );
 };
 

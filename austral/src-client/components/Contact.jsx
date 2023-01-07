@@ -46,7 +46,7 @@ function Contact() {
   }
 
   return (
-    <>
+    <div className={styles.main}>
       <h1 className={styles.contact__title}>{t.contact}</h1>
     
     <div className={styles.general__container}>
@@ -100,7 +100,7 @@ function Contact() {
         <button type ="submit"  disabled={Object.values(error).length !== 0}>{t.send}</button>
       </form>
     </div>
-    </>
+    </div>
   )
 }
 

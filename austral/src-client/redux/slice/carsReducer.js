@@ -29,7 +29,7 @@ export const getCars = () => async (dispatch) => {
       url: '/api/getAllCars',
     }); 
 
-    console.log(data, "data de get cars en redux")
+   
     dispatch(reducerCars.actions.getAllCars(data));
   } catch (error) {
     console.log(error)
@@ -37,7 +37,7 @@ export const getCars = () => async (dispatch) => {
 };
 
 export const filterFleet = (category) => (dispatch) => {
-    dispatch(reducerCars.actions.filterByCategory(category));
+  dispatch(reducerCars.actions.filterByCategory(category));
   }
   
   

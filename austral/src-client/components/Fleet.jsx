@@ -19,9 +19,12 @@ import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
 
 function  Fleet () {
   const fleet = useSelector(state => state.reducerCars.cars)
+ 
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
+  
+
   const dispatch = useDispatch()  
-  const [select, setSelect] = useState()
+  const [select, setSelect] = useState("")
   const router = useRouter();
   const t = router.locale === "es" ? fleetEs : fleetEn;
   
@@ -34,7 +37,7 @@ function  Fleet () {
   const currentFleet = fleetFiltred.length ? fleetFiltred : fleet
 
 
-  if(!fleet[0]) return <div>Loading ...</div>
+  if(!fleet[0]) return <div className={styles.loading}>Loading ...</div>
 
   const handleChange = ({target}) => {
     const {value} = target
@@ -43,23 +46,23 @@ function  Fleet () {
   }
 
   return (
-    <>
+    <div className={styles.main}>
 
     <div className={styles.header}>
-      <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} priority={true} placeholder="blur"/>
+      <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} priority={true}/>
       <h1>{t.fleet}</h1>
       <select name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>
-          <option value="a">{t.booking.bcategory.a}</option>
-          <option value="b">{t.booking.bcategory.b}</option>
-          <option value="c">{t.booking.bcategory.c}</option>
-          <option value="d">{t.booking.bcategory.d}</option>
-          <option value="e">{t.booking.bcategory.e}</option>
+          <option value="A">{t.booking.bcategory.a}</option>
+          <option value="B">{t.booking.bcategory.b}</option>
+          <option value="C">{t.booking.bcategory.c}</option>
+          <option value="D">{t.booking.bcategory.d}</option>
+          <option value="E">{t.booking.bcategory.e}</option>
       </select>
     </div>
 
-  <div className={currentFleet.length === 1 ? styles.fleet__grid_unique : styles.fleet__grid}>
-    {fleet[0] && currentFleet.map((car) => {
+  <div className={styles.fleet__grid}>
+    {currentFleet.map((car) => {
       return (
         <div className={styles.fleet__grid_card} key={car.id}>
           <h2>{car.brand} {car.model}</h2>
@@ -93,7 +96,7 @@ function  Fleet () {
       <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
     </div>
 
-    </>
+    </div>
   )
 }
 

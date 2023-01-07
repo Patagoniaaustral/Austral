@@ -1,12 +1,34 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-primary);
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: 100vh;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem 2em ;
+    min-height: 100vh;
+    background-image: url(../src-client/assets/trama.svg);
+    background-size: 100%;
+}
+
 
 /* ------------- HEADER IMG ---------- */
 
 
 .header{
     /* aspect-ratio: 16/9; */
-     object-fit: cover;
-     object-position: center;
-     margin: 0;
+    min-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
     z-index: 1;
     position: relative;
 }
@@ -21,7 +43,7 @@
     position: absolute;
     top: 70%;
     left: 10%;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
@@ -46,11 +68,12 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
     width: 100%;
+    max-width: 1200px;
     padding: 2em;
 }
 
 .fleet__grid_card{
-    width: fit-content;
+    max-width: 20em;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -75,21 +98,24 @@
 }
 
 
-.fleet__grid_unique {
-    display: flex;
-    align-self: flex-start;
-    margin: 2em;
-}
-
-
 
 /* ---------------- BRAND DIVS -------------- */
 
 
 .brands__container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap : 2em;
     margin: 2em 0;
 }
+
+
+
+/* @media(min-width:25rem){
+    .brands__container{
+        display: flex;
+        flex-direction: column;
+    }
+} */

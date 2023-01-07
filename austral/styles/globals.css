@@ -140,7 +140,7 @@ select {
   }
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +148,7 @@ main {
   min-height: 100vh;
   background-image: url(../src-client/assets/trama.svg);
   background-size: 100%;
-}
+} */
 
 ::selection {
   background-color: var(--clr-primary);
@@ -162,6 +162,7 @@ main {
 }
 
 :checked {
-  color: var(--clr-primary);
+  color: white;
+  background-color: var(--clr-primary);
 }
 

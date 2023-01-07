@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from "next/link";
 import Image from 'next/image';
 import { useRouter } from "next/router";
@@ -12,6 +12,13 @@ export const NavBar = () => {
   const router = useRouter();
   const t = router.locale === "es" ? navEs : navEn;
 
+  //FOR RESPONSIVE NAV MENU
+  // const [isActive, setIsActive] = useState(false);
+  
+  // const handleNavToggle = () => {
+  //   setIsActive((current) => !current);
+  // };
+
   const handleChange = ({target})=> {  
     const {value} = target
     router.push(router.pathname, router.pathname, {
@@ -23,7 +30,16 @@ export const NavBar = () => {
     <header className={styles.nav__container} >
       
       <Link href="/"><Image src={LogoNavBar} alt="" width={180} height={30} /></Link>
-        
+          
+        {/* <button
+           onClick={handleNavToggle}
+           className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle}
+           aria-label="toggle navigation"
+      >
+        <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
+      </button> */}
+
+      {/* <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}> */}
       <nav>
         <ul>
           <li>

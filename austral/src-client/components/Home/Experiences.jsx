@@ -20,21 +20,21 @@ function Experiences () {
 
       <div className={styles.exp__card}>
         <div className={styles.image__container}>
-          <Image src={Exp3} alt="exp1" width={300} height={300} />
+          <Image src={Exp3} alt="exp1" width={400} height={300} />
         </div>
           <p>{t.experience.esubtitle1}</p>
       </div>
 
       <div className={styles.exp__card}>
         <div className={styles.image__container} > 
-          <Image src={Exp2} alt="exp2" width={300} height={300} />
+          <Image src={Exp2} alt="exp2" width={400} height={300} />
         </div>
           <p>{t.experience.esubtitle2}</p>
       </div>
 
       <div className={styles.exp__card}>
         <div className={styles.image__container}>
-          <Image src={Exp1} alt="exp3" width={300} height={300} />
+          <Image src={Exp1} alt="exp3" width={400} height={300} />
         </div>
           <p>{t.experience.esubtitle3}</p>
       </div>

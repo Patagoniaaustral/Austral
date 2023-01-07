@@ -13,7 +13,7 @@ function Services () {
   const t = router.locale === "es" ? servEs : servEn;
 
   return (
-    <>
+    <div className={styles.main}>
 
     <div className={styles.header__img}>
       <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} priority={true} placeholder="blur"/>
@@ -59,7 +59,7 @@ function Services () {
         
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
