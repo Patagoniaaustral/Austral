@@ -7,7 +7,9 @@ import homeEn from "../../../public/locale/EN/home.json"
 import HomeCar from "../../assets/home3.jpg"
 import RedCar from "../../assets/redcar.png"
 import Nissan from "../../assets/nissan.png"
+import Hexa from "../../assets/hexBorder.svg"
 import styles from "../../../styles/Home/Slider.module.css"
+import { motion } from "framer-motion"
 
 function Slider () {
   const router = useRouter();
@@ -29,6 +31,8 @@ function Slider () {
 
   return (
     <section className={styles.section__container}>
+        <Image src={Hexa} alt="hexagono1" width={100} height={100} />
+        <Image src={Hexa} alt="hexagono1" width={100} height={100} />
       <div className={styles.general__container}>
       <div className={styles.row__container} >
         <div className={styles.info__container}>
@@ -52,9 +56,16 @@ function Slider () {
 
 {/* -------------------- FIN SLIDER ------------  */}
 
-        <div className={styles.image__container}>
+        <motion.div className={styles.image__container}
+                    initial={{x: 1000, opacity: 0}}
+                    animate = {{x: 0, opacity: 1}} 
+                    transition={{duration: 2, ease : "easeOut"}}
+                    onScroll={{opacity: 1}} 
+                    onScrollCapture={{opacity: 1}}
+                    layoutScroll={{opacity: 1}} 
+        >
           <Image src={HomeCar} alt="" width={1300} height={400}/>
-        </div>
+        </motion.div>
       </div>
 
       <div>

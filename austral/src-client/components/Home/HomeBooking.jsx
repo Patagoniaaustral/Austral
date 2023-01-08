@@ -7,6 +7,7 @@ import addDays from 'date-fns/addDays'
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import HomeMain from "../../assets/HomeMain.jpg"
+import Hexa from "../../assets/hexBorder.svg"
 import styles from '../../../styles/Home/HomeBooking.module.css'
 
 
@@ -81,9 +82,11 @@ function HomeBooking () {
   <section className={styles.section__container}>
 
     <div className={styles.header__img}>
-     <h1>{t.title}</h1>
-     <Image src ={HomeMain} alt="" width={1500} height={500} quality={100} priority={true} placeholder="blur"/>
+     <h1>{t.title1}<br/>{t.title2}</h1>
+      <Image src ={HomeMain} alt="" width={1500} height={500} priority={true} />
     </div>
+      <Image className={styles.hexa} src={Hexa} alt="hexagono1" width={100} height={100} />
+
 
     <div>
       <h2>{t.rent}</h2>

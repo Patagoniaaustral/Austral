@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.99 91.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #e14444;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g id="Grupo_98" data-name="Grupo 98">
+      <path id="Trazado_54" data-name="Trazado 54" class="cls-2" d="m147.09,91.7H13.9c-7.67-.01-13.89-6.23-13.9-13.9V13.9C.01,6.23,6.23.01,13.9,0h133.19c7.67.01,13.89,6.23,13.9,13.9v63.9c-.01,7.67-6.23,13.89-13.9,13.9ZM13.9.8C6.67.81.81,6.67.8,13.89v63.9c0,7.23,5.87,13.08,13.1,13.09h133.19c7.23,0,13.09-5.86,13.1-13.09V13.89c0-7.23-5.87-13.09-13.1-13.1H13.9Z"/>
+      <g id="Grupo_55" data-name="Grupo 55">
+        <path id="Rectángulo_420" data-name="Rectángulo 420" class="cls-2" d="m71.48,16.82h58.51c1.7,0,3.08,1.38,3.08,3.08h0c0,1.7-1.38,3.08-3.08,3.08h-58.51c-1.7,0-3.08-1.38-3.08-3.08h0c0-1.7,1.38-3.08,3.08-3.08Z"/>
+      </g>
+      <g id="Grupo_56" data-name="Grupo 56">
+        <path id="Rectángulo_421" data-name="Rectángulo 421" class="cls-2" d="m69.94,66.85h19.95c.85,0,1.54.69,1.54,1.54h0c0,.85-.69,1.54-1.54,1.54h-19.95c-.85,0-1.54-.69-1.54-1.54h0c0-.85.69-1.54,1.54-1.54Z"/>
+      </g>
+      <g id="Grupo_57" data-name="Grupo 57">
+        <path id="Rectángulo_422" data-name="Rectángulo 422" class="cls-2" d="m95.78,66.85h19.95c.85,0,1.54.69,1.54,1.54h0c0,.85-.69,1.54-1.54,1.54h-19.95c-.85,0-1.54-.69-1.54-1.54h0c0-.85.69-1.54,1.54-1.54Z"/>
+      </g>
+      <g id="Grupo_58" data-name="Grupo 58">
+        <rect id="Rectángulo_423" data-name="Rectángulo 423" class="cls-2" x="68.4" y="33.61" width="57.93" height="4.43" rx="2.21" ry="2.21"/>
+      </g>
+      <g id="Grupo_59" data-name="Grupo 59">
+        <rect id="Rectángulo_424" data-name="Rectángulo 424" class="cls-2" x="68.4" y="48.66" width="57.93" height="4.43" rx="2.21" ry="2.21"/>
+      </g>
+      <g id="Grupo_60" data-name="Grupo 60">
+        <circle id="Elipse_3" data-name="Elipse 3" class="cls-2" cx="33.37" cy="34.5" r="12.3"/>
+      </g>
+      <g id="Grupo_61" data-name="Grupo 61">
+        <path id="Trazado_56" data-name="Trazado 56" class="cls-2" d="m52.91,59.77c-1.51,1.24-3.4,1.92-5.35,1.92h-28.38c-1.95,0-3.84-.68-5.35-1.92.05-.13.11-.26.17-.38s.11-.26.18-.39c4.97-10.6,17.59-15.17,28.19-10.2,4.49,2.1,8.1,5.71,10.2,10.2.06.13.12.26.18.39s.11.25.17.38Z"/>
+      </g>
+      <g id="Grupo_62" data-name="Grupo 62">
+        <rect id="Rectángulo_425" data-name="Rectángulo 425" class="cls-1" x="11.14" y="16.82" width="44.46" height="44.46" rx="22.23" ry="22.23"/>
+      </g>
+    </g>
+  </g>
+</svg>

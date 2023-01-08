@@ -5,7 +5,7 @@ import carsData from '../../controllers/carsdata.json'
 export const reducerCars = createSlice({
   name: "reducerCars",
   initialState: {
-    cars: [], 
+    cars: [],
     carsfiltred : []
   },
   reducers: {
@@ -22,17 +22,18 @@ export const reducerCars = createSlice({
 });
 
 
-export const getCars = () => async (dispatch) => {
+export const getCars = (props) => async (dispatch) => {
   try {
+   
     // const { data } = await axios({
     //   method: 'get',
     //   url: '/api/getAllCars',
     // }); 
 
-    const data = carsData;
-    console.log(data)
+   // const data = carsData;
+
  
-    dispatch(reducerCars.actions.getAllCars(data));
+    dispatch(reducerCars.actions.getAllCars(props));
   } catch (error) {
     console.log(error)
   }

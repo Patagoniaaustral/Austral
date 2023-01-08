@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 139.72 121">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_2" data-name="Degradado sin nombre 2" x1="-828.51" y1="853.95" x2="-827.83" y2="854.74" gradientTransform="translate(115780.69 103435.87) scale(139.72 -121)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".01" stop-color="#fdf7f7" stop-opacity=".04"/>
+      <stop offset=".12" stop-color="#f5c1c1" stop-opacity=".33"/>
+      <stop offset=".22" stop-color="#ed9494" stop-opacity=".57"/>
+      <stop offset=".31" stop-color="#e87171" stop-opacity=".76"/>
+      <stop offset=".4" stop-color="#e45858" stop-opacity=".89"/>
+      <stop offset=".47" stop-color="#e14949" stop-opacity=".97"/>
+      <stop offset=".52" stop-color="#e14444"/>
+      <stop offset="1" stop-color="#e14444"/>
+    </linearGradient>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g id="Grupo_27" data-name="Grupo 27">
+      <path id="Trazado_48" data-name="Trazado 48" class="cls-1" d="m104.79,121H34.93L0,60.5,34.93,0h69.86l34.93,60.5-34.93,60.5Zm-68.82-1.81h67.77l33.89-58.69L103.75,1.8H35.97L2.09,60.5l33.89,58.69Z"/>
+    </g>
+  </g>
+</svg>

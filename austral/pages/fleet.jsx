@@ -1,9 +1,10 @@
 import React from "react";
 import Head from 'next/head'
 import FleetPage from "../src-client/components/Fleet"
+import axios from "axios";
 
 
-export default function fleet() {
+export default function fleet({props}) {
   return (
     <>
      <Head>
@@ -14,9 +15,25 @@ export default function fleet() {
       </Head>   
   
       <main >
-          <FleetPage/>
+          <FleetPage props={props}/>
       </main>
  
     </>
   );
 }
+
+export async function getStaticProps() {
+
+  const res = await axios.get("http://localhost:3000/api/getAllCars");
+  const data = await res.data;
+
+  return {
+    props: {
+      props : data
+    },
+  }
+}
+
+
+
+

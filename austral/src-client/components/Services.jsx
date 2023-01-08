@@ -5,7 +5,8 @@ import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 import Image from "next/image"
 import ServicesImg from "../assets/services.jpg"
-
+import Credent from "../assets/Credencial.svg"
+import Hexa from "../assets/hexBorder.svg"
 
 function Services () {
 
@@ -14,27 +15,29 @@ function Services () {
 
   return (
     <div className={styles.main}>
+      <div className={styles.header__img}>
+        <Image
+          src={ServicesImg}
+          alt="vista subjetiva de pasajero manejando"
+          width={1300}
+          height={400}
+          priority={true}
+          placeholder="blur"
+        />
+        <h1>{t.services}</h1>
+      </div>
 
-    <div className={styles.header__img}>
-      <Image src={ServicesImg} alt="vista subjetiva de pasajero manejando" width={1300} height={400} priority={true} placeholder="blur"/>
-      <h1>{t.services}</h1>
-    </div>
-
-      
-      
       <div className={styles.covers__container}>
         <h2>{t.covers}</h2>
         <p>{t.text1}</p>
         <p>{t.text2}</p>
         <p>{t.text3}</p>
       </div>
+      
+      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
 
-      
-      
-      
       <div>
         <div className={styles.services__container}>
-          
           <div className={styles.services__extra_container}>
             <h2>{t.extras}</h2>
             <ul>
@@ -47,16 +50,19 @@ function Services () {
           <div className={styles.services__require_container}>
             <h2>{t.required}</h2>
             <div>
-              {/* icono  */}
+              <div>
+                <Image src={Credent} alt="credencial" width={200} height={100}
+                />
+              </div>
+              <ul>
+                <li>{t.req1}</li>
+                <li>{t.req2}</li>
+                <li>{t.req3}</li>
+                <li>{t.req4}</li>
+              </ul>
             </div>
-            <ul>
-              <li>{t.req1}</li>
-              <li>{t.req2}</li>
-              <li>{t.req3}</li>
-              <li>{t.req4}</li>
-            </ul>
           </div>
-        
+            <Image src={Hexa} alt="hexagono2" width={100} height={100} />
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 
 import { useEffect, useState } from "react";
 import {useSelector, useDispatch} from "react-redux";
-import Image from 'next/image'
 import { useRouter } from "next/router";
+import axios from "axios";
+import Image from 'next/image'
 import { getCars, filterFleet, cleanFilter } from "../redux/slice/carsReducer"
 import fleetEs from "../../public/locale/ES/fleet.json"
 import fleetEn from "../../public/locale/EN/fleet.json"
@@ -19,27 +20,31 @@ import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
 import RedCar from "../assets/redcar.png"
 import Nissan from "../assets/nissan.png"
 
-function  Fleet () {
+function  Fleet (props) {
 
-  const fleet = useSelector(state => state.reducerCars.cars) 
+ const dispatch = useDispatch()
+ dispatch(getCars(props.props))
+
+ //const fleet = useSelector(state => state.reducerCars.cars) 
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
   
 
-  const dispatch = useDispatch()  
+
   const [select, setSelect] = useState("")
   const router = useRouter();
   const t = router.locale === "es" ? fleetEs : fleetEn;
   
-  useEffect(() => {
-    dispatch(getCars())
-    return dispatch(cleanFilter())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(getCars())
+  //   return dispatch(cleanFilter())
+  // }, [])
 
 
-  const currentFleet = fleetFiltred.length ? fleetFiltred : fleet
+  const currentFleet = fleetFiltred.length ? fleetFiltred : props.props
 
 
-  if(!fleet[0]) return <div className={styles.loading}>Loading ...</div>
+  //if(!fleet[0]) return <div className={styles.loading}>Loading ...</div>
+  //if(!props) return <div className={styles.loading}>Loading ...</div>
 
   const handleChange = ({target}) => {
     const {value} = target
@@ -99,7 +104,6 @@ function  Fleet () {
     </div>
   )
 }
-
 
 
 

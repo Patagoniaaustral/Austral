@@ -136,7 +136,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    scroll-behavior: smooth !important;
   }
 }
 
@@ -159,10 +159,20 @@ select {
 ::marker {
   color: var(--clr-primary);
   font-size: 1.5rem;
+  /* content: url(../src-client/assets/hex.svg);  */
 }
+
 
 :checked {
   color: white;
   background-color: var(--clr-primary);
 }
 
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
