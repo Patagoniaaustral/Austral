@@ -16,10 +16,12 @@ import LogoChe from  "../../src-client/assets/chevrolet-logo.png"
 import CarIcon1 from "../../src-client/assets/motor-ico.png"
 import CarIcon2 from "../../src-client/assets/car-ico.png"
 import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
+import RedCar from "../assets/redcar.png"
+import Nissan from "../assets/nissan.png"
 
 function  Fleet () {
-  const fleet = useSelector(state => state.reducerCars.cars)
- 
+
+  const fleet = useSelector(state => state.reducerCars.cars) 
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
   
 
@@ -70,19 +72,17 @@ function  Fleet () {
           
           <div>
               <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
-            <p>
-            {car.capacity} pasajeros</p> 
+              <p> {car.capacity} pasajeros</p> 
 
               <Image src={ CarIcon2} alt="icono de transmision" width="20" heigth="20"/>
-            <p>
-             {car.transmition}</p> 
+              <p>{car.transmition}</p> 
           
               <Image src={CarIcon1} alt="imagen de auto" width="20" heigth="20"/>
-            <p>
-            {car.motor}</p> 
+              <p>{car.motor}</p> 
           </div>
-        
-          {/* <Image>{car.image} */}
+
+          <Image src={RedCar} alt="imagen de auto" width={200} heigth={100}/>
+
         </div>
       )
     })}

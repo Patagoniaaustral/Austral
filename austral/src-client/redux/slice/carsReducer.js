@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import carsData from '../../controllers/carsdata.json'
 
 export const reducerCars = createSlice({
   name: "reducerCars",
   initialState: {
-    cars: [],
+    cars: [], 
     carsfiltred : []
   },
   reducers: {
@@ -24,17 +24,21 @@ export const reducerCars = createSlice({
 
 export const getCars = () => async (dispatch) => {
   try {
-    const { data } = await axios({
-      method: 'get',
-      url: '/api/getAllCars',
-    }); 
+    // const { data } = await axios({
+    //   method: 'get',
+    //   url: '/api/getAllCars',
+    // }); 
 
-   
+    const data = carsData;
+    console.log(data)
+ 
     dispatch(reducerCars.actions.getAllCars(data));
   } catch (error) {
     console.log(error)
   }
 };
+
+
 
 export const filterFleet = (category) => (dispatch) => {
   dispatch(reducerCars.actions.filterByCategory(category));
