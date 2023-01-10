@@ -24,16 +24,16 @@
 
 
 .header{
-    /* aspect-ratio: 16/9; */
     min-height: 20rem;
-    object-fit: cover;
-    object-position: center;
     margin: 0;
     z-index: 1;
     position: relative;
 }
 
 .header img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
     border-radius: 0 0 3em 3em;
 }
 

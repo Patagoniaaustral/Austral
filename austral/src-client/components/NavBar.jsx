@@ -43,32 +43,32 @@ export const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/" locale={router.locale} >
+            <Link href="/" >
               <span>{t.home}</span>
             </Link>
           </li>
           <li >
-            <Link href="/booking" locale={router.locale}>
+            <Link href="/booking" >
               <span>{t.booking}</span>
             </Link>
           </li>
           <li >
-            <Link href="/fleet" locale={router.locale} >
+            <Link href="/fleet"  >
               <span>{t.fleet}</span>
             </Link>
           </li>
           <li >
-            <Link href="/services" locale={router.locale}>
+            <Link href="/services" >
               <span >{t.services}</span>
             </Link>
           </li>
           <li >
-            <Link href="/contact" locale={router.locale} >
+            <Link href="/contact"  >
               <span>{t.contact}</span>
             </Link>
           </li>
           <li >
-            <select value= {router.locale} onChange={handleChange}>
+            <select onChange={handleChange}>
               <option value="es">ES</option>
               <option value ="en">EN</option>
             </select>

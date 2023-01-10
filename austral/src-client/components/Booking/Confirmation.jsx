@@ -5,6 +5,7 @@ import "react-datepicker/dist/react-datepicker.css"
 import confEs from "../../../public/locale/ES/confirmation.json"
 import confEn from "../../../public/locale/EN/confirmation.json"
 import styles from "../../../styles/Booking/Confirmation.module.css";
+import Link from 'next/link'
 
 
 
@@ -166,11 +167,13 @@ function Confirmation () {
         <textarea className={styles.user__message_input} name="message"></textarea>
         </label>
       </div>
+      
+      <input type="file" accept=".jpg , .png , .jpeg" name="image" required
+             />
 
-      <div className={styles.terms__container}>
-          <label for="terms">
-            <input type="checkbox" id="terms" name="terms" value="terms" />
-            {t.terms}</label>
+
+      <div className={styles.buttons__container}>
+          <Link href="/booking/checkout" ><button>VOLVER</button></Link>
           <button type="submit" onClick={handleSubmit}>{t.btn}</button> 
       </div>
       

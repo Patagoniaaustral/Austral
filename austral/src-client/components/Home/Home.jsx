@@ -22,9 +22,7 @@ function Home () {
       <motion.div initial={{x: -1000, opacity: 0}}
                     animate = {{x: 0, opacity: 1}} 
                     transition={{delay: 1, duration: 2, ease : "easeOut"}}
-                    onScroll={{opacity: 1}} 
-                    onScrollCapture={{opacity: 1}}
-                    layoutScroll={{opacity: 1}} >
+                     >
         <Image src={HomeRoute} alt="ruta hacia el horizonte" width={250} height={500} />
       </motion.div>
       <div>

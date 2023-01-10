@@ -26,9 +26,6 @@ function Experiences () {
         <motion.div initial={{x: 1000, opacity: 0}}
                     animate = {{x: 0, opacity: 1}} 
                     transition={{delay: 5, duration: 2, ease : "easeOut"}} 
-                    onScroll={{opacity: 1}} 
-                    onScrollCapture={{opacity: 1}}
-                    layoutScroll={{opacity: 1}} 
                     className={styles.image__container}>
           <Image src={Exp3} alt="exp1" width={400} height={300} />
         </motion.div>
@@ -39,9 +36,6 @@ function Experiences () {
         <motion.div initial={{x: 1000, opacity: 0}}
                     animate = {{x: 0, opacity: 1}} 
                     transition={{delay: 4, duration: 2, ease : "easeOut"}} 
-                    onScroll={{opacity: 1}} 
-                    onScrollCapture={{opacity: 1}} 
-                    layoutScroll={{opacity: 1}} 
                     className={styles.image__container} > 
           <Image src={Exp2} alt="exp2" width={400} height={300} />
         </motion.div>
@@ -52,9 +46,6 @@ function Experiences () {
         <motion.div initial={{x: 1000, opacity: 0}}
                     animate = {{x: 0, opacity: 1}} 
                     transition={{delay: 3, duration: 2, ease : "easeOut"}} 
-                    onScroll={{opacity: 1}} 
-                    onScrollCapture={{opacity: 1}}
-                    layoutScroll={{opacity: 1}} 
                     className={styles.image__container}>
           <Image src={Exp1} alt="exp3" width={400} height={300} />
         </motion.div>

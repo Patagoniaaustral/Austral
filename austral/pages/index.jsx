@@ -13,11 +13,7 @@ const inter = Inter ({
 
 export default function Home() {
   return (
-    <motion.div exit={{color : 'white'}} 
-                initial={{opacity: 0}}
-                animate={{opacity: 1}} 
-                transition={{duration: 0.5}
-                }>
+    <>
       <Head>
         <title>Austral </title>
         <meta charSet="utf-8" />
@@ -36,14 +32,17 @@ export default function Home() {
         <meta property="og:url" content="https://www.australrentacar.com.ar/" />
         <link rel="canonical" href="https://www.australrentacar.com.ar/" />
         <link rel="icon" href="/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-        <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/> */}
       </Head>
-      <main >
+      <motion.main exit={{color : 'white'}} 
+                initial={{opacity: 0}}
+                animate={{opacity: 1}} 
+                transition={{duration: 0.5}} >
         <HomePage />
-      </main>
-    </motion.div>
+      </motion.main>
+    </>
   );
 }
 

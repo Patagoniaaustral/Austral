@@ -7,7 +7,7 @@ import {AnimatePresence} from 'framer-motion'
 function App ({ Component, pageProps }) {
   return (
     <>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
       <Provider store={store}> 
         <Layout > 
           <Component {...pageProps} />
