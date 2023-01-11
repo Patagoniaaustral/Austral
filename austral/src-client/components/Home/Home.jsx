@@ -1,6 +1,6 @@
 import HomeBooking from "./HomeBooking"
 import Experiences  from "./Experiences"
-//import Slider from "./Slider"
+import Slider from "./Slider"
 import React, {useEffect} from 'react'
 import { useRouter } from "next/router";
 import {motion, useAnimation} from 'framer-motion'
