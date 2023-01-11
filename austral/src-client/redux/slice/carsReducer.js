@@ -22,7 +22,7 @@ export const reducerCars = createSlice({
 });
 
 
-export const getCars = (props) => async (dispatch) => {
+export const getCars = () => async (dispatch) => {
   try {
    
     const { data } = await axios({
