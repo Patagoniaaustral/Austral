@@ -97,7 +97,7 @@
 .services__container li {
     display: flex;
     flex-direction: row;
-    align-items:baseline;
+    align-items: baseline;
     gap: .7em;
     list-style: var(--clr-primary);
     margin: .7em 0;

@@ -15,26 +15,31 @@ function Home () {
   const router = useRouter();
   const t = router.locale === "es" ? homeEs : homeEn;
 
-  const { ref, inView, entries } = useInView({threshold: 0.2});
+  const { ref, inView} = useInView({threshold: 0.1}); 
   const animation = useAnimation()
+ 
 
   useEffect(() => {
     if(inView) {
+    animation.start({
+      x: 0,
+      opacity: 1,
+      transition :{
+        delay: 0.2,
+        duration: 2,
+        ease: "easeOut"
+
+      } 
+    })
+    } else {
       animation.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type:"string",
-          duration: 1, 
-          bounce: 0.3}
-      })
-    } 
-    if(!inView){
-      animation.start({
-        x: '-1000vw',
+        x: -1000,
+        opacity: 0,
+        transition :{
+          duration: 2,
+          ease: "easeOut" }
       })
     }
-    console.log(inView)
   }, [inView])
 
   return (

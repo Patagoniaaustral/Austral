@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useRouter } from "next/router";
-import {motion} from 'framer-motion'
+import {motion, useAnimationControls} from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
@@ -13,6 +14,63 @@ import Hexa from "../../assets/hexBorder.svg"
 function Experiences () {
   const router = useRouter();
   const t = router.locale === "es" ? homeEs : homeEn;
+
+  const controls1 = useAnimationControls()
+  const controls2 = useAnimationControls()
+  const controls3 = useAnimationControls()
+
+  const images = [
+    {
+      id: 1,
+      image: Exp3,
+      alt: "vista desde el hotel",
+      title: t.experience.esubtitle1,
+      controls : controls1
+    },
+    {
+      id: 2,
+      image: Exp2,
+      alt: "vista dese las montañas",
+      title: t.experience.esubtitle2,
+      controls : controls2
+    },
+    {
+      id: 3,
+      image: Exp1,
+      alt: "restaurant en la montaña",
+      title: t.experience.esubtitle3,
+      controls : controls3
+    }
+  ];
+  
+  const { ref, inView} = useInView({threshold: 0.1}); 
+
+  useEffect(() => {
+    if(inView) {
+      images.map((image, index) => {
+        image.controls.start({
+          x: 0,
+          opacity: 1,
+          transition :{
+            delay: index === 0 ? 0.2 : index === 1 ? 0.6 : 1,
+            duration: 2,
+            ease: "easeOut"
+          }
+        })
+      })
+    } else {
+      images.map((image) => {
+        image.controls.start({
+          x: 1000,
+          opacity: 0,
+          transition :{
+            duration: 2,
+            ease: "easeOut" }
+        })
+      })
+    }
+  }, [inView])
+ 
   return (
     <section className={styles.section__container}>
       <Image src={Hexa} alt="hexagono1" width={100} height={100} />
@@ -20,37 +78,15 @@ function Experiences () {
       <h2>{t.experience.etitle}</h2>
       <p>{t.experience.etext}</p>
 
-    <div className={styles.experience__container}>
-
-      <div className={styles.exp__card}>
-        <motion.div initial={{x: 1000, opacity: 0}}
-                    animate = {{x: 0, opacity: 1}} 
-                    transition={{delay: 5, duration: 2, ease : "easeOut"}} 
-                    className={styles.image__container}>
-          <Image src={Exp3} alt="exp1" width={400} height={300} />
-        </motion.div>
-          <p>{t.experience.esubtitle1}</p>
-      </div>
-
-      <div className={styles.exp__card}>
-        <motion.div initial={{x: 1000, opacity: 0}}
-                    animate = {{x: 0, opacity: 1}} 
-                    transition={{delay: 4, duration: 2, ease : "easeOut"}} 
-                    className={styles.image__container} > 
-          <Image src={Exp2} alt="exp2" width={400} height={300} />
-        </motion.div>
-          <p>{t.experience.esubtitle2}</p>
-      </div>
-
-      <div className={styles.exp__card}>
-        <motion.div initial={{x: 1000, opacity: 0}}
-                    animate = {{x: 0, opacity: 1}} 
-                    transition={{delay: 3, duration: 2, ease : "easeOut"}} 
-                    className={styles.image__container}>
-          <Image src={Exp1} alt="exp3" width={400} height={300} />
-        </motion.div>
-          <p>{t.experience.esubtitle3}</p>
-      </div>
+    <div  ref={ref} className={styles.experience__container}>
+      {images.map((image, index) => (
+        <div key={image.id} className={styles.exp__card}>
+          <motion.div animate={image.controls} className={styles.image__container}> 
+            <Image src={image.image} alt={image.alt} width={400} height={300} />
+          </motion.div>
+          <p>{image.title}</p>
+        </div>
+      ))}
     </div>
     </section>
   )
@@ -58,3 +94,6 @@ function Experiences () {
 
 
 export default Experiences;
+
+
+
