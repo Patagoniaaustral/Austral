@@ -23,7 +23,7 @@ import Nissan from "../assets/nissan.png"
 function  Fleet () {
 
  const dispatch = useDispatch()
- dispatch(getCars(props.props))
+ //dispatch(getCars(props.props))
 
  const fleet = useSelector(state => state.reducerCars.cars) 
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
