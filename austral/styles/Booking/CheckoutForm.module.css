@@ -50,7 +50,7 @@
 /* --------------------DIV DE LA RESERVA------------------- */
 
 .rent__container{
-    background-color: white;
+    background-color: var(--clr-white);
     border-radius: 3em;
     box-shadow: var(--box-shadow);
     padding: 1em 4em 6em;
@@ -90,7 +90,7 @@
     border-radius: var(--border-radius);
     padding: 0 1rem;
     font-size: 1rem;
-    border: var(--border);
+    border: 1px solid var(--clr-gray);
     -webkit-appearance: none;
     background-color: var(--clr-white);
     margin: 1em 0;
@@ -102,18 +102,18 @@
 } 
 
 .rent__container button{
-    background-color: white;
-    color: gray;
+    background-color: var(--clr-white);
+    color: var(--clr-dark-gray);
     border: none;
     cursor: pointer;
     margin-left: 1.5em;
+    padding: .5em 1em;
 }
 
 .rent__container button:hover{
-    color: var(--clr-primary);
     background-color: var(--clr-gray);
+    color: var(--clr-primary);
     border-radius: 2em;
-    padding: .5em 1em;
 }
 
 
@@ -162,7 +162,7 @@
 
 .condition__terms button{
     background-color: var(--clr-primary);
-    color: white;
+    color: var(--clr-white);
     border: none;
     border-radius: .8em;
     padding: .8em 1em;
@@ -174,7 +174,7 @@
 
 .condition__terms button:is(:hover, :focus){
     background-color: var(--clr-gray);
-    color: black;
+    color: var(--clr-black);
 }
 
 

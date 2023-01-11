@@ -75,13 +75,13 @@
     padding: .5em;
     border-radius: 50%;
     margin: 0 .6em;
-    background-color: white;
+    background-color: var(--clr-white);
     position: relative;
 }
 
 .slider__btn:is(:focus, :hover){
     background-color: var(--clr-gray);
-    border: 2px solid gray;
+    border: 2px solid var(--clr-dark-gray);
 }
 
 .image__container{
@@ -98,7 +98,7 @@
 
 
 .btn{
-    color: white;
+    color: var(--clr-white);
     background-color: var(--clr-primary);
     border: none;
     border-radius: 3em;
@@ -107,7 +107,7 @@
 
 .btn:is(:focus, :hover){
     background-color: var(--clr-gray);
-    color:  #0D0D0D; 
+    color: var(--clr-black);
 }
 
 

@@ -11,6 +11,10 @@ a {
   --clr-medium-beige: #E4D2B6; 
   --clr-bkg-gray: #F5F5F5;
   --clr-gray : #D1D1D1;
+  --clr-white: white;
+  --clr-black: #0D0D0D;
+  --clr-dark-gray : gray;
+  --clr-border: #ccc;
   
   /* font-sizes */
     /* font-size: 62.5%; */
@@ -33,7 +37,7 @@ a {
   --border-radius-input: 1rem;
   --border-radius-btn: 1rem;
   --border-radius-div: 1rem;
-  --border: 1px solid #ccc;
+  --border: 1px solid var(--border);
 }
 
 @media (min-width: 35em) {
@@ -159,13 +163,12 @@ select {
 ::marker {
   color: var(--clr-primary);
   font-size: 1.5rem;
-  /* content: url(../src-client/assets/hex.svg);  */
+  content: "";
 }
 
 
 :checked {
-  color: white;
-  background-color: var(--clr-primary);
+ color: var(--clr-primary);
 }
 
 
@@ -176,3 +179,4 @@ header {
   width: 100%;
   z-index: 999;
 }
+

@@ -1,10 +1,9 @@
  .nav__container{
-    color : black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--box-shadow);
-    background-color: white;
+    background-color: var(--clr-white);
    padding: 1em;
  }
 

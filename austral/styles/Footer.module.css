@@ -1,6 +1,6 @@
 .footer__container{
     background-color: var(--clr-primary);
-    color : white;
+    color : var(--clr-white);
     padding: 2em 0;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,10 @@
     margin-bottom: 2em;
 }
 
-.footer__container a :is(:focus, :hover){
-    color: var(--clr-gray);
+.footer__container a p:is(:focus, :hover){
+    color: var(--clr-dark-gray);
+    background-color: var(--clr-white);
+    width: fit-content;
 }
 
 .footer__first_row{
@@ -66,7 +68,7 @@
 
 .footer__second_row button:is(:focus,:hover){
     background-color: var(--clr-gray);
-    color:  #0D0D0D; 
+    color:  var(--clr-black);
 }
 
 

@@ -1,7 +1,10 @@
 {
     "services" : "Servicios",
     "covers" : "COBERTURAS",
-    "text1" : "Los autos cuentan con seguro con franquiciado  cuyo monto varía según la categoría del auto. La franquicia se refiere al monto máximo por el cual el cliente debe responder ante un potencial daño en el vehículo alquilado.",
+    "text1a" : "Los autos cuentan con",
+    "text1span1" : "seguro con franquicia",
+    "text1b" : "cuyo monto varía según la categoría del auto. La franquicia se refiere al",
+    "text1span2" : "monto máximo por el cual el cliente debe responder ante un potencial daño en el vehículo alquilado.",
     "text2" : "Por ejemplo, si se abona una franquicia de $5000 y el auto sufío un daño por un monto mayor, lo máximo que debo abonar es $5000.",
     "text3" : "Es muy importante al momento de alquilar saber el monto de la franquicia, dado que eso le da al cliente la tranquilidad  de saber el monto máximo que deberá abonar si se produce un año.",
     "extras" : "ADICIONALES",

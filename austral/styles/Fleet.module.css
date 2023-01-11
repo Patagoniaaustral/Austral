@@ -38,7 +38,7 @@
 }
 
 .header h1 {
-    color: #fff;
+    color: var(--clr-white);
     z-index: 2;
     position: absolute;
     top: 70%;
@@ -76,7 +76,7 @@
     max-width: 20em;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--clr-white);
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 2em 3em;

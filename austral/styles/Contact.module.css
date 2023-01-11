@@ -67,14 +67,14 @@
 }
 
 .form__container input{
-    border: 1px solid #ccc;
+    border:  var(--border);
     border-radius: 25px;
     padding-left: 1em;
     margin-bottom: 1em;
 }
 
 .form__container textarea{
-    border: 1px solid #ccc;
+    border: var(--border);
     border-radius: 25px;
     resize: none;
     height: 9em;
@@ -93,7 +93,7 @@
 
 .form__container button:is(:focus, :hover){
     background-color: var(--clr-gray);
-    color:  #0D0D0D; 
+    color:  var(--clr-black);
 }
 
 .form__container p {

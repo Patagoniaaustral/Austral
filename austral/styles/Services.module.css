@@ -25,7 +25,7 @@
 
 
 .header__img h1 {
-    color: #fff;
+    color: var(--clr-white);
     z-index: 2;
     position: absolute;
     top: 60%;
@@ -42,7 +42,7 @@
     /* padding: 3em; */
     padding: max(3em, 3vw);
     margin: 5em 1em;
-    background-color: #fff;
+    background-color: var(--clr-white);
     width: clamp(400px, 80%, 1200px);
     
 }
@@ -51,6 +51,9 @@
     margin: 1em 0;
 }
 
+.covers__container span {
+    color: var(--clr-primary);
+}
 
 /* ------------------- 2 DIVS EXTRA & REQUEST --------- */
 
@@ -77,7 +80,7 @@
 
 
 .services__require_container{
-    background-color: #fff;
+    background-color: var(--clr-white);
 }
 
 .services__require_container > div {
@@ -92,6 +95,10 @@
 }
 
 .services__container li {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    gap: .7em;
     list-style: var(--clr-primary);
     margin: .7em 0;
 }

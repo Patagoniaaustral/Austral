@@ -64,26 +64,19 @@ const handleSubmit = async(e) => {
 
         <div>
           <h2>{t.contact}</h2>
-          <p>
-            <a href="mailto:info@australrentacar.ar">info@australrentacar.ar</a>
-          </p>
+     
+            <Link href="mailto:info@australrentacar.ar"><p>info@australrentacar.ar</p></Link>
           <Link
             href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0"
-            target={"_blank"}
-          >
+            target={"_blank"}>
             <p>+549 294 424 2615</p>
           </Link>
         </div>
 
         <div>
           <h2>{t.service}</h2>
-
-          <p>
-            <Link href="/fleet">{t.fleet}</Link>
-          </p>
-          <p>
-            <Link href="/booking">{t.booking}</Link>
-          </p>
+            <Link href="/fleet"><p>{t.fleet}</p></Link>
+            <Link href="/booking"><p>{t.booking}</p></Link>
         </div>
       </div>
 

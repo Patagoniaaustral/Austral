@@ -1,7 +1,10 @@
 {
     "services" : "Services",
     "covers" : "COVERAGE",
-    "text1" : "The cars have a franchise whose amount varies according to the category of the car. The franchise refers to the maximum amount for which the customer must answer for a potential damage to the rented vehicle.",
+    "text1a" : "The cars have a",
+    "text1span1" : "franchise", 
+    "text1b" : "whose amount varies according to the category of the car. The franchise refers to",
+    "text1span2" : "the maximum amount for which the customer must answer for a potential damage to the rented vehicle.",
     "text2" : "For example, if a $5000 franchise is paid and the car is worth more damage, the maximum I must pay is $5000.",
     "text3" : "It is very important when renting to know the amount of the franchise, since that gives the customer the peace of mind to know the maximum amount that will have to pay if a year occurs.",
     "extras" : "EXTRAS",

@@ -9,32 +9,32 @@ import RedCar from "../../assets/redcar.png"
 import Nissan from "../../assets/nissan.png"
 import Hexa from "../../assets/hexBorder.svg"
 import styles from "../../../styles/Home/Slider.module.css"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion} from "framer-motion"
 
 function Slider () {
   const router = useRouter();
   const t = router.locale === "es" ? homeEs : homeEn;
 
 
+
   const images = ["/redcar.png", "/nissan.png" ]
   const [index, setIndex] = useState(0)
 
+
   const prev = () => {
     setIndex(0)
-    console.log("auto rojo")
   }
 
 
   const next = () => {
     setIndex(1)
-    console.log("nissan")
   }
 
 
   return (
     <section className={styles.section__container}>
-      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
-      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
+      <Image src={Hexa} alt="hexagono1" width={100} height={100} priority />
+      <Image src={Hexa} alt="hexagono1" width={100} height={100} priority/>
      
       <div className={styles.general__container}>
         <div className={styles.row__container}>
@@ -48,6 +48,8 @@ function Slider () {
           <motion.div
             className={styles.image__container}
             initial={{ x: 1000, opacity: 0 }}
+            whileInView={"onscreen"}
+            viewport = {{once:false, amount: 1}}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
            
@@ -57,11 +59,13 @@ function Slider () {
         </div>
 
           <div>
-            <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />
+            <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} priority />
+      
+         
           </div>
             <div className={styles.slider__btns}>
-              <button onClick={prev}>{""}</button>
-              <button onClick={next}>{''}</button>
+              <button onClick={prev}></button>
+              <button onClick={next}></button>
             </div>
           </div>
           

@@ -7,6 +7,7 @@ import Image from "next/image"
 import ServicesImg from "../assets/services.jpg"
 import Credent from "../assets/Credencial.svg"
 import Hexa from "../assets/hexBorder.svg"
+import HexaIco from "../assets/hex.svg"
 
 function Services () {
 
@@ -29,7 +30,7 @@ function Services () {
 
       <div className={styles.covers__container}>
         <h2>{t.covers}</h2>
-        <p>{t.text1}</p>
+        <p>{t.text1a}<span> {t.text1span1}</span> {t.text1b}<span> {t.text1span2}</span></p>
         <p>{t.text2}</p>
         <p>{t.text3}</p>
       </div>
@@ -41,9 +42,9 @@ function Services () {
           <div className={styles.services__extra_container}>
             <h2>{t.extras}</h2>
             <ul>
-              <li>{t.extra1}</li>
-              <li>{t.extra2}</li>
-              <li>{t.extra3}</li>
+              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra1}</li>
+              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra2}</li>
+              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra3}</li>
             </ul>
           </div>
 
@@ -55,10 +56,10 @@ function Services () {
                 />
               </div>
               <ul>
-                <li>{t.req1}</li>
-                <li>{t.req2}</li>
-                <li>{t.req3}</li>
-                <li>{t.req4}</li>
+                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req1}</li>
+                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req2}</li>
+                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req3}</li>
+                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req4}</li>
               </ul>
             </div>
           </div>

@@ -83,7 +83,7 @@ function HomeBooking () {
 
     <div className={styles.header__img}>
      <h1>{t.title1}<br/>{t.title2}</h1>
-      <Image src ={HomeMain} alt="" width={1500} height={500} priority={true} />
+      <Image src ={HomeMain} alt="" width={1500} height={500} priority/>
     </div>
       <Image className={styles.hexa} src={Hexa} alt="hexagono1" width={100} height={100} />
 

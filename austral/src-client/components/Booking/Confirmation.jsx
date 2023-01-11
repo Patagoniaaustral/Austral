@@ -173,8 +173,8 @@ function Confirmation () {
 
 
       <div className={styles.buttons__container}>
-          <Link href="/booking/checkout" ><button>VOLVER</button></Link>
-          <button type="submit" onClick={handleSubmit}>{t.btn}</button> 
+          <Link href="/booking/checkout" >VOLVER</Link>
+          <button  type="submit" onClick={handleSubmit}>{t.btn}</button> 
       </div>
       
           
