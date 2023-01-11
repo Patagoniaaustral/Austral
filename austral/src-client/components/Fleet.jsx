@@ -73,11 +73,11 @@ function  Fleet (props) {
       return (
         <div className={styles.fleet__grid_card} key={car.id}>
           <h2>{car.brand} {car.model}</h2>
-          <p>CATEGORIA {car.category}</p>
+          <p>{t.catego} {car.category}</p>
           
           <div>
               <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
-              <p> {car.capacity} pasajeros</p> 
+              <p> {car.capacity} {t.passengers}</p> 
 
               <Image src={ CarIcon2} alt="icono de transmision" width="20" heigth="20"/>
               <p>{car.transmition}</p> 

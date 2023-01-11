@@ -112,10 +112,8 @@
 }
 
 
-
-/* @media(min-width:25rem){
-    .brands__container{
-        display: flex;
-        flex-direction: column;
+@media(max-width: 756px){
+    .main{
+        padding: 0 1rem 2em ;
     }
-} */
+} 

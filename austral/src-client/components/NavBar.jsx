@@ -13,11 +13,11 @@ export const NavBar = () => {
   const t = router.locale === "es" ? navEs : navEn;
 
   //FOR RESPONSIVE NAV MENU
-  // const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   
-  // const handleNavToggle = () => {
-  //   setIsActive((current) => !current);
-  // };
+  const handleNavToggle = () => {
+    setIsActive((current) => !current);
+  };
 
   const handleChange = ({target})=> {  
     const {value} = target
@@ -31,16 +31,16 @@ export const NavBar = () => {
       
       <Link href="/"><Image src={LogoNavBar} alt="" width={180} height={30} /></Link>
           
-        {/* <button
+        <button
            onClick={handleNavToggle}
            className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle}
            aria-label="toggle navigation"
       >
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
-      </button> */}
+      </button>
 
-      {/* <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}> */}
-      <nav>
+      <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}>
+      {/* <nav> */}
         <ul>
           <li>
             <Link href="/" >

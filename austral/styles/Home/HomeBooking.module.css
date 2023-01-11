@@ -112,6 +112,9 @@
 }
 
 @media(max-width : 726px){
+    .section__container{
+        padding: 0 1em;
+    }
     .booking__all_container{
         display: flex;
         flex-direction: column;

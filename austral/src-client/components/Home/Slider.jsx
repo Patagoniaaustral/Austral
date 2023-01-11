@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import HomeCar from "../../assets/home3.jpg"
-//import RedCar from "../../assets/redcar.png"
-//import Nissan from "../../assets/nissan.png"
 import Hexa from "../../assets/hexBorder.svg"
 import styles from "../../../styles/Home/Slider.module.css"
 import { motion, useAnimation} from "framer-motion"

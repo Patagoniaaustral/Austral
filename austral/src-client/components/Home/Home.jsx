@@ -1,6 +1,6 @@
 import HomeBooking from "./HomeBooking"
 import Experiences  from "./Experiences"
-import Slider from "./Slider"
+//import Slider from "./Slider"
 import React, {useEffect} from 'react'
 import { useRouter } from "next/router";
 import {motion, useAnimation} from 'framer-motion'
@@ -45,7 +45,7 @@ function Home () {
   return (
     <div className={styles.main} >
      <HomeBooking/>
-     <Slider/>
+     {/* <Slider/> */}
      <section ref={ref} className={styles.section__container}>  
     
       <motion.div animate={animation} className={styles.image__container}>

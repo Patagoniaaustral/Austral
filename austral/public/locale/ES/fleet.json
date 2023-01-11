@@ -10,6 +10,7 @@
             "e" : "Categoría E",
             "f" : "Categoría F"
         }
-    }
-
+    },
+    "catego" : "CATEGORÍA",
+    "passengers" : "pasajeros"
 }
