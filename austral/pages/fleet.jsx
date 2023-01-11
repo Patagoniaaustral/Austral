@@ -5,7 +5,7 @@ import axios from "axios";
 import {motion} from "framer-motion"
 
 
-export default function fleet({props}) {
+export default function fleet() {
   return (
     <>
      <Head>
@@ -26,17 +26,17 @@ export default function fleet({props}) {
   );
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
-  const res = await axios.get("http://localhost:3000/api/getAllCars");
-  const data = await res.data;
+//   const res = await axios.get("http://localhost:3000/api/getAllCars");
+//   const data = await res.data;
 
-  return {
-    props: {
-      props : data
-    },
-  }
-}
+//   return {
+//     props: {
+//       props : data
+//     },
+//   }
+// }
 
 
 

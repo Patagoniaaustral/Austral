@@ -25,15 +25,15 @@ export const reducerCars = createSlice({
 export const getCars = (props) => async (dispatch) => {
   try {
    
-    // const { data } = await axios({
-    //   method: 'get',
-    //   url: '/api/getAllCars',
-    // }); 
+    const { data } = await axios({
+      method: 'get',
+      url: '/api/getAllCars',
+    }); 
 
-   // const data = carsData;
+   //const data = carsData;
 
  
-    dispatch(reducerCars.actions.getAllCars(props));
+    dispatch(reducerCars.actions.getAllCars(data));
   } catch (error) {
     console.log(error)
   }

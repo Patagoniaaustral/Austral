@@ -20,12 +20,12 @@ import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
 import RedCar from "../assets/redcar.png"
 import Nissan from "../assets/nissan.png"
 
-function  Fleet (props) {
+function  Fleet () {
 
  const dispatch = useDispatch()
  dispatch(getCars(props.props))
 
- //const fleet = useSelector(state => state.reducerCars.cars) 
+ const fleet = useSelector(state => state.reducerCars.cars) 
   const fleetFiltred = useSelector(state => state.reducerCars.carsfiltred)
   
 
@@ -34,16 +34,16 @@ function  Fleet (props) {
   const router = useRouter();
   const t = router.locale === "es" ? fleetEs : fleetEn;
   
-  // useEffect(() => {
-  //   dispatch(getCars())
-  //   return dispatch(cleanFilter())
-  // }, [])
+  useEffect(() => {
+    dispatch(getCars())
+    return dispatch(cleanFilter())
+  }, [])
 
 
-  const currentFleet = fleetFiltred.length ? fleetFiltred : props.props
+  const currentFleet = fleetFiltred.length ? fleetFiltred : fleet;
 
 
-  //if(!fleet[0]) return <div className={styles.loading}>Loading ...</div>
+  if(!fleet[0]) return <div className={styles.loading}>Loading ...</div>
   //if(!props) return <div className={styles.loading}>Loading ...</div>
 
   const handleChange = ({target}) => {
