@@ -6,7 +6,7 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import HomeCar from "../../assets/home3.jpg"
 import Hexa from "../../assets/hexBorder.svg"
-//import styles from "../../../styles/Home/Slider.module.css"
+import styles from "../../../styles/Home/Slider.module.css"
 import { motion, useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 
@@ -53,29 +53,29 @@ function Slider () {
   const [index, setIndex] = useState(0)
 
   return (
-    <section >
+    <section className={styles.section__container}>
       <Image src={Hexa} alt="hexagono1" width={100} height={100}/>
       <Image src={Hexa} alt="hexagono1" width={100} height={100} />
-      <div >
-        <div ref={ref} >
-          <div >
+      <div className={styles.general__container}>
+        <div ref={ref} className={styles.row__container}>
+          <div className={styles.info__container}>
             <h2>{t.sliderfleet.ftitle}</h2>
             <p>{t.sliderfleet.ftext}</p>
             <Link href="/fleet">
-              <button >{t.sliderfleet.fbtn}</button>
+              <button className={styles.btn}>{t.sliderfleet.fbtn}</button>
             </Link>
           </div>
-          <motion.div  animate={animation}>
+          <motion.div className={styles.image__container} animate={animation}>
             <Image src={HomeCar} alt="" width={1300} height={400} />
           </motion.div>
         </div>
-          <div>
-             <Image  src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
+          {/* <div>
+             <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
           </div>
-            <div >
+            <div className={styles.slider__btns}>
               <button onClick={prev}></button>
               <button onClick={next}></button>
-            </div>
+            </div> */}
           </div>
     </section>
   );
