@@ -131,10 +131,10 @@ function CheckoutForm () {
         </ul>
 
         <div className={styles.condition__terms}>
-          <label for="terms">
+          <label htmlFor="terms">
             <input type="checkbox" id="terms" name="terms" value="terms" />
             {t.terms}
-            <Link href="#id" scrollIntoView>
+            <Link href="#id">
               {" "}
               {t.read}{" "}
             </Link>

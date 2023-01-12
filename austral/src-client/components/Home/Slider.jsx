@@ -6,7 +6,7 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import HomeCar from "../../assets/home3.jpg"
 import Hexa from "../../assets/hexBorder.svg"
-import styles from "../../styles/Home/Slider.module.css"
+//import styles from "../../../styles/Home/Slider.module.css"
 import { motion, useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 
@@ -16,16 +16,6 @@ function Slider () {
 
   const { ref, inView} = useInView({threshold: 0.1}); 
   const animation = useAnimation()
-
-  const prev = (id) => {
-      setIndex(0)
-  }
-
-  const next = (id) => {
-      setIndex(1)
- 
-  }
-
   
   useEffect(() => {
     if(inView) {
@@ -73,8 +63,8 @@ function Slider () {
              <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
           </div>
             <div className={styles.slider__btns}>
-              <button onClick={prev}></button>
-              <button onClick={next}></button>
+              <button onClick={()=> setIndex(0)}></button>
+              <button onClick={()=> setIndex(1)}></button>
             </div>
           </div>
     </section>

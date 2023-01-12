@@ -1,15 +1,15 @@
-import HomeBooking from "./HomeBooking"
-import Experiences  from "./Experiences"
-import Slider from "./Slider"
 import React, {useEffect} from 'react'
 import { useRouter } from "next/router";
-import {motion, useAnimation} from 'framer-motion'
-import homeEs from "../../../public/locale/ES/home.json"
-import homeEn from "../../../public/locale/EN/home.json"
 import Image from 'next/image'
-import HomeRoute from '../../assets/home4.jpg'
-import styles from "../../../styles/Home/Home.module.css"
+import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import HomeBooking from "./Home/HomeBooking"
+import Experiences  from "./Home/Experiences"
+import Slider from "./Home/Slider"
+import homeEs from "../../public/locale/ES/home.json"
+import homeEn from "../../public/locale/EN/home.json"
+import HomeRoute from '../assets/home4.jpg'
+import styles from "../../styles/Home/Home.module.css"
 
 function Home () {
   const router = useRouter();
@@ -45,7 +45,7 @@ function Home () {
   return (
     <div className={styles.main} >
      <HomeBooking/>
-     <Slider/>
+     {/* <Slider/> */}
 
 
      <section ref={ref} className={styles.section__container}>  

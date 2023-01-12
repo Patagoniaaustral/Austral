@@ -66,7 +66,7 @@ function HomeBooking () {
     // hacer un get y filter en redux con estos parametros
      
     router.push({ 
-      pathname: '/booking/checkout',
+      pathname: '/booking',
   //     query: { 
   //       pickUpDate: pickUpDate,
   //       returnDate: returnDate,
