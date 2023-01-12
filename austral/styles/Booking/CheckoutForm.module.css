@@ -6,6 +6,7 @@
     min-height: 100vh;
     background-image: url(../../src-client/assets/trama.svg);
     background-size: 100%;
+    padding:1em 8em;
 }
 
 
@@ -20,9 +21,9 @@
 /* ------------------------- DIV DE INFO FRANQUISIA ---------------- */
 
 .features__container{
-    max-width: 55em;
-    min-height: auto;
-    padding: 1em 4em 9em;
+    /* min-height: auto; */
+    /* max-width: 55em; */
+    /* padding: 1em 4em 9em; */
     background-color: var(--clr-secondary);
     border-radius: 3em 3em 0 0;
     box-shadow: var(--box-shadow);
@@ -53,11 +54,11 @@
     background-color: var(--clr-white);
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-    padding: 1em 4em 6em;
     z-index: 2;
     position: absolute;
     top: 43em;
-    width: 58%;
+    /* padding: 1em 4em 6em;
+    width: 58%; */
 }
 
 .rent__container h4{
@@ -130,8 +131,8 @@
     background-color: var(--clr-secondary);
     border-radius: 0 0 3em 3em;
     box-shadow: var(--box-shadow);
-    width: 55em;
-    padding: 4em 3em 1em;
+    /* width: 55em;
+    padding: 4em 3em 1em; */
 
   
 }
@@ -149,6 +150,7 @@
     height: 1.5em;
     margin-right: 1em;
     cursor: pointer;
+    accent-color: var(--clr-gray);
 }
 
 .conditions__container li {
@@ -180,3 +182,30 @@
 
 
 /* --------------------- MEDIA QUERIES ------------------------ */
+
+
+@media(max-width: 726px){
+    .main{
+        padding: 1em;
+    }
+
+    .features__container{
+        padding: 1em 1em 12em;
+    }
+
+    .rent__container{
+        position: absolute;
+        top: 36%;
+        width: 95%;
+        padding: 2em 1em;
+    }
+
+    .rent__picker{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conditions__container{
+        padding: 4em 1em 0;
+    }
+}
