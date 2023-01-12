@@ -21,9 +21,7 @@
 /* ------------------------- DIV DE INFO FRANQUISIA ---------------- */
 
 .features__container{
-    /* min-height: auto; */
-    /* max-width: 55em; */
-    /* padding: 1em 4em 9em; */
+    padding: 1em 4em 9em;
     background-color: var(--clr-secondary);
     border-radius: 3em 3em 0 0;
     box-shadow: var(--box-shadow);
@@ -56,9 +54,8 @@
     box-shadow: var(--box-shadow);
     z-index: 2;
     position: absolute;
-    top: 43em;
-    /* padding: 1em 4em 6em;
-    width: 58%; */
+    top: 35%;
+    padding: 1em 5em 6em;
 }
 
 .rent__container h4{
@@ -131,10 +128,7 @@
     background-color: var(--clr-secondary);
     border-radius: 0 0 3em 3em;
     box-shadow: var(--box-shadow);
-    /* width: 55em;
-    padding: 4em 3em 1em; */
-
-  
+    padding: 4em 3em 1em;
 }
 
 .condition__terms{
