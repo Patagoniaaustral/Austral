@@ -69,13 +69,13 @@ function Slider () {
             <Image src={HomeCar} alt="" width={1300} height={400} />
           </motion.div>
         </div>
-          {/* <div>
+          <div>
              <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
           </div>
             <div className={styles.slider__btns}>
               <button onClick={prev}></button>
               <button onClick={next}></button>
-            </div> */}
+            </div>
           </div>
     </section>
   );
