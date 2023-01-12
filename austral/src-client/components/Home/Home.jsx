@@ -46,11 +46,13 @@ function Home () {
     <div className={styles.main} >
      <HomeBooking/>
      {/* <Slider/> */}
+
+
      <section ref={ref} className={styles.section__container}>  
     
-      <motion.div animate={animation} className={styles.image__container}>
+      {/* <motion.div animate={animation} className={styles.image__container}>
         <Image src={HomeRoute} alt="ruta hacia el horizonte" width={250} height={500} />
-      </motion.div>
+      </motion.div> */}
      
       <div>
         <h2>{t.about.atitle}</h2>
