@@ -53,26 +53,26 @@ function Slider () {
   const [index, setIndex] = useState(0)
 
   return (
-    <section className={styles.section__container}>
+    <section >
       <Image src={Hexa} alt="hexagono1" width={100} height={100}/>
       <Image src={Hexa} alt="hexagono1" width={100} height={100} />
-      <div className={styles.general__container}>
-        <div ref={ref} className={styles.row__container}>
-          <div className={styles.info__container}>
+      <div >
+        <div ref={ref} >
+          <div >
             <h2>{t.sliderfleet.ftitle}</h2>
             <p>{t.sliderfleet.ftext}</p>
             <Link href="/fleet">
-              <button className={styles.btn}>{t.sliderfleet.fbtn}</button>
+              <button >{t.sliderfleet.fbtn}</button>
             </Link>
           </div>
-          <motion.div className={styles.image__container} animate={animation}>
+          <motion.div  animate={animation}>
             <Image src={HomeCar} alt="" width={1300} height={400} />
           </motion.div>
         </div>
           <div>
-             <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
+             <Image  src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
           </div>
-            <div className={styles.slider__btns}>
+            <div >
               <button onClick={prev}></button>
               <button onClick={next}></button>
             </div>
