@@ -22,12 +22,12 @@ function Services () {
           alt="vista subjetiva de pasajero manejando"
           width={1300}
           height={400}
-          priority={true}
-          placeholder="blur"
+          priority
         />
         <h1>{t.services}</h1>
       </div>
 
+      <div className={styles.general__container}>
       <div className={styles.covers__container}>
         <h2>{t.covers}</h2>
         <p>{t.text1a}<span> {t.text1span1}</span> {t.text1b}<span> {t.text1span2}</span></p>
@@ -37,7 +37,6 @@ function Services () {
       
       <Image src={Hexa} alt="hexagono1" width={100} height={100} />
 
-      <div>
         <div className={styles.services__container}>
           <div className={styles.services__extra_container}>
             <h2>{t.extras}</h2>

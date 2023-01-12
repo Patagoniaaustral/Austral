@@ -36,6 +36,7 @@
 .row__container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     gap: 2em;
@@ -111,3 +112,31 @@
 }
 
 
+@media(max-width: 726px){
+    .general__container{
+      padding: 1em 0;
+    }
+
+    .row__container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .info__container{
+        width: 100%;
+    }
+
+    .image__container{
+        width:100%;
+    }
+
+    .slider__image{
+        width: 300px;
+        height: 200px;
+        top:71%;
+        left: 23%;
+    }
+}

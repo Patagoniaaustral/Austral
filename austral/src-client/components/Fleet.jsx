@@ -56,7 +56,7 @@ function  Fleet () {
     <div className={styles.main}>
 
     <div className={styles.header}>
-      <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} priority={true}/>
+      <Image src={FleetImg} alt="auto alumbrado por una puesta de sol" width={1300} height={500} priority/>
       <h1>{t.fleet}</h1>
       <select name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>

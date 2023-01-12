@@ -61,15 +61,15 @@
 }
 
 .image__container{
-    object-fit: cover;
-    object-position: center;
     width: 100%;
     height: 100%;
     margin: 0;
 }
 
 .image__container img {
-   border-radius: 1em;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1em;
 }
 
 @media(max-width: 55em){
@@ -77,4 +77,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    .image__container img{
+        width: 100%;
+        height: 100%;
+    }
+  
 }
