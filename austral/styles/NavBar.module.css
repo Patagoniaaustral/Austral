@@ -9,7 +9,8 @@
 
 
  .nav__container img {
-   margin-left: clamp(.1em, 9vw, 12em);
+    object-fit: contain;
+    margin-left: clamp(.1em, 9vw, 12em);
  }
 
  .nav__container ul{
@@ -39,6 +40,9 @@
 
  @media(max-width: 768px){
 
+    .nav__container img {
+      margin-left: .1em;
+    }
    
    .nav__container ul{
      display: flex;

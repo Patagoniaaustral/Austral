@@ -111,7 +111,7 @@
     margin: .7em 0;
 }
 
-.main > img{
+.general__container > img{
     position: absolute;
     z-index: 2;
     top : 68%;
@@ -138,12 +138,12 @@
     .covers__container{
         margin: auto;
     }
- 
+    
     .services__container{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 4em;
-        padding: 0;
+        gap: 2em;
+        padding: 2em 0;
     }
 
     .services__require_container > div {
@@ -155,6 +155,14 @@
         object-fit: scale-down;
         width: 100%;
         height: 100%;
+    }
+
+    .services__container > img {
+        display: none;
+    }
+
+    .general__container > img{
+        display: none;
     }
 }
 

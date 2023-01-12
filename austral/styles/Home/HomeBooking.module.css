@@ -52,8 +52,8 @@
     position: absolute;
     width: 30%;
     top:33%;
-    left: min(15%, 12%);
-    font-size: clamp(1rem, 6vw, 4rem);
+    left: min(15%, 10%);
+    font-size: clamp(1rem, 4vw, 4rem);
     line-height: 1;
 }
 
@@ -128,25 +128,15 @@
         flex-direction: column;
         gap : .5rem;
     }
+
     .booking__selects_container{
         display: flex;
         flex-direction: column;
         gap : .5rem;
     }
-    .select{
-        padding: .4em;
-    }
 
-    .search__btn{
-        background-color: var(--clr-primary);
-        color :var(--clr-white);
-        padding: .2em 2em;
-        border-radius: var(--border-radius);
-        border: none;
-    }
-    
-    .section__container div:has(h2){
-        left: 15%;
+    .select{
+        padding: .4em 1em;
     }
 
     .header__img img {
@@ -156,7 +146,13 @@
     }
 
     .header__img h1 {
-        top: 12%;
+        width: 100%;
+        font-size: 1.5rem;
+        top: 13%;
+    }
+
+    .hexa{
+        display: none;
     }
 
 }
