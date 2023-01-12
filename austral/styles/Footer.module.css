@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     gap: 3em;
-    margin-bottom: 2em;
 }
 
 .footer__container a p:is(:focus, :hover){

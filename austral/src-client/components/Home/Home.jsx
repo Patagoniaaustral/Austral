@@ -45,7 +45,7 @@ function Home () {
   return (
     <div className={styles.main} >
      <HomeBooking/>
-     <Slider/>
+     {/* <Slider/> */}
      <section ref={ref} className={styles.section__container}>  
     
       <motion.div animate={animation} className={styles.image__container}>
@@ -62,7 +62,7 @@ function Home () {
         </ div>
       </div>
     </section>
-     <Experiences/>
+     {/* <Experiences/> */}
     </div>
   )
 }
