@@ -7,6 +7,12 @@
     padding: 0 7em;  ;
 }
 
+/* 
+.section__container{
+    padding: 4em; 
+    position: relative;
+    z-index: 1;
+} */
 
 .booking__all_container{
     width: 100%;

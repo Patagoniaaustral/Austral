@@ -6,6 +6,7 @@
     z-index: 1;
 }
 
+
 .section__container > img:first-child {
    position: absolute;
     top: 0;
@@ -119,6 +120,7 @@
 @media(max-width: 726px){
     .general__container{
       padding: 1em 0;
+      width: 90%;
     }
 
     .row__container{

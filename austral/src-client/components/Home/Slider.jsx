@@ -44,9 +44,10 @@ function Slider () {
 
   return (
     <section className={styles.section__container}>
-      <Image src={Hexa} alt="hexagono1" width={100} height={100}/>
+      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
       <Image src={Hexa} alt="hexagono1" width={100} height={100} />
       <div className={styles.general__container}>
+        
         <div ref={ref} className={styles.row__container}>
           <div className={styles.info__container}>
             <h2>{t.sliderfleet.ftitle}</h2>
@@ -59,14 +60,23 @@ function Slider () {
             <Image src={HomeCar} alt="" width={1300} height={400} />
           </motion.div>
         </div>
-          <div>
-             <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
-          </div>
-            <div className={styles.slider__btns}>
-              <button onClick={()=> setIndex(0)}></button>
-              <button onClick={()=> setIndex(1)}></button>
-            </div>
-          </div>
+
+        <div>
+          <Image
+            className={styles.slider__image}
+            src={require(`../../assets${images[index]}`)}
+            alt="cars"
+            width={600}
+            height={350}
+          />
+        </div>
+
+        <div className={styles.slider__btns}>
+          <button onClick={() => setIndex(0)}></button>
+          <button onClick={() => setIndex(1)}></button>
+        </div>
+
+      </div>
     </section>
   );
 }

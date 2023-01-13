@@ -26,6 +26,13 @@ export const NavBar = () => {
     })
   }
 
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      setIsActive(false);
+    }, 1000);
+  };
+
+
   return (
     <header className={styles.nav__container} >
       
@@ -38,34 +45,34 @@ export const NavBar = () => {
       <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}>
         <ul>
           <li>
-            <Link href="/" >
+            <Link href="/"  onClick={handleLinkClick} >
               <span>{t.home}</span> 
             </Link>
           </li>
           <li >
-            <Link href="/booking" >
+            <Link href="/booking"  onClick={handleLinkClick}>
               <span>{t.booking}</span>
             </Link>
           </li>
           <li >
-            <Link href="/fleet"  >
+            <Link href="/fleet"  onClick={handleLinkClick}  >
               <span>{t.fleet}</span>
             </Link>
           </li>
           <li >
-            <Link href="/services" >
+            <Link href="/services"  onClick={handleLinkClick}>
               <span >{t.services}</span>
             </Link>
           </li>
           <li >
-            <Link href="/contact"  >
+            <Link href="/contact"   onClick={handleLinkClick}>
               <span>{t.contact}</span>
             </Link>
           </li>
           <li >
             <select onChange={handleChange}>
-              <option value="es">ES</option>
-              <option value ="en">EN</option>
+              <option value="es"  onClick={handleLinkClick}>ES</option>
+              <option value ="en"  onClick={handleLinkClick}>EN</option>
             </select>
           </li> 
           </ul>
