@@ -36,7 +36,6 @@ export const NavBar = () => {
       </button>
 
       <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}>
-      {/* <nav> */}
         <ul>
           <li>
             <Link href="/" >

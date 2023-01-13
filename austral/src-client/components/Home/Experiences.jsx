@@ -78,7 +78,7 @@ function Experiences () {
       <h2>{t.experience.etitle}</h2>
       <p>{t.experience.etext}</p>
 
-    <div  ref={ref} className={styles.experience__container}>
+    {/* <div  ref={ref} className={styles.experience__container}>
       {images.map((image, index) => (
         <div key={image.id} className={styles.exp__card}>
           <motion.div animate={image.controls} className={styles.image__container}> 
@@ -87,7 +87,7 @@ function Experiences () {
           <p>{image.title}</p>
         </div>
       ))}
-    </div>
+    </div> */}
     </section>
   )
 }
