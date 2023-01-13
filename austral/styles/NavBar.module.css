@@ -9,7 +9,6 @@
     z-index: 100;
     position: sticky;
     top: 0;
-    transition: backdrop-filter 250ms ease-in-out;
  }
  
  .nav__container img {
@@ -54,7 +53,6 @@
    .nav__container ul{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: xx-large;
     text-transform: uppercase;
     gap: 1em;
@@ -74,7 +72,7 @@
    .nav {
      position: fixed;
      inset: 0;
-     background: hsl(0 0% 100% /0.1);
+     background: hsl(0 0% 100% /.7);
      backdrop-filter: blur(1.5rem);
      padding: min(30vh, 10rem) 2em;
      z-index: 100;
