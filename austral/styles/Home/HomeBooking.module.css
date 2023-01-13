@@ -134,7 +134,7 @@
     }
     
     .section__container div:has(h2){
-        top: 43%;
+        top: 25%;
         left: 10%;
         font-size: 1rem;
         padding: .5em;
@@ -166,7 +166,7 @@
 
     .header__img h1 {
         font-size: 1.5rem;
-        top: 20%;
+        top: 10%;
     }
 
     .hexa{
