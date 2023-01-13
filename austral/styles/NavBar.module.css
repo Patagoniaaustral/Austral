@@ -48,7 +48,7 @@
 
 
 @media(hover : hover){
-  .nav__container li :is(:hover, :focus) {
+  .nav__container li :is(:hover, :focus, :active) {
     color: var(--clr-primary);
   }
 }

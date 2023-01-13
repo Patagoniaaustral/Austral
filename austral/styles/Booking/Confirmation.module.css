@@ -136,7 +136,7 @@ gap: 1em;
 }
 
 
-.buttons__container >a:is(:hover, :focus){
+.buttons__container >a:is(:hover, :focus, :active){
     background-color: var(--clr-gray);
     color: var(--clr-black);
 }
@@ -149,7 +149,7 @@ gap: 1em;
 }
 
 @media(hover:hover){
-    .buttons__container button:is(:hover, :focus){
+    .buttons__container button:is(:hover, :focus, :active){
     background-color: var(--clr-gray);
     color: var(--clr-black);
 }

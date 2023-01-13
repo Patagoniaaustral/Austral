@@ -105,11 +105,11 @@
 
 
 @media(hover :hover){
-    .slider__btn:is(:focus, :hover){
+    .slider__btn:is(:focus, :hover, :active){
         background-color: var(--clr-gray);
         border: 2px solid var(--clr-dark-gray);
     }
-    .btn:is(:focus, :hover){
+    .btn:is(:focus, :hover, :active){
         background-color: var(--clr-gray);
         color: var(--clr-black);
     }

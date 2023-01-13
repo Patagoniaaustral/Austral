@@ -108,12 +108,12 @@
 
 
 @media (hover : hover) {
-    .form__container button:is(:focus-visible, :hover){
+    .form__container button:is(:focus-visible, :hover, :active){
         background-color: var(--clr-gray);
         color:  var(--clr-black);
     }
 
-    .info__container a:is(:focus-visible, :hover){
+    .info__container a:is(:focus-visible, :hover, :active){
         color: var(--clr-primary);
     }
 }

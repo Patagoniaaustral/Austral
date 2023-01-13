@@ -44,7 +44,7 @@ function Home () {
 
   return (
     <div className={styles.main} >
-     {/* <HomeBooking/> */}
+     <HomeBooking/>
      <Slider/>
 
 

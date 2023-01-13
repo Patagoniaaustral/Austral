@@ -113,7 +113,7 @@
 }
 
 @media(hover : hover){
-    .search__btn:is(:hover, :focus){
+    .search__btn:is(:hover, :focus, :active){
         background-color: var(--clr-gray);
         color:  var(--clr-black);
     }
@@ -134,7 +134,7 @@
     }
     
     .section__container div:has(h2){
-        top: 25%;
+        top: 43%;
         left: 10%;
         font-size: 1rem;
         padding: .5em;
@@ -165,9 +165,8 @@
     }
 
     .header__img h1 {
-        width: 100%;
         font-size: 1.5rem;
-        top: 10%;
+        top: 20%;
     }
 
     .hexa{

@@ -146,7 +146,7 @@
     margin: 1em 0;
 }
 
-.conditions__container a:is(:hover, :focus){
+.conditions__container a:is(:hover, :focus, :active){
     color: var(--clr-primary);
 }
 
@@ -197,11 +197,11 @@
 
 
 @media(hover : hover){
-    .condition__terms button:is(:hover, :focus){
+    .condition__terms button:is(:hover, :focus, :active){
         background-color: var(--clr-gray);
         color: var(--clr-black);
     }
-    .rent__container button:hover{
+    .rent__container button:is(:hover, :focus, :active){
         background-color: var(--clr-gray);
         color: var(--clr-primary);
         border-radius: 2em;

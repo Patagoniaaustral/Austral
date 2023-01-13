@@ -175,8 +175,7 @@ function HomeBooking () {
         />
         </div>
       </div>
-
-      <button className={styles.search__btn} onClick={handleClick}>{t.booking.bsearch}</button>
+          <button className={styles.search__btn} onClick={handleClick}>{t.booking.bsearch}</button>
       </div>
     </section>
   );
