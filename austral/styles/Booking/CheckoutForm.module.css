@@ -108,11 +108,6 @@
     padding: .5em 1em;
 }
 
-.rent__container button:hover{
-    background-color: var(--clr-gray);
-    color: var(--clr-primary);
-    border-radius: 2em;
-}
 
 
 
@@ -168,10 +163,6 @@
     margin-top: 3em;
 }
 
-.condition__terms button:is(:hover, :focus){
-    background-color: var(--clr-gray);
-    color: var(--clr-black);
-}
 
 
 
@@ -202,4 +193,18 @@
     .conditions__container{
         padding: 4em 1em 0;
     }
+}
+
+
+@media(hover : hover){
+    .condition__terms button:is(:hover, :focus){
+        background-color: var(--clr-gray);
+        color: var(--clr-black);
+    }
+    .rent__container button:hover{
+        background-color: var(--clr-gray);
+        color: var(--clr-primary);
+        border-radius: 2em;
+    }
+
 }

@@ -136,8 +136,6 @@ gap: 1em;
 }
 
 
-
-.buttons__container button:is(:hover, :focus),
 .buttons__container >a:is(:hover, :focus){
     background-color: var(--clr-gray);
     color: var(--clr-black);
@@ -148,4 +146,12 @@ gap: 1em;
     padding: 1em;
     border-radius:  3em;
     
+}
+
+@media(hover:hover){
+    .buttons__container button:is(:hover, :focus){
+    background-color: var(--clr-gray);
+    color: var(--clr-black);
+}
+
 }

@@ -65,12 +65,11 @@
     width: fit-content;
 }
 
-.footer__second_row button:is(:focus,:hover){
+
+.footer__second_row button:active{
     background-color: var(--clr-gray);
     color:  var(--clr-black);
 }
-
-
 
 
 .footer__container > p {
@@ -79,7 +78,12 @@
     font-weight: 600;
 }
 
-
+@media(hover : hover){
+    .footer__second_row button:is(:focus,:hover){
+        background-color: var(--clr-gray);
+        color:  var(--clr-black);
+    }    
+}
 
 
 @media(max-width: 55em){

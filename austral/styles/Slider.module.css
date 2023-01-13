@@ -80,10 +80,6 @@
     position: relative;
 }
 
-.slider__btn:is(:focus, :hover){
-    background-color: var(--clr-gray);
-    border: 2px solid var(--clr-dark-gray);
-}
 
 .image__container{
     width: 50%;
@@ -106,11 +102,19 @@
     padding: .7em 2em;
 }
 
-.btn:is(:focus, :hover){
-    background-color: var(--clr-gray);
-    color: var(--clr-black);
-}
 
+
+@media(hover :hover){
+    .slider__btn:is(:focus, :hover){
+        background-color: var(--clr-gray);
+        border: 2px solid var(--clr-dark-gray);
+    }
+    .btn:is(:focus, :hover){
+        background-color: var(--clr-gray);
+        color: var(--clr-black);
+    }
+
+}
 
 @media(max-width: 726px){
     .general__container{

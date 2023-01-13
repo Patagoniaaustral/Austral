@@ -101,14 +101,18 @@
     border: none;
 }
 
-.search__btn:is(:hover, :focus){
-    background-color: var(--clr-gray);
-    color:  var(--clr-black);
-}
 
 
 .none{
     display: none;
+}
+
+@media(hover : hover){
+    .search__btn:is(:hover, :focus){
+        background-color: var(--clr-gray);
+        color:  var(--clr-black);
+    }
+
 }
 
 @media(max-width : 726px){

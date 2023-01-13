@@ -31,11 +31,7 @@ export const NavBar = () => {
       
       <Link href="/"><Image src={LogoNavBar} alt="" width={180} height={30} /></Link>
           
-        <button
-           onClick={handleNavToggle}
-           className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle}
-           aria-label="toggle navigation"
-      >
+      <button onClick={handleNavToggle} className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle} aria-label="toggle navigation">
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
       </button>
 
@@ -44,7 +40,7 @@ export const NavBar = () => {
         <ul>
           <li>
             <Link href="/" >
-              <span>{t.home}</span>
+              <span>{t.home}</span> 
             </Link>
           </li>
           <li >

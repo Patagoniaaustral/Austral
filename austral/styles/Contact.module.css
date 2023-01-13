@@ -45,9 +45,9 @@
     gap: 1em;
 }
 
-.info__container a :is(:focus, :hover){
+/* .info__container a :is(:focus, :hover){
     color: var(--clr-primary);
-}
+} */
 
 
 /* ----------- DIV FORM ----------- */
@@ -108,9 +108,13 @@
 
 
 @media (hover : hover) {
-    .form__container button:is(:focus-within, :hover){
+    .form__container button:is(:focus-visible, :hover){
         background-color: var(--clr-gray);
         color:  var(--clr-black);
+    }
+
+    .info__container a:is(:focus-visible, :hover){
+        color: var(--clr-primary);
     }
 }
 
