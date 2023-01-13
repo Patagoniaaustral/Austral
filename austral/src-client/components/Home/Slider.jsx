@@ -30,7 +30,7 @@ function Slider () {
       })
       } else {
         animation.start({
-          x: 1000,
+          x: 100, 
           opacity: 0,
           transition :{
             duration: 2,
@@ -55,9 +55,9 @@ function Slider () {
               <button className={styles.btn}>{t.sliderfleet.fbtn}</button>
             </Link>
           </div>
-          {/* <motion.div className={styles.image__container} animate={animation}>
+          <motion.div className={styles.image__container} animate={animation}>
             <Image src={HomeCar} alt="" width={1300} height={400} />
-          </motion.div> */}
+          </motion.div>
         </div>
           <div>
              <Image  className={styles.slider__image} src={require(`../../assets${images[index]}`)} alt="cars" width={600} height={350} />   
