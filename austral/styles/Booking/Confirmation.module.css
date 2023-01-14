@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     background-image: url(../../src-client/assets/trama.svg);
     background-size: 100%;
 }
@@ -44,6 +43,7 @@
 .form__container select{
     width: 100%;
     height: 3rem;
+    /* corregir */
     border-radius: var(--border-radius);
     padding: 0 1rem;
     font-size: 1rem;
@@ -67,6 +67,7 @@
 .form__container div:has(input) input{
     width: 100%;
     height: 2em;
+/* corregir con padding no con height; */
     margin: .5em 0;
 
 } 

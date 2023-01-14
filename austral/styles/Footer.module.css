@@ -1,23 +1,26 @@
 .footer__container{
     background-color: var(--clr-primary);
     color : var(--clr-white);
-    padding: 2em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3em;
+    padding: max(2em, 2vw) max(2em, 2vw) max(3em, 3vw);
 }
 
 .footer__container a p:is(:focus, :hover, :active){
     color: var(--clr-dark-gray);
     background-color: var(--clr-white);
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .footer__first_row{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5em;
+    gap: max(1em, 5vw);
+    /* max-width: 60%; */
+    /* margin: 0 auto; */
 }
 
 .footer__first_row h2{
@@ -39,10 +42,7 @@
 
 .footer__second_row{
     display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
     gap: 2em;
-    margin: auto;
 }
 
 .footer__second_row p{
@@ -66,12 +66,6 @@
 }
 
 
-.footer__second_row button:active{
-    background-color: var(--clr-gray);
-    color:  var(--clr-black);
-}
-
-
 .footer__container > p {
     display: flex;
     justify-content: center;
@@ -86,29 +80,25 @@
 }
 
 
-@media(max-width: 55em){
+@media(max-width: 40em){
     .footer__container{
-        padding: 2em 2em 3em;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 2em 2em 3em;
         gap: 2em;
     }
 
     .footer__container > * {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        width: 80%;
+       display: flex;
+       flex-direction: column;
+        width: 100%;
     }
-
-    /* .footer__second_row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
-    } */
-
+    .footer__first_row div:first-child a{
+        padding: 0;
+        margin: 1em 0;
+        
+    }
 
 }

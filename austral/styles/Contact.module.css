@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     background-image: url(../src-client/assets/trama.svg);
     background-size: 100%;
 }
@@ -13,26 +12,27 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
     max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
 }
 
 
 .contact__title{
     font-size: 1.4rem;
-    margin: 3em 0 1em 0;
+    padding: 3em 0 0;
 }
 
 
 /* ----------- DIV INFO ----------- */
 
 .info__container{
-    font-size: 1.2rem;
-    padding: 3em 4em;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    padding: clamp(1.5em, 4vw, 4em);
     display:flex;
     flex-direction: column;
     gap: 1em;
     background-color: var(--clr-secondary);
     border-radius: 3.5em 0  0 3.5em ;
-
 }
 
 .info__container div {
@@ -56,7 +56,7 @@
     display:flex;
     flex-direction: column;
     background-color: var(--clr-bkg-gray);
-    padding: 2em 4em 2em 2em;
+    padding: clamp(1.5em, 4vw, 4em);
     border-radius: 3em;
     box-shadow: var(--box-shadow);
    
@@ -77,7 +77,7 @@
     border: var(--border);
     border-radius: 25px;
     resize: none;
-    height: 9em;
+    min-height: 12em;
     margin-bottom: 1em;
     padding-left: 1em;
 }
@@ -119,14 +119,9 @@
 }
 
 @media (max-width: 768px) {
-    .general__container{
-      padding: 1em;
-      gap:1em;
-    }
-
     .info__container{
         border-radius: 3.5em;
-        font-size: calc(1.2rem - 0.2em);
+        /* padding:1.5em; */
     }
 
 }

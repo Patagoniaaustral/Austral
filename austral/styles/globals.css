@@ -91,6 +91,10 @@ ol[role="list"] {
   list-style: none;
 }
 
+ul{
+  padding: 0;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -144,15 +148,6 @@ select {
   }
 }
 
-/* main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 6rem 2em ;
-  min-height: 100vh;
-  background-image: url(../src-client/assets/trama.svg);
-  background-size: 100%;
-} */
 
 ::selection {
   background-color: var(--clr-primary);

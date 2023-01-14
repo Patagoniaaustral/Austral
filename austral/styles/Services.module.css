@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background-image: url(../src-client/assets/trama.svg);
     background-size: 100%;
 }
@@ -39,11 +38,15 @@
 .covers__container {
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-    padding: 3em;
-    padding: max(3em, 3vw);
-    margin: 5em 1em;
+    padding: clamp(1.5em, 3vw, 3em);
     background-color: var(--clr-white);
-    margin: 3em  9em;
+    margin: 2em auto;
+    width: max(80%, 30em);
+    font-size: calc(.8em + 0.2vw);
+}
+
+.covers__container h2{
+    font-size: calc(1em + 0.5vw);
 }
 
 .covers__container p {
@@ -57,20 +60,18 @@
 /* ------------------- 2 DIVS EXTRA & REQUEST --------- */
 
 .services__container{
-    padding:  0 10em;
+    width: max(80%, 20em);
+    margin: 2em auto;
     display:grid;
     grid-template-columns: 40% 60%;
-    /* display: flex;
-    flex-wrap: wrap; */
-    gap: 4em;
-    margin-bottom: 7em;   
+    gap: max(2em, 1vw);
 } 
 
 
 .services__extra_container, 
 .services__require_container{
-    padding: 1.5em 3em;
-    padding: max(1em, 1.5vw);
+    font-size: calc(.8em + 0.2vw);
+    padding: max(3em, 1.5vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,15 +81,8 @@
     background-color: var(--clr-secondary);
 }
 
-.services__extra_container{
-    flex: 1 1 40%;
-    min-width: 300px;
-}
-
 .services__require_container{
     background-color: var(--clr-white);
-    flex: 1 1 60%;
-    min-width: 300px;
 }
 
 .services__require_container > div {
@@ -96,10 +90,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1em;
 }
 
+
 .services__container h2{
-    color: var(--clr-primary)
+    color: var(--clr-primary);
+    font-size: calc(1em + 0.5vw);
 }
 
 .services__container li {
@@ -129,26 +126,18 @@
 
 /* ------------------- MEDIA QUERIES ------------------- */
 
-@media (max-width: 768px) {
-    .general__container{
-        padding: 1em;
-        font-size: calc(.8em + 0.5vw);
+@media (max-width: 768px) { 
+    .covers__container{
+        width: 95%;
     }
 
-    .covers__container{
-        margin: auto;
-    }
-    
     .services__container{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2em;
-        padding: 2em 0;
     }
 
     .services__require_container > div {
         flex-direction: column;
-        margin-top: 1em;
     }
 
     .header__img img {
