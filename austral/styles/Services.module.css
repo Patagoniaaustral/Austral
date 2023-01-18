@@ -28,9 +28,11 @@
     color: var(--clr-white);
     z-index: 2;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 10%;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    filter: drop-shadow(0 .1em .1em rgba(0,0,0,.6));
 }
 
 

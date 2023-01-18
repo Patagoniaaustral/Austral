@@ -23,12 +23,23 @@ import Prisma from "../assets/redcar.png"
 import Nissan from "../assets/nissan.png"
 import Spin from "../assets/chevro.png"
 import Logan from "../assets/logan.png"
-import gol from "../assets/gol.png"
+import Gol from "../assets/gol.png"
 import Toro from "../assets/toro.png"
-import sandero from "../assets/sandero.png"
-import onix from "../assets/onix.png"
+import Sandero from "../assets/sandero.png"
+import Onix from "../assets/onix.png"
 
-const carsImages = [sandero, Spin, Nissan, onix, onix, gol, Logan, Prisma, Toro]
+const carsImages = [
+  {model: Sandero, id: 1},
+  {model: Spin, id: 2},
+  {model: Nissan, id: 3},
+  {model: Onix, id: 4},
+  {model: Sandero, id: 5},
+  {model: Gol, id: 6},
+  {model: Logan, id: 7},
+  {model: Prisma, id: 8},
+  {model: Toro, id: 9}
+]
+
 
 function  Fleet () {
  
@@ -75,10 +86,10 @@ function  Fleet () {
   <div className={styles.fleet__grid}>
     {currentFleet.map((car, index) => {
       return (
+        <>
         <div className={styles.fleet__grid_card} key={car.id}>
           <h2>{car.model}</h2>
-          <p>{t.catego} {car.category}</p>
-          
+          <span>{t.catego} {car.category}</span>
           <div>
               <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
               <p> {car.capacity} {t.passengers}</p> 
@@ -88,19 +99,15 @@ function  Fleet () {
           
               <Image src={CarIcon1} alt="imagen de auto" width="20" heigth="20"/>
               <p>{car.motor}</p> 
+          
           </div>
-
-         {car.id === 1 && <Image src={carsImages[0]} alt="sandero" width="300" heigth="100" priority/>}
-          {car.id === 2 && <Image src={carsImages[1]} alt="spin" width="300" heigth="100" priority/>}
-          {car.id === 3 && <Image src={carsImages[2]} alt="nissan" width="300" heigth="100" priority/>}
-          {car.id === 4 && <Image src={carsImages[3]} alt="onix" width="300" heigth="100"/>}
-          {car.id === 5 && <Image src={carsImages[4]} alt="kwid" width="300" heigth="100"/>}
-          {car.id === 6 && <Image src={carsImages[5]} alt="gol" width="300" heigth="100"/>}
-          {car.id === 7 && <Image src={carsImages[6]} alt="logan" width="300" heigth="100"/>}
-          {car.id === 8 && <Image src={carsImages[7]} alt="prisma" width="300" heigth="100"/>}
-          {car.id === 9 && <Image src={carsImages[8]} alt="fiat toro" width="300" heigth="100"/>}
-
+          <div classNAME={styles.image__container}>
+            {car.id === carsImages[index].id
+             && <Image  className={styles.card__image} src={carsImages[index].model} alt="sandero" width={350} heigth={100} priority/>}
+          </div>
         </div>
+        
+        </>
       )
     })}
     </div>
@@ -118,6 +125,4 @@ function  Fleet () {
 }
 
 
-
 export default Fleet;
-
