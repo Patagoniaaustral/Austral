@@ -90,15 +90,15 @@ function  Fleet () {
               <p>{car.motor}</p> 
           </div>
 
-         {car.id === 1 && <Image src={carsImages[0]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 2 && <Image src={carsImages[1]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 3 && <Image src={carsImages[2]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 4 && <Image src={carsImages[3]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 5 && <Image src={carsImages[4]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 6 && <Image src={carsImages[5]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 7 && <Image src={carsImages[6]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 8 && <Image src={carsImages[7]} alt="imagen de auto" width="300" heigth="100"/>}
-          {car.id === 9 && <Image src={carsImages[8]} alt="imagen de auto" width="300" heigth="100"/>}
+         {car.id === 1 && <Image src={carsImages[0]} alt="sandero" width="300" heigth="100" priority/>}
+          {car.id === 2 && <Image src={carsImages[1]} alt="spin" width="300" heigth="100" priority/>}
+          {car.id === 3 && <Image src={carsImages[2]} alt="nissan" width="300" heigth="100" priority/>}
+          {car.id === 4 && <Image src={carsImages[3]} alt="onix" width="300" heigth="100"/>}
+          {car.id === 5 && <Image src={carsImages[4]} alt="kwid" width="300" heigth="100"/>}
+          {car.id === 6 && <Image src={carsImages[5]} alt="gol" width="300" heigth="100"/>}
+          {car.id === 7 && <Image src={carsImages[6]} alt="logan" width="300" heigth="100"/>}
+          {car.id === 8 && <Image src={carsImages[7]} alt="prisma" width="300" heigth="100"/>}
+          {car.id === 9 && <Image src={carsImages[8]} alt="fiat toro" width="300" heigth="100"/>}
 
         </div>
       )
