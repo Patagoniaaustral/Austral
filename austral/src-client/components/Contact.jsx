@@ -2,12 +2,13 @@ import React, {useState} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link"
 import { IconContext } from "react-icons";
-import {BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
+import {BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
+import {FaFacebookF} from "react-icons/fa";
 import  validate  from '../controllers/contactValidate';
+import sendDataForm from '../controllers/sendDataForm';
 import contEs from "../../public/locale/ES/contact.json"
 import contEn from "../../public/locale/EN/contact.json"
-import sendDataForm from '../controllers/sendDataForm';
 import styles from "../../styles/Contact.module.css"
 
 function Contact() {
@@ -63,7 +64,7 @@ function Contact() {
           </Link>
 
           <Link className={styles.info_link} href="mailto:info@australrentacar.ar">
-            <SiGmail className={styles.info_link_ico} />
+            <FiMail className={styles.info_link_ico} />
             <p> info@australrentacar.ar</p>
           </Link>
 
@@ -73,7 +74,7 @@ function Contact() {
           </Link>
 
           <Link  href="https://www.facebook.com/australrentacar" target={"_blank"}>
-                <BsFacebook  />
+                <FaFacebookF/>
                 <p>australrentacar.ar</p>
           </Link>
           </IconContext.Provider>

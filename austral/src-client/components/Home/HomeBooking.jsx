@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Image from 'next/image'
+import HomeMain from "../../assets/HomeMain.jpg"
+import Hexa from "../../assets/hexBorder.svg"
 import DatePicker from "react-datepicker"
-import "react-datepicker/dist/react-datepicker.css"
 import addDays from 'date-fns/addDays'  
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
-import HomeMain from "../../assets/HomeMain.jpg"
-import Hexa from "../../assets/hexBorder.svg"
+import "react-datepicker/dist/react-datepicker.css"
 import styles from '../../../styles/Home/HomeBooking.module.css'
-
 
 function HomeBooking () {
  
@@ -62,20 +61,12 @@ function HomeBooking () {
 }
   
 
-  const handleClick = (e) => { 
-    // hacer un get y filter en redux con estos parametros
-     
-    router.push({ 
-      pathname: '/booking',
-  //     query: { 
-  //       pickUpDate: pickUpDate,
-  //       returnDate: returnDate,
-  //       startTime: startTime,
-  //       endTime: endTime,
-  //       select: select
-  // }
-})
-}
+  const handleClick = (e) => {   
+      router.push({
+        pathname: "/booking",
+      })
+    }
+  
 
 
   return (
@@ -83,7 +74,7 @@ function HomeBooking () {
 
     <div className={styles.header__img}>
      <h1>{t.title1}<br/>{t.title2}</h1>
-      <Image src ={HomeMain} alt="" width={1500} height={500} priority/>
+      <Image src ={HomeMain} alt="" width={1500} height={500} priority="true"/>
     </div>
       <Image className={styles.hexa} src={Hexa} alt="hexagono1" width={100} height={100} />
 

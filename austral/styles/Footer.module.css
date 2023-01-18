@@ -5,13 +5,13 @@
     flex-direction: column;
     align-items: center;
     gap: 3em;
-    padding: max(2em, 2vw) max(2em, 2vw) max(3em, 3vw);
+    padding: max(3em, 3vw) max(2em, 2vw);  
 }
+
 
 .footer__container a p:is(:focus, :hover, :active){
     color: var(--clr-dark-gray);
     background-color: var(--clr-white);
-    /* width: fit-content; */
 }
 
 .footer__first_row{
@@ -19,8 +19,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: max(1em, 5vw);
-    /* max-width: 60%; */
-    /* margin: 0 auto; */
 }
 
 .footer__first_row h2{
@@ -28,10 +26,11 @@
 }
 
 .footer__first_row div > p,
-.footer__first_row div > a {
-    margin-bottom: .6em;
-    opacity: .7;
+.footer__first_row div a > p {
+    font-weight: 300;
+    opacity: .8;
 }
+
 
 .footer__first_row :first-child a{
     display: flex;
@@ -42,7 +41,7 @@
 
 .footer__second_row{
     display: flex;
-    gap: 2em;
+    gap: 4em;
 }
 
 .footer__second_row p{
@@ -51,18 +50,18 @@
 
 .footer__second_row input{
     border: none;
-    border-radius: var(--border-radius);
-    padding: .5em 1.5em;
-    width: fit-content;
+    border-radius: var(--border-radius-input);
+    padding: .4em 6em .4em 2em;
 }
 
 .footer__second_row button{
     color: var(--clr-primary);
-    background-color: beige;
+    background-color: var(--clr-medium-beige);
     border: none;
-    border-radius: var(--border-radius);
-    padding: .5em 1.5em;
+    border-radius: var(--border-radius-btn);
+    padding: .4em 2em;
     width: fit-content;
+    font-weight: 600;
 }
 
 
@@ -80,13 +79,35 @@
 }
 
 
+@media(max-width: 860px){
+    .footer__first_row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em 6em;
+        width: 80%;
+
+    }
+ 
+    .footer__first_row div:first-child a{
+        margin: 1em 0;
+    }
+
+    .footer__second_row{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+
 @media(max-width: 40em){
     .footer__container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2em 2em 3em;
+        padding: 2em 4em 3em;
         gap: 2em;
     }
 
@@ -94,11 +115,6 @@
        display: flex;
        flex-direction: column;
         width: 100%;
-    }
-    .footer__first_row div:first-child a{
-        padding: 0;
-        margin: 1em 0;
-        
     }
 
 }

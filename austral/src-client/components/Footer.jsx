@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
 import axios from "axios";
-import styles from "../../styles/Footer.module.css"
-import { IconContext } from "react-icons";
-import {BsInstagram, BsFacebook } from "react-icons/bs";
-import { useRouter } from "next/router";
-import footEs from "../../public/locale/ES/footer.json"
-import footEn from "../../public/locale/EN/footer.json"
 import Link from 'next/link'
 import Image from 'next/image';
 import LogoFooter from "../../src-client/assets/logoFooter.png"
+import { IconContext } from "react-icons";
+import {BsInstagram} from "react-icons/bs";
+import {FaFacebookF} from "react-icons/fa";
+import { useRouter } from "next/router";
+import footEs from "../../public/locale/ES/footer.json"
+import footEn from "../../public/locale/EN/footer.json"
+import styles from "../../styles/Footer.module.css"
 
 const Footer = () => {
 
@@ -39,16 +40,16 @@ const handleSubmit = async(e) => {
     <footer className={styles.footer__container}>
       <div className={styles.footer__first_row}>
         <div>
-          <Image src={LogoFooter} alt="Logo Footer" width={180} height={60} />
+          <Image src={LogoFooter} alt="Logo Footer" width={200} height={60} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
           
             <Link href="https://www.instagram.com/australrentacar" target={"_blank"}>
-              <BsInstagram />
+              <BsInstagram className={styles.first_row_ico} />
               <p>australrentacar.ar</p>
             </Link>
 
             <Link href="https://www.facebook.com/australrentacar" target={"_blank"}>
-              <BsFacebook />
+              <FaFacebookF className={styles.first_row_ico}/>
               <p>australrentacar.ar</p>
             </Link>
 
@@ -81,7 +82,11 @@ const handleSubmit = async(e) => {
       </div>
 
       <form onSubmit={handleSubmit} className={styles.footer__second_row}>
-        <p>{t.newsp}</p>
+       
+        <p>{t.newsp.split("\n").map((item, key) => {
+          return <span key={key}>{item}<br/></span>
+        })}</p>
+     
         <input
           type="email"
           name="email"
@@ -93,9 +98,13 @@ const handleSubmit = async(e) => {
         <button type="submit">{t.newsbtn}</button>
       </form>
 
-      <p>Austral rent a car &copy; 2023-{t.copy} Cipbyte</p>
+      <p>Austral rent a car &copy; 2023 - {t.copy} Cipbyte</p>
     </footer>
   );
 }
 
 export default Footer
+
+
+
+

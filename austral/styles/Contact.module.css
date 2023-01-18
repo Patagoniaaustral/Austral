@@ -11,43 +11,50 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
-    max-width: 1200px;
-    margin: 2em auto;
-    padding: 1em;
+    max-width: 1400px;
+    margin: 1.5em auto;
+    padding:  0 2em 4em 2em;
 }
 
 
 .contact__title{
-    font-size: 1.4rem;
-    padding: 3em 0 0;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 2.5em 0 0;
 }
 
 
 /* ----------- DIV INFO ----------- */
 
 .info__container{
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    padding: clamp(1.5em, 4vw, 4em);
+    font-size: calc(1rem + .2vw);
+    padding: 3em 4em 1em 4em;
     display:flex;
     flex-direction: column;
     gap: 1em;
     background-color: var(--clr-secondary);
-    border-radius: 3.5em 0  0 3.5em ;
+    border-radius: 3em;
 }
 
 .info__container div {
-    margin-top: 2em;
+    margin-top: 1.8em;
 }
 
 .info__container:first-child a {
     display: flex;
-    margin: 1em;
+    margin: 1em 0;
     gap: 1em;
 }
 
-/* .info__container a :is(:focus, :hover){
-    color: var(--clr-primary);
-} */
+.info__container h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.info__container > p:first-of-type  {
+    font-weight: 500;
+    width: min(50ch, 100%);
+}
 
 
 /* ----------- DIV FORM ----------- */
@@ -56,14 +63,14 @@
     display:flex;
     flex-direction: column;
     background-color: var(--clr-bkg-gray);
-    padding: clamp(1.5em, 4vw, 4em);
+    padding: 2em 4em 1em 3em;
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-   
 }
 
 .form__container label {
     margin: 0 0 .5em .8em;
+    font-weight: 500;
 }
 
 .form__container input{
@@ -75,9 +82,9 @@
 
 .form__container textarea{
     border: var(--border);
-    border-radius: 25px;
+    border-radius: var(--border-radius-textarea);
     resize: none;
-    min-height: 12em;
+    min-height: 10em;
     margin-bottom: 1em;
     padding-left: 1em;
 }
@@ -118,10 +125,27 @@
     }
 }
 
-@media (max-width: 768px) {
-    .info__container{
-        border-radius: 3.5em;
-        /* padding:1.5em; */
+@media (max-width: 950px) {
+.general__container{
+    display: flex;
+    flex-direction: column;
+}
+.form__container{
+    padding: 2em;
+}
+
+}
+
+@media(max-width:480px){
+    .general__container{
+        padding: 0 1em 4em 1em;
     }
 
+    .info__container{
+        padding: 1.7em;
+    }
+    .form__container{
+        padding: 2em 1em;
+    }
+    
 }

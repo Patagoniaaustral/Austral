@@ -35,8 +35,9 @@ a {
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --border-radius: 1rem;
   --border-radius-input: 1rem;
-  --border-radius-btn: 1rem;
+  --border-radius-btn: 3rem;
   --border-radius-div: 1rem;
+  --border-radius-textarea: .7rem;
   --border: 1px solid var(--border);
 }
 

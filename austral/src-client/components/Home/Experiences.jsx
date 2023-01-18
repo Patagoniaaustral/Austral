@@ -6,9 +6,11 @@ import Image from "next/image";
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import styles from "../../../styles/Home/Experiences.module.css"
+
 import Exp1 from "../../assets/exp1.jpg"
 import Exp2 from "../../assets/exp2.jpg"
 import Exp3 from "../../assets/exp3.jpg"
+
 import Hexa from "../../assets/hexBorder.svg"
 
 function Experiences () {

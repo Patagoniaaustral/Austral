@@ -1,101 +1,80 @@
+
 [
     {
-    "model": "Sandero",
-    "brand" : "Renault",
+    "id" : 1,
+    "model": "Renault Sandero",
     "capacity" : 5,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 13000,
-    "available" : true,
-    "category" : "A",
-    "image" : "not found"
+    "category" : "A"
     },
     {
-    "model": "Spin",
-    "brand" : "Crevrolet",
+    "id" : 2,
+    "model": " Chevrolet Spin",
     "capacity" : 7,
     "transmition" : "manual",
     "motor" : "diesel",
-    "pricePerDay" : 25000,
-    "available" : true,
-    "category" : "C",
-    "image" : "not found"
+    "category" : "C"
+ 
     },
     {
-    "model": "Frontier",
-    "brand" : "Nissan",
+    "id" : 3,
+    "model": "Nissan Frontier",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 45000,
-    "available" : true,
-    "category" : "E",
-    "image" : "not found"
+    "category" : "E"
+
     },
-       {
-    "model": "Onix",
-    "brand" : "Chevrolet",
+   {
+    "id" : 4,
+    "model": "Chevrolet Onix",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 13000,
-    "available" : true,
-    "category" : "A",
-    "image" : "not found"
+    "category" : "A"
+
     },
     {
-    "model": "Kwid",
-    "brand" : "Renault",
+    "id" : 5,
+    "model": "Renault Kwid",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 13000,
-    "available" : true,
-    "category" : "A",
-    "image" : "not found"
+    "category" : "A"
     },
     {
-    "model": "Gol Trend",
-    "brand" : "Volkswagen",
+    "id" : 6,
+    "model": "Volkswagen Gol Trend",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 13000,
-    "available" : true,
-    "category" : "A",
-    "image" : "not found"
+    "category" : "A"
     },
-       {
-    "model": "Logan Life",
-    "brand" : "Renault",
+   {
+    "id" : 7,
+    "model": "Renault Logan Life",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 15000,
-    "available" : true,
-    "category" : "B",
-    "image" : "not found"
+    "category" : "B"
+
     },
     {
-      "model": "Prisma",
-      "brand" : "Chevrolet",
+      "id" : 8,
+      "model": "Chevrolet Prisma",
       "capacity" : 7,
       "transmition" : "automatic",
       "motor" : "diesel",
-      "pricePerDay" : 15000,
-      "available" : true,
-      "category" : "B",
-      "image" : "not found"
+      "category" : "B"
+
       },
-       {
-    "model": "Toro Freedom 4x2",
-    "brand" : "Fiat",
+   {
+    "id" : 9,
+    "model": "Fiat Toro Freedom 4x2",
     "capacity" : 7,
     "transmition" : "automatic",
     "motor" : "diesel",
-    "pricePerDay" : 30000,
-    "available" : true,
-    "category" : "D",
-    "image" : "not found"
+    "category" : "D"
     }
 ]

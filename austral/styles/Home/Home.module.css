@@ -64,10 +64,11 @@
 
 
 
-@media(max-width: 756px){
+
+/* @media(max-width: 756px){
     .section__container{
         flex-direction: column-reverse;
         padding: 1em 2.5em;
     }
-}
+} */
 

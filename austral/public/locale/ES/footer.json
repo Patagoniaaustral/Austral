@@ -1,13 +1,15 @@
 {
-    "atention" : "ATENCION",
+    "atention" : "ATENCÍON",
     "days1" : "Lunes a Viernes 08hs a 22hs",
     "days2" : "Sábados y Domingos 09hs a 19hs",
     "contact": "CONTACTO",
     "service" : "SERVICIO",
     "fleet": "Flota",
     "booking" : "Reservas",
-    "newsp" : "Recibi todas nuestras promociones",
-    "newsplace" : "Ingresa tu mail",
+    "newsp" : "Recibí todas nuestras \n promociones",
+    "newsplace" : "Ingresá tu mail",
     "newsbtn" : "SUSCRIBIR",
     "copy" : "Desarrollado por"
   }
+
+

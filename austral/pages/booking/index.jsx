@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import Checkout from "../../src-client/components/Booking/CheckoutForm"
 
 
@@ -12,9 +13,12 @@ export default function booking() {
         <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
-        <Checkout/>
+        {/* <Checkout/> */}
+       <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar/"> Reservar</Link>
       </main>
     </>
   );
 }
+
+
 

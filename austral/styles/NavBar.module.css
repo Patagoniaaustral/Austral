@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 1.5em;
     background: var(--clr-white);
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -20,15 +20,9 @@
     display: flex;
     list-style: none;
     margin:0;
+    gap: 3em;
  }
 
- .nav__container li{
-   margin-right: 3em;
-}
-
-/* .nav__container li :is(:active, :hover, :focus) {
-   color: var(--clr-primary);
-} */
 
 .nav__container :is(a, select){
   font-weight: 600;
@@ -47,40 +41,27 @@
 }
 
 
+
+.nav_toggle {
+  display: none;
+}
+
 @media(hover : hover){
   .nav__container li :is(:hover, :focus, :active) {
     color: var(--clr-primary);
   }
 }
 
-
-.nav_toggle {
-  display: none;
-}
- @media(max-width: 768px){
-  .nav__container{
-    padding: 1em .5em;
-  }
-
-  .nav__container img{
+@media(max-width: 1024px){
+  .nav__container img {
     margin-left: 0;
   }
-
-   .nav__container ul{
-    flex-direction: column;
-    justify-content: center;
-    font-size: xx-large;
-    text-transform: uppercase;
-    gap: 1em;
-    }
-
-    .hamburger {
-      margin-top: 0;
-    }
-    
+  .nav__container ul {
+    gap: 2em;
   }
+}
 
- @media (max-width: 950px) {
+ @media (max-width: 768px) {
    .nav {
      position: fixed;
      inset: 0;
@@ -90,6 +71,16 @@
      z-index: 100;
    }
 
+   .nav__container ul{
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    gap: 1em;
+    padding: 0 4em;
+    }
+
+   
 
    .nav_toggle {
      display: block;
@@ -125,6 +116,7 @@
    .hamburger {
      display: block;
      position: relative;
+     margin-top: 0;
    }
  
    .hamburger,
@@ -153,5 +145,6 @@
      bottom: 6px;
    }
  }
- 
+
+
  

@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import Link from "next/link"
-import Image from "next/image"
-import { useRouter } from "next/router";
-import homeEs from "../../../public/locale/ES/home.json"
-import homeEn from "../../../public/locale/EN/home.json"
-import HomeCar from "../../assets/home3.jpg"
-import Hexa from "../../assets/hexBorder.svg"
-import styles from "../../../styles/Home/Slider.module.css"
 import { motion, useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
+import { useRouter } from "next/router";
+import Link from "next/link"
+import Image from "next/image"
+import homeEs from "../../../public/locale/ES/home.json"
+import homeEn from "../../../public/locale/EN/home.json"
+import styles from "../../../styles/Home/Slider.module.css"
+
+import HomeCar from "../../assets/home3.jpg"
+import Hexa from "../../assets/hexBorder.svg"
 
 function Slider () {
   const router = useRouter();

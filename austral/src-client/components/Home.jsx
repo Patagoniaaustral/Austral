@@ -1,14 +1,14 @@
 import React, {useEffect} from 'react'
 import { useRouter } from "next/router";
-import Image from 'next/image'
 import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image'
+import HomeRoute from '../assets/home4.jpg'
 import HomeBooking from "./Home/HomeBooking"
 import Experiences  from "./Home/Experiences"
 import Slider from "./Home/Slider"
 import homeEs from "../../public/locale/ES/home.json"
 import homeEn from "../../public/locale/EN/home.json"
-import HomeRoute from '../assets/home4.jpg'
 import styles from "../../styles/Home/Home.module.css"
 
 function Home () {

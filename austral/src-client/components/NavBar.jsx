@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from 'next/image';
-import { useRouter } from "next/router";
+import LogoNavBar from "../../src-client/assets/logoNavBar.png"
 import navEs from "../../public/locale/ES/navbar.json"
 import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
-import LogoNavBar from "../../src-client/assets/logoNavBar.png"
 
 
 export const NavBar = () => {
@@ -50,7 +50,7 @@ export const NavBar = () => {
             </Link>
           </li>
           <li >
-            <Link href="/booking"  onClick={handleLinkClick}>
+            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar/"  onClick={handleLinkClick}>
               <span>{t.booking}</span>
             </Link>
           </li>

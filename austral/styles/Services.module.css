@@ -60,7 +60,7 @@
 /* ------------------- 2 DIVS EXTRA & REQUEST --------- */
 
 .services__container{
-    width: max(80%, 20em);
+    width: max(80%, 22em);
     margin: 2em auto;
     display:grid;
     grid-template-columns: 40% 60%;
