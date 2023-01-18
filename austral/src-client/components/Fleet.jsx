@@ -102,8 +102,14 @@ function  Fleet () {
           
           </div>
           <div classNAME={styles.image__container}>
-            {car.id === carsImages[index].id
-             && <Image  className={styles.card__image} src={carsImages[index].model} alt="sandero" width={350} heigth={100} priority/>}
+            {carsImages.map((image) => {
+              return (
+                <>
+                  {car.id === image.id && <Image  className={styles.card__image} src={image.model} alt="auto de la flota" width={350} heigth={100} priority/>}
+                </>
+              )
+            }
+            )}
           </div>
         </div>
         
