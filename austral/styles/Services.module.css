@@ -5,6 +5,7 @@
     justify-content: center;
     background-image: url(../src-client/assets/trama.svg);
     background-size: 100%;
+    background-repeat: repeat;
 }
 
 
@@ -38,10 +39,10 @@
 .covers__container {
     border-radius: 3em;
     box-shadow: var(--box-shadow);
-    padding: 2em 3em;
+    padding: 2em 2em 2em 4em;
     background-color: var(--clr-white);
     margin:5em 7em;
-    width: max(82%, 30em);
+    max-width: 82%;
     font-size: calc(.8em + 0.2vw);
 }
 
@@ -52,7 +53,11 @@
 
 .covers__container p {
     margin: 1em 0;
-    width: max(65ch, 85%);
+    width: 95%;
+}
+
+.covers__container span {
+    font-weight: 600;
 }
 
 .covers__container span {
@@ -135,27 +140,79 @@
 .services__container > img {
     position: absolute;
     z-index: 2;
-    left: 39%;
-    top: 158%;
+    left: 36%;
+    top: 148%;
 }
 
 
 
 /* ------------------- MEDIA QUERIES ------------------- */
+@media(max-width: 1300px){
+    .header__img{
+       padding: 0 2em;
+    }
+
+}
+
+@media(min-width: 750px) and (max-width: 1024px){
+
+    .services__container{
+        gap: 1em;
+    }
+    .services__extra_container{
+        padding: 1em;
+        font-size: calc(.8em + 0.2vw);
+    }
+
+    .services__require_container{
+        padding: 2em;
+        font-size: calc(.8em + 0.2vw);
+    }
+
+     .services__require_container > div {
+        flex-direction: column;
+    }
+}
+
+
 
 @media (max-width: 768px) { 
+    .header__img{
+        padding: 0em;
+    }
+
     .covers__container{
-        width: 95%;
+        width: 100%;
+        margin: 2em auto;
+        padding: 1.5em 2em;
     }
 
     .services__container{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 2em;
+        margin: 2em auto;
+        width: 85%;
     }
 
     .services__require_container > div {
         flex-direction: column;
     }
+
+    .services__extra_container{
+        width: 100%;
+        padding: 2em;
+        font-size: calc(.8em + 0.2vw);
+    }
+
+    .services__require_container{
+        width: 100%;
+        padding: 2em;
+        font-size: calc(.8em + 0.2vw);
+    }
+
+   
 
     .header__img img {
         object-fit: scale-down;
@@ -171,5 +228,7 @@
         display: none;
     }
 }
+
+
 
 
