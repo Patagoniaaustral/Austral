@@ -37,7 +37,6 @@
 .row__container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     gap: 2em;
@@ -84,6 +83,7 @@
 
 .image__container{
     width: 50%;
+    height: 400px;
 }
 
 .image__container img {
@@ -116,23 +116,34 @@
     }
 }
 
+@media(max-width: 1200px){
+    .general__container{
+        padding: 1.5em;
+    }
 
-@media(max-width: 726px){
+    .slider__image{
+        top: 50%;
+        left: 27%;
+    }
+
+    
+}
+
+
+@media(max-width: 768px){
     .general__container{
       padding: 1em 0;
       width: 90%;
     }
 
     .row__container{
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        width: 100%;
-        gap: 2em;
     }
 
     .info__container{
         width: 100%;
+
     }
 
     .image__container{
@@ -140,10 +151,10 @@
     }
 
     .slider__image{
-        width: 300px;
-        height: 200px;
-        top:71%;
-        left: 29%;
+        width: 500px;
+        height: 300px;
+        top:65%;
+        left: 35%;
     }
 
     
