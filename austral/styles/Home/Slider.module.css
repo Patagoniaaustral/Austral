@@ -124,9 +124,7 @@
     .slider__image{
         top: 50%;
         left: 27%;
-    }
-
-    
+    }  
 }
 
 
@@ -157,11 +155,9 @@
         left: 35%;
     }
 
-    
     .section__container > img:first-child {
         display: none;
     }
-
 
     .section__container > img:nth-child(2) {
         display: none;

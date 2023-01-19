@@ -18,7 +18,7 @@ function Contact() {
     phone: "",
     email : "",
     message: "",
-    }
+  }
 
 
   const [input, setInput]= useState(dataInput)

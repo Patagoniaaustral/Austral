@@ -49,17 +49,16 @@ function Home () {
 
 
      <section ref={ref} className={styles.section__container}>  
-    
       <motion.div animate={animation} className={styles.image__container}>
-        <Image src={HomeRoute} alt="ruta hacia el horizonte" width={250} height={500} />
+        <Image className={styles.image}src={HomeRoute} alt="ruta hacia el horizonte" width={250} height={500} />
       </motion.div>
 
-      <div>
-        <h2>{t.about.atitle}</h2>
-        <p>{t.about.atext} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis! Eius adipisci tempora nobis, amet reprehenderit, vitae, culpa aspernatur sed minima nemo autem? Libero earum alias dignissimos cum repellat esse ea error non dolorem assumenda. Illum, cumque sapiente dicta vero, in quis fuga amet enim ab magnam aliquam, distinctio reiciendis.</p>
-        <div> 
+      <div className={styles.about}>
+        <h2 className={styles.about__title}>{t.about.atitle}</h2>
+        <p className={styles.about__text}>{t.about.atext} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis! Eius adipisci tempora nobis, amet reprehenderit, vitae, culpa aspernatur sed minima nemo autem? Libero earum alias dignissimos cum repellat esse ea error non dolorem assumenda. Illum, cumque sapiente dicta vero, in quis fuga amet enim ab magnam aliquam, distinctio reiciendis.</p>
+        <div className={styles.about__linetime}> 
           <h3>1980</h3>
-          <div className={styles.line}></div>
+          <div className={styles.about__line}></div>
           <h3>2023</h3>
         </ div>
       </div>
