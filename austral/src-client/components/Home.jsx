@@ -45,7 +45,7 @@ function Home () {
   return (
     <div className={styles.main} >
      <HomeBooking/>
-     <Slider/>
+     {/* <Slider/> */}
 
 
      <section ref={ref} className={styles.section__container}>  
@@ -55,7 +55,7 @@ function Home () {
 
       <div className={styles.about}>
         <h2 className={styles.about__title}>{t.about.atitle}</h2>
-        <p className={styles.about__text}>{t.about.atext} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis! Eius adipisci tempora nobis, amet reprehenderit, vitae, culpa aspernatur sed minima nemo autem? Libero earum alias dignissimos cum repellat esse ea error non dolorem assumenda. Illum, cumque sapiente dicta vero, in quis fuga amet enim ab magnam aliquam, distinctio reiciendis.</p>
+        <p className={styles.about__text}>{t.about.atext} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis! Eius adipisci tempora nobis, amet reprehenderit, vitae, culpa aspernatur sed minima nemo autem? Libero earum alias dignissimos cum repellat esse ea error non dolorem assumenda. Illum, cumque sapiente dicta vero, in quis fuga amet enim ab magnam aliquam, distinctio reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis. Eius sint culpa, deleniti, aliquid suscipit quidem deserunt dolore ipsum consequatur quam</p>
         <div className={styles.about__linetime}> 
           <h3>1980</h3>
           <div className={styles.about__line}></div>

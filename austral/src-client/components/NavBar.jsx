@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from 'next/image';
 import LogoNavBar from "../../src-client/assets/logoNavBar.png"
+import Es from "../../src-client/assets/lang-es.png"
+import En from "../../src-client/assets/lang-en.png"
 import navEs from "../../public/locale/ES/navbar.json"
 import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
@@ -11,8 +13,7 @@ import styles from "../../styles/NavBar.module.css"
 export const NavBar = () => {
   const router = useRouter();
   const t = router.locale === "es" ? navEs : navEn;
-
-  //FOR RESPONSIVE NAV MENU
+  const [lang, setLang] = useState(Es);
   const [isActive, setIsActive] = useState(false);
   
   const handleNavToggle = () => {
@@ -24,6 +25,7 @@ export const NavBar = () => {
     router.push(router.pathname, router.pathname, {
       locale : value
     })
+    setLang(lang === Es ? En : Es);
   }
 
   const handleLinkClick = () => {
@@ -31,6 +33,8 @@ export const NavBar = () => {
       setIsActive(false);
     }, 1000);
   };
+
+
 
 
   return (
@@ -65,14 +69,15 @@ export const NavBar = () => {
             </Link>
           </li>
           <li >
-            <Link href="/contact"   onClick={handleLinkClick}>
+            <Link href="/contact" onClick={handleLinkClick}>
               <span>{t.contact}</span>
             </Link>
           </li>
-          <li >
+          <li className={styles.lang__item} >
+              <Image src={lang} alt="" width={30} height={30} />
             <select onChange={handleChange}>
-              <option value="es"  onClick={handleLinkClick}>ES</option>
-              <option value ="en"  onClick={handleLinkClick}>EN</option>
+              <option value="es" >ES</option>
+              <option value ="en">EN</option>
             </select>
           </li> 
           </ul>
