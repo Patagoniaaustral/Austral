@@ -55,8 +55,8 @@
 .slider__image{
     z-index: 2;
     position: absolute;
-    top: 32%;
-    left: 27%;
+    top: 35%;
+    left: 30%;
 }
 
 .slider__btnsContainer{
@@ -116,8 +116,8 @@
     }
     
     .slider__btn:is(:focus, :hover, :active){
-        background-color: var(--clr-black);
-        border: 2px solid var(--clr-dark-gray);
+        background-color: var(--clr-gray);
+        border: 2px solid var(--clr-gray);
     }
 }
 
