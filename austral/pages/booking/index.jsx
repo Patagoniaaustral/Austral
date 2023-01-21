@@ -13,9 +13,7 @@ export default function booking() {
         <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
-        {/* <Checkout/> */}
-        <p>PROXIMAMENTE ...</p>
-       <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar/">CONEXION PAGINA ANTERIOR</Link>
+        <Checkout/>
       </main>
     </>
   );

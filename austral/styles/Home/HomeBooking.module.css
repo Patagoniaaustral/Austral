@@ -7,21 +7,15 @@
     padding: 0 7em;  ;
 }
 
-/* 
-.section__container{
-    padding: 4em; 
-    position: relative;
-    z-index: 1;
-} */
-
 .booking__all_container{
     width: 100%;
-    max-width: 95%;
+    max-width: 86%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     box-shadow: var(--box-shadow);
     border-radius: 2em;
-    padding:  2em;
+    padding:  2em 1.5em;
     z-index: 1;
     position: relative;
     background-color: var(--clr-white);
@@ -35,19 +29,15 @@
     justify-content: center;
 }
 
-.hexa {
-    position: absolute;
-    top: 25%;
-    left: 22%;
-    z-index: 1;
-}
+
 
 .header__img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/7;
     object-fit: cover;
-    object-position: center;
+    object-position: 0 65%; 
     border-radius: 0 0 3em 3em;
-    box-shadow: var(--box-shadow);
-    filter: brightness(105%);
 }
 
 
@@ -61,6 +51,12 @@
     line-height: 1;
 }
 
+.hexa {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    z-index: 1;
+}
 
 .section__container div:has(h2){
     background-color: var(--clr-medium-beige);
@@ -69,40 +65,45 @@
     width: fit-content;
     border-radius: 1em 1em 0 0;
     position: absolute;
-    top: 73%;
-    left: 16%;
+    top: 80%;
+    left: 15%;
     z-index: 1;
     font-size: 1.5rem;
     text-align: start;
 }
 
 .booking__container{
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap : 1rem;
+    gap : 1.3rem;
 }
 
 .booking__selects_container{
     display: flex;
-    gap : 1.5rem;
+    gap : 2rem;
 }
 
 .select{
     width: 100%; 
     border-radius: var(--border-radius);
-    padding: .7em;
+    padding: .6em 1.3em;
     font-size: 1rem;
-    border: 1px solid var(--clr-gray);
+    color: rgba(0, 0, 0, .3);
+    border: 2px solid var(--clr-gray);
     background-color: var(--clr-white);
     box-shadow: inset 0 2px 5px 0 rgba(0,0,0,.1);
     -webkit-appearance: none;
 }
 
+
 .search__btn{
     background-color: var(--clr-primary);
-    color : var(--clr-white);
-    padding: .2em 2em;
-    border-radius: var(--border-radius);
+    color : rgba(255, 255, 255, 0.9);
+    font-weight: 800;
+    padding: .5em 2em;
+    margin-right: 4em;
+    border-radius: 3em;
     border: none;
 }
 
@@ -179,16 +180,6 @@
         padding: .4em 1em;      
     }
 
-    .header__img{
-        padding: 0;
-    }
-
-    .header__img img {
-        object-fit: scale-down;
-        width: 100%;
-        height: 100%;
-    }
-
     .header__img h1 > span {
         font-size: 6.5vw;
         left: 4%;
@@ -196,6 +187,10 @@
 
     .hexa{
       display: none;
+    }
+
+    .search__btn{
+        margin: 0;
     }
 
 }

@@ -19,7 +19,7 @@
 
 .header__img img {
     object-fit: cover;
-    object-position: center;
+    object-position: 10% 0;
     border-radius: 0 0 3em 3em;
 }
 
@@ -32,7 +32,7 @@
     left: 10%;
     font-size: 2.5rem;
     font-weight: 800;
-    filter: drop-shadow(0 .1em .1em rgba(0,0,0,.6));
+    filter: drop-shadow(0 .1em .1em rgba(0,0,0,.4));
 }
 
 
@@ -152,6 +152,10 @@
 @media(max-width: 1300px){
     .header__img{
        padding: 0 2em;
+    }
+
+    .header__img img{
+        object-position: 50% 0;
     }
 
 }

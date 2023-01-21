@@ -54,7 +54,7 @@ export const NavBar = () => {
             </Link>
           </li>
           <li >
-            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar/"  onClick={handleLinkClick}>
+            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick}> 
               <span>{t.booking}</span>
             </Link>
           </li>

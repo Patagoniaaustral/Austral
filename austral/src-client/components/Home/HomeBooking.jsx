@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
+import axios from "axios" 
 import Image from 'next/image'
 import HomeMain from "../../assets/HomeMain.jpg"
 import Hexa from "../../assets/hexBorder.svg"
@@ -15,10 +16,11 @@ function HomeBooking () {
   const objectSelect = {
     category: "none",
     pickUpPlace: "none",
-    returnPlace: "none"
+    returnPlace: "none",
   }
   
   const [select, setSelect] = useState(objectSelect)
+  
   const [pickUpDate, setPickUpDate] = useState(null)
   const [returnDate, setReturnDate] = useState(null)
   const [startTime, setStartTime] = useState(new Date());
@@ -60,13 +62,38 @@ function HomeBooking () {
    }
 }
   
-
-  const handleClick = (e) => {   
-      router.push({
-        pathname: "/booking",
-      })
+const handlesubmit = async(e) => {   
+  e.preventDefault()
+    const data ={
+      select,
+      pickUpDate,
+      returnDate,
+      startTime,
+      endTime
     }
+    
+
   
+// falta cors !
+    await axios("https://www.patagoniaaustralrentacar.com.ar/reservar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        // "Access-Control-Allow-Origin": "*",
+        // "Access-Control-Allow-Methods": "POST",
+        // "Access-Control-Allow-Headers": "Content-Type",
+      },
+      data: JSON.stringify(data)
+    })
+    .then(res => {
+      window.location.href = "https://www.patagoniaaustralrentacar.com.ar/reservar"
+      console.log(res, "post works")
+    })
+    .catch(err => {
+      console.log(err, "post doesn't work")
+    })
+  }
+
 
 
   return (
@@ -85,7 +112,7 @@ function HomeBooking () {
       <h2>{t.rent}</h2>
     </div>
 
-      <div className={styles.booking__all_container}>
+      <form className={styles.booking__all_container} onSubmit={handlesubmit}>
         
         <div className={styles.booking__container}>
           <div className={styles.booking__selects_container}>
@@ -148,7 +175,7 @@ function HomeBooking () {
           onChange={(startTime) => setStartTime(startTime)}
           showTimeSelect
           showTimeSelectOnly
-          timeIntervals={60}
+          timeIntervals={30}
           timeCaption="Time"
           dateFormat="h:mm aa" 
           placeholderText={t.booking.btimepickup} 
@@ -160,16 +187,15 @@ function HomeBooking () {
           onChange={(endTime) => setEndTime(endTime)}
           showTimeSelect
           showTimeSelectOnly
-          timeIntervals={60}
+          timeIntervals={30}
           timeCaption="Time"
           dateFormat="h:mm aa"
           placeholderText={t.booking.btimereturn}
-        
         />
         </div>
       </div>
-          <button className={styles.search__btn} onClick={handleClick}>{t.booking.bsearch}</button>
-      </div>
+          <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button>
+      </form>
     </section>
   );
 }

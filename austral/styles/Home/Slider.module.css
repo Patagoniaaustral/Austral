@@ -24,24 +24,15 @@
 
 .general__container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
+    justify-content: space-between;
+    gap: 2em;
     background-color: var(--clr-secondary);
     border-radius: 3em;
-    padding: 2.5em 5em;
+    padding: 2.5em 5em 10em 5em;
     width: 85%;
     margin-bottom: 3em;
 }
 
-.row__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 2em;
-    z-index: 1;
-}
 
 
 .info__container{
@@ -68,17 +59,31 @@
     left: 27%;
 }
 
-.slider__btns{
+.slider__btnsContainer{
     display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 87%;
+    transform: translate(-50%, -50%);
 }
 
-.slider__btns button{
+.slider__btn{
     padding: .5em;
     border-radius: 50%;
     margin: 0 .6em;
     background-color: var(--clr-white);
     position: relative;
 }
+
+.slider__btnselected{
+    padding: .5em;
+    border-radius: 50%;
+    margin: 0 .6em;
+    background-color: var(--clr-dark-gray);
+    border: 2px solid var(--clr-dark-gray);
+}
+
+
 
 
 .image__container{
@@ -95,7 +100,7 @@
 }
 
 
-.btn{
+.info__btn{
     color: var(--clr-white);
     background-color: var(--clr-primary);
     border: none;
@@ -105,13 +110,13 @@
 
 
 @media(hover : hover){
-    .btn:is(:focus, :hover, :active){
+    .info__btn:is(:focus, :hover, :active){
         background-color: var(--clr-gray);
         color: var(--clr-black);
     }
     
-    .slider__btn:is(:focus, :hover :active){
-        background-color: var(--clr-gray);
+    .slider__btn:is(:focus, :hover, :active){
+        background-color: var(--clr-black);
         border: 2px solid var(--clr-dark-gray);
     }
 }
