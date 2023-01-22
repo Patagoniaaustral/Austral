@@ -7,7 +7,7 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import styles from "../../../styles/Home/Slider.module.css"
 import Redcar from "../../assets/redcar.png"
-import Nissan from "../../assets/nissan.png"
+import Gol from "../../assets/gol2.png"
 import HomeCar from "../../assets/home3.jpg"
 import Hexa from "../../assets/hexBorder.svg"
 
@@ -41,7 +41,6 @@ function Slider () {
   }, [inView])
 
   const [image, setImage] = useState(Redcar)
-  // para que el boton seleccionado se quede de color gris y el otro blanco
   const [selected, setSelected] = useState(0)
 
 
@@ -67,13 +66,11 @@ function Slider () {
           </motion.div>
       </div>
 
-        <div>
-          <Image className={styles.slider__image} src={image} alt="cars" width={600} height={350} />
-        </div>
+        <Image className={styles.slider__image} src={image} alt="cars" width={600} height={350} />
         
         <div className={styles.slider__btnsContainer}>
           <button value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
-          <button value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Nissan); setSelected(1)}}></button>
+          <button value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Gol); setSelected(1)}}></button>
         </div>
 
     </section>

@@ -73,7 +73,7 @@ const handlesubmit = async(e) => {
     }
     
 
-  
+  // HACER POST A SERRVIDOR O MANDAR POR QUERY U OTRO MEDIO??
 // falta cors !
     await axios("https://www.patagoniaaustralrentacar.com.ar/reservar", {
       method: "POST",
