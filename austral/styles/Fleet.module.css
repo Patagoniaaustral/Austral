@@ -91,11 +91,11 @@
     margin: .5em 0;
 }
 
-/* .image__container img{
-    width: 100%;
+.image__container img{
+    width: 90%;
     height: 100%;
-    object-fit: contain;
-} */
+    object-fit: scale-down;
+}
 
 .card__image{
     z-index: 2;

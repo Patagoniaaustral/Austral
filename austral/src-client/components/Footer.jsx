@@ -77,7 +77,7 @@ const handleSubmit = async(e) => {
         <div>
           <h2>{t.service}</h2>
             <Link href="/fleet"><p>{t.fleet}</p></Link>
-            <Link href="/booking"><p>{t.booking}</p></Link>
+            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar"><p>{t.booking}</p></Link>
         </div>
       </div>
 
