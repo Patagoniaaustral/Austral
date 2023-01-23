@@ -82,21 +82,25 @@ function Contact() {
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form__container} autoComplete="on"  >
-        <label>{t.lastname}</label>
-        <input type="text" name="lastName" value={input.lastName} onChange={handleChange} required/>
+        <label><span>{t.lastname}</span>
+        <input type="text" name="lastName"  aria-label="required" value={input.lastName} onChange={handleChange} required/>
         {error.lastName && ( <p>{error.lastName}</p>)}
+        </label>
 
-        <label>{t.phone}</label>
-        <input type="text" name="phone" value={input.phone} onChange={handleChange} required/>
+        <label><span>{t.phone}</span>
+        <input type="text" name="phone"  aria-label="required" value={input.phone} onChange={handleChange} required/>
         {error.phone && ( <p>{error.phone}</p>)}
+        </label>
 
-        <label>{t.email}</label>
-        <input type="email" name="email" value={input.email} onChange={handleChange} required/>
+        <label><span>{t.email}</span>
+        <input type="email" name="email"  aria-label="required" value={input.email} onChange={handleChange} required/>
         {error.email && ( <p>{error.email}</p>)}
+        </label>
 
-        <label>{t.message}</label>
-        <textarea name="message" value={input.message}  onChange={handleChange} required></textarea>
+        <label><span>{t.message}</span>
+        <textarea name="message"  aria-label="required" value={input.message} onChange={handleChange} required></textarea>
         {error.message && ( <p>{error.message}</p>)}
+        </label>
 
         <button type ="submit"  disabled={Object.values(error).length !== 0}>{t.send}</button>
       </form>

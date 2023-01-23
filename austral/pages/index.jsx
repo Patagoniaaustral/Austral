@@ -30,7 +30,7 @@ export default function Home() {
         <meta property="og:title" content="Austral Rent A Car" />
         <meta property="og:description" content="Austral Rent A Car" />
         <meta property="og:url" content="https://www.australrentacar.com.ar/" />
-        <link rel="canonical" href="https://www.australrentacar.com.ar/" />
+        {/* <link rel="canonical" href="https://www.australrentacar.com.ar/" /> */}
         <link rel="icon" href="/favicon.png" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>

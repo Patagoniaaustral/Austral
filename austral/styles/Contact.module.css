@@ -69,6 +69,11 @@
 }
 
 .form__container label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__container label > span {
     margin: 0 0 .5em .8em;
     font-weight: 500;
 }

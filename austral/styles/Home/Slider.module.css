@@ -99,6 +99,8 @@
     position: relative;
 }
 
+
+
 .slider__btnselected{
     padding: .5em;
     border-radius: 50%;
@@ -107,7 +109,10 @@
     border: 2px solid var(--clr-dark-gray);
 }
 
+.input{
+    padding: 1em;
 
+}
 
 
 

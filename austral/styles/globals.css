@@ -6,7 +6,8 @@ a {
 :root {
   /* colors */
   color: #0D0D0D; 
-  --clr-primary:  #E14444; 
+  /* --clr-primary:  #E14444;  */
+  --clr-primary: #DD3131;
   --clr-secondary:#FFF6E8; 
   --clr-medium-beige: #E4D2B6; 
   --clr-bkg-gray: #F5F5F5;

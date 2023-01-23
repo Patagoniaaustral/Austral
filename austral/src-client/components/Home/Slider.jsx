@@ -69,8 +69,8 @@ function Slider () {
         <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={600} height={350} />
         
         <div className={styles.slider__btnsContainer}>
-          <button value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
-          <button value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Gol); setSelected(1)}}></button>
+          <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
+          <button aria-label="cambiar imagen" value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Gol); setSelected(1)}}></button>
         </div>
 
     </section>

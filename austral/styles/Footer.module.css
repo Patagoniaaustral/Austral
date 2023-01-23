@@ -28,7 +28,7 @@
 .footer__first_row div > p,
 .footer__first_row div a > p {
     font-weight: 300;
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 
@@ -57,6 +57,7 @@
 .footer__second_row button{
     color: var(--clr-primary);
     background-color: var(--clr-medium-beige);
+    /* background-color: var(--clr-white); */
     border: none;
     border-radius: var(--border-radius-btn);
     padding: .4em 2em;
@@ -101,7 +102,7 @@
 }
 
 
-@media(max-width: 40em){
+@media(max-width: 768px){
     .footer__container{
         display: flex;
         flex-direction: column;
