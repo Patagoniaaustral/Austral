@@ -20,7 +20,7 @@ function Services () {
       <div className={styles.header__img}>
         <Image
           src={ServicesImg}
-          alt="vista subjetiva de pasajero manejando"
+          alt="niño asomanose del auto"
           width={1300}
           height={400}
           priority
@@ -38,15 +38,15 @@ function Services () {
         <p>{t.text3}</p>
       </div>
       
-      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
+      <Image src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
 
         <div className={styles.services__container}>
           <div className={styles.services__extra_container}>
             <h2>{t.extras}</h2>
             <ul>
-              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra1}</li>
-              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra2}</li>
-              <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.extra3}</li>
+              <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.extra1}</li>
+              <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.extra2}</li>
+              <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.extra3}</li>
             </ul>
           </div>
 
@@ -54,18 +54,18 @@ function Services () {
             <h2>{t.required}</h2>
             <div>
               <div>
-                <Image src={Credent} alt="credencial" width={200} height={100}
+                <Image src={Credent} alt=" icono de permiso conducir" width={200} height={100}
                 />
               </div>
               <ul>
-                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req1}</li>
-                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req2}</li>
-                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req3}</li>
-                <li><Image src={HexaIco} alt="hexagono2" width={12} height={16} />{t.req4}</li>
+                <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req1}</li>
+                <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req2}</li>
+                <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req3}</li>
+                <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req4}</li>
               </ul>
             </div>
           </div>
-            <Image src={Hexa} alt="hexagono2" width={100} height={100} />
+            <Image src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image'
-import HomeRoute from '../assets/home4.jpg'
+import HomeRoute from '../assets/ruta-patagonica.jpg'
 import HomeBooking from "./Home/HomeBooking"
 import Experiences  from "./Home/Experiences"
 import Slider from "./Home/Slider"
@@ -48,7 +48,7 @@ function Home () {
      <Slider/>
      <section ref={ref} className={styles.section__container}>  
       <motion.div animate={animation} className={styles.image__container}>
-        <Image className={styles.image}src={HomeRoute} alt="ruta hacia el horizonte" width={250} height={500} />
+        <Image className={styles.image}src={HomeRoute} alt="ruta patagonica hacia el horizonte" width={250} height={500} />
       </motion.div>
 
       <div className={styles.about}>

@@ -40,7 +40,7 @@ export const NavBar = () => {
   return (
     <header className={styles.nav__container} >
       
-      <Link href="/"><Image src={LogoNavBar} alt="" width={180} height={30} /></Link>
+      <Link href="/"><Image src={LogoNavBar} alt="Logo Austral Rental" width={180} height={30} priority /></Link>
           
       <button onClick={handleNavToggle} className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle} aria-label="toggle navigation">
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
@@ -74,9 +74,9 @@ export const NavBar = () => {
             </Link>
           </li>
           <li className={styles.lang__item} >
-              <Image src={lang} alt="" width={30} height={30} />
-            <select onChange={handleChange}>
-              <option value="es" >ES</option>
+            <Image src={lang} alt="icono de banderas de paises" width={30} height={30} />
+            <select  onClick={handleLinkClick}  onChange={handleChange}>
+              <option value="es">ES</option>
               <option value ="en">EN</option>
             </select>
           </li> 

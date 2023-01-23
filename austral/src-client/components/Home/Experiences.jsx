@@ -25,21 +25,21 @@ function Experiences () {
     {
       id: 1,
       image: Exp3,
-      alt: "vista desde el hotel",
+      alt: "vista de hotel de montaña",
       title: t.experience.esubtitle1,
       controls : controls1
     },
     {
       id: 2,
       image: Exp2,
-      alt: "vista dese las montañas",
+      alt: "vista a paisaje de montaña",
       title: t.experience.esubtitle2,
       controls : controls2
     },
     {
       id: 3,
       image: Exp1,
-      alt: "restaurant en la montaña",
+      alt: "restaurant de montaña",
       title: t.experience.esubtitle3,
       controls : controls3
     }
@@ -75,8 +75,8 @@ function Experiences () {
  
   return (
     <section className={styles.section__container}>
-      <Image className={styles.section__firstHexa} src={Hexa} alt="hexagono1" width={100} height={100} />
-      <Image  className={styles.section__secondHexa}src={Hexa} alt="hexagono1" width={50} height={50} />
+      <Image className={styles.section__firstHexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
+      <Image  className={styles.section__secondHexa}src={Hexa} alt="icono de hexagono grande" width={50} height={50} />
       <h2 className={styles.section__title}>{t.experience.etitle}</h2>
       <p className={styles.section__text}>{t.experience.etext}</p>
 

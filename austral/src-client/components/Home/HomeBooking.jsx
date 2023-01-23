@@ -103,9 +103,9 @@ const handlesubmit = async(e) => {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
-      <Image src ={HomeMain} alt="" width={1500} height={500} priority="true"/>
+      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1500} height={500} priority/>
     </div>
-      <Image className={styles.hexa} src={Hexa} alt="hexagono1" width={100} height={100} />
+      <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
 
 
     <div>

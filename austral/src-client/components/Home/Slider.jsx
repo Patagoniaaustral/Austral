@@ -51,8 +51,8 @@ function Slider () {
 
   return (
     <section className={styles.section__container}>
-      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
-      <Image src={Hexa} alt="hexagono1" width={100} height={100} />
+      <Image src={Hexa} alt="icono de hexagono" width={100} height={100} />
+      <Image src={Hexa} alt="icono de hexagono" width={100} height={100} />
       
       <div ref={ref} className={styles.general__container}>
           <div className={styles.info__container}>
@@ -62,11 +62,11 @@ function Slider () {
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            <Image src={HomeCar} alt="" width={1300} height={400} />
+            <Image src={HomeCar} alt="viaje en ruta por patagonia" width={1300} height={400} />
           </motion.div>
       </div>
 
-        <Image className={styles.slider__image} src={image} alt="cars" width={600} height={350} />
+        <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={600} height={350} />
         
         <div className={styles.slider__btnsContainer}>
           <button value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>

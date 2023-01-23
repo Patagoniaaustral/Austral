@@ -86,42 +86,36 @@ function  Fleet () {
   <div className={currentFleet.length === 2 ? styles.double__cards : styles.fleet__grid}>
     {currentFleet.map((car, index) => {
       return (
-        <>
-        <div className={styles.card} key={car.id}>
+        <div className={styles.card} key={index}>
           <h2 className={styles.card__title}>{car.model}</h2>
           <span className={styles.card__category}>{t.catego} {car.category}</span>
+          
           <div className={styles.card__info}>
-              <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
+              <Image src={CarIcon3} alt="icono de cantidad de pasajeros" width="20" heigth="20"/>
               <p> {car.capacity} {t.passengers}</p> 
 
-              <Image src={ CarIcon2} alt="icono de transmision" width="20" heigth="20"/>
+              <Image src={ CarIcon2} alt="icono de transmision automotor" width="20" heigth="20"/>
               <p>{car.transmition}</p> 
           
-              <Image src={CarIcon1} alt="imagen de auto" width="20" heigth="20"/>
+              <Image src={CarIcon1} alt="icono de motor automotor" width="20" heigth="20"/>
               <p>{car.motor}</p> 
-          
           </div>
 
           <div>
-            {carsImages.map((image) => {
+            {carsImages.map((image, index) => {
               return (
-                <>
-                  {car.id === image.id && <Image  className={styles.card__image} src={image.model} alt="modelo de auto" width={350} heigth={100} priority/>}
-                </>
-              )
-            }
-            )}
-            </div>
+                <div key={index}>
+                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto" width={350} heigth={100}/>}
+                </div>
+              )})}
+          </div>
         </div>
-        
-        </>
-      )
-    })}
+      )})}
     </div>
 
     <div className={styles.brands__container}>
       <Image src={LogoFiat} alt="logo de fiat" width="50" heigth="50"/>
-      <Image src={LogoVW} alt="logo de vw" width="50" heigth="50"/>
+      <Image src={LogoVW} alt="logo de volkswagen" width="50" heigth="50"/>
       <Image src={LogoRenault} alt="logo de renault" width="70" heigth="70"/>
       <Image src={LogoNissan} alt="logo de nissan" width="50" heigth="50"/>
       <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
