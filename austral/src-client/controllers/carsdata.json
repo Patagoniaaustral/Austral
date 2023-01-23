@@ -9,6 +9,49 @@
     "category" : "A"
     },
     {
+      "id" : 4,
+      "model": "Chevrolet Onix",
+      "capacity" : 7,
+      "transmition" : "automatic",
+      "motor" : "diesel",
+      "category" : "A"
+  
+      },
+      {
+        "id" : 6,
+        "model": "Volkswagen Gol Trend",
+        "capacity" : 7,
+        "transmition" : "automatic",
+        "motor" : "diesel",
+        "category" : "A"
+        },
+        {
+          "id" : 5,
+          "model": "Renault Kwid",
+          "capacity" : 7,
+          "transmition" : "automatic",
+          "motor" : "diesel",
+          "category" : "A"
+          },
+       {
+        "id" : 7,
+        "model": "Renault Logan Life",
+        "capacity" : 7,
+        "transmition" : "automatic",
+        "motor" : "diesel",
+        "category" : "B"
+    
+        },
+        {
+          "id" : 8,
+          "model": "Chevrolet Prisma",
+          "capacity" : 7,
+          "transmition" : "automatic",
+          "motor" : "diesel",
+          "category" : "B"
+    
+          },
+    {
     "id" : 2,
     "model": " Chevrolet Spin",
     "capacity" : 7,
@@ -17,58 +60,7 @@
     "category" : "C"
  
     },
-    {
-    "id" : 3,
-    "model": "Nissan Frontier",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "E"
-
-    },
-   {
-    "id" : 4,
-    "model": "Chevrolet Onix",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "A"
-
-    },
-    {
-    "id" : 5,
-    "model": "Renault Kwid",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "A"
-    },
-    {
-    "id" : 6,
-    "model": "Volkswagen Gol Trend",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "A"
-    },
-   {
-    "id" : 7,
-    "model": "Renault Logan Life",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "B"
-
-    },
-    {
-      "id" : 8,
-      "model": "Chevrolet Prisma",
-      "capacity" : 7,
-      "transmition" : "automatic",
-      "motor" : "diesel",
-      "category" : "B"
-
-      },
+    
    {
     "id" : 9,
     "model": "Fiat Toro Freedom 4x2",
@@ -76,5 +68,14 @@
     "transmition" : "automatic",
     "motor" : "diesel",
     "category" : "D"
+    },
+    {
+    "id" : 3,
+    "model": "Nissan Frontier",
+    "capacity" : 7,
+    "transmition" : "automatic",
+    "motor" : "diesel",
+    "category" : "E"
     }
+
 ]

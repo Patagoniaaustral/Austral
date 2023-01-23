@@ -2,7 +2,7 @@
     "fleet" : "NUESTRA FLOTA",
     "booking" :{
         "bcategory" : {
-            "none" : "Seleccione una categoría",
+            "none" : "CATEGORÍA",
             "a" : "Categoría A",
             "b" : "Categoría B",
             "c" : "Categoría C",

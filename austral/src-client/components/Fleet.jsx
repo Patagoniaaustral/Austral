@@ -19,7 +19,7 @@ import CarIcon1 from "../../src-client/assets/motor-ico.png"
 import CarIcon2 from "../../src-client/assets/car-ico.png"
 import CarIcon3 from "../../src-client/assets/car-seat-ico.png"
 
-import Prisma from "../assets/redcar.png"
+import Prisma from "../assets/prisma2.png"
 import Nissan from "../assets/nissan.png"
 import Spin from "../assets/chevro.png"
 import Logan from "../assets/logan.png"
@@ -30,14 +30,14 @@ import Onix from "../assets/onix.png"
 
 const carsImages = [
   {model: Sandero, id: 1},
-  {model: Spin, id: 2},
-  {model: Nissan, id: 3},
   {model: Onix, id: 4},
-  {model: Sandero, id: 5},
   {model: Gol, id: 6},
+  {model: Sandero, id: 5},
   {model: Logan, id: 7},
   {model: Prisma, id: 8},
-  {model: Toro, id: 9}
+  {model: Spin, id: 2},
+  {model: Toro, id: 9},
+  {model: Nissan, id: 3}
 ]
 
 
@@ -83,14 +83,14 @@ function  Fleet () {
       </select>
     </div>
 
-  <div className={styles.fleet__grid}>
+  <div className={currentFleet.length === 2 ? styles.double__cards : styles.fleet__grid}>
     {currentFleet.map((car, index) => {
       return (
         <>
-        <div className={styles.fleet__grid_card} key={car.id}>
-          <h2>{car.model}</h2>
-          <span>{t.catego} {car.category}</span>
-          <div>
+        <div className={styles.card} key={car.id}>
+          <h2 className={styles.card__title}>{car.model}</h2>
+          <span className={styles.card__category}>{t.catego} {car.category}</span>
+          <div className={styles.card__info}>
               <Image src={CarIcon3} alt="icono de pasajeros" width="20" heigth="20"/>
               <p> {car.capacity} {t.passengers}</p> 
 
@@ -101,16 +101,17 @@ function  Fleet () {
               <p>{car.motor}</p> 
           
           </div>
-          <div classNAME={styles.image__container}>
+
+          <div>
             {carsImages.map((image) => {
               return (
                 <>
-                  {car.id === image.id && <Image  className={styles.card__image} src={image.model} alt="auto de la flota" width={350} heigth={100} priority/>}
+                  {car.id === image.id && <Image  className={styles.card__image} src={image.model} alt="modelo de auto" width={350} heigth={100} priority/>}
                 </>
               )
             }
             )}
-          </div>
+            </div>
         </div>
         
         </>
