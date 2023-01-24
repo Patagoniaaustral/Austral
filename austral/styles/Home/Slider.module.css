@@ -7,7 +7,7 @@
 }
 
 
-.section__container > img:first-child {
+.first__hexa {
    position: absolute;
     top: 0;
     left: 5%;
@@ -15,9 +15,9 @@
 
 }
 
-.section__container > img:nth-child(2) {
+.second__hexa {
     position: absolute;
-     top: 75%;
+     top: 77%;
      left: 88%;
      z-index: 2;
  }
@@ -109,10 +109,6 @@
     border: 2px solid var(--clr-dark-gray);
 }
 
-.input{
-    padding: 1em;
-
-}
 
 
 
@@ -149,10 +145,6 @@
     .slider__btnsContainer{
         top:89%;
     }
-
-    /* .section__container > img:nth-child(2) {
-        display: none;
-    } */
 }
 
 
@@ -187,13 +179,8 @@
         top: 92%;
     }
 
-    .section__container > img:first-child {
+    .first__hexa, .second__hexa{
         display: none;
-    }
-
-    .section__container > img:nth-child(2) {
-        display: none;
-
     }
 }
 

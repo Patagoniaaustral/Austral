@@ -51,8 +51,8 @@ function Slider () {
 
   return (
     <section className={styles.section__container}>
-      <Image src={Hexa} alt="icono de hexagono" width={100} height={100} />
-      <Image src={Hexa} alt="icono de hexagono" width={100} height={100} />
+      <Image  className={styles.first__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
+      <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
       
       <div ref={ref} className={styles.general__container}>
           <div className={styles.info__container}>
