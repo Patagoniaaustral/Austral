@@ -9,12 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^2.0.1",
-    "@fortawesome/fontawesome-svg-core": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.0.7",
-    "@prisma/client": "^4.8.0",
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.1",
     "eslint": "8.29.0",
@@ -33,11 +28,7 @@
     "react-intersection-observer": "^9.4.1",
     "react-redux": "^8.0.5",
     "redux-devtools-extension": "^2.13.9",
-    "redux-persist": "^6.0.0",
     "redux-reset": "^0.3.0",
     "redux-thunk": "^2.4.2"
-  },
-  "devDependencies": {
-    "prisma": "^4.8.0"
   }
 }

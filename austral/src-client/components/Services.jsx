@@ -5,6 +5,7 @@ import servEs from "../../public/locale/ES/services.json"
 import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 
+import RedCar from "../assets/redcar.png"
 import ServicesImg from "../assets/services.jpg"
 import Credent from "../assets/Credencial.svg"
 import Hexa from "../assets/hexBorder.svg"
@@ -30,12 +31,13 @@ function Services () {
 
       <div className={styles.general__container}>
       <div className={styles.covers__container}>
-        <h2>{t.covers}</h2>
-
-        <p>{t.text1a}<span>{t.text1span1}</span>{t.text1b}<span>{t.text1span2}</span></p>
-        
-        <p>{t.text2}</p>
-        <p>{t.text3}</p>
+        <div>
+          <h2>{t.covers}</h2>
+          <p>{t.text1a}<span>{t.text1span1}</span>{t.text1b}<span>{t.text1span2}</span></p>
+          <p>{t.text2}</p>
+          <p>{t.text3}</p>
+        </div>
+        {/* <Image className={styles.covers__image} src={RedCar} alt="modelo de auto" width={600} height={350} /> */}
       </div>
       
       <Image src={Hexa} alt="icono de hexagono grande" width={100} height={100} />

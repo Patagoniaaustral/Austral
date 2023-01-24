@@ -39,13 +39,14 @@
 /* -------------COVERS CONTAINER---------------- */
 
 .covers__container {
+    display: flex;
     border-radius: 3em;
     box-shadow: var(--box-shadow);
     padding: 2em 2em 2em 4em;
     background-color: var(--clr-white);
     margin:5em 7em;
     max-width: 82%;
-    font-size: calc(.8em + 0.2vw);
+    /* font-size: calc(.7em + 0.2vw); */
 }
 
 .covers__container h2{
@@ -55,6 +56,7 @@
 
 .covers__container p {
     margin: 1em 0;
+    /* max-inline-size: 80ch; */
     width: 95%;
 }
 
@@ -65,6 +67,7 @@
 .covers__container span {
     color: var(--clr-primary);
 }
+
 
 /* ------------------- 2 DIVS EXTRA & REQUEST --------- */
 
@@ -158,6 +161,10 @@
         object-position: 50% 0;
     }
 
+    .covers__image{
+        display: none;
+    }
+
 }
 
 @media(min-width: 750px) and (max-width: 1024px){
@@ -175,17 +182,16 @@
         display: flex;
         justify-content: flex-start;
         padding: 2em 1.5em;
-        font-size: calc(.8em + 0.2vw);
-
     }
 
     .services__require_container{
         padding: 2em;
-        font-size: calc(.8em + 0.2vw);
     }
-
-     .services__require_container > div {
+    
+    .services__require_container > div {
         flex-direction: column;
+        gap:0;
+        margin: 1em 0;
     }
 
     .services__container > img {
@@ -207,7 +213,7 @@
     .covers__container{
         width: 100%;
         margin: 2em auto;
-        padding: 1.5em 2em;
+        padding: 2em;
     }
 
     .services__container{
@@ -219,24 +225,24 @@
         width: 85%;
     }
 
-    .services__require_container > div {
-        flex-direction: column;
-    }
 
     .services__extra_container{
         width: 100%;
-        padding: 2em;
-        font-size: calc(.8em + 0.2vw);
+        padding: 2em 1.5em;
+    }
+
+    .services__require_container > div {
+        flex-direction: column;
+        gap:0;
+        margin: 1em 0;
     }
 
     .services__require_container{
         width: 100%;
-        padding: 2em;
-        font-size: calc(.8em + 0.2vw);
+        padding: 2em 1.5em;
     }
 
     .header__img img {
-        object-fit: scale-down;
         width: 100%;
         height: 100%;
     }

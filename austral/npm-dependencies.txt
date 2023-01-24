@@ -5,23 +5,6 @@ npx create-next-app@latest
 ///
 
 
-/// prisma orm
-/// instalacion
-npm install @prisma/client >>> resuelve el problema de npx prisma migrate
-npm install prisma --save-dev 
-npx prisma init --datasource-provider postgresql
-npx prisma db pull  //es como hacer un git pull pero te traes los cambio de la base de datos.
- 
-///
-/// ejecucion
-npx prisma generate >>> carga los modelos a Postgres, USAR SI QUERES ACTUALIZAR LOS MODELOS :)
-npx prisma migrate dev --name nombre del cambio init //EJECUTAR SOLO SI QUERES MIGRAR LOS DATOS DE LOS MODELOS !!!OOJO
-^^^^^^^<<< si no tenes la carpeta migrate ni lo EJECUTES PORQUE BORRAS LA BASE DE DATOSSSSS!!!! >:(
-npx prisma studio >> opcional, abre base de datos para hacer imports desde el web como si fuese phpmyadmin
-npx prisma db pull  // investigar NO EJECUTAR!!!!!
-///
-
-
 /// redux
 npm i redux-reset
 npm install @reduxjs/toolkit react-redux redux-thunk redux-devtools-extension redux-persist next-redux-wrapper
@@ -37,10 +20,6 @@ npm install nodemailer
 
 /// iconos
 npm install react-icons --save
-///
-
-///Auth0
-npm install next-auth 
 ///
 
 ///Cambio de idioma
