@@ -12,19 +12,19 @@
 /* -------------- HEADER IMG ---------------- */
 
 
-.header__img{
+.header{
     z-index: 1;
     position: relative;
 }
 
-.header__img img {
+.header__img {
     object-fit: cover;
     object-position: 10% 0;
     border-radius: 0 0 3em 3em;
 }
 
 
-.header__img h1 {
+.header__title {
     color: var(--clr-white);
     z-index: 2;
     position: absolute;
@@ -38,40 +38,38 @@
 
 /* -------------COVERS CONTAINER---------------- */
 
-.covers__container {
+.covers{
     display: flex;
     border-radius: 3em;
     box-shadow: var(--box-shadow);
     padding: 2em 2em 2em 4em;
     background-color: var(--clr-white);
     margin:5em 7em;
-    max-width: 82%;
+    width: 82%;
     /* font-size: calc(.7em + 0.2vw); */
 }
 
-.covers__container h2{
+.covers__title{
     font-size: calc(1em + 0.5vw);
     font-weight: 800;
 }
 
-.covers__container p {
+.covers p {
     margin: 1em 0;
     /* max-inline-size: 80ch; */
     width: 95%;
 }
 
-.covers__container span {
+.covers span {
     font-weight: 600;
-}
-
-.covers__container span {
     color: var(--clr-primary);
 }
 
 
-/* ------------------- 2 DIVS EXTRA & REQUEST --------- */
 
-.services__container{
+/* ------------------- DIVS = EXTRA & REQUEST --------- */
+
+.containers{
     width: max(81%, 30em);
     margin: 2em 7em 10em;
     display:grid;
@@ -79,54 +77,13 @@
     gap: max(4em, 1vw);
 } 
 
-
-.services__extra_container, 
-.services__require_container {
-    border-radius: 3em;
-    box-shadow: var(--box-shadow);
-}
-
-.services__extra_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2em 2em 1em 4.5em;
-    background-color: var(--clr-secondary);
-}
-
-.services__extra_container > ul {
-    margin: 0;
-    padding: 0;
-}
-
-.services__require_container{
-    display: flex;
-    flex-direction: column;
-    padding: 2em 1em 1em 3em;
-    background-color: var(--clr-white);
-}
-
-.services__require_container > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap : 2em;
-}
-
-.services__require_container > div > ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-.services__container h2{
+.containers h2{
     color: var(--clr-primary);
     font-size: calc(1em + 0.5vw);
     margin-left: .5em;
 }
 
-.services__container li {
+.containers li {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -135,14 +92,57 @@
     margin: .7em 0;
 }
 
-.general__container > img{
+
+.extras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 2em 1em 4.5em;
+    background-color: var(--clr-secondary);
+}
+
+.extras > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.requirements{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em 1em 3em;
+    background-color: var(--clr-white);
+}
+
+.requirements__contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 2em;
+}
+
+.requirements__list{
+    margin: 0;
+    padding: 0;
+}
+
+.extras, 
+.requirements{
+    border-radius: 3em;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+/* ----------------- FLOTANTES ------------------ */
+.first__hexa{
     position: absolute;
     z-index: 2;
     top : 68%;
     left: 87%;
 }
 
-.services__container > img {
+.second__hexa{
     position: absolute;
     z-index: 2;
     left: 36%;
@@ -153,11 +153,11 @@
 
 /* ------------------- MEDIA QUERIES ------------------- */
 @media(max-width: 1300px){
-    .header__img{
+    .header{
        padding: 0 2em;
     }
 
-    .header__img img{
+    .header__img{
         object-position: 50% 0;
     }
 
@@ -168,37 +168,35 @@
 }
 
 @media(min-width: 750px) and (max-width: 1024px){
-    .covers__container{
-        width: 100%;
+    .covers{
+        width: 90%;
         margin: 2em auto;
     }
 
-    .services__container{
+    .containers{
         gap: 1em;
         width: 90%;
         margin: 2em auto;
     }
-    .services__extra_container{
+
+    .extras{
         display: flex;
         justify-content: flex-start;
         padding: 2em 1.5em;
     }
 
-    .services__require_container{
+    .requirements{
         padding: 2em;
     }
     
-    .services__require_container > div {
+    .requirements__contain{
         flex-direction: column;
         gap:0;
         margin: 1em 0;
     }
 
-    .services__container > img {
-        display: none;
-    }
-
-    .general__container > img{
+    .first__hexa,
+    .second__hexa{
         display: none;
     }
 }
@@ -206,17 +204,22 @@
 
 
 @media (max-width: 768px) { 
-    .header__img{
+    .header{
         padding: 0em;
     }
 
-    .covers__container{
+    .header__img{
         width: 100%;
-        margin: 2em auto;
-        padding: 2em;
+        height: 100%;
     }
 
-    .services__container{
+    .covers{
+        width: 90%;
+        margin: 2em auto;
+        padding: 2em 1.5em;
+    }
+
+    .containers{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -225,33 +228,21 @@
         width: 85%;
     }
 
-
-    .services__extra_container{
-        width: 100%;
-        padding: 2em 1.5em;
-    }
-
-    .services__require_container > div {
+    .requirements__contain {
         flex-direction: column;
         gap:0;
         margin: 1em 0;
     }
 
-    .services__require_container{
+    .extras, 
+    .requirements{
         width: 100%;
-        padding: 2em 1.5em;
+        padding: 1.5em;
     }
+    
 
-    .header__img img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .services__container > img {
-        display: none;
-    }
-
-    .general__container > img{
+    .first__hexa,
+    .second__hexa{
         display: none;
     }
 }

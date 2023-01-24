@@ -11,12 +11,12 @@
     top: 0;
  }
  
- .nav__container img {
+ .logo{
     object-fit: contain;
     margin-left: clamp(.1em, 9vw, 12em);
  }
 
- .nav__container ul{
+ .nav__list{
     display: flex;
     align-items: center;
     list-style: none;
@@ -24,30 +24,26 @@
     gap: 3em;
  }
 
+ .nav__list li :active {
+   color: var(--clr-primary);
+ }
 
-.nav__container :is(a, select){
+.nav :is(a, select){
   font-weight: 600;
 }
 
-.nav__container select {
-      border: none;
-}
-
-.nav__container select {
-   background-color: transparent;
-}
-
-.nav__container li :active {
-  color: var(--clr-primary);
-}
-
-.lang__item{
+.nav__langItem{
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.lang__item img{
+.nav__langItem select {
+      border: none;
+      background-color: transparent;
+}
+
+.nav__langItem img{
   margin: 0;
 }
 
@@ -56,22 +52,25 @@
 }
 
 @media(hover : hover){
-  .nav__container li :is(:hover, :focus, :active) {
+  .nav__list li :is(:hover, :focus, :active) {
     color: var(--clr-primary);
   }
 }
 
+
+/* ---------------------- MEDIA QUERYS ------------------- */
+
 @media(max-width: 1024px){
-  .nav__container img {
+  .logo {
     margin-left: 0;
   }
-  .nav__container ul {
+  .nav__list {
     gap: 2em;
   }
 }
 
  @media (max-width: 768px) {
-   .nav {
+   .nav{
      position: fixed;
      inset: 0;
      background: hsl(0 0% 100% /.7);
@@ -80,7 +79,7 @@
      z-index: 100;
    }
 
-   .nav__container ul{
+   .nav__list{
     flex-direction: column;
     justify-content: center;
     font-size: xx-large;
@@ -90,7 +89,6 @@
     }
 
    
-
    .nav_toggle {
      display: block;
      background: transparent;

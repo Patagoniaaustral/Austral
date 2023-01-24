@@ -18,32 +18,32 @@ function Services () {
 
   return (
     <div className={styles.main}>
-      <div className={styles.header__img}>
+      <div className={styles.header}>
+        <h1 className={styles.header__title}>{t.services}</h1>
         <Image
           src={ServicesImg}
+          className={styles.header__img}
           alt="niño asomanose del auto"
           width={1300}
           height={400}
-          priority
-        />
-        <h1>{t.services}</h1>
+          priority/>
       </div>
 
-      <div className={styles.general__container}>
-      <div className={styles.covers__container}>
-        <div>
-          <h2>{t.covers}</h2>
-          <p>{t.text1a}<span>{t.text1span1}</span>{t.text1b}<span>{t.text1span2}</span></p>
-          <p>{t.text2}</p>
-          <p>{t.text3}</p>
+        
+        <div className={styles.covers}>
+          <div>
+            <h2 className={styles.covers__title}>{t.covers}</h2>
+            <p>{t.text1a}<span>{t.text1span1}</span>{t.text1b}<span>{t.text1span2}</span></p>
+            <p>{t.text2}</p>
+            <p>{t.text3}</p>
+          </div>
+          {/* <Image className={styles.covers__image} src={RedCar} alt="modelo de auto" width={600} height={350} /> */}
         </div>
-        {/* <Image className={styles.covers__image} src={RedCar} alt="modelo de auto" width={600} height={350} /> */}
-      </div>
       
-      <Image src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
+        <Image className={styles.first__hexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
 
-        <div className={styles.services__container}>
-          <div className={styles.services__extra_container}>
+        <div className={styles.containers}>
+          <div className={styles.extras}>
             <h2>{t.extras}</h2>
             <ul>
               <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.extra1}</li>
@@ -52,14 +52,11 @@ function Services () {
             </ul>
           </div>
 
-          <div className={styles.services__require_container}>
+          <div className={styles.requirements}>
             <h2>{t.required}</h2>
-            <div>
-              <div>
-                <Image src={Credent} alt=" icono de permiso conducir" width={200} height={100}
-                />
-              </div>
-              <ul>
+            <div className={styles.requirements__contain}>
+                <Image src={Credent} alt=" icono de permiso conducir" width={200} height={100}/>
+              <ul className={styles.requirements__list}>
                 <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req1}</li>
                 <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req2}</li>
                 <li><Image src={HexaIco} alt="icono de hexagono" width={12} height={16} />{t.req3}</li>
@@ -67,9 +64,8 @@ function Services () {
               </ul>
             </div>
           </div>
-            <Image src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
         </div>
-      </div>
+            <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
     </div>
   );
 }

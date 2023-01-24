@@ -40,14 +40,14 @@ export const NavBar = () => {
   return (
     <header className={styles.nav__container} >
       
-      <Link href="/"><Image src={LogoNavBar} alt="Logo Austral Rental" width={180} height={30} priority /></Link>
+      <Link href="/"><Image className={styles.logo} src={LogoNavBar} alt="Logo Austral Rental" width={180} height={30} priority /></Link>
           
       <button onClick={handleNavToggle} className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle} aria-label="toggle navigation">
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
       </button>
 
       <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}>
-        <ul>
+        <ul className={styles.nav__list}>
           <li>
             <Link href="/"  onClick={handleLinkClick} >
               <span>{t.home}</span> 
@@ -73,7 +73,7 @@ export const NavBar = () => {
               <span>{t.contact}</span>
             </Link>
           </li>
-          <li className={styles.lang__item} >
+          <li className={styles.nav__langItem} >
             <Image src={lang} alt="icono de banderas de paises" width={30} height={30} />
             <select  onClick={handleLinkClick}  onChange={handleChange}>
               <option value="es">ES</option>
