@@ -50,13 +50,13 @@ function Contact() {
     <div className={styles.main}>
       <h1 className={styles.contact__title}>{t.contact}</h1>
     
-    <div className={styles.general__container}>
+    <div className={styles.contact__container}>
       
-      <div className={styles.info__container}>
-        <h2>{t.write}</h2>
-        <p>{t.text}</p>
+      <div className={styles.contact__info}>
+        <h2 className={styles.contact__info__title}>{t.write}</h2>
+        <p className={styles.contact__info__text}>{t.text}</p>
 
-        <div>
+        <div className={styles.contact__info__links}>
         <IconContext.Provider value={{ color: "black", size: "1.5em" }}> 
           <Link   href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}>
               <BsWhatsapp />
@@ -81,7 +81,7 @@ function Contact() {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className={styles.form__container} autoComplete="on"  >
+      <form onSubmit={handleSubmit} className={styles.contact__form} autoComplete="on"  >
         <label><span>{t.lastname}</span>
         <input type="text" name="lastName"  aria-label="required" value={input.lastName} onChange={handleChange} required/>
         {error.lastName && ( <p>{error.lastName}</p>)}

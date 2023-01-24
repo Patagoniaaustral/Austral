@@ -19,16 +19,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: max(1em, 5vw);
+    font-weight: 300;
 }
 
 .footer__first_row h2{
     margin-bottom: 1.4em;
-}
-
-.footer__first_row div > p,
-.footer__first_row div a > p {
-    font-weight: 300;
-    /* opacity: .8; */
 }
 
 
@@ -65,12 +60,6 @@
     font-weight: 600;
 }
 
-
-.footer__container > p {
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-}
 
 @media(hover : hover){
     .footer__second_row button:is(:focus,:hover, :active){

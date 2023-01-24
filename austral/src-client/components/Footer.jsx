@@ -42,44 +42,33 @@ const handleSubmit = async(e) => {
         <div>
           <Image src={LogoFooter} alt="Logo de Austral Rental" width={200} height={60} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-          
             <Link href="https://www.instagram.com/australrentacar" target={"_blank"}>
               <BsInstagram className={styles.first_row_ico} />
               <p>australrentacar.ar</p>
             </Link>
-
             <Link href="https://www.facebook.com/australrentacar" target={"_blank"}>
               <FaFacebookF className={styles.first_row_ico}/>
               <p>australrentacar.ar</p>
             </Link>
-
-
           </IconContext.Provider>
         </div>
-
         <div>
           <h2>{t.atention}</h2>
           <p>{t.days1}</p>
           <p>{t.days2}</p>
         </div>
-
         <div>
           <h2>{t.contact}</h2>
-     
             <Link href="mailto:info@australrentacar.ar"><p>info@australrentacar.ar</p></Link>
-          <Link
-            href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0"
-            target={"_blank"}>
-            <p>+549 294 424 2615</p>
-          </Link>
+            <Link href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}><p>+549 294 424 2615</p></Link>
         </div>
-
         <div>
           <h2>{t.service}</h2>
             <Link href="/fleet"><p>{t.fleet}</p></Link>
             <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar"><p>{t.booking}</p></Link>
         </div>
       </div>
+
 
       <form onSubmit={handleSubmit} className={styles.footer__second_row}>
         <p>{t.newsp.split("\n").map((item, key) => {
@@ -95,6 +84,7 @@ const handleSubmit = async(e) => {
         />
         <button type="submit">{t.newsbtn}</button>
       </form>
+
 
       <p>Austral rent a car &copy; 2023 - {t.copy} Cipbyte</p>
     </footer>

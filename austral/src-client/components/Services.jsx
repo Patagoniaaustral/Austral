@@ -52,6 +52,8 @@ function Services () {
             </ul>
           </div>
 
+          <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
+         
           <div className={styles.requirements}>
             <h2>{t.required}</h2>
             <div className={styles.requirements__contain}>
@@ -65,7 +67,6 @@ function Services () {
             </div>
           </div>
         </div>
-            <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
     </div>
   );
 }

@@ -108,11 +108,11 @@ const handlesubmit = async(e) => {
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
 
 
-    <div>
+    <div className={styles.rent}>
       <h2>{t.rent}</h2>
     </div>
 
-      <form className={styles.booking__all_container} onSubmit={handlesubmit}>
+    <form className={styles.booking__all_container} onSubmit={handlesubmit}>
         
         <div className={styles.booking__container}>
           <div className={styles.booking__selects_container}>

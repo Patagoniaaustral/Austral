@@ -47,7 +47,9 @@
     top: 35%;
     left: 9%;
     line-height: 1;
-    font-size: clamp(1.3rem, 3.5rem, 3.5vw);
+    font-size: calc(1.5rem + 2vw);
+    filter: drop-shadow(0 0 0.1em rgb(255, 255, 255));
+    /* font-size: clamp(1.3rem, 3.5rem, 3.5vw); */
 }
 
 .hexa {
@@ -57,7 +59,7 @@
     z-index: 1;
 }
 
-.section__container div:has(h2){
+.rent{
     background-color: var(--clr-medium-beige);
     color: var(--clr-primary);
     padding: .3em 2.5em .3em 1em;
@@ -126,12 +128,12 @@
         top: -4rem;
     }
     
-    /* .section__container div:has(h2){
+    .rent{
         top:67%;
         left: 15%;
         font-size: 1.2rem;
         padding: .5em 2.5em;
-    }*/
+    }
 
     .booking__container{
         width: 100%;
@@ -160,18 +162,20 @@
         top: -3rem;
     }
     
-    /* .section__container div:has(h2){
+    .rent{
         top: 73%;
         left: 10%;
         font-size: 1.2rem;
         padding: .5em 2.5em;
-    } */
+    }
 
     .booking__selects_container:nth-last-of-type(1){
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap : .7rem;
     }
+
+    
 }
 
 @media(max-width : 768px){
@@ -189,13 +193,13 @@
         top: -2.5rem;
     }
     
-    /* .section__container div:has(h2){
+    .rent{
         top: 73%;
         left: 10%;
         font-size: 1rem;
         padding: 1em 2em;
     }
-     */
+    
     
     .booking__container{
         display: flex;
@@ -208,34 +212,35 @@
         padding: .4em 1em;   
     }
 
-    /* .header__img h1 > span {
-        font-size: 6.5vw;
-        left: 4%;
-    } */
-
-    .hexa{
-      display: none;
+    .header__img h1 {
+        font-size: 5.5vw;
+        top: 32%;
+        left: 3%;
     }
 
     .search__btn{
         margin: 0;
     }
 
+    .hexa{
+        display: none;
+    }
+
 }
 
 
 @media(max-width:650px){
-    /* .header__img h1 {
-        font-size: 6vw;
-        top: 28%;
-    } */
-    
     .header__img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         aspect-ratio: 16/9;
+    }
+
+    .header__img h1 {
+        top: 31%;
+        left: 5%;
     }
 
     .booking__selects_container{

@@ -46,6 +46,8 @@
     background-color: var(--clr-white);
     margin:5em 7em;
     width: 82%;
+    z-index: 1;
+    position: relative;
     /* font-size: calc(.7em + 0.2vw); */
 }
 
@@ -83,6 +85,11 @@
     margin-left: .5em;
 }
 
+.containers ul{
+    margin: 0;
+    padding: 0;
+}
+
 .containers li {
     display: flex;
     flex-direction: row;
@@ -92,7 +99,6 @@
     margin: .7em 0;
 }
 
-
 .extras{
     display: flex;
     flex-direction: column;
@@ -100,12 +106,10 @@
     align-items: center;
     padding: 2em 2em 1em 4.5em;
     background-color: var(--clr-secondary);
+    z-index: 1;
+    position: relative;
 }
 
-.extras > ul {
-    margin: 0;
-    padding: 0;
-}
 
 .requirements{
     display: flex;
@@ -145,8 +149,8 @@
 .second__hexa{
     position: absolute;
     z-index: 2;
-    left: 36%;
-    top: 148%;
+    left: 38%;
+    top: 152%;
 }
 
 
@@ -163,6 +167,15 @@
 
     .covers__image{
         display: none;
+    }
+    .first__hexa{
+        top: 80%;
+        left: 85%;
+    }
+
+    .second__hexa{
+        top: 180%;
+        left: 38%;
     }
 
 }
@@ -194,6 +207,11 @@
         gap:0;
         margin: 1em 0;
     }
+
+    /* .first__hexa{
+        top: 77%;
+        left: 87%;
+    } */
 
     .first__hexa,
     .second__hexa{
@@ -241,12 +259,34 @@
     }
     
 
-    .first__hexa,
-    .second__hexa{
+    /* .first__hexa{
+        top: 58%;
+        left: 80%;
+    } */
+
+    /* .second__hexa{
+      top: 120%;
+        left: 38%;
+    } */
+
+    .first__hexa, .second__hexa{
         display: none;
     }
 }
+/* 
+@media(max-width: 650px){
+    .first__hexa{
+        width: 5rem;
+        top: 35%;
+        left: 74%;
+    }
 
+    .second__hexa{
+        width: 5rem;
+        left: 74%;
+    }
+
+} */
 
 
 

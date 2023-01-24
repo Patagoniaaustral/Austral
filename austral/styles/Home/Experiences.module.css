@@ -13,19 +13,21 @@
     z-index: 1;
 }
 
-.section__firstHexa{
+
+.hexa__first{
     position: absolute;
-    top: 5%;
-    left: 5%;
     z-index: 2;
+    top: 5%;
+    left: 10%;
 }
 
 
-.section__secondHexa{
+.hexa__second{
+    margin: 1.5em;
     position: absolute;
-    top: 15%;
-    left: 12%;
     z-index: 2;
+    top: 11%;
+    left: 15%;
 }
 
 .section__title {
@@ -91,6 +93,18 @@
  .experience__card{
     padding: 2vw;
 }
+
+.hexa__first{
+    top: 3%;
+    left:5%;
+}
+
+.hexa__second{
+    top: 9%;
+    left: 10%;
+    margin: 2.5em;
+}
+
 }
 
 @media(max-width: 768px){
@@ -108,7 +122,6 @@
         flex-direction: column;
         align-items: center;
         width: 60%;
-      
     }
 
     .experience__card{
@@ -116,14 +129,8 @@
         padding: 4vw;
     }  
 
-    .section__firstHexa {
+    .hexa__first, .hexa__second{
         display: none;
     }
-
-
-    .section__secondHexa {
-        display: none;
-    }
-
   
 }

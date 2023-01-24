@@ -75,8 +75,8 @@ function Experiences () {
  
   return (
     <section className={styles.section__container}>
-      <Image className={styles.section__firstHexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
-      <Image  className={styles.section__secondHexa}src={Hexa} alt="icono de hexagono grande" width={50} height={50} />
+      <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
+      <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} />
       <h2 className={styles.section__title}>{t.experience.etitle}</h2>
       <p className={styles.section__text}>{t.experience.etext}</p>
 

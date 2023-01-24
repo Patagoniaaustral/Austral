@@ -7,7 +7,7 @@
 }
 
 
-.general__container{
+.contact__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
@@ -26,7 +26,7 @@
 
 /* ----------- DIV INFO ----------- */
 
-.info__container{
+.contact__info{
     font-size: calc(1rem + .2vw);
     padding: 3em 4em 1em 4em;
     display:flex;
@@ -36,30 +36,28 @@
     border-radius: 3em;
 }
 
-.info__container div {
-    margin-top: 1.8em;
-}
-
-.info__container:first-child a {
-    display: flex;
-    margin: 1em 0;
-    gap: 1em;
-}
-
-.info__container h2 {
+.contact__info__title {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.info__container > p:first-of-type  {
+.contact__info__text{
     font-weight: 500;
     width: min(50ch, 100%);
 }
 
+.contact__info__links {
+    margin-top: 1.8em;
+}
 
+.contact__info__links > a {
+    display: flex;
+    margin: 1em 0;
+    gap: 1em;
+}
 /* ----------- DIV FORM ----------- */
 
-.form__container{
+.contact__form{
     display:flex;
     flex-direction: column;
     background-color: var(--clr-bkg-gray);
@@ -68,24 +66,24 @@
     box-shadow: 0 0 1em 1px rgba(0,0,0,.2);
 }
 
-.form__container label {
+.contact__form label {
     display: flex;
     flex-direction: column;
 }
 
-.form__container label > span {
+.contact__form label > span {
     margin: 0 0 .5em .8em;
     font-weight: 500;
 }
 
-.form__container input{
+.contact__form input{
     border:  var(--border);
     border-radius: 25px;
     padding-left: 1em;
     margin-bottom: 1em;
 }
 
-.form__container textarea{
+.contact__form textarea{
     border: var(--border);
     border-radius: var(--border-radius-textarea);
     resize: none;
@@ -94,7 +92,7 @@
     padding-left: 1em;
 }
 
-.form__container button{
+.contact__form button{
     padding: .3em 1.7em;
     margin-left: auto;
     border-radius: var(--border-radius);
@@ -103,53 +101,48 @@
     border: none;
 }
 
-/* .form__container button:is(:focus, :hover){
-    background-color: var(--clr-gray);
-    color:  var(--clr-black);
-} */
-
-.form__container button:active{
+.contact__form button:active{
     background-color: var(--clr-gray);
     color:  var(--clr-black);
 }
 
-.form__container p {
+.contact__form p {
     color: var(--clr-primary);
     margin-bottom: 1em;
 }
 
 
 @media (hover : hover) {
-    .form__container button:is(:focus-visible, :hover, :active){
+    .contact__form button:is(:focus-visible, :hover, :active){
         background-color: var(--clr-gray);
         color:  var(--clr-black);
     }
 
-    .info__container a:is(:focus-visible, :hover, :active){
+    .contact__info a:is(:focus-visible, :hover, :active){
         color: var(--clr-primary);
     }
 }
 
 @media (max-width: 950px) {
-.general__container{
+.contact__container{
     display: flex;
     flex-direction: column;
 }
-.form__container{
+.contact__form{
     padding: 2em;
 }
 
 }
 
 @media(max-width:480px){
-    .general__container{
+    .contact__container{
         padding: 0 1em 4em 1em;
     }
 
-    .info__container{
+    .contact__info{
         padding: 1.7em;
     }
-    .form__container{
+    .contact__form{
         padding: 2em 1em;
     }
     
