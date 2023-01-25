@@ -7,7 +7,6 @@ import {motion} from 'framer-motion'
 
 export const config = {
   unstable_runtimeJS: false,
-  amp : true
 }
 
 // const inter = Inter ({ 
