@@ -6,7 +6,6 @@ a {
 :root {
   /* colors */
   color: #0D0D0D; 
-  /* --clr-primary:  #E14444;  */
   --clr-primary: #DD3131;
   --clr-secondary:#FFF6E8; 
   --clr-medium-beige: #E4D2B6; 
@@ -126,18 +125,6 @@ select {
 ::selection {
   background-color: var(--clr-primary);
   color: var(--clr-secondary);
-}
-
-
-::marker {
-  color: var(--clr-primary);
-  font-size: 1.5rem;
-  content: "";
-}
-
-
-:checked {
- color: var(--clr-primary);
 }
 
 

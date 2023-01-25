@@ -88,15 +88,16 @@
 .containers ul{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.containers li {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: .7em;
-    list-style: var(--clr-primary);
-    margin: .7em 0;
+.containers li::before{
+    content: url(../src-client/assets/hex.svg);
+    display: inline-block;
+    margin: .7em ;
+    width: .7em;
+    height: .7em;
+    background-size: .8em;
 }
 
 .extras{
@@ -104,7 +105,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em 2em 1em 4.5em;
+    padding: 2em 2em 2em 4em;
     background-color: var(--clr-secondary);
     z-index: 1;
     position: relative;
@@ -137,7 +138,6 @@
 }
 
 
-
 /* ----------------- FLOTANTES ------------------ */
 .first__hexa{
     position: absolute;
@@ -150,7 +150,7 @@
     position: absolute;
     z-index: 2;
     left: 38%;
-    top: 152%;
+    top: 169%;
 }
 
 

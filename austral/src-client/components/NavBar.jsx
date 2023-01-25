@@ -41,7 +41,9 @@ export const NavBar = () => {
     <header className={styles.nav__container} >
       
       <Link href="/"><Image className={styles.logo} src={LogoNavBar} alt="Logo Austral Rental" width={180} height={30} priority /></Link>
-          
+
+      
+       {isActive && <div className={styles.navBar}></div>}
       <button onClick={handleNavToggle} className={isActive ? [styles.nav_toggle, styles.nav_open].join(" ") : styles.nav_toggle} aria-label="toggle navigation">
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
       </button>
@@ -53,26 +55,31 @@ export const NavBar = () => {
               <span>{t.home}</span> 
             </Link>
           </li>
+          {isActive && <div className={styles.line}></div>}
           <li >
             <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick}> 
               <span>{t.booking}</span>
             </Link>
           </li>
+          {isActive && <div className={styles.line}></div>}
           <li >
             <Link href="/fleet"  onClick={handleLinkClick}  >
               <span>{t.fleet}</span>
             </Link>
           </li>
+          {isActive && <div className={styles.line}></div>}
           <li >
             <Link href="/services"  onClick={handleLinkClick}>
               <span >{t.services}</span>
             </Link>
           </li>
+          {isActive && <div className={styles.line}></div>}
           <li >
             <Link href="/contact" onClick={handleLinkClick}>
               <span>{t.contact}</span>
             </Link>
           </li>
+          {isActive && <div className={styles.line}></div>}
           <li className={styles.nav__langItem} >
             <Image src={lang} alt="icono de banderas de paises" width={30} height={30} />
             <select  onClick={handleLinkClick}  onChange={handleChange}>

@@ -50,9 +50,8 @@
 }
 
 .footer__second_row button{
-    color: var(--clr-primary);
-    background-color: var(--clr-medium-beige);
-    /* background-color: var(--clr-white); */
+    color: #5C5C5C;
+    background-color: var(--clr-medium-beige); 
     border: none;
     border-radius: var(--border-radius-btn);
     padding: .4em 2em;
@@ -64,7 +63,7 @@
 @media(hover : hover){
     .footer__second_row button:is(:focus,:hover, :active){
         background-color: var(--clr-gray);
-        color:  var(--clr-black);
+        color: #5C5C5C;
     }    
 }
 
