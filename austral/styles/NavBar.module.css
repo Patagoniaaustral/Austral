@@ -75,7 +75,7 @@
      inset: 0;
      background: hsl(0 0% 100% /.7);
      backdrop-filter: blur(1.5rem);
-     padding: min(30vh, 7rem) 2em;
+     padding: min(30vh, 7rem);
      z-index: 100;
    }
    

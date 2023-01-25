@@ -71,9 +71,7 @@ const handleSubmit = async(e) => {
 
 
       <form onSubmit={handleSubmit} className={styles.footer__second_row}>
-        <p>{t.newsp.split("\n").map((item, key) => {
-          return <span key={key}>{item}<br/></span>
-        })}</p>
+        <p>{t.newsp}</p>
         <input
           type="email"
           name="email"
