@@ -48,39 +48,39 @@ export const NavBar = () => {
         <span className={isActive ? [styles.hamburger, styles.nav_open].join(" ") : styles.hamburger}></span>
       </button>
 
-      <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")}>
+      <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")} aria-label="main navigation">
         <ul className={styles.nav__list}>
           <li>
-            <Link href="/"  onClick={handleLinkClick} >
+            <Link href="/"  onClick={handleLinkClick} aria-label="home" >
               <span>{t.home}</span> 
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick}> 
+            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick} aria-label="booking">
               <span>{t.booking}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/fleet"  onClick={handleLinkClick}  >
+            <Link href="/fleet"  onClick={handleLinkClick} aria-label="fleet">
               <span>{t.fleet}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/services"  onClick={handleLinkClick}>
+            <Link href="/services"  onClick={handleLinkClick} aria-label="services">
               <span >{t.services}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/contact" onClick={handleLinkClick}>
+            <Link href="/contact" onClick={handleLinkClick} aria-label="contact">
               <span>{t.contact}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
-          <li className={styles.nav__langItem} >
+          <li className={styles.nav__langItem} aria-label="language">
             <Image src={lang} alt="icono de banderas de paises" width={30} height={30} />
             <select  onClick={handleLinkClick}  onChange={handleChange}>
               <option value="es">ES</option>

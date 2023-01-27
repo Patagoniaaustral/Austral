@@ -76,9 +76,12 @@
 
 
 .slider__image{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
     z-index: 2;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 30%;
 }
 

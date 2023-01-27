@@ -42,11 +42,11 @@ const handleSubmit = async(e) => {
         <div>
           <Image src={LogoFooter} alt="Logo de Austral Rental" width={200} height={60} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-            <Link href="https://www.instagram.com/australrentacar" target={"_blank"}>
+            <Link href="https://www.instagram.com/australrentacar" target={"_blank"} aria-label="instagram">
               <BsInstagram className={styles.first_row_ico} />
               <p>australrentacar.ar</p>
             </Link>
-            <Link href="https://www.facebook.com/australrentacar" target={"_blank"}>
+            <Link href="https://www.facebook.com/australrentacar" target={"_blank"} aria-label="facebook">
               <FaFacebookF className={styles.first_row_ico}/>
               <p>australrentacar.ar</p>
             </Link>
@@ -64,8 +64,8 @@ const handleSubmit = async(e) => {
         </div>
         <div>
           <h2>{t.service}</h2>
-            <Link href="/fleet"><p>{t.fleet}</p></Link>
-            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar"><p>{t.booking}</p></Link>
+            <Link href="/fleet" aria-label="services" ><p>{t.fleet}</p></Link>
+            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" aria-label='booking' ><p>{t.booking}</p></Link>
         </div>
       </div>
 
