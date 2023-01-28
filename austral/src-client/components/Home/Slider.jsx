@@ -62,11 +62,11 @@ function Slider () {
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            <Image src={HomeCar} alt="viaje en ruta por patagonia"  />
+            <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" />
           </motion.div>
       </div>
 
-        <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
+        <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={500} height={500} layout="responsive" />
         
         <div className={styles.slider__btnsContainer}>
           <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
