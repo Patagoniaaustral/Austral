@@ -137,9 +137,10 @@
     .booking__all_container{
         /* gap: 1rem;
         width: 95%; */
+        width: 70%;
         top: -4rem;
     }
-    
+/*     
     .rent{
         display: none;
     }
@@ -155,7 +156,7 @@
 
     .select{
         padding: .5em;
-    }
+    } */
 
 }
 
@@ -185,9 +186,9 @@
         padding: 0 0 2em;
 
     }
-    
+ 
     .booking__all_container{
-        width: 86%;
+        /* width: 86%; */
         /* display: flex;
         flex-direction: column;
         align-items: center;
