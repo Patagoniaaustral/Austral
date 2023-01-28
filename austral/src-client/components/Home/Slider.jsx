@@ -8,7 +8,7 @@ import homeEn from "../../../public/locale/EN/home.json"
 import styles from "../../../styles/Home/Slider.module.css"
 import Redcar from "../../assets/redcar.png"
 import Gol from "../../assets/gol2.png"
-import HomeCar from "../../assets/home3.jpg"
+//import HomeCar from "../../assets/home3.jpg"
 import Hexa from "../../assets/hexBorder.svg"
 
 function Slider () {
@@ -51,6 +51,7 @@ function Slider () {
 
   return (
     <section className={styles.section__container}>
+
       <Image  className={styles.first__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
       <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
       
@@ -62,11 +63,14 @@ function Slider () {
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" />
+            {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
+            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" />
           </motion.div>
       </div>
 
-        <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={500} height={500} layout="responsive" />
+        <div>
+          <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
+        </div>
         
         <div className={styles.slider__btnsContainer}>
           <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>

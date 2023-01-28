@@ -13,6 +13,7 @@
     "@next/font": "^13.0.7",
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.1",
+    "cloudinary": "^1.33.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.7",
     "framer-motion": "^7.10.2",

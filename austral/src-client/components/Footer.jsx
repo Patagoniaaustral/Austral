@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import axios from "axios";
 import Link from 'next/link'
 import Image from 'next/image';
 import LogoFooter from "../../src-client/assets/logoFooter.png"

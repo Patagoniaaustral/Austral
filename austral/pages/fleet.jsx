@@ -1,7 +1,6 @@
 import React from "react";
 import Head from 'next/head'
 import FleetPage from "../src-client/components/Fleet"
-import axios from "axios";
 import {motion} from "framer-motion"
 
 
@@ -26,17 +25,6 @@ export default function fleet() {
   );
 }
 
-// export async function getStaticProps() {
-
-//   const res = await axios.get("http://localhost:3000/api/getAllCars");
-//   const data = await res.data;
-
-//   return {
-//     props: {
-//       props : data
-//     },
-//   }
-// }
 
 
 

@@ -7,7 +7,12 @@ npx create-next-app@latest
 
 /// redux
 npm i redux-reset
-npm install @reduxjs/toolkit react-redux redux-thunk redux-devtools-extension redux-persist next-redux-wrapper
+npm install @reduxjs/toolkit 
+react-redux
+ redux-thunk
+  redux-devtools-extension 
+  redux-persist 
+  next-redux-wrapper
 ///
 
 /// animacion
