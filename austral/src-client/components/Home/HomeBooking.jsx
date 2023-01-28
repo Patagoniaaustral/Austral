@@ -1,21 +1,20 @@
 import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import { useRouter } from "next/router";
-import axios from "axios" 
 import Image from 'next/image'
 import HomeMain from "../../assets/HomeMain.jpg"
 import Hexa from "../../assets/hexBorder.svg"
 import DatePicker from "react-datepicker"
 import addDays from 'date-fns/addDays'  
+import "react-datepicker/dist/react-datepicker.css"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
-import "react-datepicker/dist/react-datepicker.css"
 import styles from '../../../styles/Home/HomeBooking.module.css'
 
 function HomeBooking () {
   const router = useRouter();
+  
   const t = router.locale === "es" ? homeEs : homeEn;
- 
 //   const objectSelect = {
 //     category: "none",
 //     pickUpPlace: "none",
@@ -103,7 +102,7 @@ function HomeBooking () {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
-      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" priority/>
+      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} layout="responsive" objectFit="cover" objectPosition="center" priority />
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
 
