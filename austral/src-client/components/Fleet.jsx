@@ -89,17 +89,6 @@ function  Fleet () {
         <div className={styles.card} key={index}>
           <h2 className={styles.card__title}>{car.model}</h2>
           <span className={styles.card__category}>{t.catego} {car.category}</span>
-          
-          {/* <div >
-              <Image src={CarIcon3} alt="icono de cantidad de pasajeros" width="20" heigth="20"/>
-              <p> </p> 
-
-              <Image src={ CarIcon2} alt="icono de transmision automotor" width="20" heigth="20"/>
-              <p></p> 
-          
-              <Image src={CarIcon1} alt="icono de motor automotor" width="20" heigth="20"/>
-              <p></p> 
-          </div> */}
 
           <ul className={styles.card__info} >
             <li><Image src={CarIcon3} alt="icono de cantidad de pasajeros" width="20" heigth="20"/>{car.capacity} {t.passengers}</li>
