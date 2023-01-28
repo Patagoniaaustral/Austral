@@ -5,9 +5,9 @@ import {motion} from 'framer-motion'
 
 
 
-export const config = {
-  unstable_runtimeJS: false,
-}
+// export const config = {
+//   unstable_runtimeJS: false,
+// }
 
 // const inter = Inter ({ 
 //   subsets: ['latin'],
