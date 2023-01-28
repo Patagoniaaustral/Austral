@@ -102,7 +102,7 @@ function HomeBooking () {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
-      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" sizes='(max-width: 768px) 90vw, 100vw' layout="responsive" width={1920} height={1080} priority={true} />
+      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" sizes='(max-width: 768px) 90vw, 100vw' layout="responsive" priority />
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
 
