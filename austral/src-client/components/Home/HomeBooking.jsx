@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import { useRouter } from "next/router";
 import Image from 'next/image'
-import HomeMain from "../../assets/HomeMain.jpg"
-import Hexa from "../../assets/hexBorder.svg"
+import HomeMain from "../../../public/assets/hero/HomeMain.jpg"
+import Hexa from "../../../public/assets/svg/hexBorder.svg"
 import DatePicker from "react-datepicker"
 import addDays from 'date-fns/addDays'  
 import "react-datepicker/dist/react-datepicker.css"
@@ -102,7 +102,8 @@ const handlesubmit = async(e) => {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
-      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} sizes= "(max-width: 768px) 50vw, 1920px" priority/>
+        {/* <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} sizes= "(max-width: 768px) 50vw, 1920px" priority/> */}
+        <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674951543/logoMain_pp2bwb.webp" alt="familia de vacaciones en patagonia" width={1920} height={1080} sizes= "(max-width: 768px) 50vw, 1920px" priority/>
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
 

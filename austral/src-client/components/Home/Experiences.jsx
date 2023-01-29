@@ -7,11 +7,10 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import styles from "../../../styles/Home/Experiences.module.css"
 
-import Exp1 from "../../assets/exp1.jpg"
-import Exp2 from "../../assets/exp2.jpg"
-import Exp3 from "../../assets/exp3.jpg"
-
-import Hexa from "../../assets/hexBorder.svg"
+import Exp1 from "../../../public/assets/others/exp1.jpg"
+import Exp2 from "../../../public/assets/others/exp2.jpg"
+import Exp3 from "../../../public/assets/others/exp3.jpg"
+import Hexa from "../../../public/assets/svg/hexBorder.svg"
 
 function Experiences () {
   const router = useRouter();
@@ -38,7 +37,7 @@ function Experiences () {
     },
     {
       id: 3,
-      image: Exp1,
+      image: "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009567/grid_landscape_1_rapmug.webp",
       alt: "restaurant de montaña",
       title: t.experience.esubtitle3,
       controls : controls3

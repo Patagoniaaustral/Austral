@@ -5,11 +5,10 @@ import servEs from "../../public/locale/ES/services.json"
 import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 
-import RedCar from "../assets/redcar.png"
-import ServicesImg from "../assets/services.jpg"
-import Credent from "../assets/Credencial.svg"
-import Hexa from "../assets/hexBorder.svg"
-import HexaIco from "../assets/hex.svg"
+import RedCar from "../../public/assets/fleet/redcar.png"
+import ServicesImg from "../../public/assets/hero/services.jpg"
+import Credent from "../../public/assets/svg/Credencial.svg"
+import Hexa from "../../public/assets/svg/hexBorder.svg"
 
 function Services () {
 

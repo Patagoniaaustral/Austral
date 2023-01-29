@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-import LogoFooter from "../../src-client/assets/logoFooter.png"
+import LogoFooter from "../../public/assets/others/logoFooter.png"
 import { IconContext } from "react-icons";
 import {BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";

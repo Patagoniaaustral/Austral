@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import Image from "next/image"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
+import Redcar from "../../../public/assets/fleet/redcar.png"
+import Gol from "../../../public/assets/fleet/gol2.png"
+import HomeCar from "../../../public/assets/others/home3.jpg"
+import Hexa from "../../../public/assets/svg/hexBorder.svg"
 import styles from "../../../styles/Home/Slider.module.css"
-import Redcar from "../../assets/redcar.png"
-import Gol from "../../assets/gol2.png"
-import HomeCar from "../../assets/home3.jpg"
-import Hexa from "../../assets/hexBorder.svg"
 
 function Slider () {
   const router = useRouter();
@@ -63,8 +63,8 @@ function Slider () {
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" />
-            {/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} /> */}
+            {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
+            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} />
           </motion.div>
       </div>
 

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image'
-import HomeRoute from '../assets/ruta-patagonica.jpg'
+import HomeRoute from '../../public/assets/others/ruta-patagonica.jpg'
 import HomeBooking from "./Home/HomeBooking"
 import Experiences  from "./Home/Experiences"
 import Slider from "./Home/Slider"
