@@ -102,7 +102,8 @@ const handlesubmit = async(e) => {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
-      <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} layout="responsive" objectFit="cover" objectPosition="center" priority/>
+      {/* <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} priority/> */}
+      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674951543/logoMain_pp2bwb.webp" alt="familia de vacaciones en patagonia" width={1920} height={1080} priority/>
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
 
