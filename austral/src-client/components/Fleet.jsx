@@ -30,7 +30,7 @@ import Sandero from "../../public/assets/fleet/sandero.png"
 import Onix from "../../public/assets/fleet/onix.png"
 
 const carsImages = [
-  {model: "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png", id: 1},
+  {model: Sandero, id: 1},
   {model: Onix, id: 4},
   {model: Gol, id: 6},
   {model: Sandero, id: 5},
@@ -92,9 +92,9 @@ function  Fleet () {
           <span className={styles.card__category}>{t.catego} {car.category}</span>
 
           <ul className={styles.card__info} >
-            <li><Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/car-ico_ubjrc9.png" alt="icono de cantidad de pasajeros" width="20" heigth="20"/>{car.capacity} {t.passengers}</li>
+            <li><Image src={CarIcon3} alt="icono de cantidad de pasajeros" width="20" heigth="20"/>{car.capacity} {t.passengers}</li>
             <li><Image src={ CarIcon2} alt="icono de transmision automotor" width="20" heigth="20"/>{car.transmition}</li>
-            <li><Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/motor-ico_atgd4d.png" alt="icono de motor automotor" width="20" heigth="20"/>{car.motor}</li>
+            <li><Image src={CarIcon1} alt="icono de motor automotor" width="20" heigth="20"/>{car.motor}</li>
           </ul>
 
           <div>
@@ -110,11 +110,11 @@ function  Fleet () {
     </div>
 
     <div className={styles.brands__container}>
-      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017775/logo_fiat_ed9qey.png" alt="logo de fiat" width="50" heigth="50"/>
-      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017775/vw-logo_kbewdy.png" alt="logo de volkswagen" width="50" heigth="50"/>
-      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017775/vw-logo_kbewdy.png" alt="logo de renault" width="70" heigth="70"/>
-      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017775/nissan-logo_go3txk.png" alt="logo de nissan" width="50" heigth="50"/>
-      <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017775/chevrolet-logo_guzdsx.png" alt="logo de chevrolet" width="90" heigth="90"/>
+      <Image src={LogoFiat} alt="logo de fiat" width="50" heigth="50"/>
+      <Image src={LogoVW} alt="logo de volkswagen" width="50" heigth="50"/>
+      <Image src={LogoRenault} alt="logo de renault" width="70" heigth="70"/>
+      <Image src={LogoNissan} alt="logo de nissan" width="50" heigth="50"/>
+      <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
     </div>
 
     </div>

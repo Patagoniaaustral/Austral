@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
-import Redcar from "../../../public/assets/fleet/redcar.png"
+//import Redcar from "../../../public/assets/fleet/redcar.png"
 import Gol from "../../../public/assets/fleet/gol2.png"
 import HomeCar from "../../../public/assets/others/home3.jpg"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
@@ -73,7 +73,7 @@ function Slider () {
         </div>
         
         <div className={styles.slider__btnsContainer}>
-          <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
+          <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage("https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png"); setSelected(0)}}></button>
           <button aria-label="cambiar imagen" value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Gol); setSelected(1)}}></button>
         </div>
 

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from 'next/image';
-import LogoNavBar from "../../public/assets/others/logoNavBar.png"
+//import LogoNavBar from "../../public/assets/others/logoNavBar.png"
 //import Es from "../../public/assets/icons/lang-es.png"
 //import En from "../../public/assets/icons/lang-en.png"
 import navEs from "../../public/locale/ES/navbar.json"
