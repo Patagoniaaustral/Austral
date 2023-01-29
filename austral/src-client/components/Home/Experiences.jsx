@@ -75,8 +75,8 @@ function Experiences () {
  
   return (
     <section className={styles.section__container}>
-      {/* <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100}  loading="lazy"/> */}
-      {/* <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} loading="lazy"/> */}
+      <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100}  loading="lazy"/>
+      <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} loading="lazy"/>
       <h2 className={styles.section__title}>{t.experience.etitle}</h2>
       <p className={styles.section__text}>{t.experience.etext}</p>
 
@@ -84,7 +84,7 @@ function Experiences () {
       {images.map((image) => (
         <div key={image.id} className={styles.experience__card}>
           <motion.div animate={image.controls} className={styles.experience__image}> 
-            {/* <Image src={image.image} alt={image.alt} width={500} height={500} loading="lazy" /> */}
+            <Image src={image.image} alt={image.alt} width={500} height={500} loading="lazy" />
           </motion.div>
           <p className={styles.experience__text}>{image.title}</p>
         </div>
