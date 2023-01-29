@@ -39,7 +39,7 @@ const handleSubmit = async(e) => {
     <footer className={styles.footer__container}>
       <div className={styles.footer__first_row}>
         <div>
-          <Image src={LogoFooter} alt="Logo de Austral Rental" width={200} height={60} />
+          <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017818/logoFooter_m2otmm.png" alt="Logo de Austral Rental" width={200} height={60} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
             <Link href="https://www.instagram.com/australrentacar" target={"_blank"} aria-label="instagram">
               <BsInstagram className={styles.first_row_ico} />

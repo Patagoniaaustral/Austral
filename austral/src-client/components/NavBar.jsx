@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import LogoNavBar from "../../public/assets/others/logoNavBar.png"
 //import Es from "../../public/assets/icons/lang-es.png"
-import En from "../../public/assets/icons/lang-en.png"
+//import En from "../../public/assets/icons/lang-en.png"
 import navEs from "../../public/locale/ES/navbar.json"
 import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
@@ -14,6 +14,7 @@ export const NavBar = () => {
   const router = useRouter();
   const t = router.locale === "es" ? navEs : navEn;
   const Es = "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/lang-es_aejjrs.png"
+ const En = "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/lang-en_wqsfo6.png"
   const [lang, setLang] = useState(Es);
   const [isActive, setIsActive] = useState(false);
   
