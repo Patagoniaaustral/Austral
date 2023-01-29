@@ -23,14 +23,14 @@ function Experiences () {
   const images = [
     {
       id: 1,
-      image: Exp3,
+      image: "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017824/exp1_nykqlt.jpg",
       alt: "vista de hotel de montaña",
       title: t.experience.esubtitle1,
       controls : controls1
     },
     {
       id: 2,
-      image: Exp2,
+      image: "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017822/exp2_d6fk5i.jpg",
       alt: "vista a paisaje de montaña",
       title: t.experience.esubtitle2,
       controls : controls2

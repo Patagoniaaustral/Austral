@@ -40,7 +40,7 @@ function Slider () {
       }
   }, [inView])
 
-  const [image, setImage] = useState(Redcar)
+  const [image, setImage] = useState("https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png")
   const [selected, setSelected] = useState(0)
 
 
@@ -64,12 +64,12 @@ function Slider () {
           
           <motion.div className={styles.image__container} animate={animation}>
             {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
-            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} />
+            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009577/grid_landscape_ly0sho.webp" alt="viaje en ruta por patagonia"  width={500} height={500} />
           </motion.div>
       </div>
 
         <div>
-          <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
+          <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={500} height={500} />
         </div>
         
         <div className={styles.slider__btnsContainer}>
