@@ -40,7 +40,7 @@ export const NavBar = () => {
   return (
     <header className={styles.nav__container} >
       
-      <Link href="/"><Image className={styles.logo} src={LogoNavBar} alt="Logo Austral Rental" width={200} height={60} priority /></Link>
+      {/* <Link href="/"><Image className={styles.logo} src={LogoNavBar} alt="Logo Austral Rental" width={200} height={60} priority /></Link> */}
 
       
        {isActive && <div className={styles.navBar}></div>}

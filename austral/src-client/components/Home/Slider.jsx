@@ -52,8 +52,8 @@ function Slider () {
   return (
     <section className={styles.section__container}>
 
-      <Image  className={styles.first__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
-      <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} />
+      {/* <Image  className={styles.first__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} /> */}
+      {/* <Image className={styles.second__hexa} src={Hexa} alt="icono de hexagono" width={100} height={100} /> */}
       
       <div ref={ref} className={styles.general__container}>
           <div className={styles.info__container}>
@@ -64,12 +64,12 @@ function Slider () {
           
           <motion.div className={styles.image__container} animate={animation}>
             {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
-            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} />
+            {/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} /> */}
           </motion.div>
       </div>
 
         <div>
-          <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
+          {/* <Image className={styles.slider__image} src={image} alt="modelos de la flota" /> */}
         </div>
         
         <div className={styles.slider__btnsContainer}>

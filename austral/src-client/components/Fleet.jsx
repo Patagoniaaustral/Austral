@@ -108,13 +108,13 @@ function  Fleet () {
       )})}
     </div>
 
-    <div className={styles.brands__container}>
+    {/* <div className={styles.brands__container}>
       <Image src={LogoFiat} alt="logo de fiat" width="50" heigth="50"/>
       <Image src={LogoVW} alt="logo de volkswagen" width="50" heigth="50"/>
       <Image src={LogoRenault} alt="logo de renault" width="70" heigth="70"/>
       <Image src={LogoNissan} alt="logo de nissan" width="50" heigth="50"/>
       <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
-    </div>
+    </div> */}
 
     </div>
   )

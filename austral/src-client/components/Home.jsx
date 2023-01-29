@@ -48,7 +48,7 @@ function Home () {
      <Slider/>
      <section ref={ref} className={styles.section__container}>  
       <motion.div animate={animation} className={styles.image__container}>
-        <Image className={styles.image}src={HomeRoute} alt="ruta patagonica hacia el horizonte" width={250} height={500} />
+        {/* <Image className={styles.image}src={HomeRoute} alt="ruta patagonica hacia el horizonte" width={250} height={500} /> */}
       </motion.div>
 
       <div className={styles.about}>
