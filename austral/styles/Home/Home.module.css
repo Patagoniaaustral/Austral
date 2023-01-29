@@ -8,7 +8,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 3.5em 11vmax;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%), url(https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017826/paisaje-patagonico_gtgsjh.jpg);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%), url(../../public/assets/others/paisaje-patagonico.jpg);
     background-size: 100% 150%;
     background-position: 0 20%;
     background-repeat: no-repeat;

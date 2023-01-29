@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
-//import Redcar from "../../../public/assets/fleet/redcar.png"
+import Redcar from "../../../public/assets/fleet/redcar.png"
 import Gol from "../../../public/assets/fleet/gol2.png"
 import HomeCar from "../../../public/assets/others/home3.jpg"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
@@ -40,7 +40,7 @@ function Slider () {
       }
   }, [inView])
 
-  const [image, setImage] = useState("https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png")
+  const [image, setImage] = useState(Redcar)
   const [selected, setSelected] = useState(0)
 
 
@@ -64,16 +64,16 @@ function Slider () {
           
           <motion.div className={styles.image__container} animate={animation}>
             {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
-            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009577/grid_landscape_ly0sho.webp" alt="viaje en ruta por patagonia"  width={500} height={500} />
+            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} />
           </motion.div>
       </div>
 
         <div>
-          <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={500} height={500} />
+          <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
         </div>
         
         <div className={styles.slider__btnsContainer}>
-          <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage("https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png"); setSelected(0)}}></button>
+          <button  aria-label="cambiar imagen" value={selected} className={selected === 0 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Redcar); setSelected(0)}}></button>
           <button aria-label="cambiar imagen" value={selected} className={selected === 1 ? styles.slider__btnselected : styles.slider__btn} onClick={() => {setImage(Gol); setSelected(1)}}></button>
         </div>
 

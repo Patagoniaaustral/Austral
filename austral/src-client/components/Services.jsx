@@ -19,7 +19,7 @@ function Services () {
     <div className={styles.main}>
       <div className={styles.header}>
         <h1 className={styles.header__title}>{t.services}</h1>
-        <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017786/services_kix8tf.jpg" className={styles.header__img} alt="niño asomandose del auto" width={1300} height={400} priority/>
+        <Image src={ServicesImg} className={styles.header__img} alt="niño asomandose del auto" width={1300} height={400} priority/>
       </div>
 
         
@@ -30,10 +30,10 @@ function Services () {
             <p>{t.text2}</p>
             <p>{t.text3}</p>
           </div>
-          <Image className={styles.covers__image} src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017734/redcar_mshc5f.png" alt="modelo de auto" width={600} height={350} />
+          <Image className={styles.covers__image} src={RedCar} alt="modelo de auto" width={600} height={350} />
         </div>
       
-        <Image className={styles.first__hexa} src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017827/hexBorder_vszuno.svg" alt="icono de hexagono grande" width={100} height={100} />
+        <Image className={styles.first__hexa} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
 
         <div className={styles.containers}>
           <div className={styles.extras}>
@@ -50,7 +50,7 @@ function Services () {
           <div className={styles.requirements}>
             <h2>{t.required}</h2>
             <div className={styles.requirements__contain}>
-                <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017827/Credencial_zeecov.svg" alt=" icono de permiso conducir" width={200} height={100}/>
+                <Image src={Credent} alt=" icono de permiso conducir" width={200} height={100}/>
               <ul className={styles.requirements__list}>
                 <li>{t.req1}</li>
                 <li>{t.req2}</li>
