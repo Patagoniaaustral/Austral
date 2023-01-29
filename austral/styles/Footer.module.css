@@ -21,6 +21,10 @@
     gap: max(1em, 5vw);
     font-weight: 300;
 }
+.first_row_logo{
+    width: 85%;
+    height: 40%;
+}
 
 .footer__first_row h2{
     margin-bottom: 1.4em;
