@@ -85,6 +85,7 @@
     left: 30%;
 }
 
+
 .slider__btnsContainer{
     display: flex;
     position: absolute;
@@ -139,6 +140,8 @@
     }
 
     .slider__image{
+        width: 55%;
+        height: 55%;
         object-fit: scale-down;
         top: 70%;
         left: 57%;
