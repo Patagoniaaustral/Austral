@@ -28,7 +28,7 @@
 }
 
 .slogan{
- color: var(--clr-primary);
+    color: var(--clr-primary);
     font-size: clamp(1.3rem, 2.5rem, 3.5vw);
 }
 
@@ -37,6 +37,8 @@
 .header__img{
     display: flex;
     justify-content: center;
+    width: 80em;
+    height: 35em;
 }
 
 
@@ -60,7 +62,7 @@
     line-height: 1;
     font-size: calc(1.5rem + 2vw);
     filter: drop-shadow(0 0 0.1em rgb(255, 255, 255));
-    /* font-size: clamp(1.3rem, 3.5rem, 3.5vw); */
+    font-size: clamp(1.3rem, 3.5rem, 3.5vw);
 }
 
 .hexa {

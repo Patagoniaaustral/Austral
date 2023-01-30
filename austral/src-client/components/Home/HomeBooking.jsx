@@ -103,7 +103,6 @@ const handlesubmit = async(e) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>    
         <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} priority/>
-       
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
 
