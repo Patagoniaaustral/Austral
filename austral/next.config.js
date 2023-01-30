@@ -7,10 +7,7 @@ const nextConfig = {
     defaultLocale: 'es',
     locales: ['en', 'es'],
   },
-  swcMinify: true,
-  images: {
-    domains: ["res.cloudinary.com"]
-}
+  swcMinify: true, 
 }
 
 module.exports = nextConfig

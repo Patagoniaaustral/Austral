@@ -21,8 +21,8 @@ export default function Home() {
     <>
       <Head>
         <title>Austral </title>
-        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta charSet="utf-8" />
         <meta name="description" content="Austral Rent A Car." />
         <meta name="austral" content="Austral Rent A Car" />
         <meta name="robots" content="index, follow" />
@@ -30,7 +30,7 @@ export default function Home() {
          alquiler de autos bariloche, rent a car, rent a car bariloche, rent a car argentina"/>
         <meta property="og:title" content="Austral Rent A Car" />
         <meta property="og:description" content="Austral Rent A Car" />
-        <meta property="og:url" content="https://www.australrentacar.com.ar/" />
+        <meta property="og:url" content="https://www.australrentacar.com.ar/" /> */}
         <link rel="icon" href="/favicon.png" />
         <meta name="google-site-verification" content="GDZpDah58kjFg2Q5RBcgT48NdKk0DkwrQFHB_k8hZkc" />
       </Head>

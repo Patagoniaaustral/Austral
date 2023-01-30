@@ -102,7 +102,7 @@ function  Fleet () {
             {carsImages.map((image, index) => {
               return (
                 <div key={index}>
-                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto" 
+                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto"  sizes="(max-width: 768px) 100vw, 1980px" 
                   />}
                 </div>
               )})}
