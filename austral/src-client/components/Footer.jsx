@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-//import LogoFooter from "../../public/assets/others/logoFooter.png"
+import LogoFooter from "../../public/assets/others/logoFooter.png"
 import { IconContext } from "react-icons";
 import {BsInstagram} from "react-icons/bs";
 import {FaFacebookF} from "react-icons/fa";
@@ -39,7 +39,7 @@ const handleSubmit = async(e) => {
     <footer className={styles.footer__container}>
       <div className={styles.footer__first_row}>
         <div>
-          <Image className={styles.first_row_logo} src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017818/logoFooter_m2otmm.png" alt="Logo de Austral Rental" width={256} height={86} />
+          <Image className={styles.first_row_logo} src={logoFooter} alt="Logo de Austral Rental" width={256} height={86} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
             <Link href="https://www.instagram.com/australrentacar" target={"_blank"} aria-label="instagram">
               <BsInstagram />

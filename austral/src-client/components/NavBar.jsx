@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from 'next/image';
-//import LogoNavBar from "../../public/assets/others/logoNavBar.png"
-//import Es from "../../public/assets/icons/lang-es.png"
-//import En from "../../public/assets/icons/lang-en.png"
+import LogoNavBar from "../../public/assets/others/logoNavBar.png"
+import Es from "../../public/assets/icons/lang-es.png"
+import En from "../../public/assets/icons/lang-en.png"
 import navEs from "../../public/locale/ES/navbar.json"
 import navEn from "../../public/locale/EN/navbar.json"
 import styles from "../../styles/NavBar.module.css"
@@ -13,8 +13,7 @@ import styles from "../../styles/NavBar.module.css"
 export const NavBar = () => {
   const router = useRouter();
   const t = router.locale === "es" ? navEs : navEn;
-  const Es = "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/lang-es_aejjrs.png"
- const En = "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017799/lang-en_wqsfo6.png"
+
   const [lang, setLang] = useState(Es);
   const [isActive, setIsActive] = useState(false);
   
@@ -42,7 +41,7 @@ export const NavBar = () => {
   return (
     <header className={styles.nav__container} >
       
-      <Link href="/"><Image className={styles.logo} src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017816/logoNavBar_osyjwg.png" alt="Logo Austral Rental" width={200} height={60} priority /></Link>
+      <Link href="/"><Image className={styles.logo} src={LogoNavBar} alt="Logo Austral Rental" width={200} height={60} priority /></Link>
 
       
        {isActive && <div className={styles.navBar}></div>}

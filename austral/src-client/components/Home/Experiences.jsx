@@ -37,7 +37,7 @@ function Experiences () {
     },
     {
       id: 3,
-      image: "https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009567/grid_landscape_1_rapmug.webp",
+      image: Exp3,
       alt: "restaurant de montaña",
       title: t.experience.esubtitle3,
       controls : controls3
@@ -74,8 +74,8 @@ function Experiences () {
  
   return (
     <section className={styles.section__container}>
-      <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100}  loading="lazy"/>
-      <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} loading="lazy"/>
+      <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
+      <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} />
       <h2 className={styles.section__title}>{t.experience.etitle}</h2>
       <p className={styles.section__text}>{t.experience.etext}</p>
 
@@ -83,7 +83,7 @@ function Experiences () {
       {images.map((image) => (
         <div key={image.id} className={styles.experience__card}>
           <motion.div animate={image.controls} className={styles.experience__image}> 
-            <Image src={image.image} alt={image.alt} width={500} height={500} loading="lazy" />
+            <Image src={image.image} alt={image.alt} width={500} height={500}  />
           </motion.div>
           <p className={styles.experience__text}>{image.title}</p>
         </div>

@@ -63,8 +63,7 @@ function Slider () {
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" /> */}
-            <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1674946904/home3_dsoiyg.jpg" alt="viaje en ruta por patagonia"  width={500} height={500} />
+            <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} layout="responsive" />
           </motion.div>
       </div>
 
