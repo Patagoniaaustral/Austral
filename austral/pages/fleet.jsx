@@ -9,6 +9,7 @@ export default function fleet() {
     <>
      <Head>
         <title>Austral</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="cars fleet" />
       </Head>   
   

@@ -21,6 +21,7 @@ export default function Home() {
     <>
       <Head>
         <title>Austral</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Austral Rent A Car." />
       </Head>
       <motion.main exit={{color : 'white'}} 

@@ -73,7 +73,8 @@ function  Fleet () {
     <div className={styles.main}>
 
     <div className={styles.header}>
-      {/* <Image className={styles.header__image} src={FleetImg} alt="imagen de la flota" sizes="100vw" priority/> */}
+{/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017793/fleet_xvp11n.jpg" alt="imagen de la flota" width={auto} height={auto} priority/> */}
+      <Image className={styles.header__image} src={FleetImg} alt="imagen de la flota" priority/>
       <h1 className={styles.header__title}>{t.fleet}</h1>
       <select className={styles.header__filter} name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>

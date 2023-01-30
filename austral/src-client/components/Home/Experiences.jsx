@@ -83,7 +83,7 @@ function Experiences () {
       {images.map((image) => (
         <div key={image.id} className={styles.experience__card}>
           <motion.div animate={image.controls} className={styles.experience__image}> 
-            <Image src={image.image} alt={image.alt} width={500} height={500}  />
+            {/* <Image src={image.image} alt={image.alt} width={500} height={500}  /> */}
           </motion.div>
           <p className={styles.experience__text}>{image.title}</p>
         </div>
