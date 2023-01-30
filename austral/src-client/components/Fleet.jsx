@@ -31,15 +31,15 @@ import Sandero from "../../public/assets/fleet/sandero.png"
 import Onix from "../../public/assets/fleet/onix.png"
 
 const carsImages = [
-  {model: Sandero, id: 1, width: 400, height: 200},
-  {model: Onix, id: 4, width: 400, height: 200},
-  {model: Gol, id: 6,  width: 400, height: 200},
-  {model: Sandero, id: 5, width: 400, height: 200},
-  {model: Logan, id: 7, width: 400, height: 200},
-  {model: Prisma, id: 8, width: 400, height: 200},
-  {model: Spin, id: 2, width: 400, height: 200},
-  {model: Toro, id: 9, width: 400, height: 200},
-  {model: Nissan, id: 3, width: 400, height: 200}
+  {model: Sandero, id: 1},
+  {model: Onix, id: 4},
+  {model: Gol, id: 6},
+  {model: Sandero, id: 5},
+  {model: Logan, id: 7},
+  {model: Prisma, id: 8},
+  {model: Spin, id: 2},
+  {model: Toro, id: 9},
+  {model: Nissan, id: 3}
 ]
 
 
@@ -73,7 +73,7 @@ function  Fleet () {
     <div className={styles.main}>
 
     <div className={styles.header}>
-      <Image className={styles.header__image} src={FleetImg} alt="auto alumbrado por una puesta de sol"  width= {1980} height={1080} sizes="(max-width: 768px) 100vw, 1980px"  priority/>
+      <Image className={styles.header__image} src={FleetImg} alt="auto alumbrado por una puesta de sol"  sizes="(max-width: 768px) 100vw, 1980px"  priority/>
       <h1 className={styles.header__title}>{t.fleet}</h1>
       <select className={styles.header__filter} name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>
@@ -102,7 +102,7 @@ function  Fleet () {
             {carsImages.map((image, index) => {
               return (
                 <div key={index}>
-                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto" width={image.width} heigth={image.height}
+                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto" 
                   />}
                 </div>
               )})}
