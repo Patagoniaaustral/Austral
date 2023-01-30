@@ -8,6 +8,9 @@ const nextConfig = {
     locales: ['en', 'es'],
   },
   swcMinify: true, 
+  image : {
+    domains : ["res.cloudinary.com"]
+  }
 }
 
 module.exports = nextConfig

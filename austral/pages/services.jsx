@@ -7,6 +7,7 @@ export default function service() {
   return (
    <>
      <Head>
+        <title>Austral</title>
         <link rel="icon" href="/favicon.png" />
       </Head>   
       <motion.main exit={{color : 'white'}} 

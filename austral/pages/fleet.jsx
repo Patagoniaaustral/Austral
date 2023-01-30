@@ -8,6 +8,7 @@ export default function fleet() {
   return (
     <>
      <Head>
+        <title>Austral</title>
         <meta name="description" content="cars fleet" />
       </Head>   
   

@@ -20,6 +20,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Austral</title>
         <meta name="description" content="Austral Rent A Car." />
       </Head>
       <motion.main exit={{color : 'white'}} 

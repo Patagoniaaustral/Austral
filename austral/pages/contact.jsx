@@ -8,6 +8,7 @@ export default function contact() {
   return (
     <>
      <Head>
+       <title>Austral</title>
         <meta name="description" content="Contact" />
       </Head>   
       <motion.main exit={{color : 'white'}} 

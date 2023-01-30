@@ -101,7 +101,8 @@ const handlesubmit = async(e) => {
     <div className={styles.header__img}>
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
-     })}</h1>    
+     })}</h1>
+     <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009593/logoMain_un3peu.webp" alt="logo de patagonia austral rent a car" width={1920} height={1080} priority/>     
         {/* <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} priority/> */}
     </div>
       <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
