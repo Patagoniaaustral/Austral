@@ -51,6 +51,8 @@
         "q5" : "Cleaning and disinfection protocol",
         "a5" : "All cars are cleaned and disinfected paying special attention to areas and items that are handled most frequently. In the event of a special health situation such as Covid-19, the protocols established by the competent authorities are respected.",
         "q6" : "I can’t find what I’m looking for",
-        "a6" : "Contact us by phone or email so we can provide you with personalized advice, in the contact section you can find our details."
+        "a6" : "Contact us by phone or email so we can provide you with personalized advice, in the contact section you can find our details.",
+        "link1" : "RENT NOW",
+        "link2" : "CONTACT US"
     }
 }
