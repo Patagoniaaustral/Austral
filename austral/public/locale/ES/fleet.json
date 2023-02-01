@@ -1,5 +1,5 @@
 {
-    "fleet" : "NUESTRA FLOTA",
+    "fleet" : "Autos en alquiler",
     "booking" :{
         "bcategory" : {
             "none" : "CATEGORÍA",

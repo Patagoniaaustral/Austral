@@ -7,9 +7,9 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import styles from "../../../styles/Home/Experiences.module.css"
 
-import Exp1 from "../../../public/assets/others/exp1.jpg"
-import Exp2 from "../../../public/assets/others/exp2.jpg"
-import Exp3 from "../../../public/assets/others/exp3.jpg"
+import Exp3 from "../../../public/assets/others/Lago Gutierrez,, Bariloche, Argentina.webp"
+import Exp2 from "../../../public/assets/others/Laguna Escondida, Circuito Chico, Bariloche, Argentina.webp"
+import Exp1 from "../../../public/assets/others/Ventisquero Negro en el Parque Nacional Nahuel Huapi en Argentina.webp"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
 
 function Experiences () {
@@ -24,21 +24,21 @@ function Experiences () {
     {
       id: 1,
       image: Exp1,
-      alt: "vista de hotel de montaña",
+      alt: "Laguna Escondida, Circuito Chico, Bariloche, Argentina",
       title: t.experience.esubtitle1,
       controls : controls1
     },
     {
       id: 2,
       image: Exp2,
-      alt: "vista a paisaje de montaña",
+      alt: "Ventisquero Negro en el Parque Nacional Nahuel Huapi en Argentina",
       title: t.experience.esubtitle2,
       controls : controls2
     },
     {
       id: 3,
       image: Exp3,
-      alt: "restaurant de montaña",
+      alt: "Lago Gutierrez,, Bariloche, Argentina",
       title: t.experience.esubtitle3,
       controls : controls3
     }
@@ -77,13 +77,15 @@ function Experiences () {
       <Image className={styles.hexa__first} src={Hexa} alt="icono de hexagono grande" width={100} height={100} />
       <Image  className={styles.hexa__second}src={Hexa} alt="icono de hexagono grande" width={60} height={60} />
       <h2 className={styles.section__title}>{t.experience.etitle}</h2>
-      <p className={styles.section__text}>{t.experience.etext}</p>
+      <p className={styles.section__text}>{t.experience.etext.split("\n").map((item, key) => {
+      return <span key={key}>{item}<br/></span>
+     })}</p>
 
     <div ref={ref} className={styles.experience__container}>
       {images.map((image) => (
         <div key={image.id} className={styles.experience__card}>
           <motion.div animate={image.controls} className={styles.experience__image}> 
-            {/* <Image src={image.image} alt={image.alt} width={500} height={500}  /> */}
+            <Image src={image.image} alt={image.alt} width={500} height={500}  />
           </motion.div>
           <p className={styles.experience__text}>{image.title}</p>
         </div>

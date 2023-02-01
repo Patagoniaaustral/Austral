@@ -24,32 +24,34 @@
 
 .general__container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 2em;
     background-color: var(--clr-secondary);
     border-radius: 3em;
-    padding: 2.5em 5em 8em 5em;
+    padding: 5em 6em;
     width: 85%;
-    margin-bottom: 3em;
+    margin: 1.2em 0 3em;
 }
-
-
 
 .info__container{
-    padding: 2em;
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
-
 
 
 .info__container > h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 1.5em;
+
 }
 
-.info__container > * {
-    margin-bottom: 1.5em;
-}
+.info__container > p {
+    margin-bottom: 7em;
+    color: var(--clr-dark-gray);
+} 
 
 .image__container{
     width: 50%;
@@ -66,6 +68,7 @@
 
 
 .info__btn{
+    width: max-content;
     color: var(--clr-white);
     background-color: var(--clr-primary);
     border: none;
@@ -135,8 +138,7 @@
 
 @media(max-width: 1200px){
     .general__container{
-        padding: 1.5em 1.5em 10em;
-        align-items: center;
+        padding: 5em 3em;
     }
 
     .slider__image{
@@ -156,16 +158,25 @@
 
 @media(max-width: 768px){
     .general__container{
-      padding: 1em 1em 12em;
+      padding: 1em 1.5em 12em;
       width: 90%;
       flex-direction: column;
       align-items: center;
-      gap: 0em;
+      gap: 2em;
     }
 
     .info__container{
         width: 100%; 
         padding: 1em;       
+    }
+
+    .info__container > h2 {
+        font-size: 1.4rem;
+        margin-bottom: .5em;
+    }
+
+    .info__container > p {
+        margin-bottom: 2em;
     }
     
     .image__container{

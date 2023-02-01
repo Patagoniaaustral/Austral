@@ -4,11 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 7em 4em; 
 }
 
 .booking__all_container{
-    width: 86%;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,45 +23,36 @@
     z-index: 1;
     position: relative;
     background-color: var(--clr-white);
-    top: -5rem;
+    top: -3.5rem;
 }
 
-.slogan{
-    color: var(--clr-primary);
-    font-size: clamp(1.3rem, 2.5rem, 3.5vw);
-}
 
 /* ------------------ HEARDER IMG ------------------ */
 
 .header__img{
-    display: flex;
-    justify-content: center;
-    width: 80em;
-    height: 35em;
+    padding: 0 7em;
+    margin-bottom: 2em;
+    z-index: 1;
+    position: relative;
 }
-
-
 
 .header__img img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 16/7;
-    object-fit: cover;
-    object-position: 0 65%; 
     border-radius: 0 0 3em 3em;
 }
 
 
 .header__img h1{
-    color:var(--clr-primary);
+    color:var(--clr-white);
     z-index: 2;
     position: absolute;
-    top: 35%;
-    left: 9%;
+    top: 55%;
+    left: 10%;
     line-height: 1;
-    font-size: calc(1.5rem + 2vw);
-    filter: drop-shadow(0 0 0.1em rgb(255, 255, 255));
-    font-size: clamp(1.3rem, 3.5rem, 3.5vw);
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-weight: 800;
+    filter: drop-shadow(0 .1em .1em rgba(0,0,0,.4));
 }
 
 .hexa {
@@ -136,6 +126,10 @@
 }
 
 @media(max-width : 1417px){
+    .section__container{
+        padding: 0 2em;
+    }
+
     .booking__all_container{
         gap: 1rem;
         width: 95%;
@@ -162,9 +156,15 @@
 
 }
 
+@media(max-width:1300px){
+    .header__img{
+      padding: 0 2em;
+    }
+}
+
 @media(max-width : 1024px){
     .section__container{
-        padding: 0 1.2em 7em;
+        padding: 0 1.2em;
     }
     
     .booking__all_container{
@@ -186,16 +186,18 @@
 @media(max-width : 768px){
     .section__container{
         padding: 0 0 2em;
-
     }
- 
+
+    .header__img{
+        padding: 0;
+    }
+
     .booking__all_container{
         width: 86%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        top: -2.5rem;
     }
 
     
@@ -210,11 +212,6 @@
         padding: .4em 1em;   
     }
 
-    .header__img h1 {
-        font-size: 5.5vw;
-        top: 32%;
-        left: 3%;
-    }
 
     .search__btn{
         margin: 0;
@@ -228,20 +225,7 @@
 
 
 @media(max-width:650px){
-    .header__img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        aspect-ratio: 16/9;
-    }
 
-    .header__img h1 {
-        font-size: 6vw;
-        filter: drop-shadow(0 0 .4em rgb(255, 255, 255));
-        top: 28%;
-        left: 7%;
-    }
 
     .booking__selects_container{
         display: flex;

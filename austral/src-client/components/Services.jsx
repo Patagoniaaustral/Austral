@@ -6,7 +6,7 @@ import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 
 import RedCar from "../../public/assets/fleet/redcar.png"
-import ServicesImg from "../../public/assets/hero/services.jpg"
+import ServicesHero from "../../public/assets/hero/Familia viajando en auto, Bariloche.webp"
 import Credent from "../../public/assets/svg/Credencial.svg"
 import Hexa from "../../public/assets/svg/hexBorder.svg"
 
@@ -19,14 +19,14 @@ function Services () {
     <div className={styles.main}>
       <div className={styles.header}>
         <h1 className={styles.header__title}>{t.services}</h1>
-        <Image src={ServicesImg} className={styles.header__img} alt="niño asomandose del auto" width={1300} height={400} priority/>
+        <Image src={ServicesHero} className={styles.header__img} alt="Familia viajando en auto en Bariloche." width={1300} height={400} priority/>
       </div>
 
         
         <div className={styles.covers}>
           <div>
             <h2 className={styles.covers__title}>{t.covers}</h2>
-            <p>{t.text1a}<span>{t.text1span1}</span>{t.text1b}<span>{t.text1span2}</span></p>
+            <p>{t.text1a}<strong>{t.text1span1}</strong>{t.text1b}<span>{t.text1span2}</span></p>
             <p>{t.text2}</p>
             <p>{t.text3}</p>
           </div>

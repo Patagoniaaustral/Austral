@@ -35,7 +35,7 @@
           },
        {
         "id" : 7,
-        "model": "Renault Logan Life",
+        "model": "Renault Logan",
         "capacity" : 7,
         "transmition" : "automatic",
         "motor" : "diesel",
@@ -53,7 +53,7 @@
           },
     {
     "id" : 2,
-    "model": " Chevrolet Spin",
+    "model": "Chevrolet Spin",
     "capacity" : 7,
     "transmition" : "manual",
     "motor" : "diesel",
@@ -76,6 +76,14 @@
     "transmition" : "automatic",
     "motor" : "diesel",
     "category" : "E"
+    },
+    {
+      "id" : 10,
+      "model": "Nissan Frontier",
+      "capacity" : 7,
+      "transmition" : "automatic",
+      "motor" : "diesel",
+      "category" : "E"
     }
 
 ]

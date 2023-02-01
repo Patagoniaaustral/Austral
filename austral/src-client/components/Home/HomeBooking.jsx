@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import { useRouter } from "next/router";
 import Image from 'next/image'
-import HomeMain from "../../../public/assets/hero/HomeMain.jpg"
+import HomeHero from "../../../public/assets/hero/Familia jugando en una plaza de Bariloche.webp"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
 import DatePicker from "react-datepicker"
 import addDays from 'date-fns/addDays'  
@@ -103,14 +103,14 @@ const handlesubmit = async(e) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>
      {/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009593/logoMain_un3peu.webp" alt="logo de patagonia austral rent a car" width={1920} height={1080} priority/>      */}
-        {/* <Image src ={HomeMain} alt="familia de vacaciones en patagonia" width={1920} height={1080} priority/> */}
+        <Image src ={HomeHero} alt="Familia jugando en una plaza de Bariloche" width={1920} height={1080} priority/>
     </div>
-      <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" />
+      {/* <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" /> */}
 
-
+{/* 
     <div className={styles.rent}>
       <h2>{t.rent}</h2>
-    </div>
+    </div> */}
 
     {/* <div className={styles.booking__all_container}>
       <h2 className={styles.slogan}>Gestiona tu reserva online</h2>

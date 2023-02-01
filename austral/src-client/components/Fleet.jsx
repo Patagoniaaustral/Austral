@@ -9,12 +9,11 @@ import fleetEs from "../../public/locale/ES/fleet.json"
 import fleetEn from "../../public/locale/EN/fleet.json"
 import styles from "../../styles/Fleet.module.css"
 
-import FleetImg from "../../public/assets/hero/fleet.jpg"
-
-import LogoFiat from  "../../public/assets/brands/logo_fiat.png"
-import LogoVW from  "../../public/assets/brands/vw-logo.png"
+import FleetHero from "../../public/assets/hero/Bariloche visto desde el auto.webp"
+import LogoFiat from  "../../public/assets/brands/fiat-logo.png"
+import LogoVW from  "../../public/assets/brands/volkswagen-logo.png"
 import LogoNissan from  "../../public/assets/brands/nissan-logo.png"
-import LogoRenault from  "../../public/assets/brands/Renault-Logo.png"
+import LogoRenault from  "../../public/assets/brands/renault-logo.png"
 import LogoChe from  "../../public/assets/brands/chevrolet-logo.png"
 
 import CarIcon1 from "../../public/assets/icons/motor-ico.png"
@@ -31,15 +30,16 @@ import Sandero from "../../public/assets/fleet/sandero.png"
 import Onix from "../../public/assets/fleet/onix.png"
 
 const carsImages = [
-  {model: Sandero, id: 1, width: 300, heigth: 300},
-  {model: Onix, id: 4, width: 300, heigth: 300},
-  {model: Gol, id: 6, width: 200, heigth: 200},
-  {model: Sandero, id: 5, width: 300, heigth: 300},
-  {model: Logan, id: 7, width: 300, heigth: 300},
-  {model: Prisma, id: 8, width: 300, heigth: 300},
-  {model: Spin, id: 2, width: 300, heigth: 300},
-  {model: Toro, id: 9, width: 300, heigth: 300},
-  {model: Nissan, id: 3, width: 300, heigth: 300}
+  {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquieler de auto Renault Sandero"},
+  {model: Onix, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
+  {model: Gol, id: 6, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
+  {model: Sandero, id: 5, width: 300, heigth: 300, alt : "Alquiler de auto Renault Sandero"},
+  {model: Logan, id: 7, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
+  {model: Prisma, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},
+  {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
+  {model: Toro, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
+  {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
+  {model: Sandero, id: 10, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"}
 ]
 
 
@@ -73,8 +73,7 @@ function  Fleet () {
     <div className={styles.main}>
 
     <div className={styles.header}>
-{/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675017793/fleet_xvp11n.jpg" alt="imagen de la flota" width={auto} height={auto} priority/> */}
-      <Image className={styles.header__image} src={FleetImg} alt="imagen de la flota" priority/>
+      <Image className={styles.header__image} src={FleetHero} alt="Familia viajando en auto en Bariloche." priority/>
       <h1 className={styles.header__title}>{t.fleet}</h1>
       <select className={styles.header__filter} name="category" onChange={handleChange}> 
           <option value="" >{t.booking.bcategory.none}</option>
@@ -94,16 +93,16 @@ function  Fleet () {
           <span className={styles.card__category}>{t.catego} {car.category}</span>
 
           <ul className={styles.card__info} >
-            <li><Image src={CarIcon3} alt="icono de cantidad de pasajeros" width="20" heigth="20"/>{car.capacity} {t.passengers}</li>
-            <li><Image src={ CarIcon2} alt="icono de transmision automotor" width="20" heigth="20"/>{car.transmition}</li>
-            <li><Image src={CarIcon1} alt="icono de motor automotor" width="20" heigth="20"/>{car.motor}</li>
+            <li><Image src={CarIcon3} alt="cantidad de pasajeros" width="20" heigth="20"/>{car.capacity} {t.passengers}</li>
+            <li><Image src={ CarIcon2} alt="tipo de caja" width="20" heigth="20"/>{car.transmition}</li>
+            <li><Image src={CarIcon1} alt="tipo de motor" width="20" heigth="20"/>{car.motor}</li>
           </ul>
 
           <div>
             {carsImages.map((image, index) => {
               return (
                 <div key={index}>
-                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt="modelo de auto" width={image.width} heigth={image.heigth}
+                  {car.id === image.id && <Image className={styles.card__image} src={image.model} alt={image.alt} width={image.width} heigth={image.heigth}
                   />}
                 </div>
               )})}
@@ -113,13 +112,12 @@ function  Fleet () {
     </div>
 
     <div className={styles.brands__container}>
-      <Image src={LogoFiat} alt="logo de fiat" width="50" heigth="50"/>
-      <Image src={LogoVW} alt="logo de volkswagen" width="50" heigth="50"/>
-      <Image src={LogoRenault} alt="logo de renault" width="70" heigth="70"/>
-      <Image src={LogoNissan} alt="logo de nissan" width="50" heigth="50"/>
-      <Image src={LogoChe} alt="logo de chevrolet" width="90" heigth="90"/>
+      <Image src={LogoFiat} alt="Logo Fiat" width="70" heigth="70"/>
+      <Image src={LogoVW} alt="Logo Volkswagen" width="70" heigth="70"/>
+      <Image src={LogoRenault} alt="Logo Renault" width="90" heigth="90"/>
+      <Image src={LogoNissan} alt="Logo Nissan" width="70" heigth="70"/>
+      <Image src={LogoChe} alt="Logo Chevrolet" width="120" heigth="120"/>
     </div>
-
     </div>
   )
 }

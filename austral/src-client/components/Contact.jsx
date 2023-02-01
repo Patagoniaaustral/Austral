@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link"
+import Image from "next/image"
 import { IconContext } from "react-icons";
 import {BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import {FaFacebookF} from "react-icons/fa";
+import ContactHero from "../../public/assets/hero/Persona hablando por smartphone, Península San Pedro, Bariloche.webp"
 import  validate  from '../controllers/contactValidate';
 import sendDataForm from '../controllers/sendDataForm';
 import contEs from "../../public/locale/ES/contact.json"
@@ -48,8 +50,11 @@ function Contact() {
 
   return (
     <div className={styles.main}>
-      <h1 className={styles.contact__title}>{t.contact}</h1>
-    
+         <div className={styles.header}>
+        <h1 className={styles.header__title}>{t.contact}</h1>
+        <Image src={ContactHero} className={styles.header__img} alt="niño asomandose del auto" width={1300} height={400} priority/>
+      </div>
+
     <div className={styles.contact__container}>
       
       <div className={styles.contact__info}>

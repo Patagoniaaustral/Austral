@@ -28,7 +28,7 @@ a {
   --border-radius-btn: 3rem;
   --border-radius-div: 1rem;
   --border-radius-textarea: .7rem;
-  --border: 1px solid var(--border);
+  --border: 1px solid var(--clr-border);
 }
 
 /* Box sizing rules */

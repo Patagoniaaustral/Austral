@@ -7,7 +7,8 @@ import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
 import Redcar from "../../../public/assets/fleet/redcar.png"
 import Gol from "../../../public/assets/fleet/gol2.png"
-import HomeCar from "../../../public/assets/others/home3.jpg"
+
+import HomeCar from "../../../public/assets/others/Persona disfrutando viaje en Bariloche.webp"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
 import styles from "../../../styles/Home/Slider.module.css"
 
@@ -58,12 +59,12 @@ function Slider () {
       <div ref={ref} className={styles.general__container}>
           <div className={styles.info__container}>
             <h2>{t.sliderfleet.ftitle}</h2>
-            <p>{t.sliderfleet.ftext}</p>
+            <p>{t.sliderfleet.ftext} <strong>{t.sliderfleet.fstrong}</strong></p>
             <button className={styles.info__btn} onClick={handleClick}>{t.sliderfleet.fbtn}</button>
           </div>
           
           <motion.div className={styles.image__container} animate={animation}>
-            {/* <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} /> */}
+            <Image src={HomeCar} alt="viaje en ruta por patagonia"  width={500} height={500} />
           </motion.div>
       </div>
 
