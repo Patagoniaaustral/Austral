@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import Image from "next/image"
 import homeEs from "../../../public/locale/ES/home.json"
 import homeEn from "../../../public/locale/EN/home.json"
-import Redcar from "../../../public/assets/fleet/redcar.png"
-import Gol from "../../../public/assets/fleet/gol2.png"
+import Redcar from "../../../public/assets/fleet/Chevrolet Prisma.webp"
+import Gol from "../../../public/assets/fleet/Volkswagen Gol Trend.webp"
 
 import HomeCar from "../../../public/assets/others/Persona disfrutando viaje en Bariloche.webp"
 import Hexa from "../../../public/assets/svg/hexBorder.svg"
@@ -69,7 +69,7 @@ function Slider () {
       </div>
 
         <div>
-          <Image className={styles.slider__image} src={image} alt="modelos de la flota" />
+          <Image className={styles.slider__image} src={image} alt="modelos de la flota" width={400} height={400}/>
         </div>
         
         <div className={styles.slider__btnsContainer}>

@@ -6,7 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/Favicon.webp" />
         <meta name="austral" content="Austral Rent A Car" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="alquiler de autos, alquiler de autos en argentina,

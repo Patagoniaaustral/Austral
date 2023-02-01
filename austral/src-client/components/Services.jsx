@@ -5,7 +5,7 @@ import servEs from "../../public/locale/ES/services.json"
 import servEn from "../../public/locale/EN/services.json"
 import styles from "../../styles/Services.module.css"
 
-import RedCar from "../../public/assets/fleet/redcar.png"
+import RedCar from "../../public/assets/fleet/Chevrolet Prisma.webp"
 import ServicesHero from "../../public/assets/hero/Familia viajando en auto, Bariloche.webp"
 import Credent from "../../public/assets/svg/Credencial.svg"
 import Hexa from "../../public/assets/svg/hexBorder.svg"

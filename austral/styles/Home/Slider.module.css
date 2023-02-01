@@ -79,13 +79,10 @@
 
 
 .slider__image{
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
     z-index: 2;
     position: absolute;
-    top: 45%;
-    left: 30%;
+    top: 35%;
+    left: 37%;
 }
 
 
@@ -142,9 +139,6 @@
     }
 
     .slider__image{
-        width: 55%;
-        height: 55%;
-        object-fit: scale-down;
         top: 70%;
         left: 57%;
         transform: translate(-50%, -50%);
@@ -185,8 +179,7 @@
     }
 
     .slider__image{
-        width: 98%;
-        top: 79%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -201,3 +194,14 @@
     }
 }
 
+
+
+@media(max-width: 500px){
+    .slider__image{
+        width: 300px;
+        height: 300px;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
