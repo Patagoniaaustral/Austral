@@ -114,8 +114,10 @@
     }
 
     .faqs a {
-        color: var(--clr-primary);
         font-style: italic;
+        background-color: var(--clr-primary);
+        color: var(--clr-white);
+        padding: .1em .5em;
     }
 
 @media(max-width: 1250px){
