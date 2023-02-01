@@ -102,20 +102,8 @@ const handlesubmit = async(e) => {
      <h1>{t.title.split("\n").map((item, key) => {
       return <span key={key}>{item}<br/></span>
      })}</h1>
-     {/* <Image src="https://res.cloudinary.com/de74ziogy/image/upload/f_auto,q_auto/v1675009593/logoMain_un3peu.webp" alt="logo de patagonia austral rent a car" width={1920} height={1080} priority/>      */}
-        <Image src ={HomeHero} alt="Familia jugando en una plaza de Bariloche" priority/>
+        <Image src ={HomeHero} sizes= " (max-width: 768px) 200vw, 100vw" placeholder='blur' alt="Familia jugando en una plaza de Bariloche" priority/>
     </div>
-      {/* <Image className={styles.hexa} src={Hexa} alt="icono de hexagono" /> */}
-
-{/* 
-    <div className={styles.rent}>
-      <h2>{t.rent}</h2>
-    </div> */}
-
-    {/* <div className={styles.booking__all_container}>
-      <h2 className={styles.slogan}>Gestiona tu reserva online</h2>
-      <Link className={styles.search__btn} href="https://www.patagoniaaustralrentacar.com.ar/reservar" passHref>{t.booking.bsearch}</Link>
-    </div> */}
 
     <form className={styles.booking__all_container} onSubmit={handlesubmit}>
         
