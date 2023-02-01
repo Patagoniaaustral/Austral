@@ -13,7 +13,7 @@ const nextConfig = {
       imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
       path: '/_next/image',
       loader: 'default',
-      loaderFile: '',
+      loaderFile: 'next/image',
       disableStaticImages: false,
       minimumCacheTTL: 60,
       formats: ['image/webp'],

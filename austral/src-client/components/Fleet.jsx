@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { useRouter } from "next/router";
@@ -13,7 +12,7 @@ import FleetHero from "../../public/assets/hero/Bariloche visto desde el auto.we
 import LogoFiat from  "../../public/assets/brands/fiat-logo.png"
 import LogoVW from  "../../public/assets/brands/volkswagen-logo.png"
 import LogoNissan from  "../../public/assets/brands/nissan-logo.png"
-import LogoRenault from  "../../public/assets/brands/renault-logo.png"
+//import LogoRenault from  "../../public/assets/brands/renault-logo.png"
 import LogoChe from  "../../public/assets/brands/chevrolet-logo.png"
 
 import CarIcon1 from "../../public/assets/icons/motor-ico.png"
@@ -114,7 +113,7 @@ function  Fleet () {
     <div className={styles.brands__container}>
       <Image src={LogoFiat} alt="Logo Fiat" width="70" heigth="70"/>
       <Image src={LogoVW} alt="Logo Volkswagen" width="70" heigth="70"/>
-      <Image src={LogoRenault} alt="Logo Renault" width="90" heigth="90"/>
+      {/* <Image src={LogoRenault} alt="Logo Renault" width="90" heigth="90"/> */}
       <Image src={LogoNissan} alt="Logo Nissan" width="70" heigth="70"/>
       <Image src={LogoChe} alt="Logo Chevrolet" width="120" heigth="120"/>
     </div>
