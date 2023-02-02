@@ -1,89 +1,77 @@
 
 [
-    {
+  {
     "id" : 1,
     "model": "Renault Sandero",
     "capacity" : 5,
-    "transmition" : "automatic",
-    "motor" : "diesel",
+    "transmition" : "Manual",
+    "motor" : "Nafta",
     "category" : "A"
+  },
+  {
+      "id" : 2,
+      "model": "Chevrolet Spin",
+      "capacity" : 7,
+      "transmition" : "Manual",
+      "motor" : "Nafta",
+      "category" : "C"
+    },
+    {
+        "id" : 3,
+        "model": "Nissan Frontier 4x4",
+        "capacity" : 5,
+        "transmition" : "Manual",
+        "motor" : "Gasoil",
+        "category" : "E"
     },
     {
       "id" : 4,
       "model": "Chevrolet Onix",
-      "capacity" : 7,
-      "transmition" : "automatic",
-      "motor" : "diesel",
+      "capacity" : 5,
+      "transmition" : "Manual",
+      "motor" : "Nafta",
       "category" : "A"
-  
-      },
-      {
-        "id" : 6,
-        "model": "Volkswagen Gol Trend",
-        "capacity" : 7,
-        "transmition" : "automatic",
-        "motor" : "diesel",
-        "category" : "A"
-        },
-        {
+    },
+    {
           "id" : 5,
           "model": "Renault Kwid",
-          "capacity" : 7,
-          "transmition" : "automatic",
-          "motor" : "diesel",
+          "capacity" : 5,
+          "transmition" : "Manual",
+          "motor" : "Gasoil",
           "category" : "A"
-          },
-       {
+    },
+    {
+            "id" : 6,
+            "model": "Volkswagen Gol Trend",
+            "capacity" : 5,
+            "transmition" : "Manual",
+            "motor" : "Nafta",
+            "category" : "A"
+     },
+     {
         "id" : 7,
         "model": "Renault Logan",
-        "capacity" : 7,
-        "transmition" : "automatic",
-        "motor" : "diesel",
+        "capacity" : 5,
+        "transmition" : "Manual",
+        "motor" : "Nafta",
         "category" : "B"
     
         },
         {
           "id" : 8,
           "model": "Chevrolet Prisma",
-          "capacity" : 7,
-          "transmition" : "automatic",
-          "motor" : "diesel",
+          "capacity" : 5,
+          "transmition" : "Mnaual",
+          "motor" : "Nafta",
           "category" : "B"
     
-          },
-    {
-    "id" : 2,
-    "model": "Chevrolet Spin",
-    "capacity" : 7,
-    "transmition" : "manual",
-    "motor" : "diesel",
-    "category" : "C"
- 
-    },
-    
+      },
    {
     "id" : 9,
-    "model": "Fiat Toro Freedom 4x2",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
+    "model": "Fiat Toro 4x2",
+    "capacity" : 5,
+    "transmition" : "Automática",
+    "motor" : "Nafta",
     "category" : "D"
-    },
-    {
-    "id" : 3,
-    "model": "Nissan Frontier",
-    "capacity" : 7,
-    "transmition" : "automatic",
-    "motor" : "diesel",
-    "category" : "E"
-    },
-    {
-      "id" : 10,
-      "model": "Chevrolet Joy",
-      "capacity" : 7,
-      "transmition" : "automatic",
-      "motor" : "diesel",
-      "category" : "E"
     }
-
 ]

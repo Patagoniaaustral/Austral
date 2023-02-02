@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1.5em;
+    padding: .3em 1.5em;
     background: var(--clr-white);
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -24,9 +24,14 @@
     gap: 3em;
  }
 
- .nav__list li :active {
+ .nav__list li :active, 
+ .current_nav_item {
    color: var(--clr-primary);
  }
+
+.notcurrent_nav_item{
+  color: var(--clr-black);
+}
 
 .nav :is(a, select){
   font-weight: 600;
@@ -75,7 +80,7 @@
      inset: 0;
      background: hsl(0 0% 100% /.7);
      backdrop-filter: blur(1.5rem);
-     padding: min(30vh, 7rem);
+     padding: 8em;
      z-index: 100;
    }
    
@@ -92,7 +97,8 @@
    .nav__list{
     flex-direction: column;
     justify-content: center;
-    font-size: xx-large;
+    align-items: center;
+    font-size: 1.5rem;
     text-transform: uppercase;
     gap: .1em;
     }

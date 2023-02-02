@@ -40,7 +40,6 @@
 }
 
 .section__text {
-    font-size: calc(1rem + .3vw);
     font-weight: 500;
     max-width: 60%;
 }

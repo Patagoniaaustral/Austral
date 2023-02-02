@@ -95,6 +95,7 @@ const handlesubmit = async(e) => {
 
 
 
+
   return (
   <section className={styles.section__container}>
 
@@ -105,9 +106,17 @@ const handlesubmit = async(e) => {
         <Image src ={HomeHero} sizes= " (max-width: 768px) 200vw, 100vw" placeholder='blur' alt="Familia jugando en una plaza de Bariloche" priority/>
     </div>
 
-    <form className={styles.booking__all_container} onSubmit={handlesubmit}>
+    <div className={styles.booking__all_container} onSubmit={handlesubmit}>
+      <iframe className={styles.iframe} 
+       id="reservas" src="https://www.patagoniaaustralrentacar.com.ar/reservar" frameborder="1"></iframe>
+    </div>
+
+
+
+
+
         
-         <div className={styles.booking__container}>
+         {/* <div className={styles.booking__container}>
           <div className={styles.booking__selects_container}>
 
         <select className={styles.select} name="category" onChange={handleChangeCategory} value={select.category}> 
@@ -187,8 +196,8 @@ const handlesubmit = async(e) => {
         />
         </div>
       </div> 
-          <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button>
-      </form>
+          <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button> */}
+    
     </section>
   );
 }

@@ -33,7 +33,8 @@ export const NavBar = () => {
     setTimeout(() => {
       setIsActive(false);
     }, 1000);
-  };
+}
+
 
 
 
@@ -52,7 +53,7 @@ export const NavBar = () => {
       <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")} aria-label="main navigation">
         <ul className={styles.nav__list}>
           <li>
-            <Link href="/"  onClick={handleLinkClick} aria-label="home" >
+            <Link href="/" className={router.pathname === "/" ? styles.current_nav_item : styles.notcurrent_nav_item} onClick={handleLinkClick} aria-label="home" >
               <span>{t.home}</span> 
             </Link>
           </li>
@@ -64,7 +65,7 @@ export const NavBar = () => {
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/fleet"  onClick={handleLinkClick} aria-label="fleet">
+            <Link href="/fleet" onClick={handleLinkClick} aria-label="fleet">
               <span>{t.fleet}</span>
             </Link>
           </li>

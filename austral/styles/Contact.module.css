@@ -12,13 +12,13 @@
 .contact__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 85%;
-    max-width: 1400px;
+    width: 80%;
+    max-width: 1200px;
     margin: 3em auto;
 }
 
 .header{
-    padding: 0 7em; 
+    padding: 0 5em; 
     z-index: 1;
     position: relative;
 }
@@ -45,8 +45,8 @@
 /* ----------- DIV INFO ----------- */
 
 .contact__info{
-    font-size: calc(1rem + .5vw);
-    padding: 2.5em 2em 2em 4em;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    padding: 2.5em 1em 1em 4em;
     display:flex;
     flex-direction: column;
     gap: 1em;

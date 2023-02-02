@@ -28,19 +28,17 @@ import Toro from "../../public/assets/fleet/Fiat Toro.webp"
 import Sandero from "../../public/assets/fleet/Renault Sandero.webp"
 import Onix from "../../public/assets/fleet/Chevrolet Onix.webp"
 import Kwid from "../../public/assets/fleet/Renault Kwid.webp"
-import Joy from "../../public/assets/fleet/Chevrolet Joy.webp"
 
 const carsImages = [
   {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquieler de auto Renault Sandero"},
+  {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
+  {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
   {model: Onix, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
+  {model: Kwid, id: 5, width: 300, heigth: 300, alt : "Alquiler de auto Renault Kwid"},
   {model: Gol, id: 6, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
-  {model: Joy, id: 5, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Joy"},
   {model: Logan, id: 7, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
   {model: Prisma, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},
-  {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
-  {model: Toro, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
-  {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
-  {model: Kwid, id: 10, width: 300, heigth: 300, alt : "Alquiler de auto Renault Kwid"}
+  {model: Toro, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"}
 ]
 
 

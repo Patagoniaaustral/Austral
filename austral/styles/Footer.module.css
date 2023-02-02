@@ -125,4 +125,8 @@
         font-size: 1.2rem;
     }
 
+    .footer__container a > p{
+        margin-bottom: .7em;
+    }
+
 }
