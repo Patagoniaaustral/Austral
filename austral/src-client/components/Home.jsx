@@ -51,8 +51,8 @@ function Home () {
 
       <div className={styles.icons}>
        <IconContext.Provider value={{ color: "#DD3131", size: "2em" }}>  
-          <Link  href="https://www.instagram.com/australrentacar" target={"_blank"}><BsInstagram/></Link>
-          <Link  href="https://www.facebook.com/australrentacar" target={"_blank"}><BsFacebook/></Link>
+          <Link  href="https://www.instagram.com/australrentacar" alt="instagram" target={"_blank"}><BsInstagram/></Link>
+          <Link  href="https://www.facebook.com/australrentacar" alt="facebook" target={"_blank"}><BsFacebook/></Link>
        </IconContext.Provider>
       </div>
 

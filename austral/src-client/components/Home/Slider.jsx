@@ -69,7 +69,7 @@ function Slider () {
       </div>
 
         <div>
-          <Image className={styles.slider__image} src={image} alt="modelos de la flota"  sizes=" (max-width: 768px) 50vw, 30vw" width={500} height={500} />
+          <Image className={styles.slider__image} src={image} alt="modelos de la flota"  width={400} height={400} />
         </div>
         
         <div className={styles.slider__btnsContainer}>
