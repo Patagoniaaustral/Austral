@@ -12,7 +12,7 @@ import FleetHero from "../../public/assets/hero/Bariloche visto desde el auto.we
 import LogoFiat from  "../../public/assets/brands/fiat-logo.png"
 import LogoVW from  "../../public/assets/brands/volkswagen-logo.png"
 import LogoNissan from  "../../public/assets/brands/nissan-logo.png"
-import LogoRenault from  "../../public/assets/brands/renault-logo.png"
+import LogoRenault from  "../../public/assets/brands/Renault-Logo.png"
 import LogoChe from  "../../public/assets/brands/chevrolet-logo.png"
 
 import CarIcon1 from "../../public/assets/icons/motor-ico.png"
