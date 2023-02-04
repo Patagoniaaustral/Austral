@@ -26,7 +26,7 @@ function Services () {
         <div className={styles.covers}>
           <div>
             <h2 className={styles.covers__title}>{t.covers}</h2>
-            <p>{t.text1a}<strong>{t.text1span1}</strong>{t.text1b}<span>{t.text1span2}</span></p>
+            <p>{t.text1a}<strong>{t.text1span1}</strong>{t.text1b}<strong>{t.text1span2}</strong></p>
             <p>{t.text2}</p>
             <p>{t.text3}</p>
           </div>
