@@ -16,6 +16,14 @@ export const NavBar = () => {
 
   const [lang, setLang] = useState(Es);
   const [isActive, setIsActive] = useState(false);
+  const [currentPage, setCurrentPage] = useState("/");
+  const [activePage, setActivePage] = useState(false);
+
+  useEffect(() => {
+    setCurrentPage(router.pathname); 
+    setActivePage(true);
+  }, [router.pathname]); 
+
   
   const handleNavToggle = () => {
     setIsActive((current) => !current);
@@ -32,7 +40,7 @@ export const NavBar = () => {
   const handleLinkClick = () => {
     setTimeout(() => {
       setIsActive(false);
-    }, 1000);
+    }, 500);
 }
 
 
@@ -53,31 +61,32 @@ export const NavBar = () => {
       <nav id="nav" className={isActive ? [styles.nav, styles.nav_open].join(" ") : [styles.nav, styles.nav_close].join(" ")} aria-label="main navigation">
         <ul className={styles.nav__list}>
           <li>
-            <Link href="/" className={router.pathname === "/" ? styles.current_nav_item : styles.notcurrent_nav_item} onClick={handleLinkClick} aria-label="home" >
+            <Link className={currentPage === "/" ? styles.current_nav_item : styles.notcurrent_nav_item}
+            href="/" onClick={handleLinkClick} aria-label="home" >
               <span>{t.home}</span> 
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick} aria-label="booking">
+            <Link className={currentPage === "/booking" ? styles.current_nav_item : styles.notcurrent_nav_item} href="https://www.patagoniaaustralrentacar.com.ar/reservar" onClick={handleLinkClick} aria-label="booking">
               <span>{t.booking}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/fleet" onClick={handleLinkClick} aria-label="fleet">
+            <Link className={currentPage === "/fleet" ? styles.current_nav_item : styles.notcurrent_nav_item} href="/fleet" onClick={handleLinkClick} aria-label="fleet">
               <span>{t.fleet}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/services"  onClick={handleLinkClick} aria-label="services">
+            <Link className={currentPage === "/services" ? styles.current_nav_item : styles.notcurrent_nav_item} href="/services"  onClick={handleLinkClick} aria-label="services">
               <span >{t.services}</span>
             </Link>
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link href="/contact" onClick={handleLinkClick} aria-label="contact">
+            <Link className={currentPage === "/contact" ? styles.current_nav_item : styles.notcurrent_nav_item} href="/contact" onClick={handleLinkClick} aria-label="contact">
               <span>{t.contact}</span>
             </Link>
           </li>

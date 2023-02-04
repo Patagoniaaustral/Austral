@@ -22,7 +22,7 @@
         "bdatereturn" : "Return Date",
         "btimepickup" : "Hs Pick Up",
         "btimereturn" : "Hs Return",
-        "bsearch" : "RENT"
+        "bsearch" : "SEARCH"
     },
     "sliderfleet" : {
         "ftitle" : "TRAVELLING IN BARILOCHE",
@@ -32,7 +32,7 @@
     },
     "about" : {
         "atitle" : "WHY RENT CARS IN AUSTRAL?",
-        "atext" : "We want you to enjoy your travel experience in Bariloche, so our treatment is personalized in order to understand the general and specific needs of each user. We work collaboratively with spaces and businesses to offer you useful information and recommendations. We are a car rental agency operating more than thirty years ago, adapting to the demands and needs of quality."
+        "atext" : "We want you to enjoy your travel experience in Bariloche, so our treatment is personalized to address the general and specific needs of each user. We work collaboratively with spaces and businesses to offer you useful information and recommendations. We are a car rental agency operating more than thirty years ago, adapting to the demands and needs of quality"
     },
     "experience" : {
         "etitle" : "WHAT TO DO IN BARILOCHE?",

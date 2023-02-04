@@ -2,18 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../public/assets/svg/trama.svg);
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: repeat;
 }
 
-.loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 /* ------------- HEADER IMG ---------- */
 

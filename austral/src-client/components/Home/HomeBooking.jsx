@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from "next/router";
 import Image from 'next/image'
 import HomeHero from "../../../public/assets/hero/Familia jugando en una plaza de Bariloche.webp"
-import Hexa from "../../../public/assets/svg/hexBorder.svg"
 import DatePicker from "react-datepicker"
 import addDays from 'date-fns/addDays'  
 import "react-datepicker/dist/react-datepicker.css"
@@ -71,26 +70,7 @@ const handlesubmit = async(e) => {
       endTime
     }
     
-
-  // HACER POST A SERRVIDOR O MANDAR POR QUERY U OTRO MEDIO??
-// falta cors !
-    await axios("https://www.patagoniaaustralrentacar.com.ar/reservar", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
-        // "Access-Control-Allow-Methods": "POST",
-        // "Access-Control-Allow-Headers": "Content-Type",
-      },
-      data: JSON.stringify(data)
-    })
-    .then(res => {
-      window.location.href = "https://www.patagoniaaustralrentacar.com.ar/reservar"
-      console.log(res, "post works")
-    })
-    .catch(err => {
-      console.log(err, "post doesn't work")
-    })
+    window.location.href = "https://www.patagoniaaustralrentacar.com.ar/reservar"
   }
 
 
@@ -106,16 +86,7 @@ const handlesubmit = async(e) => {
         <Image src ={HomeHero} sizes= " (max-width: 768px) 200vw, 100vw" placeholder='blur' alt="Familia jugando en una plaza de Bariloche" priority/>
     </div>
 
-    <div className={styles.booking__all_container} onSubmit={handlesubmit}>
-      <iframe className={styles.iframe} 
-       id="reservas" src="https://www.patagoniaaustralrentacar.com.ar/reservar" frameborder="1"></iframe>
-    </div>
-
-
-
-
-
-        
+    <form className={styles.booking__all_container} onSubmit={handlesubmit}>
          {/* <div className={styles.booking__container}>
           <div className={styles.booking__selects_container}>
 
@@ -169,8 +140,6 @@ const handlesubmit = async(e) => {
           locale={router.locale === "es" ? "es" : "en"}      
           />
 
-       
-
         <DatePicker
           className={styles.select}
           selected={startTime}
@@ -195,9 +164,9 @@ const handlesubmit = async(e) => {
           placeholderText={t.booking.btimereturn}
         />
         </div>
-      </div> 
-          <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button> */}
-    
+      </div>  */}
+          <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button>
+      </form>
     </section>
   );
 }

@@ -1,9 +1,8 @@
 .main{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../../public/assets/svg/trama.svg);
-    background-size: 100%;
 }
 
 

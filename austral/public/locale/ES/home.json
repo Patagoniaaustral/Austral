@@ -22,7 +22,7 @@
         "bdatereturn" : "Fecha de Devolución",
         "btimepickup" : "Hs Recogida",
         "btimereturn" : "Hs Devolución",
-        "bsearch" : "RESERVAR"
+        "bsearch" : "BUSCAR"
     },
     "sliderfleet" : {
         "ftitle" : "DE VIAJE EN BARILOCHE",
@@ -32,7 +32,7 @@
     },
     "about" : {
         "atitle" : "¿POR QUÉ ALQUILAR AUTOS EN AUSTRAL?",
-        "atext" : "Queremos que disfrutes tu experiencia de viaje en Bariloche, por eso nuestro trato es personalizado de modo de entender las necesidades generales y específicas de cada usuario. Trabajamos de manera colaborativa con espacios y comercios para ofrecerte información útil y recomendaciones. Somos una agencia de alquiler de autos operando hace más de treinta años, adaptándonos a las demandas y necesidades de calidad."
+        "atext" : "Queremos que disfrutes tu experiencia de viaje en Bariloche, por eso nuestro trato es personalizado para abordar las necesidades generales y específicas de cada usuario. Trabajamos de manera colaborativa con espacios y comercios para ofrecerte información útil y recomendaciones. Somos una agencia de alquiler de autos operando hace más de treinta años, adaptándonos a las demandas y necesidades de calidad."
     },
     "experience" : {
         "etitle" : "¿QUÉ HACER EN BARILOCHE?",

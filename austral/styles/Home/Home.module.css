@@ -1,16 +1,11 @@
-.main{
-    background-image: url(../../public/assets/svg/trama.svg);
-    background-repeat: repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-}
+
 
 .section__container{
-    background: url(../../public/assets/others/Llao\ llao\,\ invierno\,\ en\ bariloche.webp);
+    background-image: url(../../public/assets/others/Llao\ llao\,\ invierno\,\ en\ bariloche.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 87vh;
+    min-height: 70vh;
     padding: 5em 0;
 }
 
@@ -150,7 +145,7 @@
 
  @media(max-width: 768px){
     .section__container{
-        min-height: 100vh;
+       padding: 1.5em;
     }
 
     .about{

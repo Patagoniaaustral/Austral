@@ -12,8 +12,6 @@ import styles from "../../../styles/Booking/CheckoutForm.module.css"
 
 function CheckoutForm () {
   const car = useSelector(state => state.reducerCars.cars)
-  // solo para probar, en realidad deberia consultar la category que me devuelva el get de la consulta a la reservacion o de 
-  // del input seleccionado en el home
 
   const [pickUpDate, setPickUpDate] = useState(null)
   const [returnDate, setReturnDate] = useState(null)
@@ -106,13 +104,13 @@ function CheckoutForm () {
 
         <div className={styles.rent__prices}>
           <h3>{t.rent.extras}*:</h3>
-          <p>$500</p>
+          <p>$500</p> {/* // ESTO ES UNA PRUEBA, NO ES EL PRECIO REAL. TRAER DESDE EL BACK*/}
         </div>
           <button>+ {t.rent.addextras}</button>
        
         <div className={styles.rent__prices}>
           <h2>{t.rent.total} **</h2>
-          <h2>$120,00</h2>
+          <h2>$120,00</h2> {/* // ESTO ES UNA PRUEBA, NO ES EL PRECIO REAL. TRAER DESDE EL BACK*/}
         </div>
         <small>{t.rent.conditions1}</small>
         <small>{t.rent.conditions2}</small>

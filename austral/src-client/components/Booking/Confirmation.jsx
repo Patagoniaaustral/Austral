@@ -83,7 +83,7 @@ function Confirmation () {
 
 {/*      ----------DIV DETALLE RESERVA ---------- */}
       <h2>{t.rentDetail.detail}</h2>
-      <h4>{t.rentDetail.rentCode}</h4> {/* //deberia ser el id?? o que puedo usar de codigo? */}
+      <h4>{t.rentDetail.rentCode}</h4> {/* //el codigo deberia ser el id?? */}
 
       <p>{t.rentDetail.category} </p>
       <p>{t.rentDetail.extras}</p>

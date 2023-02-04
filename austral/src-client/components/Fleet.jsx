@@ -12,7 +12,7 @@ import FleetHero from "../../public/assets/hero/Bariloche visto desde el auto.we
 import LogoFiat from  "../../public/assets/brands/fiat-logo.png"
 import LogoVW from  "../../public/assets/brands/volkswagen-logo.png"
 import LogoNissan from  "../../public/assets/brands/nissan-logo.png"
-//import LogoRenault from  "../../public/assets/brands/renault-logo.png"
+import LogoRenault from  "../../public/assets/brands/renault-logo.png"
 import LogoChe from  "../../public/assets/brands/chevrolet-logo.png"
 
 import CarIcon1 from "../../public/assets/icons/motor-ico.png"
@@ -30,7 +30,7 @@ import Onix from "../../public/assets/fleet/Chevrolet Onix.webp"
 import Kwid from "../../public/assets/fleet/Renault Kwid.webp"
 
 const carsImages = [
-  {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquieler de auto Renault Sandero"},
+  {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquiler de auto Renault Sandero"},
   {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
   {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
   {model: Onix, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
@@ -111,9 +111,9 @@ function  Fleet () {
     </div>
 
     <div className={styles.brands__container}>
-      <Image src={LogoFiat} alt="Logo Fiat" width="70" heigth="70"/>
+      <Image src={LogoFiat} alt="Logo Fiat" width="60" heigth="60"/>
       <Image src={LogoVW} alt="Logo Volkswagen" width="70" heigth="70"/>
-      {/* <Image src={LogoRenault} alt="Logo Renault" width="90" heigth="90"/> */}
+      <Image src={LogoRenault} alt="Logo Renault" width="90" heigth="90"/>
       <Image src={LogoNissan} alt="Logo Nissan" width="70" heigth="70"/>
       <Image src={LogoChe} alt="Logo Chevrolet" width="120" heigth="120"/>
     </div>
