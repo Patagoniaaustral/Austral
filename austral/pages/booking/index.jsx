@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link';
-import Checkout from "../../src-client/components/Booking/CheckoutForm"
+import BookingOriginal from "../../src-client/components/Booking/Reservar"
 
 
 export default function booking() {
@@ -13,7 +12,7 @@ export default function booking() {
         <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
-        <Checkout/>
+        <BookingOriginal/>
       </main>
     </>
   );

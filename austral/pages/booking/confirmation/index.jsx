@@ -1,6 +1,6 @@
 import React from "react";
 import Head from 'next/head'
-import ConfirmationPage from "../../../src-client/components/Booking/Confirmation"
+import CheckoutOriginal from "../../../src-client/components/Booking/ConfirmacionAustral"
 
 
 export default function confirmation() {
@@ -13,7 +13,7 @@ export default function confirmation() {
         <link rel="icon" href="/favicon.png" />
       </Head>   
       <main>
-       <ConfirmationPage/>
+       <CheckoutOriginal/>
       </main>
     </>
   );
