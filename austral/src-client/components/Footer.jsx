@@ -41,11 +41,11 @@ const handleSubmit = async(e) => {
         <div>
           <Image src={LogoFooter} alt="Logo de Austral Rental" width={200} height={67} />
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-            <Link href="https://www.instagram.com/australrentacar" target={"_blank"} aria-label="instagram">
+            <Link href="https://www.instagram.com/austral.rentacar" target={"_blank"} aria-label="instagram">
               <BsInstagram />
               <p>australrentacar.ar</p>
             </Link>
-            <Link href="https://www.facebook.com/australrentacar" target={"_blank"} aria-label="facebook">
+            <Link href="https://www.facebook.com/austral.ar" target={"_blank"} aria-label="facebook">
               <FaFacebookF/>
               <p>australrentacar.ar</p>
             </Link>

@@ -26,7 +26,7 @@ const handler= async(req, res) => {
        }
 
     const mailOptions = {
-      from:mail,  //TESTEAR!
+      from:"info@australrentacar.ar",  //TESTEAR!
       to: `${data.email}`,
       subject : `Contact form submission from  ${data.lastName.toUpperCase()}`,
       html : `<p>Hi! Thanks ${data.lastName.toUpperCase()} for contact us!</p><br>

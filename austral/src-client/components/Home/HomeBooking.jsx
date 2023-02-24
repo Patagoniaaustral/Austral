@@ -61,15 +61,7 @@ function HomeBooking () {
 }
   
 const handlesubmit = async(e) => {   
-  e.preventDefault()
-    const data ={
-      select,
-      pickUpDate,
-      returnDate,
-      startTime,
-      endTime
-    }
-    
+    e.preventDefault()
     window.location.href = "https://www.patagoniaaustralrentacar.com.ar/reservar"
   }
 
@@ -87,84 +79,6 @@ const handlesubmit = async(e) => {
     </div>
 
     <form className={styles.booking__all_container} onSubmit={handlesubmit}>
-         {/* <div className={styles.booking__container}>
-          <div className={styles.booking__selects_container}>
-
-        <select className={styles.select} name="category" onChange={handleChangeCategory} value={select.category}> 
-          <option value="">{t.booking.bcategory.none}</option>
-          <option value="a">{t.booking.bcategory.a}</option>
-          <option value="b">{t.booking.bcategory.b}</option>
-          <option value="c">{t.booking.bcategory.c}</option>
-          <option value="d">{t.booking.bcategory.d}</option>
-          <option value="e">{t.booking.bcategory.e}</option>
-          <option value="f">{t.booking.bcategory.f}</option>
-        </select>
-
-        <select className={styles.select} name ="pickUpPlace" onChange={handleChange} value={select.pickUpPlace}>
-          <option value="" >{t.booking.bplace.pickup}</option>
-          <option value="airportpu">{t.booking.bplace.airport}</option>
-          <option value="downtownpu">{t.booking.bplace.downtown} </option>
-          <option value="terminalpu">{t.booking.bplace.terminal}</option>
-        </select>
-
-        <select className={styles.select} name="returnPlace" onChange={handleChange} value={select.returnPlace}>
-          <option value="">{t.booking.bplace.return}</option>
-          <option value="airportr">{t.booking.bplace.airport}</option>
-          <option value="downtownr">{t.booking.bplace.downtown} </option>
-          <option value="terminalr">{t.booking.bplace.terminal}</option>
-        </select>
-        </div>
-
-        <div className={styles.booking__selects_container}>
-        <DatePicker
-          className={styles.select}
-          selected={pickUpDate}
-          onChange={(pickUpDate)=> setPickUpDate(pickUpDate)}
-          dateFormat="dd/MM/yyyy"
-          minDate={new Date()}
-          showDisabledMonthNavigation
-          closeOnScroll={(e) => e.target === document}
-          placeholderText={t.booking.bdatepickup}
-          locale={router.locale === "es" ? "es" : "en"}
-          />
-
-        <DatePicker
-          className={styles.select}
-          selected={returnDate}
-          onChange={(returnDate)=> setReturnDate(returnDate)}
-          dateFormat="dd/MM/yyyy"
-          showDisabledMonthNavigation  
-          closeOnScroll={(e) => e.target === document} 
-          placeholderText={t.booking.bdatereturn}
-          minDate={addDays(pickUpDate, 3)} 
-          locale={router.locale === "es" ? "es" : "en"}      
-          />
-
-        <DatePicker
-          className={styles.select}
-          selected={startTime}
-          onChange={(startTime) => setStartTime(startTime)}
-          showTimeSelect
-          showTimeSelectOnly
-          timeIntervals={30}
-          timeCaption="Time"
-          dateFormat="h:mm aa" 
-          placeholderText={t.booking.btimepickup} 
-          />
-        
-        <DatePicker
-          className={styles.select}
-          selected={endTime}
-          onChange={(endTime) => setEndTime(endTime)}
-          showTimeSelect
-          showTimeSelectOnly
-          timeIntervals={30}
-          timeCaption="Time"
-          dateFormat="h:mm aa"
-          placeholderText={t.booking.btimereturn}
-        />
-        </div>
-      </div>  */}
           <button className={styles.search__btn} type="submit">{t.booking.bsearch}</button>
       </form>
     </section>

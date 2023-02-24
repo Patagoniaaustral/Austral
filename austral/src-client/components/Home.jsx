@@ -19,40 +19,14 @@ function Home () {
   const router = useRouter();
   const t = router.locale === "es" ? homeEs : homeEn;
 
-  // const { ref, inView} = useInView({threshold: 0.1}); 
-  // const animation = useAnimation()
- 
-
-  // useEffect(() => {
-  //   if(inView) {
-  //   animation.start({
-  //     x: 0,
-  //     opacity: 1,
-  //     transition :{
-  //       delay: 0.2,
-  //       duration: 2,
-  //       ease: "easeOut"
-
-  //     } 
-  //   })
-  //   } else {
-  //     animation.start({
-  //       x: -100,
-  //       opacity: 0,
-  //       transition :{
-  //         duration: 2,
-  //         ease: "easeOut" }
-  //     })
-  //   }
-  // }, [inView])
 
   return (
     <div className={styles.main} >
 
       <div className={styles.icons}>
        <IconContext.Provider value={{ color: "#DD3131", size: "2em" }}>  
-          <Link  href="https://www.instagram.com/australrentacar" alt="instagram" target={"_blank"}><BsInstagram/></Link>
-          <Link  href="https://www.facebook.com/australrentacar" alt="facebook" target={"_blank"}><BsFacebook/></Link>
+          <Link  href="https://www.instagram.com/austral.rentacar" alt="instagram" target={"_blank"}><BsInstagram/></Link>
+          <Link  href="https://www.facebook.com/austral.ar" alt="facebook" target={"_blank"}><BsFacebook/></Link>
        </IconContext.Provider>
       </div>
 
@@ -64,11 +38,6 @@ function Home () {
         <h2 className={styles.section__title}>{t.about.atitle}</h2>
       <div className={styles.about}>
         <p className={styles.about__text}>{t.about.atext}</p>
-        {/* <div className={styles.about__linetime}> 
-          <h3>1980</h3>
-          <div className={styles.about__line}></div>
-          <h3>2023</h3>
-        </ div> */}
       </div>
     </section>
      <Experiences/>

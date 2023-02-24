@@ -27,7 +27,7 @@ const handlerNewsletter= async(req, res) => {
        }
     
     await transporter.sendMail({
-      from: mail,
+      from: "info@australrentacar.ar", //TESTEAR!
       to:`${email}`,
       subject : `Newsletter susbribe from ${email}`,
       html : `<p>Hi!Welcome to Austral Newsletter! Soon we will contact you. Thanks!</p><br>`
