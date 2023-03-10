@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import { Inter } from '@next/font/google'
 import HomePage from "../src-client/components/Home"
 import {motion} from 'framer-motion'
