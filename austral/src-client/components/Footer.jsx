@@ -64,7 +64,8 @@ const handleSubmit = async(e) => {
         <div>
           <h2>{t.service}</h2>
             <Link href="/fleet" aria-label="services" ><p>{t.fleet}</p></Link>
-            <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar" aria-label='booking' ><p>{t.booking}</p></Link>
+            <Link href="/booking" aria-label='booking' ><p>{t.booking}</p></Link>
+            <Link href="/terms" aria-label="termsandconditions"><p>{t.terms}</p></Link>
         </div>
       </div>
 

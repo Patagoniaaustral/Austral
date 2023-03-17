@@ -84,13 +84,13 @@ function Experiences () {
 
     <div ref={ref} className={styles.experience__container}>
       {images.map((image) => (
-        <Link href="https://www.excursionesbariloche.com/" key={image.id}>
-          <div className={styles.experience__card}>
+        // <Link href="https://www.excursionesbariloche.com/" >
+          <div className={styles.experience__card} key={image.id}>
             <motion.div animate={image.controls} > 
               <Image className={styles.experience__image} src={image.image} alt={image.alt} width={500} height={500}  />
             </motion.div>
         </div>
-        </Link>
+        // </Link>
       ))}
     </div>
     </section>

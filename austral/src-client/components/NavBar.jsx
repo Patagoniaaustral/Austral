@@ -68,7 +68,7 @@ export const NavBar = () => {
           </li>
           {isActive && <div className={styles.line}></div>}
           <li >
-            <Link className={currentPage === "/booking" ? styles.current_nav_item : styles.notcurrent_nav_item} href="https://austral.rentlynetwork.com/elegi-tu-auto?commercialAgreementCode&customPromotionId&dateFrom=08-03-2023&dateTo=10-03-2023&driverAge&dropOffEndpoint=austral&dropOffId=1&hourFrom=15%3A15&hourTo=15%3A15&ilimitedKm=true&onlyFullAvailability=false&pickUpEndpoint=austral&pickUpId=1&promotionCode" onClick={handleLinkClick} aria-label="booking">
+            <Link className={currentPage === "/booking" ? styles.current_nav_item : styles.notcurrent_nav_item} href="/booking" onClick={handleLinkClick} aria-label="booking">
               <span>{t.booking}</span>
             </Link>
           </li>

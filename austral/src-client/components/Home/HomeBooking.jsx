@@ -26,6 +26,7 @@ useEffect(()=>{
      })}</h1>
         <Image src ={HomeHero} sizes= " (max-width: 768px) 200vw, 100vw" placeholder='blur' alt="Familia jugando en una plaza de Bariloche" priority/>
     </div>
+    
     <iframe className={styles.booking__all_container} src="https://austral.rentlynetwork.com/widget"  frameBorder="0" title="Rently Widget"></iframe> 
     </section>
   );
