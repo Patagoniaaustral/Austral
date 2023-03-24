@@ -10,8 +10,8 @@ function PrivacyPolicy() {
 
   return (
     <div className={styles.main} >
-        <div className={styles.form__container}>
           <h2>Politica de Pirvacidad</h2>
+        <div className={styles.form__container}>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus dolorum repudiandae eos ut obcaecati eveniet quidem cumque provident doloremque, ducimus minus saepe quam autem, recusandae eaque quis minima. Fuga.
            Quaerat incidunt officia, deserunt necessitatibus quis eveniet fuga rerum veritatis et. Modi vel, at veritatis illum debitis perspiciatis quidem alias beatae culpa rem expedita architecto ex a cupiditate quo magnam?
            Autem, numquam voluptatem laudantium deleniti nesciunt doloribus error fugiat maiores! Obcaecati maiores, id incidunt ipsam iste nemo ipsum, eligendi ut impedit quos reiciendis libero est fuga sit provident enim laborum.

@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import nodemailer from "nodemailer"
-import contactTemplate from "./contactHtmlEmail"
+
 
 const mail =process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
