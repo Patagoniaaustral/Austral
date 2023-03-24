@@ -1,6 +1,5 @@
 
 /// next.j
-/// primero 
 npx create-next-app@latest 
 ///
 
@@ -31,9 +30,6 @@ npm install react-icons --save
 npm i react-i18next
 ///
 
-///Calendario
-npm install react-datepicker --save
-///
 
 
 

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from 'next/image';
+import {FcCancel} from "react-icons/fc";
 import LogoNavBar from "../../public/assets/others/logoNavBar.png"
 import Es from "../../public/assets/icons/lang-es.png"
 import En from "../../public/assets/icons/lang-en.png"
@@ -90,6 +91,15 @@ export const NavBar = () => {
               <span>{t.contact}</span>
             </Link>
           </li>
+          
+            {isActive && <div className={styles.line}></div>}
+           <li className={styles.cancel}>
+            <Link className={currentPage === "/cancel" ? styles.current_nav_item : styles.notcurrent_nav_item} href="/cancel" onClick={handleLinkClick} aria-label="cancelBtn">
+              <span>{t.cancel}</span>
+            </Link>
+              <FcCancel className={styles.cancel_ico}/>
+           </li>
+
           {isActive && <div className={styles.line}></div>}
           <li className={styles.nav__langItem} aria-label="language">
             <Image src={lang} alt="icono de banderas de paises" width={30} height={30} />

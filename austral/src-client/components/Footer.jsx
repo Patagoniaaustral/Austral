@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
+import axios from 'axios'
 import Image from 'next/image';
 import LogoFooter from "../../public/assets/others/logoFooter.png"
 import { IconContext } from "react-icons";
@@ -11,9 +12,7 @@ import footEn from "../../public/locale/EN/footer.json"
 import styles from "../../styles/Footer.module.css"
 
 const Footer = () => {
-
 const [email, setEmail] = useState("")
-
 const router = useRouter();
 const t = router.locale === "es" ? footEs : footEn;
 
@@ -23,9 +22,7 @@ const handleSubmit = async(e) => {
     alert("Email is required")
   }
   try {
-    const mail = {
-      email,
-    }
+    const mail = {email}
     await axios.post("/api/newsletterForm", mail)
     alert("Suscribe success")
     setEmail("");
@@ -66,17 +63,18 @@ const handleSubmit = async(e) => {
             <Link href="/fleet" aria-label="services" ><p>{t.fleet}</p></Link>
             <Link href="/booking" aria-label='booking' ><p>{t.booking}</p></Link>
             <Link href="/terms" aria-label="termsandconditions"><p>{t.terms}</p></Link>
+            <Link href="/policy" aria-label="privacyPolicy"><p>{t.policy}</p></Link>
         </div>
       </div>
 
 
-      <form onSubmit={handleSubmit} className={styles.footer__second_row}>
+      <form onSubmit={handleSubmit} className={styles.footer__second_row} autoComplete="on">
         <p>{t.newsp}</p>
         <input
           type="email"
           name="email"
           value={email}
-          onChange={({ target }) => setEmail(target.value)}
+          onChange={(e) => {setEmail(e.target.value)}}
           placeholder={t.newsplace}
           required
         />

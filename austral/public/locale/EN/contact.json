@@ -5,6 +5,10 @@
     "lastname" : "Lastname",
     "phone" : "Phone",
     "email" : "E-mail",
+    "code" : "Reservation code",
     "message" : "Message",
+    "cancel" : "Request cancellation",
+    "cancelText" : "If you want to cancel your reservation, please fill in the form below and we will contact you as soon as possible.",
+    "btnCancel" : "Cancel reservation",
     "send":"Send"
 }

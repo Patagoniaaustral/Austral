@@ -56,6 +56,16 @@
   display: none;
 }
 
+.cancel{
+  display: flex;
+  flex-direction: row;  
+}
+
+.cancel_ico{
+  width: 1.5em;
+  height: 1.5em;
+}
+
 @media(hover : hover){
   .nav__list li :is(:hover, :focus, :active) {
     color: var(--clr-primary);
@@ -74,7 +84,7 @@
   }
 }
 
- @media (max-width: 768px) {
+ @media (max-width: 968px) {
    .nav{
      position: fixed;
      inset: 0;
@@ -176,6 +186,8 @@
     .hamburger::after {
       bottom: 6px;
     }
+
+
   }
   
   

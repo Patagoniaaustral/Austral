@@ -34,7 +34,6 @@ const carsImages = [
   {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
   {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
   {model: Onix, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
-  {model: Kwid, id: 5, width: 300, heigth: 300, alt : "Alquiler de auto Renault Kwid"},
   {model: Gol, id: 6, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
   {model: Logan, id: 7, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
   {model: Prisma, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},

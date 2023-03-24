@@ -33,14 +33,6 @@
       "category" : "A"
     },
     {
-          "id" : 5,
-          "model": "Renault Kwid",
-          "capacity" : 5,
-          "transmition" : "Manual",
-          "motor" : "Gasoil",
-          "category" : "A"
-    },
-    {
             "id" : 6,
             "model": "Volkswagen Gol Trend",
             "capacity" : 5,

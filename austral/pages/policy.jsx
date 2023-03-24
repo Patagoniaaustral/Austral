@@ -1,10 +1,9 @@
-
-import TermsandConditions from "../src-client/components/TermsandConditions"
+import PrivacyPage from "../src-client/components/PrivacyPolicy"
 import Head from 'next/head'
 import React from "react";
 import {motion} from "framer-motion"
 
-export default function terms() {
+export default function privacy() {
   return (
     <>
      <Head>
@@ -16,7 +15,7 @@ export default function terms() {
                 initial={{opacity: 0}}
                 animate={{opacity: 1}} 
                 transition={{duration: 0.5}}>  
-        <TermsandConditions />
+        <PrivacyPage />
       </motion.main>  
     </>
   );

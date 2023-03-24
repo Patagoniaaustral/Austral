@@ -46,7 +46,7 @@ function Home () {
       <div className={styles.faqs}>
           <h3>{t.faqs.q1}</h3>
           <p>{t.faqs.a1}
-          <Link href="https://www.patagoniaaustralrentacar.com.ar/reservar"> {t.faqs.link1}</Link> </p>
+          <Link href="/booking"> {t.faqs.link1}</Link> </p>
 
           <h3>{t.faqs.q2}</h3>
           <p>{t.faqs.a2}</p>
