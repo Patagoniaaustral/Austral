@@ -32,6 +32,8 @@ export const NavBar = () => {
 
   const handleChange = ({target})=> {  
     const {value} = target
+    setCurrentPage(router.pathname); 
+    console.log(currentPage, "current page")
     router.push(router.pathname, router.pathname, {
       locale : value
     })

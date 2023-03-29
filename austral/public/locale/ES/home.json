@@ -36,18 +36,18 @@
     },
     "experience" : {
         "etitle" : "¿QUÉ HACER EN BARILOCHE?",
-        "etext" : "En Bariloche y alrededores hay diversidad de lugares para realizar y compartir actividades y excursiones de todo tipo: trekking, senderismo, rafting, etc.\n Si sos aficionado al deporte vas a encontrar pistas de esquí y snowboard, sectores de escalada, circuitos de running y mountain bike, cabalgatas y muchos deportes más. \n Si no sabes qué hacer en Bariloche, te acercamos algunas recomendaciones de experiencias destacadas que no te podés perder, algunas de ellas son recomendaciones gratuitas y otras pueden requerir algún costo"
+        "etext" : "En Bariloche y alrededores hay diversidad de lugares para realizar y compartir actividades y excursiones de todo tipo: trekking, senderismo, rafting, etc.\n Si sos aficionado al deporte vas a encontrar pistas de esquí y snowboard, sectores de escalada, circuitos de running y mountain bike, cabalgatas y muchos deportes más. \n Si no sabes qué hacer en Bariloche, te acercamos algunas recomendaciones de experiencias destacadas que no te podés perder, algunas de ellas son recomendaciones gratuitas y otras pueden requerir algún costo."
     },
     "faqs" : {
         "title": "PREGUNTAS FRECUENTES",
         "q1" : "¿Cuánto cuesta el alquiler de un auto?",
-        "a1" : "El costo varía según la categoría del auto y se presupuesta por día. Debido a las variables macroeconómicas, los precios en Argentina fluctúan constantemente, por eso, si consultaste hace mucho tiempo sería conveniente que vuelvas a realizar tu consulta simulando tu reserva aquí, seleccionando la categoría de auto que mejor se adapte a tu necesidad y consultes el costo por la cantidad de días de tu viaje.",
+        "a1" : "El costo varía según la categoría del auto y se presupuesta por día. Debido a las variables macroeconómicas, los precios en Argentina fluctúan constantemente, por eso, si consultaste hace mucho tiempo sería conveniente que vuelvas a realizar tu consulta simulando tu reserva, seleccionando la categoría de auto que mejor se adapte a tu necesidad y consultes el costo por la cantidad de días de tu viaje.",
         "q2" : "¿Qué es una franquicia?",
-        "a2" : "En un seguro, la franquicia es el monto que el asegurado tiene que pagar por cuenta propia para cubrir los costos por cualquier daño que le suceda a un auto. Por ejemplo, si la franquicia es de $10.000, si el daño del auto es por un monto de $10.000 o menor, el gasto corre por cuenta del cliente. Si el gasto de reparación o reposición es mayor, el cliente solo deberá abonar el costo de la franquicia, es decir $10.000 y la diferencia correrá por cuenta del seguro. El monto de la franquicia varía según el modelo y Austral cuenta con un seguro premium que te permite reducir el costo de la franquicia. ",
+        "a2" : "En un seguro, la franquicia es el monto que el asegurado tiene que pagar por cuenta propia para cubrir los costos por cualquier daño que le suceda a un auto. Por ejemplo, si la franquicia es de $10.000, y el daño del auto es por un monto de $10.000 o menor, el gasto corre por cuenta del cliente. Si el gasto de reparación o reposición es mayor, el cliente solo deberá abonar el costo de la franquicia, es decir $10.000 y la diferencia correrá por cuenta del seguro. El monto de la franquicia varía según el modelo y Austral cuenta con un seguro premium que te permite reducir el costo de la franquicia. ",
         "q3" : "¿Cuáles son los requisitos para alquilar un auto?",
         "a3" : "Debes ser mayor de 21 años, presentar el documento de identidad, NIF o pasaporte, carnet de conducir vigente del país de origen y tarjeta de crédito a modo de garantía.",
-        "q4" : "¿Qué pasa si cancelo mi reserva?",
-        "a4" : "Dado que para reservar se debe efectuar el pago de una seña, al cancelar, perderás la misma. ",
+        "q4" : "¿Cómo puedo cancelar mi reserva?",
+        "a4" : "Para cancelar tu reserva, podés utilizar el botón ubicado en el menú superior derecho de la página. ",
         "q5" : "Protocolo de limpieza y desinfección",
         "a5" : "Todos los autos se limpian y desinfectan prestando especial atención a las áreas y artículos que se manipulan con mayor frecuencia. En caso de alguna situación sanitaria especial como el Covid-19, se respetan los protocolos establecidos por las autoridades competentes.",
         "q6" : "No encuentro lo que busco",

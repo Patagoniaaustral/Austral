@@ -1,22 +1,23 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router'
+import swal from 'sweetalert';
 import styles from '../../styles/CancelForm.module.css'
-//import termsEs from "../../public/locale/ES/cancel.json"
-//import termsEn from "../../public/locale/EN/cancel.json"
-import  validate  from '../controllers/contactValidate';
+import  validate  from '../controllers/validateCancelForm';
 import sendCancelForm from '../controllers/sendCancelForm';
 import contEs from "../../public/locale/ES/contact.json"
 import contEn from "../../public/locale/EN/contact.json"
 
 function CancelForm() {
-    const router = useRouter();
+  const router = useRouter();
    const t = router.locale === "es" ? contEs : contEn;
-   const dataInput={
+  
+  const dataInput={
+    name : "",
     lastName: "",
     phone: "",
     email : "",
-    code : "",
-    message: ""
+    codeReservation : "",
+    message: "",
   }
 
 
@@ -28,18 +29,30 @@ function CancelForm() {
     setInput({...input, [name]: value});
     setError(validate({...input, [name]:value}))
   }
+  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(Object.values(error).length !== 0){
-      alert("Algunos campos estas incompletos. Por favor, completelos")
+      swal("Algunos campos estan incompletos. Por favor, completelos")
     }
+
+    const data = {
+      input,
+      router: router.locale
+    }
+
     try {
-     sendCancelForm(input);
+     await sendCancelForm(data);
      setInput(dataInput);
-     alert("Message send succesfully!")
+     swal("Su mensaje fue enviado con éxito.",{
+      buttons: false,
+      timer: 3000,
+    });
+  
    } catch (error) {
-    alert("Error in send message. Try again.")
+   swal("Error al enviar el mensaje. Intente nuevamente.")
    }
   }
 
@@ -51,6 +64,12 @@ function CancelForm() {
         <p className={styles.contact__info__text}>{t.cancelText}</p>
 
     <form onSubmit={handleSubmit} className={styles.contact__form} autoComplete="on" >
+
+        
+    <label><span>{t.name}</span>
+        <input type="text" name="name"  aria-label="required" value={input.name} onChange={handleChange} required/>
+        {error.name && ( <p>{error.name}</p>)}
+        </label>
 
         <label><span>{t.lastname}</span>
         <input type="text" name="lastName"  aria-label="required" value={input.lastName} onChange={handleChange} required/>
@@ -67,14 +86,13 @@ function CancelForm() {
         {error.email && ( <p>{error.email}</p>)}
         </label>
 
-        {/* <label><span>{t.code}</span>
-        <input type="text" name="codeReservation"   value={input.code} onChange={handleChange}/>
-        {error.code && ( <p>{error.code}</p>)} 
-        </label> */}
+        <label><span>{t.codeReservation}</span>
+        <input type="text" name="codeReservation"   value={input.codeReservation} onChange={handleChange}/>
+        {error.codeReservation && ( <p>{error.codeReservation}</p>)}
+        </label>
 
         <label><span>{t.message}</span>
-        <textarea name="message"  aria-label="required" value={input.message} onChange={handleChange} required></textarea>
-        {error.message && ( <p>{error.message}</p>)}
+        <textarea name="message"  value={input.message} onChange={handleChange}></textarea>
         </label>
 
         

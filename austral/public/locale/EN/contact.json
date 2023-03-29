@@ -2,13 +2,14 @@
     "contact" : "Contact",
     "write" : "WRITE US",
     "text" : "If you have any questions, contact us by phone or leave your message in this section so that we can contact you as soon as possible.",
+    "name" : "Name",
     "lastname" : "Lastname",
     "phone" : "Phone",
     "email" : "E-mail",
-    "code" : "Reservation code",
-    "message" : "Message",
+    "codeReservation" : "Reservation code",
+    "message" : "Message (opcional)",
     "cancel" : "Request cancellation",
-    "cancelText" : "If you want to cancel your reservation, please fill in the form below and we will contact you as soon as possible.",
+    "cancelText" : "If you want to cancel your reservation, please fill in the form below.",
     "btnCancel" : "Cancel reservation",
     "send":"Send"
 }

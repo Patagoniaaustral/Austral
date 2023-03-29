@@ -20,57 +20,69 @@ const handler= async(req, res) => {
          }
      }) 
 
-    if(!data.lastName || !data.phone || !data.email || !data.message){
+    if(!data.input.lastName || !data.input.phone || !data.input.email || !data.router){
       return res.status(403).json({message: "Bad request.Missing data fields."})
+    }
+    let html = "";
+    let subject = "";
+
+    if (data.router === "es") {
+      html =  `
+      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
+      <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
+      <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;"> Cancelacion de Reserva </h1>
+      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+          <p>Hola ${data.input.name.toUpperCase()},</p>
+          <p>Gracias por contactarnos, hemos recibido su solicitud de cancelación de reserva.</p>
+          <p>El proceso de cancelación puede tardar hasta 24hs en completarse. Una vez que hayamos procesado tu solicitud, te notificaremos por éste medio.</p>
+          
+          <p style="margin-top: 2rem; font-style: italic;">Atentamente,</p>
+          <p style="font-style: italic;"> Equipo de Austral.</p>
+              </div>
+          
+      </body>
+      `;
+      subject = `Solicitud de cancelacion recibida`;
+    } else {
+      html = 
+      `
+      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
+          <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
+          <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;">Reservation Cancellation</h1>
+          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em; border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #F5F5F5;">
+              <p>Hello ${data.input.name.toUpperCase()},</p>
+              <p>Thank you for contacting us, we have received your reservation cancellation request.</p>
+              <p>The cancellation process may take up to 24 hours to complete. Once we have processed your request, we will notify you through this medium.</p>
+              <p style="margin-top: 2rem; font-style: italic;">Yours sincerely,</p>
+              <p style="font-style: italic;"> Austral Team.</p>
+              </div>
+      </body>
+      `;
+      subject = `Cancellation request received`;
     }
 
     const mailFromAustral = {
       from: mail,  
-      to: `${data.email}`,
-      subject : `Solicitud de cancelacion recibida`,
-      html : 
-      `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Email From Austral</title>
-    </head>
-    <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-    <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
-        <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >¡Gracias por contactarnos!</h1>
-        <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
-            <p>Hola ${data.lastName.toUpperCase()},</p>
-            <p>Gracias por contactarnos y por hacernos saber acerca de tu solicitud de cancelación del servicio. Nos tomamos muy en serio tus comentarios y estamos trabajando diligentemente para procesar tu solicitud lo antes posible.</p>
-            <p>Por favor, tenga en cuenta que el proceso de cancelación puede tardar 24hs en completarse. Una vez que hayamos procesado tu solicitud, te notificaremos por correo electrónico o por teléfono.</p>
-            <p>Si necesita asistencia adicional o tiene alguna pregunta, no dude en llamarnos directamente al número de teléfono <a href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target="_blank">+549 294 424 2615</a></p>
-            <p> Gracias de nuevo por tu confianza en nosotros.</p>
-            
-            <p style="margin-top: 2rem; font-style: italic;">Atentamente,</p>
-            <p style="font-style: italic;"> Equipo de Austral.</p>
-            </div>
-        
-    </body>
-    </html>
-    `
+      to: `${data.input.email}`,
+      subject : subject,
+      html : html,
+     
     }
 
     const mailFromUser = {
-      from: `${data.email}`,
+      from: `${data.input.email}`,
       to: mail,
-      subject : `Solicitud de Cancelación de ${data.lastName.toUpperCase()}`,
+      subject : `Solicitud de Cancelación de ${data.input.lastName.toUpperCase()}`,
       html : `
       <body style="background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;>
-      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo mensaje de ${data.lastName.toUpperCase()}</h1> 
+      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo mensaje de  ${data.input.lastName.toUpperCase()}</h1> 
       <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
       <p>Los datos del Usuario para que puedas ponerte en contacto son:</p>
-      <p>Teléfono: ${data.phone}</p>
-      <p>Email: ${data.email}</p>
+      <p>Teléfono: ${data.input.phone}</p>
+      <p>Email: ${data.input.email}</p>
       </br>
 
-      <p style="margin: 1rem auto; width: 70%; line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.message}</strong></p>
+      <p style="margin: 1rem auto; width: 70%; line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
       </div>
       </body>
       `

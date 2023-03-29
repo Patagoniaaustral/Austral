@@ -17,12 +17,6 @@
       case !input.email || !/\S+@\S+\.\S+/.test(input.email):
         error.email = "Email is required";
         break;
-      // case input.code.length < 3:
-      //   error.code = "Code is required";
-      //   break;
-      case !input.message || input.message.length <= 10:
-        error.message = "Message is required";
-        break;
       default:
         break;
     }

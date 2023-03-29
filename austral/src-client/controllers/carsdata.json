@@ -9,61 +9,61 @@
     "category" : "A"
   },
   {
-      "id" : 2,
+    "id" : 2,
+    "model": "Chevrolet Onix",
+    "capacity" : 5,
+    "transmition" : "Manual",
+    "motor" : "Nafta",
+    "category" : "A"
+  },
+  {
+    "id" : 3,
+    "model": "Volkswagen Gol Trend",
+    "capacity" : 5,
+    "transmition" : "Manual",
+    "motor" : "Nafta",
+    "category" : "A"
+},
+{
+  "id" : 4,
+  "model": "Chevrolet Prisma",
+  "capacity" : 5,
+  "transmition" : "Mnaual",
+  "motor" : "Nafta",
+  "category" : "B"
+},
+{
+  "id" : 5,
+  "model": "Renault Logan",
+  "capacity" : 5,
+  "transmition" : "Manual",
+  "motor" : "Nafta",
+  "category" : "B"
+
+  },
+  {
+      "id" : 6,
       "model": "Chevrolet Spin",
       "capacity" : 7,
       "transmition" : "Manual",
       "motor" : "Nafta",
-      "category" : "C"
+      "category" : "D"
     },
     {
-        "id" : 3,
+      "id" : 7,
+      "model": "Fiat Toro 4x2",
+      "capacity" : 5,
+      "transmition" : "Automática",
+      "motor" : "Nafta",
+      "category" : "E"
+      },
+    {
+        "id" : 8,
         "model": "Nissan Frontier 4x4",
         "capacity" : 5,
         "transmition" : "Manual",
         "motor" : "Gasoil",
-        "category" : "E"
-    },
-    {
-      "id" : 4,
-      "model": "Chevrolet Onix",
-      "capacity" : 5,
-      "transmition" : "Manual",
-      "motor" : "Nafta",
-      "category" : "A"
-    },
-    {
-            "id" : 6,
-            "model": "Volkswagen Gol Trend",
-            "capacity" : 5,
-            "transmition" : "Manual",
-            "motor" : "Nafta",
-            "category" : "A"
-     },
-     {
-        "id" : 7,
-        "model": "Renault Logan",
-        "capacity" : 5,
-        "transmition" : "Manual",
-        "motor" : "Nafta",
-        "category" : "B"
-    
-        },
-        {
-          "id" : 8,
-          "model": "Chevrolet Prisma",
-          "capacity" : 5,
-          "transmition" : "Mnaual",
-          "motor" : "Nafta",
-          "category" : "B"
-    
-      },
-   {
-    "id" : 9,
-    "model": "Fiat Toro 4x2",
-    "capacity" : 5,
-    "transmition" : "Automática",
-    "motor" : "Nafta",
-    "category" : "D"
+        "category" : "F"
     }
 ]
+

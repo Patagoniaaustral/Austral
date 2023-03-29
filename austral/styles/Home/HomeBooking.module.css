@@ -9,6 +9,7 @@
 
 .booking__all_container{
     width: 75%;
+    height: 440px ;
     display: flex;
     align-items: center;
     justify-content: space-around;

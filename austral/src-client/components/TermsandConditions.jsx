@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { downloadFile } from '../controllers/downloadFile'
 import styles from '../../styles/TermsandConditions.module.css'
 import termsEs from "../../public/locale/ES/terms.json"
 import termsEn from "../../public/locale/EN/terms.json"
@@ -11,7 +10,16 @@ function TermsandConditions() {
     const t = router.locale === "es" ? termsEs : termsEn;
 
     const handleDownload = () => {
-      downloadFile("https://www.australrentacar.ar/ModeloDeContratoAustral.pdf", "ModeloDeContratoAustral.pdf")
+      const downloadLink = document.createElement('a');
+      downloadLink.href = 'https://patagoniaaustralrentacar.com.ar/ModeloDeContratoAustral.pdf';
+      downloadLink.target = '_blank';
+      downloadLink.download = 'ModeloDeContratoAustral.pdf';
+  
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+  
+      document.body.removeChild(downloadLink);
+  
 
     }
 
@@ -29,8 +37,10 @@ function TermsandConditions() {
       <h3><strong>{t.Ititle}</strong></h3>
       <p>{t.Itext}</p><br />
 
-        <h3><strong>{t.IItitle} </strong></h3> <p>{t.IItextA}</p><a className={styles.links} href="https://australrentacar.ar/ModeloDeContratoAustral.pdf" download="ModeloDeContratoAustral.pdf">CONTRATO</a>
-        <p>{t.IItextB}<Link className={styles.links} href="https://australrentacar.ar" target={"_blank"}>https://australrentacar.ar</Link>.</p><br/> 
+        <h3><strong>{t.IItitle} </strong></h3> <p>{t.IItextA}</p>
+        <a className={styles.links} href='https://patagoniaaustralrentacar.com.ar/ModeloDeContratoAustral.pdf' download="ModeloDeContratoAustral.pdf">CONTRATO</a>
+        <p>{t.IItextB}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+           https://patagoniaaustralrentacar.com.ar/</Link>.</p><br/> 
         
         <h3><strong>{t.IIItitle}</strong></h3>
         <p>{t.IIItext}</p><br />
@@ -42,15 +52,17 @@ function TermsandConditions() {
         <p>{t.Vtext}</p><br />
 
         <h3><strong>{t.VItitle}</strong> </h3>
-        <p>{t.VIIItextA}<Link className={styles.links} href="https://australrentacar.ar" target={"_blank"}>https://australrentacar.ar</Link>. Vencido el Plazo de Tolerancia,
-         {t.VIIItextB}</p><br />
+        <p>{t.VItextA}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+           https://patagoniaaustralrentacar.com.ar/ </Link>{t.VItextB}</p><br />
 
         <h3>  <strong>{t.VIItitle}</strong></h3>
-        <p>{t.VIItext} <Link className={styles.links} href="https://australrentacar.ar" target={"_blank"}>https://australrentacar.ar</Link>.
+        <p>{t.VIItext} <Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+        https://patagoniaaustralrentacar.com.ar/ </Link>
         </p><br />
 
           <h3><strong>{t.VIIItitle}</strong></h3>
-        <p>{t.VIIItextA} <Link className={styles.links} href="https://australrentacar.ar" target={"_blank"}>https://australrentacar.ar</Link>. A partir de su presentación de
+        <p>{t.VIIItextA} <Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+       https://patagoniaaustralrentacar.com.ar/</Link>
          {t.VIIItextB}</p><br />
 
         <h3><strong>{t.IXtitle}</strong></h3>

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Link from 'next/link'
 import axios from 'axios'
 import Image from 'next/image';
+import swal from 'sweetalert';
 import LogoFooter from "../../public/assets/others/logoFooter.png"
 import { IconContext } from "react-icons";
 import {BsInstagram} from "react-icons/bs";
@@ -19,14 +20,21 @@ const t = router.locale === "es" ? footEs : footEn;
 const handleSubmit = async(e) => {
   e.preventDefault();
   if(!email){
-    alert("Email is required")
+  swal("Por favor, ingrese su email")
   }
   try {
-    const mail = {email}
+    const mail = {
+      email,
+      router: router.locale}
+      
     await axios.post("/api/newsletterForm", mail)
-    alert("Suscribe success")
+   swal("Su email fue enviado con éxito.",{
+      buttons: false,
+      timer: 3000,
+      })
     setEmail("");
   } catch (error) {
+    swal("Error al enviar el email. Intente nuevamente.")
       console.log(error)
       return error;
   }
@@ -55,8 +63,8 @@ const handleSubmit = async(e) => {
         </div>
         <div>
           <h2>{t.contact}</h2>
-            <Link href="mailto:info@australrentacar.ar"><p>info@australrentacar.ar</p></Link>
-            <Link href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}><p>+549 294 424 2615</p></Link>
+            <Link href="mailto:info@australrentacar.ar"><p>info@patagoniaaustralrentacar.com.ar</p></Link>
+            <Link href="https://wa.me/5492944242615" target={"_blank"}><p>+549 294 424 2615</p></Link>
         </div>
         <div>
           <h2>{t.service}</h2>

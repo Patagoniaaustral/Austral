@@ -25,19 +25,20 @@ import Spin from "../../public/assets/fleet/Chevrolet Spin.webp"
 import Logan from "../../public/assets/fleet/Renault Logan.webp"
 import Gol from "../../public/assets/fleet/Volkswagen Gol Trend.webp"
 import Toro from "../../public/assets/fleet/Fiat Toro.webp"
-import Sandero from "../../public/assets/fleet/Renault Sandero.webp"
+import Sandero from "../../public/assets/fleet/Renault Sandero life.webp"
 import Onix from "../../public/assets/fleet/Chevrolet Onix.webp"
-import Kwid from "../../public/assets/fleet/Renault Kwid.webp"
+import Vitrus from "../../public/assets/fleet/Volkswagen Vitrus.webp"
 
 const carsImages = [
   {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquiler de auto Renault Sandero"},
-  {model: Spin, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
-  {model: Nissan, id: 3, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
-  {model: Onix, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
-  {model: Gol, id: 6, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
-  {model: Logan, id: 7, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
-  {model: Prisma, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},
-  {model: Toro, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"}
+  {model: Onix, id: 2, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Onix"},
+  {model: Gol, id: 3, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
+  {model: Prisma, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},
+  {model: Logan, id: 5, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
+  {model: Spin, id: 6, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
+  {model: Toro, id: 7, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
+  {model: Nissan, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
+  {model: Vitrus, id: 9, width: 400, heigth: 400, alt : "Alquiler de auto Volkswagen Vitrus"}
 ]
 
 
@@ -80,6 +81,7 @@ function  Fleet () {
           <option value="C">{t.booking.bcategory.c}</option>
           <option value="D">{t.booking.bcategory.d}</option>
           <option value="E">{t.booking.bcategory.e}</option>
+          <option value="F">{t.booking.bcategory.f}</option>
       </select>
     </div>
 
@@ -122,3 +124,14 @@ function  Fleet () {
 
 
 export default Fleet;
+
+
+/// to add to json 
+// {
+//   "id" : 5,
+//   "model": "Volkswagen Vitrus",
+//   "capacity" : 5,
+//   "transmition" : "Manual",
+//   "motor" : "Nafta",
+//   "category" : "C"
+// },

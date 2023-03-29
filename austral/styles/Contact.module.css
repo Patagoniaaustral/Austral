@@ -145,6 +145,11 @@
     .header {
       padding: 0 2em;
     }
+
+    .info_link_email{
+        font-size: .9rem;
+    }
+    
 }
 
 @media (max-width: 950px) {
@@ -171,6 +176,10 @@
     .contact__info{
         padding: 2em 3em;
     }
+
+    .info_link_email{
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:480px){
@@ -183,6 +192,10 @@
     }
     .contact__form{
         padding: 2em 1em;
+    }
+
+    .info_link_email{
+        font-size: .8rem;
     }
     
 }

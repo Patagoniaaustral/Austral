@@ -29,6 +29,7 @@
 .contact__info__text{
     font-weight: 500;
     width: min(70ch, 80%);
+    text-align: center;
 }
 
   .contact__form{
@@ -86,6 +87,8 @@
     color: var(--clr-primary);
     margin-bottom: 1em;
 }
+
+
 
 
 @media (hover : hover) {

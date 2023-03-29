@@ -2,13 +2,14 @@
     "contact" : "Contacto",
     "write" : "ESCRIBINOS",
     "text" : "Si tienes alguna duda, comunicate con nosotros telefonicamente o deja tu mensaje en este apartado para que nos comuniquemos a la brevedad.",
+    "name" : "Nombre",
     "lastname" : "Apellido",
-    "phone" : "Telefono",
+    "phone" : "Teléfono",
     "email" : "E-mail",
-    "code" : "Codigo de Reserva",
-    "message" : "Mensaje",
+    "codeReservation" : "Codigo de Reserva",
+    "message" : "Mensaje (opcional)",
     "send":"Enviar",
     "cancel": "Solicitud de Cancelación",
-    "cancelText": "Si deseas cancelar tu reserva, por favor completa el siguiente formulario y te contactaremos a la brevedad.",
+    "cancelText": "Si deseas cancelar tu reserva, por favor completa el siguiente formulario.",
     "btnCancel" : "Cancelar Reserva"
 }

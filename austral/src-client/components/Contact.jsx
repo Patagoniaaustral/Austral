@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useRouter } from "next/router";
+import swal from 'sweetalert';
 import Link from "next/link"
 import Image from "next/image"
 import { IconContext } from "react-icons";
@@ -14,6 +15,8 @@ import contEn from "../../public/locale/EN/contact.json"
 import styles from "../../styles/Contact.module.css"
 
 function Contact() {
+  const router = useRouter();
+  const t = router.locale === "es" ? contEs : contEn;
 
   const dataInput={
     lastName: "",
@@ -22,29 +25,38 @@ function Contact() {
     message: "",
   }
 
+  
 
   const [input, setInput]= useState(dataInput)
   const [error, setError] = useState(dataInput)
-  const router = useRouter();
-  const t = router.locale === "es" ? contEs : contEn;
-
+  
   const handleChange = ({target})=>{
     const {name, value} = target;
     setInput({...input, [name]: value});
     setError(validate({...input, [name]:value}))
   }
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(Object.values(error).length !== 0){
-      alert("Some fiels are empthy. Please complete.")
+      swal("Algunos campos estan incompletos. Por favor, completelos")
     }
+
+    const data = {
+      input,
+      router : router.locale
+    }
+    
     try {
-     await sendDataForm(input)
+     await sendDataForm(data)
      setInput(dataInput);
-     alert("Message send succesfully!")
+     swal("Su mensaje fue enviado con éxito.",{
+      buttons: false,
+      timer: 3000,
+    });
    } catch (error) {
-    alert("Error in send message. Try again.")
+    swal("Error al enviar el mensaje. Intente nuevamente.")
    }
   }
 
@@ -63,7 +75,7 @@ function Contact() {
 
         <div className={styles.contact__info__links}>
         <IconContext.Provider value={{ color: "black", size: "1.5em" }}> 
-          <Link   href="https://api.whatsapp.com/send/?phone=549 294 424 2615&text&type=phone_number&app_absent=0" target={"_blank"}>
+          <Link   href="https://wa.me/5492944242615" target={"_blank"}>
               <BsWhatsapp />
              <p>+549 294 424 2615</p>
           </Link>
@@ -103,8 +115,7 @@ function Contact() {
         </label>
 
         <label><span>{t.message}</span>
-        <textarea name="message"  aria-label="required" value={input.message} onChange={handleChange} required></textarea>
-        {error.message && ( <p>{error.message}</p>)}
+        <textarea name="message"  value={input.message} onChange={handleChange} ></textarea>
         </label>
 
         <button type ="submit"  disabled={Object.values(error).length !== 0}>{t.send}</button>
