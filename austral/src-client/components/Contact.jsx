@@ -53,7 +53,7 @@ function Contact() {
      setInput(dataInput);
      swal("Su mensaje fue enviado con éxito.",{
       buttons: false,
-      timer: 3000,
+      timer: 1000,
     });
    } catch (error) {
     swal("Error al enviar el mensaje. Intente nuevamente.")

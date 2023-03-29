@@ -30,7 +30,7 @@ const handleSubmit = async(e) => {
     await axios.post("/api/newsletterForm", mail)
    swal("Su email fue enviado con éxito.",{
       buttons: false,
-      timer: 3000,
+      timer: 1000,
       })
     setEmail("");
   } catch (error) {

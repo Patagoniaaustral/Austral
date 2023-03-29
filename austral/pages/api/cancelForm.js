@@ -10,10 +10,9 @@ const handler= async(req, res) => {
     const data = req.body;
     
     const transporter = nodemailer.createTransport({
-         host : "smtp.gmail.com",
+        host : "wo48.wiroos.host",
          port: 465,
          secure: true,
-         service: "gmail",
          auth: {
              user: mail,
              pass,
@@ -31,7 +30,7 @@ const handler= async(req, res) => {
       <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;">
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
       <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;"> Cancelación de Reserva </h1>
-      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+      <div style="width:70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
           <p>Hola ${data.input.name.toUpperCase()},</p>
           <p>Gracias por contactarnos, hemos recibido su solicitud de cancelación de reserva.</p>
           <p>El proceso de cancelación puede tardar hasta 24hs en completarse. Una vez que hayamos procesado tu solicitud, te notificaremos por éste medio.</p>
@@ -48,12 +47,12 @@ const handler= async(req, res) => {
       `
       <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; ">
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
-          <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;">Reservation Cancellation</h1>
-          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em; border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #F5F5F5;">
+          <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;">Booking Cancellation</h1>
+          <div style="width: 70%; margin: 0 auto; padding: 3em 4em; border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #F5F5F5;">
               <p>Hello ${data.input.name.toUpperCase()},</p>
               <p>Thank you for contacting us, we have received your reservation cancellation request.</p>
               <p>The cancellation process may take up to 24 hours to complete. Once we have processed your request, we will notify you through this medium.</p>
-              <p style="margin-top: 2rem; font-style: italic;">Yours sincerely,</p>
+              <p style="margin-top: 2rem; font-style: italic;">Sincerely,</p>
               <p style="font-style: italic;"> Austral Team.</p>
               </div>
       </body>
@@ -76,14 +75,13 @@ const handler= async(req, res) => {
       html : `
       <body>
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
-      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo mensaje de  ${data.input.lastName.toUpperCase()}</h1> 
-      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
-      <p>Los datos del Usuario para que puedas ponerte en contacto son:</p>
+      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Solicitud de cancelacion de  ${data.input.lastName.toUpperCase()}</h1> 
+      <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+      <p>Los datos del Usuario ${data.input.name} ${data.iinput.lastName} para que puedas ponerte en contacto son:</p>
       <p>Teléfono: ${data.input.phone}</p>
       <p>Email: ${data.input.email}</p>
-      </br>
-      
-      <p style="margin: 1rem auto; width: 70%; line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
+      <p> Código de Reserva : ${data.input.codeReservation}</p>
+      <p style="line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
       </div>
       </body>
       `

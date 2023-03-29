@@ -12,10 +12,9 @@ const handlerNewsletter= async(req, res) => {
     const {email, router} = req.body
     
     const transporter = nodemailer.createTransport({
-         host : "smtp.gmail.com",
+         host : "wo48.wiroos.host",
          port: 465,
          secure: true,
-         service: "gmail",
          auth: {
              user: mail,
              pass,
@@ -35,7 +34,7 @@ const handlerNewsletter= async(req, res) => {
       html = `<body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;"> 
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
       <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >¡Bienvenido a nuestro Newsletter!</h1>
-          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+          <div style="width: 70%; margin:0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
               <p>Hola,</p>
               <p>Gracias por suscribirte a nuestro newsletter.</p>
               <p>Pronto te enviaremos noticias, consejos y promociones exclusivas. Te mantendremos al día con las últimas novedades de Autral.</p>
@@ -54,7 +53,7 @@ const handlerNewsletter= async(req, res) => {
       <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;">
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>
       <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Welcome to our Newsletter!</h1>
-      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+      <div style="width: 70%; margin:0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
       <p>Hello,</p>
       <p>Thank you for subscribing to our newsletter.</p>
       <p>Soon we will send you news, tips and exclusive promotions. We will keep you up to date with the latest news from Austral.</p>

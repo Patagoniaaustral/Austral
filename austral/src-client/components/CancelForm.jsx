@@ -48,7 +48,7 @@ function CancelForm() {
      setInput(dataInput);
      swal("Su mensaje fue enviado con éxito.",{
       buttons: false,
-      timer: 3000,
+      timer: 1000,
     });
   
    } catch (error) {

@@ -13,10 +13,9 @@ const handler= async(req, res) => {
    
 
     const transporter = nodemailer.createTransport({
-         host : "smtp.gmail.com",
+        host : "wo48.wiroos.host",
          port: 465,
          secure: true,
-         service: "gmail",
          auth: {
              user: mail,
              pass,
@@ -35,7 +34,7 @@ const handler= async(req, res) => {
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
          
           <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >¡Gracias por contactarnos!</h1>
-          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+          <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
               <p>Hola ${data.input.lastName.toUpperCase()},</p>
               <p>Nos complace que esté interesado en nuestros servicios.</p>
               <p>Hemos recibido su solicitud y estamos revisando su consulta, en breve nos pondremos en contacto ofreciendo una respuesta.</p>
@@ -54,7 +53,7 @@ const handler= async(req, res) => {
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
 
           <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Thanks for contact us!</h1>
-          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+          <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
               <p>Hello ${data.input.lastName.toUpperCase()},</p>
               <p>We are pleased that you are interested in our services.</p>
               <p>We have received your request and are reviewing your inquiry, we will contact you shortly with a response.</p>
@@ -86,13 +85,12 @@ const handler= async(req, res) => {
       <body>
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
       <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo mensaje de ${data.input.lastName.toUpperCase()}</h1>
-      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+      <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
       <p>Los datos del Usuario para que puedas ponerte en contacto son:</p>
       <p>Teléfono: ${data.input.phone}</p>
       <p>Email: ${data.input.email}</p>
       </br>
-
-      <p style="margin: 1rem auto; width: 70%; line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
+      <p style="line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
       </div>
       </body>
       `
