@@ -12,7 +12,7 @@ function TermsandConditions() {
     const handleDownload =() => {
      const url = "http://australrent.vercel.app/ModelodeContratoAustral.pdf";
     //const url = "http://localhost:3000/ModelodeContratoAustral.pdf"  
-    const filename = "ModeloDeContratoAustral.pdf";
+    const filename = "ModelodeContratoAustral.pdf";
 
       fetch(url).then(response => response.blob()
       .then(blob => {
@@ -21,9 +21,6 @@ function TermsandConditions() {
         link.href = blobUrl;
         link.dowload = filename;
         link.click();
-
-      
-
       }))
       .catch(err => console.log(err))
 
@@ -45,7 +42,7 @@ function TermsandConditions() {
 
         <h3><strong>{t.IItitle} </strong></h3> <p>{t.IItextA}</p>
        
-        {/* <a className={styles.links} href= "ModeloDeContratoAustral.pdf" download="ModeloDeContratoAustral.pdf">{t.contract}</a>  */}
+        <a className={styles.links} href= "http://australrent.vercel.app/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">{t.contract}</a> 
         <p>{t.IItextB}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
            https://patagoniaaustralrentacar.com.ar/</Link>.</p><br/> 
         
