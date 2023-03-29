@@ -10,7 +10,7 @@ function TermsandConditions() {
     const t = router.locale === "es" ? termsEs : termsEn;
 
     const handleDownload =() => {
-     const url = "http://australrent.vercel.app/ModeloDeContratoAustral.pdf";
+     const url = "http://australrent.vercel.app/ModelodeContratoAustral.pdf";
     //const url = "http://localhost:3000/ModelodeContratoAustral.pdf"  
     const filename = "ModeloDeContratoAustral.pdf";
 
