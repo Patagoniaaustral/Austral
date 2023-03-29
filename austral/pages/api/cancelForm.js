@@ -28,9 +28,9 @@ const handler= async(req, res) => {
 
     if (data.router === "es") {
       html =  `
-      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-      <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
-      <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;"> Cancelacion de Reserva </h1>
+      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;">
+      <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
+      <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;"> Cancelación de Reserva </h1>
       <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
           <p>Hola ${data.input.name.toUpperCase()},</p>
           <p>Gracias por contactarnos, hemos recibido su solicitud de cancelación de reserva.</p>
@@ -38,7 +38,7 @@ const handler= async(req, res) => {
           
           <p style="margin-top: 2rem; font-style: italic;">Atentamente,</p>
           <p style="font-style: italic;"> Equipo de Austral.</p>
-              </div>
+          </div>
           
       </body>
       `;
@@ -46,8 +46,8 @@ const handler= async(req, res) => {
     } else {
       html = 
       `
-      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-          <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
+      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; ">
+      <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
           <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;">Reservation Cancellation</h1>
           <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em; border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); background-color: #F5F5F5;">
               <p>Hello ${data.input.name.toUpperCase()},</p>
@@ -74,14 +74,15 @@ const handler= async(req, res) => {
       to: mail,
       subject : `Solicitud de Cancelación de ${data.input.lastName.toUpperCase()}`,
       html : `
-      <body style="background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;>
+      <body>
+      <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
       <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo mensaje de  ${data.input.lastName.toUpperCase()}</h1> 
       <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
       <p>Los datos del Usuario para que puedas ponerte en contacto son:</p>
       <p>Teléfono: ${data.input.phone}</p>
       <p>Email: ${data.input.email}</p>
       </br>
-
+      
       <p style="margin: 1rem auto; width: 70%; line-height:1.5rem;"><strong>MENSAJE:<br/> ${data.input.message}</strong></p>
       </div>
       </body>

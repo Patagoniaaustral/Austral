@@ -10,7 +10,6 @@ const handlerNewsletter= async(req, res) => {
   try {
  
     const {email, router} = req.body
-    console.log(req.body)
     
     const transporter = nodemailer.createTransport({
          host : "smtp.gmail.com",
@@ -33,9 +32,9 @@ const handlerNewsletter= async(req, res) => {
     let subject = "";
 
     if (router === "es") {
-      html = `<body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-          <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
-          <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >¡Bienvenido a nuestro Newsletter!</h1>
+      html = `<body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;"> 
+      <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
+      <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >¡Bienvenido a nuestro Newsletter!</h1>
           <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
               <p>Hola,</p>
               <p>Gracias por suscribirte a nuestro newsletter.</p>
@@ -45,25 +44,24 @@ const handlerNewsletter= async(req, res) => {
               <p style="margin-top: 2rem; font-style: italic;">Atentamente,</p>
               <p style="font-style: italic;"> Equipo de Austral.</p>
               </div>
-          
+      
       </body>
       `;
       subject = `Hola, gracias por suscribirte!`;
     } else {
       html = 
       `
-      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0; background-image : url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;">
-          <img src="https://drive.google.com/file/d/1p8O-4EwKpJafZFiqJZea2FdQxHWrzrQA/view?usp=sharing"  alt="austral logo"/>
-          <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Welcome to our Newsletter!</h1>
-          <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
-              <p>Hello,</p>
-              <p>Thank you for subscribing to our newsletter.</p>
-              <p>Soon we will send you news, tips and exclusive promotions. We will keep you up to date with the latest news from Austral.</p>
-              <p>Do not hesitate to contact us if you have any questions or suggestions.</p>
-              <p style="margin-top: 2rem; font-style: italic;">Yours sincerely,</p>
-              <p style="font-style: italic;"> Austral Team.</p>
-              </div>
-          
+      <body style="font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; margin: 0; padding: 0;">
+      <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>
+      <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Welcome to our Newsletter!</h1>
+      <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+      <p>Hello,</p>
+      <p>Thank you for subscribing to our newsletter.</p>
+      <p>Soon we will send you news, tips and exclusive promotions. We will keep you up to date with the latest news from Austral.</p>
+      <p>Do not hesitate to contact us if you have any questions or suggestions.</p>
+      <p style="margin-top: 2rem; font-style: italic;">Yours sincerely,</p>
+      <p style="font-style: italic;"> Austral Team.</p>
+      </div>
       </body>
       `;
       subject = "Hi, thanks for subscribing!";
@@ -85,10 +83,11 @@ const handlerNewsletter= async(req, res) => {
         to: mail,
         subject : `Newsletter de Austral/Nvo Suscriptor: ${email}`,
         html : `
-        <body style="background-image:url(https://drive.google.com/file/d/1DZsDBTRz21kFf9sOA0i78Y3tII-J9haB/view?usp=sharing)"; background-size: 100%; background-repeat: repeat; background-attachment: fixed;>
+        <body>
+        <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png" display="flex" justify-content="flex-end" width="200px" height="auto" alt="austral logo"/>
         <h1  style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Tienes un nuevo suscriptor! </h1>
-        <div style="width: 90%; margin: 2em 0 6em; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
-        <p>Email de tu nuevo suscriptor para que puedas agregarlo a tu lista: </br>
+        <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
+        <p>Email de tu nuevo suscriptor para agregar a tu Newsletter: </br>
         ${email}</p>
         </br>
         </div>

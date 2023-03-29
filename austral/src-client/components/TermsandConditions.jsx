@@ -9,22 +9,6 @@ function TermsandConditions() {
     const router = useRouter();
     const t = router.locale === "es" ? termsEs : termsEn;
 
-    const handleDownload = () => {
-      const downloadLink = document.createElement('a');
-      downloadLink.href = 'https://patagoniaaustralrentacar.com.ar/ModeloDeContratoAustral.pdf';
-      downloadLink.target = '_blank';
-      downloadLink.download = 'ModeloDeContratoAustral.pdf';
-  
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-  
-      document.body.removeChild(downloadLink);
-  
-
-    }
-
-
-
   return (
     <div className={styles.main}>
       <h2 className={styles.title}>{t.terms}</h2>
@@ -38,7 +22,7 @@ function TermsandConditions() {
       <p>{t.Itext}</p><br />
 
         <h3><strong>{t.IItitle} </strong></h3> <p>{t.IItextA}</p>
-        <a className={styles.links} href='https://patagoniaaustralrentacar.com.ar/ModeloDeContratoAustral.pdf' download="ModeloDeContratoAustral.pdf">CONTRATO</a>
+        <a className={styles.links} href= "ModeloDeContratoAustral.pdf" download="ModeloDeContratoAustral.pdf">{t.contract}</a> 
         <p>{t.IItextB}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
            https://patagoniaaustralrentacar.com.ar/</Link>.</p><br/> 
         
@@ -69,7 +53,9 @@ function TermsandConditions() {
         <p>{t.IXtext}</p>
       </div>
 
-          <button className={styles.button} onClick={handleDownload}>{t.download}</button>
+        <a href="ModeloDeContratoAustral.pdf"  download="ModelodeContratoAustral.pdf" >
+          <button className={styles.button} >{t.download}</button>
+        </a>  
 
     </div>
   );
