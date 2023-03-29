@@ -9,9 +9,18 @@ function TermsandConditions() {
     const router = useRouter();
     const t = router.locale === "es" ? termsEs : termsEn;
 
-    const handleDownload =(e) => {
-        e.preventDefault();
-        window.open("ModeloDeContratoAustral.pdf", "_blank");
+    const handleDownload =() => {
+      const url = "http://https://australrent.vercel.app/ModeloDeContratoAustral.pdf";
+      const filename = "ModeloDeContratoAustral.pdf";
+      fetch(url).then(response => response.blob()
+      .then(blob => {
+        let blobUrl = window.URL.createObjectURL(blob);
+        let link = document.createElement('a');
+        link.href = blobUrl;
+        link.dowload = filename;
+        link.click();
+      }))
+      .catch(err => console.log(err))
     }
 
 
