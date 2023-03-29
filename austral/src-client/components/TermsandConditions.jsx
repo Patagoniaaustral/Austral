@@ -73,8 +73,9 @@ function TermsandConditions() {
         <p>{t.IXtext}</p>
       </div>
 
-      
-          <button className={styles.button} onClick={handleDownload} >{t.download}</button>
+      <a className={styles.links} href= "http://australrent.vercel.app/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">
+          <button className={styles.button}  >{t.download}</button>
+      </a> 
 
     </div>
   );
