@@ -10,8 +10,10 @@ function TermsandConditions() {
     const t = router.locale === "es" ? termsEs : termsEn;
 
     const handleDownload =() => {
-      const url = "http://https://australrent.vercel.app/ModeloDeContratoAustral.pdf";
-      const filename = "ModeloDeContratoAustral.pdf";
+     const url = "http://australrent.vercel.app/ModeloDeContratoAustral.pdf";
+    //const url = "http://localhost:3000/ModelodeContratoAustral.pdf"  
+    const filename = "ModeloDeContratoAustral.pdf";
+
       fetch(url).then(response => response.blob()
       .then(blob => {
         let blobUrl = window.URL.createObjectURL(blob);
@@ -19,8 +21,12 @@ function TermsandConditions() {
         link.href = blobUrl;
         link.dowload = filename;
         link.click();
+
+      
+
       }))
       .catch(err => console.log(err))
+
     }
 
 
@@ -70,8 +76,7 @@ function TermsandConditions() {
         <p>{t.IXtext}</p>
       </div>
 
-        {/* <a href="ModeloDeContratoAustral.pdf"  download="ModelodeContratoAustral.pdf" >
-        </a>   */}
+      
           <button className={styles.button} onClick={handleDownload} >{t.download}</button>
 
     </div>
