@@ -68,6 +68,11 @@ function  Fleet () {
     value === "" ? dispatch(cleanFilter()) : dispatch(filterFleet(value))
   }
 
+
+  window.parent.postMessage("test iframe fleet funcionando")
+
+
+
   return (
     <div className={styles.main}>
 

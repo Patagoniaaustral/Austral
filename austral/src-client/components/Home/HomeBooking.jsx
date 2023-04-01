@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react'
+import React, { useRef, useState, useEffect} from 'react'
 import { useRouter } from "next/router";
 import Image from 'next/image'
 import HomeHero from "../../../public/assets/hero/Familia jugando en una plaza de Bariloche.webp"
@@ -7,36 +7,25 @@ import homeEn from "../../../public/locale/EN/home.json"
 import styles from '../../../styles/Home/HomeBooking.module.css'
 
 function HomeBooking () {
-  const iframeRef = useRef(null);
+  const iframeRef = useRef(null)
+  const [mensaje, setMensaje] = useState("")
   const router = useRouter();
   const t = router.locale === "es" ? homeEs : homeEn;
   
-  const handleResize = () => {
-    console.log(iframeRef, "iframeRef")
-//     let iframe = document.querySelector("#custom-iframe"); 
-
+  useEffect(()=>{
+    window.addEventListener("message", (e)=> {
+      if(!e.data) console.log("no llega data")
+      if(e.origin === " https://austral.rentlynetwork.com"){
+        console.log("Mensaje recibido de rently:", e.data)
+      }
+      console.log(" Mensaje de iframe 2 e.data:", e.data) // si viene desde otro origen
+      setMensaje(e.data)
+    }, false)
+  }, [])
   
-
-// window.addEventListener('message', function(e) { 
-
-//    // message that was passed from iframe page 
-
-//    let message = e.data; 
-
-  
-
-//    iframe.style.height = message.height + 'px'; 
-
-//    iframe.style.width = message.width + 'px'; 
-
-// }, false); 
-    // para setear el alto del iframe acorde al contenido dinamico
-  
-    console.log(iframeRef.current , "iframeRef.current") 
-    // como el iframe es de otro dominio no se puede acceder a su contenido directamente
-    //console.log(iframeRef.current.contentWindow.document, "document"); // DA UN ERROR DE CORS
-    //console.log(iframeRef.current.postMessage) //da undefined
-  }
+  console.log("Mensaje:", mensaje)
+  // extraer de message el height y asignarselo a un estado height del iframe 
+ // window.parent.postMessage("Test comunicacion austral/rently funcionado")
 
   return (
   <section className={styles.section__container}>
@@ -46,11 +35,11 @@ function HomeBooking () {
       })}</h1>
       <Image src ={HomeHero} sizes= " (max-width: 768px) 200vw, 100vw" placeholder='blur' alt="Familia jugando en una plaza de Bariloche" priority/>
     </div>
-    <iframe  className={styles.booking__all_container} src="https://austral.rentlynetwork.com/widget"  ref={iframeRef} onLoad={handleResize} scrolling="no"  frameBorder="0" title="Rently Widget"></iframe> 
+    <iframe  className={styles.booking__all_container} ref={iframeRef} src="https://austral.rentlynetwork.com/widget"  frameBorder="0" title="Rently Widget"></iframe> 
   </section>
   );
 }
-
+ 
 export default HomeBooking;
 
 

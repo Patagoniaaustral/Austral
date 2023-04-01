@@ -132,7 +132,7 @@
     }
 
     .icons{
-        right: 2%;
+        right: 4%;
     }
 }
 
@@ -170,6 +170,7 @@
     }
     .icons{
         padding: .6em;
+        right: 9%;
     }
 
     .about{
@@ -187,4 +188,10 @@
     }
    
 } 
+
+@media(max-width: 480px){
+    .icons{
+        right: 13%;
+    }
+}
 
