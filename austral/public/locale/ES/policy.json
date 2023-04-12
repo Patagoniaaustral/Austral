@@ -1,0 +1,33 @@
+{
+    "title": "Política de Privacidad",
+    "text" : "Austral Rent a Car (en adelante, la 'Rentadora') está comprometida con la protección de la privacidad de sus clientes y con el cabal cumplimiento de la Ley Nro. 25.326 de Datos Personales (en adelante, la 'LDP') y/o de la que en el futuro la reforme, modifique, derogue o reemplace. Al navegar por el sitio [www.patagoniaaustralrentacar.com.ar], usted acepta que la Rentadora realice la recolección, procesamiento y tratamiento de sus datos personales conforme se describe en la presente Política de Privacidad (en adelante, la 'Política').",
+    "finalityTitle" : "Finalidad de la recolección, procesamiento y tratamiento de datos",
+    "finalityText" : "La Rentadora recolecta, procesa y trata datos únicamente a los fines de prestar de manera efectiva y satisfactoria el servicio contratado como también para comunicarse con el cliente. Adicionalmente, podrá utilizar dichos datos a los fines de publicitar servicios, ofertas y promociones a la casilla de correo indicada por el cliente.",
+    "typedata" : {
+        "title" : "Tipos de datos ",
+        "text1" : "La Rentadora no recolecta, procesa ni trata datos sensibles conforme art. 2° LDP. En cuanto a datos personales, la Rentadora recolecta, procesa y trata la siguiente información de los clientes:",
+        "data1" : "Nombre completo ",
+        "data2" : "DNI/Pasaporte",
+        "data3" : "Nacionalidad",
+        "data4" : "Fecha de nacimiento",
+        "data5" : "Domicilio",
+        "data6" : "Correo electrónico",
+        "data7" : "Teléfono",
+        "data8" : "CUIT",
+        "data9" : "Licencia de Conducir",
+        "data10" : "Número de Vuelo",
+        "data11" : "Información relativa a tarjetas de crédito o demás formas de pago del servicio y de constitución de la garantía establecida en el contrato",
+        "data12" : "Información de los autorizados a conducir, en caso de que hubieran",
+        "text2" : "La información podrá ser recolectada directamente a través de la página web de la Rentadora, como también a través de otros métodos como llamadas telefónicas, formularios de suscripción, entre otros."
+    },
+    "transferDataTitle" : "Transferencia de datos",
+    "transferDataText" : "La Rentadora no realiza transferencia alguna de datos personales, más allá de la necesaria para la efectiva y satisfactoria prestación del servicio y para los supuestos que la ley así lo disponga. En particular, podrá transferir datos con sus socias y asociadas, con las agencias de seguros, con las autoridades policiales y/o administrativas y demás organismos y entidades necesarias en función del contrato.",
+    "accesibilityTitle" : "Acceso y corrección a los datos personales",
+    "accesibilityText" : "Conforme lo establece la LDP, el titular de datos personales tiene la facultad de ejercer el derecho de acceso en forma gratuita a intervalos no inferiores a seis meses. El titular de los datos podrá acceder o corregir su información personal comunicándose con la Rentadora a través de los canales de contacto que se detallan en el sitio web.",
+    "changeTitle" : "Cambios en la Política",
+    "changeText" : "La Rentadora podrá ocasionalmente actualizar esta Política. La versión más reciente estará disponible en el sitio web de la Rentadora. Se recomienda que el cliente revise la Política de manera periódica.",
+    "reclamationTitle" : "Reclamos",
+    "reclamationText" : "La Dirección Nacional de Datos Personales, Órgano de Control de la Ley nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales. Puede contactar a la Dirección Nacional de Protección de Datos Personales en",
+    "garantiaTitle" : "Garantía de veracidad y exactitud de la información proporcionada",
+    "garantiaText" : "Por el presente, el cliente garantiza la veracidad y exactitud de la información personal proporcionada. La Rentadora no será responsable de manera alguna en el caso en el que el cliente proporcione información errónea o falsa."
+}

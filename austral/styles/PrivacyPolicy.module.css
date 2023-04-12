@@ -32,6 +32,27 @@
 }
 
 
+
+.mainList li::before{
+    content: url(../public/assets/svg/hex.svg);
+    display: inline-block;
+    margin: 0 .7em;
+    width: .7em;
+    height: .7em;
+    background-size: .8em;
+}
+
+.mainList li:not(.subList li) {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+
+.subList{
+    margin: .5rem 3rem;
+    list-style: none;
+}
+
 @media(max-width: 1024px){
     .form__container{
         width: 80%;
@@ -50,6 +71,10 @@
 @media(max-width: 480px){   
     .form__container{
         width: 100%;
-        padding: 2em 1em;
+        padding: 2em 1.5em;
+    }
+
+    .subList{
+        margin: .5rem;
     }
 }

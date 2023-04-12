@@ -1,0 +1,33 @@
+{
+    "title": "Privacy Policy",
+    "text" : "Austral Rent a Car (hereinafter, the 'Renter') is committed to protecting the privacy of its customers and to full compliance with Law No. 25.326 of Personal Data (hereinafter 'the LDP') and/or of which in the future it reforms, modifies, repeals or replaces. By browsing the site [www.patagoniaaustralrentacar.com.ar], you agree that the Renter performs the collection, processing and processing of your personal data as described in this Privacy Policy (hereinafter 'Policy').",
+    "finalityTitle" : "Purpose of data collection, processing and processing",
+    "finalityText" : "The Renter collects, processes and processes data only for the purpose of effectively and satisfactorily providing the contracted service and also to communicate with the customer. Additionally, you may use such data for the purpose of advertising services, offers and promotions to the mailbox indicated by the customer.",
+    "typedata" : {
+        "title" : "Data types ",
+        "text1" : "The Renter does not collect, process or process sensitive data according to art. 2° LDP. Regarding personal data, the Renter collects, processes and processes the following customer information:",
+        "data1" : "Full name ",
+        "data2" : "ID card/passport",
+        "data3" : "Nationality",
+        "data4" : "Date of birth",
+        "data5" : "Domicile",
+        "data6" : "Email",
+        "data7" : "Telephone",
+        "data8" : "CUIT",
+        "data9" : "Driver’s License",
+        "data10" : "Flight Number",
+        "data11" : "Information concerning credit cards or other forms of payment for the service and the creation of the guarantee provided in the contract",
+        "data12" : "Information on drivers, if any",
+        "text2" : "The information may be collected directly through the Renter’s website, as well as through other methods such as telephone calls, subscription forms, among others."
+    },
+    "transferDataTitle" : "Data transfer",
+    "transferDataText" : "The Renter does not make any transfer of personal data, beyond the necessary for the effective and satisfactory provision of the service and for the cases that the law so provides. In particular, it may transfer data with its members and associates, with insurance agencies, with law enforcement and/or administrative authorities and other bodies and entities required by the contract.",
+    "accesibilityTitle" : "Access and correction of personal data",
+    "accesibilityText" : "In accordance with the LDP, the holder of personal data is entitled to exercise the right of access free of charge at intervals of not less than six months. The data subject may access or correct your personal information by contacting the Renter through the contact channels detailed on the website.",
+    "changeTitle" : "Changes in the Policy",
+    "changeText" : "The Renter may occasionally update this Policy. The latest version will be available on the Renter’s website. We recommend that you review the Policy periodically. ",
+    "reclamationTitle" : "Claims",
+    "reclamationText" : "The National Directorate of Personal Data, the supervisory body of Law No 25326, has the power to deal with complaints and claims filed in relation to non-compliance with the rules on the protection of personal data. You can contact the National Directorate for Personal Data Protection at",
+    "garantiaTitle" : "Guarantee of veracity and accuracy of the information provided",
+    "garantiaText" : "The customer hereby guarantees the accuracy and accuracy of the personal information provided. The Renter shall not be liable in any way in the event that the customer provides incorrect or false information."
+}
