@@ -111,6 +111,13 @@
     display: none;
 }
 
+
+.error{
+    color: red;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
 @media(hover : hover){
     .search__btn:is(:hover, :focus, :active){
         background-color: var(--clr-gray);

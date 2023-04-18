@@ -12,7 +12,7 @@ export default function Document() {
       
         <meta property="og:title" content="Austral Rent A Car" />
         <meta property="og:description" content="Austral Rent A Car" />
-        <meta property="og:url" content="https://www.australrentacar.com.ar/" />
+        <meta property="og:url" content="https://www.patagoaustralrentacar.com.ar/" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>

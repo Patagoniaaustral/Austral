@@ -23,9 +23,9 @@ function TermsandConditions() {
 
         <h3><strong>{t.IItitle} </strong></h3> <p>{t.IItextA}</p>
        
-        <a className={styles.links} href= "http://australrent.vercel.app/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">{t.contract}</a> 
-        <p>{t.IItextB}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
-           https://patagoniaaustralrentacar.com.ar/</Link>.</p><br/> 
+        <a className={styles.links} href= "http://www.patagoniaaustralrentacar.com.ar/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">{t.contract}</a> 
+        <p>{t.IItextB}<Link className={styles.links} href=" https://www.patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+           https://www.patagoniaaustralrentacar.com.ar/</Link>.</p><br/> 
         
         <h3><strong>{t.IIItitle}</strong></h3>
         <p>{t.IIItext}</p><br />
@@ -37,24 +37,24 @@ function TermsandConditions() {
         <p>{t.Vtext}</p><br />
 
         <h3><strong>{t.VItitle}</strong> </h3>
-        <p>{t.VItextA}<Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
-           https://patagoniaaustralrentacar.com.ar/ </Link>{t.VItextB}</p><br />
+        <p>{t.VItextA}<Link className={styles.links} href=" https://www.patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+           https://www.patagoniaaustralrentacar.com.ar/ </Link>{t.VItextB}</p><br />
 
         <h3>  <strong>{t.VIItitle}</strong></h3>
-        <p>{t.VIItext} <Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
-        https://patagoniaaustralrentacar.com.ar/ </Link>
+        <p>{t.VIItext} <Link className={styles.links} href=" https://www.patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+        https://www.patagoniaaustralrentacar.com.ar/ </Link>
         </p><br />
 
           <h3><strong>{t.VIIItitle}</strong></h3>
-        <p>{t.VIIItextA} <Link className={styles.links} href=" https://patagoniaaustralrentacar.com.ar/" target={"_blank"}>
-       https://patagoniaaustralrentacar.com.ar/</Link>
+        <p>{t.VIIItextA} <Link className={styles.links} href=" https://www.patagoniaaustralrentacar.com.ar/" target={"_blank"}>
+       https://www.patagoniaaustralrentacar.com.ar/</Link>
          {t.VIIItextB}</p><br />
 
         <h3><strong>{t.IXtitle}</strong></h3>
         <p>{t.IXtext}</p>
       </div>
 
-      <a className={styles.links} href= "http://australrent.vercel.app/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">
+      <a className={styles.links} href= "http://www.patagoniaaustralrentacar.com.ar/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">
           <button className={styles.button}  >{t.download}</button>
       </a> 
 
