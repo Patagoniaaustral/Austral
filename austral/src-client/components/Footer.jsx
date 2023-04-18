@@ -48,11 +48,11 @@ const handleSubmit = async(e) => {
           <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
             <Link href="https://www.instagram.com/austral.rentacar" target={"_blank"} aria-label="instagram">
               <BsInstagram />
-              <p>australrentacar.ar</p>
+              <p>austral.rentacar</p>
             </Link>
             <Link href="https://www.facebook.com/austral.ar" target={"_blank"} aria-label="facebook">
               <FaFacebookF/>
-              <p>australrentacar.ar</p>
+              <p>austral.ar</p>
             </Link>
           </IconContext.Provider>
         </div>

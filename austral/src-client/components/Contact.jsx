@@ -87,12 +87,12 @@ function Contact() {
 
           <Link  href="https://www.instagram.com/australrentacar" target={"_blank"}>
                 <BsInstagram  />
-                <p>australrentacar.ar</p>
+                <p>austral.rentacar</p>
           </Link>
 
           <Link  href="https://www.facebook.com/australrentacar" target={"_blank"}>
                 <FaFacebookF/>
-                <p>australrentacar.ar</p>
+                <p>austral.ar</p>
           </Link>
           </IconContext.Provider>
         </div>
