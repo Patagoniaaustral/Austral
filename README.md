@@ -1,5 +1,14 @@
 # Austral 
+##### Deployment link: [austral](https://australrent.vercel.app/)
+
+## Objectivos del Projecto 
 Desarrollo web para austral rent a car.
+
+## Descripcion
+
+
+
+## Home
 
 
 
@@ -19,3 +28,10 @@ Desarrollo web para austral rent a car.
 2. Para enviar cambios, crear una rama a partir de la rama principal y hacer una pull request.
 
 ## Dependencias
+- React
+- NextJS
+- Redux Toolkit
+- Framer Motion
+- Nodemailer
+
+
