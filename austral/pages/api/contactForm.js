@@ -7,7 +7,7 @@ const pass = process.env.EMAIL_PASS;
 
 
 
-const handler= async(req, res) => {
+const contactFormHandler= async(req, res) => {
   try {
     const data = req.body;
    
@@ -112,4 +112,4 @@ const handler= async(req, res) => {
 }
 
 
-export default handler;
+export default contactFormHandler;

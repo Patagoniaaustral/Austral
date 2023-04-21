@@ -5,7 +5,7 @@ const pass = process.env.EMAIL_PASS;
 
 
 
-const handler= async(req, res) => {
+const cancelFormHandler= async(req, res) => {
   try {
     const data = req.body;
     
@@ -103,4 +103,4 @@ const handler= async(req, res) => {
 }
 
 
-export default handler;
+export default cancelFormHandler;

@@ -6,7 +6,7 @@ const pass = process.env.EMAIL_PASS;
 
 
 
-const handlerNewsletter= async(req, res) => {
+const newsletterHandler = async(req, res) => {
   try {
  
     const {email, router} = req.body
@@ -109,4 +109,4 @@ const handlerNewsletter= async(req, res) => {
 }
 
 
-export default handlerNewsletter;
+export default newsletterHandler;
