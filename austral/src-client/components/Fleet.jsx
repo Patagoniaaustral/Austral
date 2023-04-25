@@ -35,10 +35,10 @@ const carsImages = [
   {model: Gol, id: 3, width: 200, heigth: 200, alt : "Alquiler de auto Volkswagen Gol Trend"},
   {model: Prisma, id: 4, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Prisma"},
   {model: Logan, id: 5, width: 300, heigth: 300, alt: "Alquiler de auto Renault Logan"},
-  {model: Spin, id: 6, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
-  {model: Toro, id: 7, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
-  {model: Nissan, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
-  {model: Vitrus, id: 9, width: 400, heigth: 400, alt : "Alquiler de auto Volkswagen Vitrus"}
+  {model: Vitrus, id: 6, width: 400, heigth: 400, alt : "Alquiler de auto Volkswagen Vitrus"},
+  {model: Spin, id: 7, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
+  {model: Toro, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
+  {model: Nissan, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"}
 ]
 
 
@@ -131,12 +131,4 @@ function  Fleet () {
 export default Fleet;
 
 
-/// to add to json 
-// {
-//   "id" : 5,
-//   "model": "Volkswagen Vitrus",
-//   "capacity" : 5,
-//   "transmition" : "Manual",
-//   "motor" : "Nafta",
-//   "category" : "C"
-// },
+
