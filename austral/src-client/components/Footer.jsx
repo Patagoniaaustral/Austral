@@ -63,7 +63,7 @@ const handleSubmit = async(e) => {
         </div>
         <div>
           <h2>{t.contact}</h2>
-            <Link href="mailto:info@australrentacar.ar"><p>info@patagoniaaustralrentacar.com.ar</p></Link>
+            <Link href="mailto: info@patagoniaaustralrentacar.com.ar"><p>info@patagoniaaustralrentacar.com.ar</p></Link>
             <Link href="https://wa.me/5492944242615" target={"_blank"}><p>+549 294 424 2615</p></Link>
         </div>
         <div>

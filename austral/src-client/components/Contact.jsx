@@ -80,9 +80,9 @@ function Contact() {
              <p>+549 294 424 2615</p>
           </Link>
 
-          <Link className={styles.info_link} href="mailto:info@australrentacar.ar">
+          <Link className={styles.info_link} href="mailto:info@patagoniaaustralrentacar.com.ar">
             <FiMail className={styles.info_link_ico} />
-            <p> info@australrentacar.ar</p>
+            <p> info@patagoniaaustralrentacar.com.ar</p>
           </Link>
 
           <Link  href="https://www.instagram.com/australrentacar" target={"_blank"}>
