@@ -23,11 +23,12 @@ app.prepare().then(() => {
       const parsedUrl = parse(req.url, true)
       const { pathname, query } = parsedUrl
 
-
       if (pathname === '/a') {
         await app.render(req, res, '/a', query)
       } else if (pathname === '/b') {
         await app.render(req, res, '/b', query)
+      } else if (pathname === '/c') {
+        await app.render(req, res, '/c', query)
       } else {
         await handle(req, res, parsedUrl)
       }
