@@ -54,7 +54,7 @@ function TermsandConditions() {
         <p>{t.IXtext}</p>
       </div>
 
-      <a className={styles.links} href= "http://www.patagoniaaustralrentacar.com.ar/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">
+      <a className={styles.links} href= "https://www.patagoniaaustralrentacar.com.ar/ModelodeContratoAustral.pdf" download="ModelodeContratoAustral.pdf">
           <button className={styles.button}  >{t.download}</button>
       </a> 
 
