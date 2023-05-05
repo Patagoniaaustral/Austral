@@ -8,7 +8,6 @@ const pass = process.env.EMAIL_PASS;
 
 const newsletterHandler = async(req, res) => {
   try {
- 
     const {email, router} = req.body
     
     const transporter = nodemailer.createTransport({

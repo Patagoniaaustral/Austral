@@ -19,7 +19,7 @@ const cancelFormHandler= async(req, res) => {
       }
      }) 
 
-    if(!data.input.name || !data.input.phone || !data.input.email || !data.router){
+    if(!data.input.lastName || !data.input.name || !data.input.phone || !data.input.email || !data.router){
       return res.status(403).json({message: "Bad request.Missing data fields."})
     }
     let html = "";
