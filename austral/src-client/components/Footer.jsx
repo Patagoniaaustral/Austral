@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import footEs from "../../public/locale/ES/footer.json"
 import footEn from "../../public/locale/EN/footer.json"
 import styles from "../../styles/Footer.module.css"
+import sendNewsletter from "../controllers/sendNewsletter"
 
 const Footer = () => {
 const [email, setEmail] = useState("")
@@ -20,15 +21,16 @@ const t = router.locale === "es" ? footEs : footEn;
 const handleSubmit = async(e) => {
   e.preventDefault();
   if(!email){
-  swal("Por favor, ingrese su email")
+    swal("Por favor, ingrese su email")
   }
+
   try {
     const mail = {
       email,
       router: router.locale}
       
-    await axios.post("/api/newsletterForm", mail)
-   swal("Su email fue enviado con éxito.",{
+    await sendNewsletter(mail);
+    swal("Su email fue enviado con éxito.",{
       buttons: false,
       timer: 1000,
       })
