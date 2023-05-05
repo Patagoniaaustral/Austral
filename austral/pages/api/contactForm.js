@@ -13,15 +13,16 @@ const contactFormHandler= async(req, res) => {
    
 
     const transporter = nodemailer.createTransport({
-      host: 'mail.patagoniaaustralrentacar.com.ar',
+        host: 'mail.patagoniaaustralrentacar.com.ar',
          port: 465 || 26,
+         secure: true,
          auth: {
              user: mail,
              pass,
          }
      }) 
 
-    if(!data.input.lastName || !data.input.name  || !data.input.phone || !data.input.email || !data.router){
+    if(!data.input.lastName || !data.input.phone || !data.input.email || !data.router){
       return res.status(403).json({message: "Bad request.Missing data fields."})
     }
 

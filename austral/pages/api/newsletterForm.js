@@ -13,6 +13,7 @@ const newsletterHandler = async(req, res) => {
     const transporter = nodemailer.createTransport({
         host: 'mail.patagoniaaustralrentacar.com.ar',
          port: 465 || 26,
+         secure: true,
          auth: {
              user: mail,
              pass,
