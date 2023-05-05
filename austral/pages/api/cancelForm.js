@@ -10,13 +10,13 @@ const cancelFormHandler= async(req, res) => {
     const data = req.body;
     
     const transporter = nodemailer.createTransport({
-        host : "wo48.wiroos.host",
-         port: 465,
-         secure: true,
-         auth: {
-             user: mail,
-             pass,
-         }
+      host: 'mail.patagoniaaustralrentacar.com.ar',
+      port: 465 || 26,
+      secure: true,
+      auth:{
+        user: mail,
+        pass: pass
+      }
      }) 
 
     if(!data.input.lastName || !data.input.phone || !data.input.email || !data.router){

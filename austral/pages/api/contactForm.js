@@ -13,9 +13,8 @@ const contactFormHandler= async(req, res) => {
    
 
     const transporter = nodemailer.createTransport({
-        host : "wo48.wiroos.host",
-         port: 465,
-         secure: true,
+      host: 'mail.patagoniaaustralrentacar.com.ar',
+         port: 465 || 26,
          auth: {
              user: mail,
              pass,
