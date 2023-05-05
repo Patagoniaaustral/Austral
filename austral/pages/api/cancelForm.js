@@ -19,7 +19,7 @@ const cancelFormHandler= async(req, res) => {
       }
      }) 
 
-    if(!data.input.lastName || !data.input.phone || !data.input.email || !data.router){
+    if(!data.input.name || !data.input.phone || !data.input.email || !data.router){
       return res.status(403).json({message: "Bad request.Missing data fields."})
     }
     let html = "";
@@ -71,13 +71,13 @@ const cancelFormHandler= async(req, res) => {
     const mailFromUser = {
       from: `${data.input.email}`,
       to: mail,
-      subject : `Solicitud de Cancelación de ${data.input.lastName.toUpperCase()}`,
+      subject : `Solicitud de Cancelación de ${data.input.name.toUpperCase()}`,
       html : `
       <body>
       <img src="https://res.cloudinary.com/de74ziogy/image/upload/v1675017816/logoNavBar_osyjwg.png"  width="200px" height="auto" alt="austral logo"/>   
-      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Solicitud de cancelacion de  ${data.input.lastName.toUpperCase()}</h1> 
+      <h1 style="text-align: center; font-size: 2rem; font-weight: 600; margin-top: 2rem; color: #DD3131;" >Solicitud de cancelacion de  ${data.input.name.toUpperCase()} ${data.input.lastName.toUpperCase()}</h1>
       <div style="width: 70%; margin: 0 auto; padding: 3em 4em;  border-radius: 3em; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);  background-color: #F5F5F5;">
-      <p>Los datos del Usuario ${data.input.name} ${data.iinput.lastName} para que puedas ponerte en contacto son:</p>
+      <p>Los datos del Usuario ${data.input.name} ${data.input.lastName} para que puedas ponerte en contacto son:</p>
       <p>Teléfono: ${data.input.phone}</p>
       <p>Email: ${data.input.email}</p>
       <p> Código de Reserva : ${data.input.codeReservation}</p>
