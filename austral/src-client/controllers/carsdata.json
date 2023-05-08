@@ -47,7 +47,7 @@
   "capacity" : 5,
   "transmition" : "Manual",
   "motor" : "Nafta",
-  "category" : "C"
+  "category" : "D"
 },
   {
       "id" : 7,
@@ -55,7 +55,7 @@
       "capacity" : 7,
       "transmition" : "Manual",
       "motor" : "Nafta",
-      "category" : "D"
+      "category" : "E"
     },
     {
       "id" : 8,
@@ -63,7 +63,7 @@
       "capacity" : 5,
       "transmition" : "Automática",
       "motor" : "Nafta",
-      "category" : "E"
+      "category" : "F"
       },
     {
         "id" : 9,
@@ -71,7 +71,15 @@
         "capacity" : 5,
         "transmition" : "Manual",
         "motor" : "Gasoil",
-        "category" : "F"
+        "category" : "G"
+    },
+    {
+      "id" : 10,
+      "model": "Renault Sandero Stepway",
+      "capacity" : 5,
+      "transmition" : "Manual",
+      "motor" : "Nafta",
+      "category" : "C"
     }
 ]
 

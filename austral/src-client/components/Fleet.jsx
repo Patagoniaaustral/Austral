@@ -28,6 +28,7 @@ import Toro from "../../public/assets/fleet/Fiat Toro.webp"
 import Sandero from "../../public/assets/fleet/Renault Sandero life.webp"
 import Onix from "../../public/assets/fleet/Chevrolet Onix.webp"
 import Vitrus from "../../public/assets/fleet/Volkswagen Vitrus.webp"
+import Stepway from "../../public/assets/fleet/Renault Sandero Stepway.webp"
 
 const carsImages = [
   {model: Sandero, id: 1, width: 300, heigth: 300, alt: "Alquiler de auto Renault Sandero"},
@@ -38,7 +39,8 @@ const carsImages = [
   {model: Vitrus, id: 6, width: 400, heigth: 400, alt : "Alquiler de auto Volkswagen Vitrus"},
   {model: Spin, id: 7, width: 300, heigth: 300, alt : "Alquiler de auto Chevrolet Spin"},
   {model: Toro, id: 8, width: 300, heigth: 300, alt : "Alquiler de auto Fiat Toro"},
-  {model: Nissan, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"}
+  {model: Nissan, id: 9, width: 300, heigth: 300, alt : "Alquiler de auto Nissan Frontier"},
+  {model: Stepway, id: 10, width: 300, heigth: 300, alt : "Alquiler de auto Renault Sandero Stepway"},
 ]
 
 
