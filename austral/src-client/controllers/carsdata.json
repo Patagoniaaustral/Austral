@@ -41,6 +41,14 @@
   "category" : "B"
 
   },
+  {
+    "id" : 10,
+    "model": "Renault Sandero Stepway",
+    "capacity" : 5,
+    "transmition" : "Manual",
+    "motor" : "Nafta",
+    "category" : "C"
+  },
 {
   "id" : 6,
   "model": "Volkswagen Vitrus",
@@ -72,14 +80,6 @@
         "transmition" : "Manual",
         "motor" : "Gasoil",
         "category" : "G"
-    },
-    {
-      "id" : 10,
-      "model": "Renault Sandero Stepway",
-      "capacity" : 5,
-      "transmition" : "Manual",
-      "motor" : "Nafta",
-      "category" : "C"
     }
 ]
 
